@@ -1,0 +1,55 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>Charlie's Dictionary of Trucks and Machine: Control Panel</title></head>
+<body
+   onLoad="document.hello.submit(); return 1" 
+   
+   text="#0000FF" link="#0000FF" vlink="#0000FF" alink="#0000FF"
+>
+<form name="hello" action="ahello.wav"><input type="hidden"></form>
+<a href="/home/wcohen/dict/subj/0menu.html"><img src="/home/wcohen/dict/lib/abooks.gif"></a><a target="Second Window" href="http://www.bisman.com/butler/kids.html"><img src="/home/wcohen/dict/lib/awww.gif"></a>
+<br>
+<p><img src="aline.gif"></p>
+<a href="ahello.wav">
+<fig align="left" src="apicture.gif"
+<h2>Charlie's Dictionary of Trucks and Machine</h2>
+</fig>
+<p><img src="aline.gif"></p>
+
+
+<table border=5>
+<tr>
+<td><form><input type="button" value="<font size=+3>B</font>ACKHOE" onClick="v('/home/wcohen/dict/subj/trucks/pbackhoe0.html')"></td>
+<td><form><input type="button" value="<font size=+3>B</font>ULLDOZER" onClick="v('/home/wcohen/dict/subj/trucks/pbulldozer0.html')"></td>
+<td><form><input type="button" value="<font size=+3>C</font>RANE" onClick="v('/home/wcohen/dict/subj/trucks/pcrane0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="<font size=+3>F</font>ORKLIFT" onClick="v('/home/wcohen/dict/subj/trucks/pforklift0.html')"></td>
+<td><form><input type="button" value="<font size=+3>G</font>RADER" onClick="v('/home/wcohen/dict/subj/trucks/pgrader0.html')"></td>
+<td><form><input type="button" value="<font size=+3>S</font>KID STEER" onClick="v('/home/wcohen/dict/subj/trucks/pskid_steer0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="<font size=+3>Y</font>ARDER" onClick="v('/home/wcohen/dict/subj/trucks/pyarder0.html')"></td>
+<td><form><input type="button" value="<font size=+3>C</font>RAWLER TRACTOR" onClick="v('/home/wcohen/dict/subj/trucks/pcrawler_tractor0.html')"></td>
+<td><form><input type="button" value="<font size=+3>D</font>UMP TRUCK" onClick="v('/home/wcohen/dict/subj/trucks/pdump_truck0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="<font size=+3>F</font>IRE TRUCK" onClick="v('/home/wcohen/dict/subj/trucks/pfire_truck0.html')"></td>
+<td><form><input type="button" value="<font size=+3>L</font>OADER" onClick="v('/home/wcohen/dict/subj/trucks/ploader0.html')"></td>
+<td><form><input type="button" value="<font size=+3>M</font>OTOR DIGGER" onClick="v('/home/wcohen/dict/subj/trucks/pmotor_digger0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="<font size=+3>M</font>OTORCYCLE" onClick="v('/home/wcohen/dict/subj/trucks/pmotorcycle0.html')"></td>
+<td><form><input type="button" value="<font size=+3>S</font>PORTS CAR" onClick="v('/home/wcohen/dict/subj/trucks/psports_car0.html')"></td>
+<td><form><input type="button" value="<font size=+3>T</font>RAIN" onClick="v('/home/wcohen/dict/subj/trucks/ptrain0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="<font size=+3>U</font>NIT" onClick="v('/home/wcohen/dict/subj/trucks/punit0.html')"></td>
+</tr>
+</table>

@@ -1,0 +1,3533 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List
+href="./IJCAI_Workshop_-_Wrapster_Associations_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="./IJCAI_Workshop_-_Wrapster_Associations_files/editdata.mso">
+<link rel=OLE-Object-Data
+href="./IJCAI_Workshop_-_Wrapster_Associations_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Thesis Proposal</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jensen</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>William Cohen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>3646</o:TotalTime>
+  <o:LastPrinted>2001-03-08T19:22:00Z</o:LastPrinted>
+  <o:Created>2002-06-07T17:41:00Z</o:Created>
+  <o:LastSaved>2002-06-07T17:41:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>4224</o:Words>
+  <o:Characters>24080</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>200</o:Lines>
+  <o:Paragraphs>48</o:Paragraphs>
+  <o:CharactersWithSpaces>29571</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="8" DLLVersion="513" NLCheck="0">1</w:ActiveWritingStyle>
+  <w:DrawingGridHorizontalSpacing>3.6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>3.6 pt</w:DrawingGridVerticalSpacing>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DrawingGridHorizontalOrigin>84.95 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>99.35 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:WW6BorderRules/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l19 level1 lfo41;
+	tab-stops:list .3in;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.4in;
+	margin-bottom:.0001pt;
+	text-indent:-.4in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l19 level2 lfo41;
+	tab-stops:list .4in;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l26 level3 lfo40;
+	tab-stops:list .5in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.6in;
+	text-indent:-.6in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l26 level4 lfo40;
+	tab-stops:list .6in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.7in;
+	text-indent:-.7in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-list:l26 level5 lfo40;
+	tab-stops:list .7in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h6
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.8in;
+	text-indent:-.8in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	mso-list:l26 level6 lfo40;
+	tab-stops:list .8in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.9in;
+	text-indent:-.9in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:7;
+	mso-list:l26 level7 lfo40;
+	tab-stops:list .9in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.0in;
+	text-indent:-1.0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:8;
+	mso-list:l26 level8 lfo40;
+	tab-stops:list 1.0in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.1in;
+	text-indent:-1.1in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	mso-list:l26 level9 lfo40;
+	tab-stops:list 1.1in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	tab-stops:67.5pt right dotted 431.5pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	text-transform:uppercase;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:10.1pt;
+	margin-bottom:.0001pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-variant:small-caps;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	tab-stops:50.0pt right dotted 431.5pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-20.0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	text-transform:uppercase;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	mso-bidi-font-weight:bold;
+	text-decoration:underline;
+	text-underline:single;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+strong
+	{mso-bidi-font-weight:normal;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Abstract, li.Abstract, div.Abstract
+	{mso-style-name:Abstract;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Equation, li.Equation, div.Equation
+	{mso-style-name:Equation;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Figure, li.Figure, div.Figure
+	{mso-style-name:Figure;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Reference, li.Reference, div.Reference
+	{mso-style-name:Reference;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.TableBody, li.TableBody, div.TableBody
+	{mso-style-name:"Table Body";
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:7.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Helvetica;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.TableHeader, li.TableHeader, div.TableHeader
+	{mso-style-name:"Table Header";
+	mso-style-parent:"Table Body";
+	mso-style-next:"Table Body";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:7.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Author, li.Author, div.Author
+	{mso-style-name:Author;
+	mso-style-parent:"";
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:24.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.AfterEquation, li.AfterEquation, div.AfterEquation
+	{mso-style-name:"After Equation";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.table, li.table, div.table
+	{mso-style-name:table;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Table0, li.Table0, div.Table0
+	{mso-style-name:Table;
+	mso-style-parent:Caption;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Graph, li.Graph, div.Graph
+	{mso-style-name:Graph;
+	mso-style-parent:Caption;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	mso-style-parent:Reference;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	text-indent:-2.0in;
+	mso-pagination:widow-orphan;
+	tab-stops:.1in .2in .3in .4in .5in .6in .7in .8in .9in 1.0in 1.1in;
+	background:#F2F2F2;
+	mso-shading:white;
+	mso-pattern:gray-5 auto;
+	font-size:8.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.AbstractHeading, li.AbstractHeading, div.AbstractHeading
+	{mso-style-name:"Abstract Heading";
+	mso-style-parent:"Heading 1";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-font-kerning:14.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:1;
+	mso-even-footer:url("./IJCAI_Workshop_-_Wrapster_Associations_files/header.htm") ef1;
+	mso-footer:url("./IJCAI_Workshop_-_Wrapster_Associations_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:1;
+	mso-even-footer:url("./IJCAI_Workshop_-_Wrapster_Associations_files/header.htm") ef1;
+	mso-footer:url("./IJCAI_Workshop_-_Wrapster_Associations_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-132;
+	mso-list-type:simple;
+	mso-list-template-ids:-375459950;}
+@list l0:level1
+	{mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:-131;
+	mso-list-type:simple;
+	mso-list-template-ids:-1344611292;}
+@list l1:level1
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:-130;
+	mso-list-type:simple;
+	mso-list-template-ids:267826208;}
+@list l2:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:-129;
+	mso-list-type:simple;
+	mso-list-template-ids:-221196216;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:-128;
+	mso-list-type:simple;
+	mso-list-template-ids:-978050730;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:-127;
+	mso-list-type:simple;
+	mso-list-template-ids:1440351692;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:1999162900;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:-1381302754;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:-120;
+	mso-list-type:simple;
+	mso-list-template-ids:1360711906;}
+@list l8:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:-481133888;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:72707678;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-816785818 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:142816183;
+	mso-list-template-ids:-812227222;}
+@list l11:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l11:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l11:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l11:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l11:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l11:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l11:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l11:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l11:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l12
+	{mso-list-id:214970889;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:251091806;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-23453390 -1827889196 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l13:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14
+	{mso-list-id:346055716;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:617177206;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:631594110;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l17
+	{mso-list-id:638532662;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:717820308;
+	mso-list-template-ids:-987998342;}
+@list l18:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l18:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l18:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l18:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l18:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l18:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l18:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l18:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l18:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l19
+	{mso-list-id:743068209;
+	mso-list-template-ids:-1971657602;}
+@list l19:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l19:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l19:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l19:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l19:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l19:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l19:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l19:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l19:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l20
+	{mso-list-id:768082063;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:807286196;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:856116023;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l22:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l23
+	{mso-list-id:945041692;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1057125012;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l24:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l25
+	{mso-list-id:1144854763;
+	mso-list-template-ids:654892610;}
+@list l25:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l25:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l25:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:.85in;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.35in;}
+@list l25:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:1.2in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.45in;}
+@list l25:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:1.55in;
+	mso-level-number-position:left;
+	margin-left:1.55in;
+	text-indent:-.55in;}
+@list l25:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:1.9in;
+	mso-level-number-position:left;
+	margin-left:1.9in;
+	text-indent:-.65in;}
+@list l25:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.75in;}
+@list l25:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:2.6in;
+	mso-level-number-position:left;
+	margin-left:2.6in;
+	text-indent:-.85in;}
+@list l25:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:3.0in;
+	text-indent:-1.0in;}
+@list l26
+	{mso-list-id:1176266099;
+	mso-list-template-ids:-2061459842;}
+@list l26:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l26:level2
+	{mso-level-text:"%1\.";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l26:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l26:level4
+	{mso-level-style-link:"Heading 4";
+	mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l26:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l26:level6
+	{mso-level-style-link:"Heading 6";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l26:level7
+	{mso-level-style-link:"Heading 7";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l26:level8
+	{mso-level-style-link:"Heading 8";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l26:level9
+	{mso-level-style-link:"Heading 9";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l27
+	{mso-list-id:1271204216;
+	mso-list-type:simple;
+	mso-list-template-ids:1380608328;}
+@list l27:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l28
+	{mso-list-id:1387223586;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l28:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l29
+	{mso-list-id:1459638439;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l29:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l30
+	{mso-list-id:1600328355;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1413218748 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l31
+	{mso-list-id:1629319859;
+	mso-list-template-ids:1088834524;}
+@list l31:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l31:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l31:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l31:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l31:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l31:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l31:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l31:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l31:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l32
+	{mso-list-id:1803880709;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l32:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l33
+	{mso-list-id:1807813335;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l33:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34
+	{mso-list-id:1897084927;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l34:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l35
+	{mso-list-id:1903444329;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l35:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l36
+	{mso-list-id:1947229132;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l36:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050" fill="f" stroke="f">
+  <v:fill on="f"/>
+  <v:stroke on="f"/>
+  <o:colormenu v:ext="edit" fillcolor="white" strokecolor="none"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="0"/>
+   <o:entry new="3" old="0"/>
+   <o:entry new="4" old="0"/>
+   <o:entry new="5" old="0"/>
+   <o:entry new="6" old="0"/>
+   <o:entry new="7" old="0"/>
+   <o:entry new="8" old="0"/>
+   <o:entry new="9" old="8"/>
+   <o:entry new="10" old="8"/>
+   <o:entry new="11" old="0"/>
+   <o:entry new="12" old="11"/>
+   <o:entry new="13" old="11"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle><a name="_Toc477690614"><span style='font-size:18.0pt;
+mso-bidi-font-size:10.0pt'>Grouping Extracted Fields<o:p></o:p></span></a></p>
+
+<p class=Author style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in;tab-stops:center 1.5in 4.5in right 6.0in'><span
+style='mso-bookmark:_Toc477690614'><span style='font-family:Arial'><span
+style='mso-tab-count:1'>                          </span>Lee S. Jensen<span
+style='mso-tab-count:1'>                                                 </span>William
+W. Cohen <br>
+</span></span><span style='mso-bookmark:_Toc477690614'><span style='font-size:
+9.0pt;mso-bidi-font-size:10.0pt'><span style='mso-tab-count:1'>                           </span>lee.jensen@whizbang.com<span
+style='mso-tab-count:1'>                                                        </span>wcohen@whizbang.com<o:p></o:p></span></span></p>
+
+<p class=Author style='margin:0in;margin-bottom:.0001pt;tab-stops:center 1.5in 4.5in right 6.0in'><span
+style='mso-bookmark:_Toc477690614'><span style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'><span style='mso-tab-count:1'>                         </span>WhizBang!
+Labs – Research,<span style='mso-tab-count:1'>                                                  </span>WhizBang!
+Labs – Research,<br>
+<span style='mso-tab-count:1'>                  </span>3210 North Canyon Road,
+Suite 300,<span style='mso-tab-count:1'>                                                   </span>4616
+Henry Street,<br>
+<span style='mso-tab-count:1'>                                  </span>Provo,
+UT 84604<span style='mso-tab-count:1'>                                                                </span>Pittsburgh,
+PA 15213<o:p></o:p></span></span></p>
+
+<p class=Author style='margin-top:0in;tab-stops:center 1.5in 4.5in right 6.0in'><span
+style='mso-bookmark:_Toc477690614'><span style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></p>
+
+</div>
+
+<span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section2>
+
+<p class=AbstractHeading><span style='mso-bookmark:_Toc477690614'>Abstract</span></p>
+
+<p class=Abstract style='margin-bottom:6.0pt'><span style='mso-bookmark:_Toc477690614'>While
+much work has been done on extracting information from documents there are few
+example systems that define a generic methodology for grouping the extracted
+fields into a record structure.<span style="mso-spacerun: yes"> 
+</span>Generally, systems assume either that an entire web page is a single
+record, or that a contiguous block of fields represent a record.<span
+style="mso-spacerun: yes">  </span>These assumptions often fail to correctly
+model a significant number of interesting extraction problems that occur in
+practice.<span style="mso-spacerun: yes">  </span>For example sometimes fields
+must be grouped from multiple page, or in another case a common field is only
+given once for all records on a page.</span></p>
+
+<p class=Abstract><span style='mso-bookmark:_Toc477690614'>The contribution of
+this paper is the definition of a small language that suitably represents the
+common cases of grouping extracted fields.<span style="mso-spacerun: yes"> 
+</span>The grouping language was used to describe two different domains (job
+postings and product information) from over 500 different web sites.<span
+style="mso-spacerun: yes">  </span>In all cases the rules were expressive
+enough to accurately represent the relationship between fields in order to
+correctly group them into records.</span></p>
+
+<span style='mso-bookmark:_Toc477690614'></span>
+
+<h1><a name="_Ref473186027"></a><a name="_Ref473460703"></a><a
+name="_Toc477690627"><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Introduction</span></span></a></h1>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>One
+of the primary goals of information extraction[1] is to transform unstructured
+(or semi-structured) data into a highly structured format such as a relational
+database.<span style="mso-spacerun: yes">  </span>In order to accomplish this
+goal an information extraction system must first devise an algorithm for
+finding the relevant data and applying the appropriate field type.<span
+style="mso-spacerun: yes">  </span>Then the data is usually transferred to a
+structured representation such as a database or XML document.<span
+style="mso-spacerun: yes">  </span>Often times the extracted fields have
+relationships to, and dependences with, each other.<span style="mso-spacerun:
+yes">  </span>For example in the case of extracting <i>name-title</i> pairs it
+is vital that the correct name is matched with the correct title.<span
+style="mso-spacerun: yes">  </span>For this reason (borrowing from the database
+metaphor) a single name-title pair can be thought of as a record containing two
+associated fields.<span style="mso-spacerun: yes">  </span>In the name-title
+example it is fairly easy to code a programming rule based upon some criteria,
+such as proximity of the fields, in order to produce the correct grouping.<span
+style="mso-spacerun: yes">  </span>However, the complexity of a record schema
+plays a direct relationship to the complexity of the logic for correctly
+grouping fields into a record.<span style="mso-spacerun: yes">  </span>For
+example if the extracted data includes not just a name and title, but other
+fields such as office phone number, home phone number, prior work experience,
+and email address.<span style="mso-spacerun: yes">  </span>Additionally, if
+there are multiple records per document then some sort of segmentation must be
+conducted[2].</span></span></span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+problem of grouping fields is further complicated by the fact that often times
+records in a single document contain <i>shared</i> fields.<span
+style="mso-spacerun: yes">  </span>For example a single field at the top of a
+document might provide the manufacture name for all of the products listed in
+the document.<span style="mso-spacerun: yes">  </span>Additionally, related
+fields may not even be contained in the document where the majority of the
+record data is located.<span style="mso-spacerun: yes">  </span>These <i>disjoint</i>
+fields may be in referenced (descendant) documents, or in documents (ancestors)
+that refer to the document containing the record.<span style="mso-spacerun:
+yes">  </span>An example of this case is a web site that has a page listing
+links to pages containing job postings.<span style="mso-spacerun: yes"> 
+</span>For each link the geographic location of the job is listed.<span
+style="mso-spacerun: yes">  </span>Each of the job posting pages gives the
+title of the job and a description, but then link to a sub-page that contains
+the email address of the person to submit resume information to.<span
+style="mso-spacerun: yes">  </span>Taking this a step further there could be a
+field that needs to be grouped with every record extracted from a web site, or
+collection of co-referenced documents, that is several levels of indirection
+away.<span style="mso-spacerun: yes">  </span>For example the product support
+telephone number for a company’s products may be listed on a completely
+different section of a web site then the actual products themselves.</span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>1.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Illustrative Example </span></span></span></h2>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><span
+style='mso-field-code:"REF _Ref508682730 \\h"'><i><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt'>Figure 1</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600380032003700330030000000</w:data>
+</xml><![endif]--></span> shows a theoretical web site from which product
+information needs to be extracted.<span style="mso-spacerun: yes">  </span>The
+relevant fields to extract include: Product name, company location, order
+contact, cost, description, and specific specification fields.<span
+style="mso-spacerun: yes">  </span>The common information extraction task is to
+correctly identify and label each of these fields.<span style="mso-spacerun:
+yes">  </span>The next step is to correctly group the fields into the records
+displayed on the left of <span style='mso-field-code:"REF _Ref508682730 \\h"'><i><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Figure 1</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600380032003700330030000000</w:data>
+</xml><![endif]--></span>.<span style="mso-spacerun: yes">  </span>Since the
+required fields are scattered across multiple pages grouping the fields becomes
+a non-trivial problem.<span style="mso-spacerun: yes">  </span>For example the
+company location must be shared with all records extracted from the site.<span
+style="mso-spacerun: yes">  </span>The sales phone number for purchasing kites
+is different than one for ordering other products and so it must only be
+grouped with kite records.<span style="mso-spacerun: yes">  </span>The product price
+is not found on the page that contains the main product information, but on the
+one that links to it.<span style="mso-spacerun: yes">  </span>Finally, the
+detailed specifications are on a secondary page.</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+real problem illustrated by this example is not that it is impossible to group
+disjoint or shared fields, but to come up with a solution that is expressive
+enough to be used generically across domains.<span style="mso-spacerun: yes"> 
+</span>The solution must also be simple enough that it can fit easily into many
+extraction systems, regardless if system is a rote extraction program, or a
+fully inductive system.</span></span></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><!--[if gte vml 1]><v:group
+   id="_x0000_s1320" style='position:absolute;margin-left:34.7pt;margin-top:1.9pt;
+   width:395.95pt;height:193.35pt;z-index:5;mso-wrap-distance-top:14.4pt;
+   mso-wrap-distance-bottom:14.4pt' coordorigin="1628,6379" coordsize="7919,3816"
+   o:allowoverlap="f">
+   <v:group id="_x0000_s1321" style='position:absolute;left:1628;top:6379;
+    width:4248;height:3816;mso-position-vertical-relative:page' coordorigin="5587,10627"
+    coordsize="5256,4608" o:allowoverlap="f">
+    <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+     <v:stroke joinstyle="miter"/>
+     <v:path gradientshapeok="t" o:connecttype="rect"/>
+    </v:shapetype><v:shape id="_x0000_s1322" type="#_x0000_t202" style='position:absolute;
+     left:7113;top:10627;width:1526;height:834' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1322'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Toys.com<o:p></o:p></span></b></p>
+        <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt'>Company Info<br>
+        Kites<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1323" type="#_x0000_t202" style='position:absolute;
+     left:5587;top:11828;width:1695;height:850' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1323'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Company
+        Info<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        mso-bidi-font-weight:bold'>Location: </span><span style='font-size:
+        6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;mso-bidi-font-family:
+        "Times New Roman";mso-bidi-font-weight:bold'>Oregon<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1324" type="#_x0000_t202" style='position:absolute;
+     left:8469;top:11828;width:1696;height:1189' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1324'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Kites<o:p></o:p></span></b></p>
+        <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+        color:blue;mso-bidi-font-weight:bold'>Buy a kite<o:p></o:p></span></u></p>
+        <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+        color:blue;mso-bidi-font-weight:bold'>Box Kite</span></u><span
+        style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Helvetica;
+        mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'><span
+        style='mso-tab-count:1'>           </span>$100</span><u><span
+        style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+        mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+        bold'><br>
+        Stunt Kite</span></u><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>$300</span><u><span
+        style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+        mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+        bold'><o:p></o:p></span></u></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1325" type="#_x0000_t202" style='position:absolute;
+     left:7791;top:13181;width:1357;height:1019' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1325'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Box
+        Kite<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Great
+        for kids<br>
+        <br>
+        <u><span style='color:blue;mso-bidi-font-weight:bold'>Detailed specs<o:p></o:p></span></u></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1326" type="#_x0000_t202" style='position:absolute;
+     left:5587;top:13197;width:2035;height:849' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1326'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Order
+        Info<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        mso-bidi-font-weight:bold'>Call:</span><u><span style='font-size:6.0pt;
+        mso-bidi-font-size:10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+        color:blue;mso-bidi-font-weight:bold'><br>
+        </span></u><span style='font-size:6.0pt;mso-bidi-font-size:10.0pt;
+        font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        mso-bidi-font-weight:bold'>1-800-FLY-KITE<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1327" type="#_x0000_t202" style='position:absolute;
+     left:9487;top:13197;width:1356;height:1019' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1327'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Stunt
+        Kite<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Lots
+        of fun<o:p></o:p></span></p>
+        <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+        color:blue;mso-bidi-font-weight:bold'>Detailed specs<o:p></o:p></span></u></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1328" type="#_x0000_t202" style='position:absolute;
+     left:7791;top:14386;width:1357;height:849' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1328'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Specs<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Color:
+        blue<br>
+        Size: small<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1329" type="#_x0000_t202" style='position:absolute;
+     left:9487;top:14386;width:1356;height:849' strokeweight="1pt">
+     <v:textbox style='mso-next-textbox:#_x0000_s1329'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Specs<o:p></o:p></span></b></p>
+        <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Color:
+        red<br>
+        Size: big<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:line id="_x0000_s1330" style='position:absolute;flip:x'
+     from="6399,11122" to="7213,11802" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1331" style='position:absolute' from="7959,11258"
+     to="9044,11802" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1332" style='position:absolute;flip:x' from="6942,12293"
+     to="8569,13176" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1333" style='position:absolute;flip:x' from="8162,12632"
+     to="8569,13176" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1334" style='position:absolute' from="9115,12931"
+     to="9858,13177" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1335" style='position:absolute;flip:x' from="8434,14121"
+     to="8434,14393" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line><v:line id="_x0000_s1336" style='position:absolute;flip:x' from="10129,14121"
+     to="10129,14393" strokeweight="1pt">
+     <v:stroke endarrow="block"/>
+    </v:line></v:group><v:group id="_x0000_s1337" style='position:absolute;
+    left:6091;top:6955;width:3456;height:2880' coordorigin="6307,11629"
+    coordsize="3456,2880">
+    <v:shape id="_x0000_s1338" type="#_x0000_t202" style='position:absolute;
+     left:7963;top:11629;width:1800;height:1368' strokeweight="1pt">
+     <v:stroke dashstyle="1 1"/>
+     <v:textbox style='mso-next-textbox:#_x0000_s1338'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Name:
+        Box Kite<o:p></o:p></span></b></p>
+        <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        color:windowtext;text-decoration:none;text-underline:none'>Company:
+        Toys.com<br>
+        Location: Oregon<br>
+        Order: 1-800-FLY-KITE<br>
+        Cost: $100<br>
+        Description: Great for kids<br>
+        Color: blue<br>
+        Size: small<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shape id="_x0000_s1339" type="#_x0000_t202" style='position:absolute;
+     left:7963;top:13141;width:1800;height:1368' strokeweight="1pt">
+     <v:stroke dashstyle="1 1"/>
+     <v:textbox style='mso-next-textbox:#_x0000_s1339'>
+      <![if !mso]>
+      <table cellpadding=0 cellspacing=0 width="100%">
+       <tr>
+        <td><![endif]>
+        <div>
+        <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Name:
+        Stunt Kite<o:p></o:p></span></b></p>
+        <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+        10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+        color:windowtext;text-decoration:none;text-underline:none'>Company:
+        Toys.com<br>
+        Location: Oregon<br>
+        Order: 1-800-FLY-KITE<br>
+        Cost: $300<br>
+        Description: Lots of fun<br>
+        Color: red<br>
+        Size: big<o:p></o:p></span></p>
+        </div>
+        <![if !mso]></td>
+       </tr>
+      </table>
+      <![endif]></v:textbox>
+    </v:shape><v:shapetype id="_x0000_t13" coordsize="21600,21600" o:spt="13"
+     adj="16200,5400" path="m@0,0l@0@1,0@1,0@2@0@2@0,21600,21600,10800xe">
+     <v:stroke joinstyle="miter"/>
+     <v:formulas>
+      <v:f eqn="val #0"/>
+      <v:f eqn="val #1"/>
+      <v:f eqn="sum height 0 #1"/>
+      <v:f eqn="sum 10800 0 #1"/>
+      <v:f eqn="sum width 0 #0"/>
+      <v:f eqn="prod @4 @3 10800"/>
+      <v:f eqn="sum width 0 @5"/>
+     </v:formulas>
+     <v:path o:connecttype="custom" o:connectlocs="@0,0;0,10800;@0,21600;21600,10800"
+      o:connectangles="270,180,90,0" textboxrect="0,@1,@6,@2"/>
+     <v:handles>
+      <v:h position="#0,#1" xrange="0,21600" yrange="0,10800"/>
+     </v:handles>
+    </v:shapetype><v:shape id="_x0000_s1340" type="#_x0000_t13" style='position:absolute;
+     left:6307;top:12421;width:1440;height:1368' filled="f" strokeweight="1.5pt"/>
+   </v:group><w:wrap type="square"/>
+  </v:group><![endif]--><![if !vml]><img width=531 height=260
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image001.gif" align=left
+  v:shapes="_x0000_s1320 _x0000_s1321 _x0000_s1322 _x0000_s1323 _x0000_s1324 _x0000_s1325 _x0000_s1326 _x0000_s1327 _x0000_s1328 _x0000_s1329 _x0000_s1330 _x0000_s1331 _x0000_s1332 _x0000_s1333 _x0000_s1334 _x0000_s1335 _x0000_s1336 _x0000_s1337 _x0000_s1338 _x0000_s1339 _x0000_s1340"><![endif]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:10.0pt'><o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><a
+  name="_Ref508682714"></a><a name="_Ref508682730"><span style='mso-bookmark:
+  _Ref508682714'><i><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Figure
+  </span></i></span></a></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508682730'><span
+  style='mso-bookmark:_Ref508682714'></span></span></span></span></span><span
+  style='mso-element:field-begin'></span><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><span
+  style='mso-bookmark:_Ref508682730'><span style='mso-bookmark:_Ref508682714'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'><span style="mso-spacerun:
+  yes"> </span>SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span></i></span></span></span></span></span><![endif]--><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508682730'><span
+  style='mso-bookmark:_Ref508682714'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'>1</span></i></span></span></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508682730'><span
+  style='mso-bookmark:_Ref508682714'></span></span></span></span></span><span
+  style='mso-element:field-end'></span><![endif]--><span style='mso-bookmark:
+  _Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508682730'><span
+  style='mso-bookmark:_Ref508682714'></span></span></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508682714'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'> – Example Web Site</span></i></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>1.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Field Grouping Rules</span></span></span></h2>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>As
+a solution to the complex field grouping problem this work contributes the
+definition of a small language for grouping fields into records.<span
+style="mso-spacerun: yes">  </span>This language defines not only how to deal
+with shared and disjoint fields, but also how to segment records that appear in
+documents that contain multiple record.<span style="mso-spacerun: yes"> 
+</span>It should be noted that this paper is not an attempt to define an
+extraction system, but to define grouping expressions that can be learned <i>along</i>
+with extraction rules.<span style="mso-spacerun: yes">  </span>The grouping
+expressions and extraction rules are then used in conjunction with each other
+to extract data from a corpus of documents into highly structured records.<span
+style="mso-spacerun: yes">  </span>The lack of the definition of an extraction
+system should not be seen as a disadvantage, but as a key advantage.<span
+style="mso-spacerun: yes">  </span>Being that its utility is not tied to a
+specific architecture or domain.</span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>1.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Related Work</span></span></span></h2>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Much
+work has been done in the field of information extraction in general and
+specifically from the World Wide Web[1].<span style="mso-spacerun: yes"> 
+</span>Generally these systems have some sort of mechanism for handling field
+grouping.<span style="mso-spacerun: yes">  </span>The simplest form of field
+grouping occurs when there is only one field in a record.<span
+style="mso-spacerun: yes">  </span>This is common in systems trying to solve
+problems like the MUC named entity task as is shown by the Collins/Singer named
+entity extractor[3].<span style="mso-spacerun: yes">  </span>The next level of
+complexity comes from systems trying to compose simple record based upon the
+field proximity.<span style="mso-spacerun: yes">  </span>In systems like this
+it is often sufficient to either build the segmentation of records and grouping
+based upon some simple record schema, or to actually use the co-appearance of
+fields as criteria for extracting fields.<span style="mso-spacerun: yes"> 
+</span>This is exemplified by systems such as Brin’s[4] pattern extraction
+framework that was used to find book titles and authors, or Kushmerick’s
+wrapper induction technique[5].</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Several
+natural language processing (NLP) systems[10] have been successful at
+establishing the relationship between fields by using grammatical clues.<span
+style="mso-spacerun: yes">  </span>However, often times, as is the case with
+web pages, the proper grammatical structure is missing and replaced with
+formatting and structural clues.<span style="mso-spacerun: yes"> 
+</span>Soderland[11] suggested a system called Webfoot for alleviating this
+problem, but did not to extend the process to include disjoint, or off page,
+fields.</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Other
+common approaches assume that records are contiguous and therefore can be
+expressed as hierarchical containers[6][7] [8].<span style="mso-spacerun:
+yes">  </span>As demonstrated above this assumption does not always hold for
+many interesting extraction problems.<span style="mso-spacerun: yes">  </span></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>One
+wrapper induction system that does relax the assumption that records are
+contiguous is described by Embley/Xu[9]. They describe a system that begins by
+segmenting web pages into records, assuming that related fields are nearby, and
+then incrementally modifies the segmentation by moving extracted information
+around from references pages and nearby records. This reshuffling process is
+guided by a metric on record quality based on the database scheme. If the
+record more closely resembles the expected record schema then the manipulation
+is accepted.<span style="mso-spacerun: yes">  </span>In experiments this
+procedure found acceptable groupings most (but not all of the time).</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Embley/Xu’s
+efforts are the perhaps most related to the contributions given in this
+paper.<span style="mso-spacerun: yes">  </span>However, their system appears to
+assume that a relatively rich record scheme is available---a scheme rich enough
+to guide the reshuffling process.<span style="mso-spacerun: yes">  </span>It
+also does not allow data to moved arbitrarily far across a web site
+structure.<span style="mso-spacerun: yes">  </span>More importantly, their system
+is different in kind from the one described here.<span style="mso-spacerun:
+yes">  </span>Whereas Embly/Xu propose a general-purpose, site-independent
+method for grouping records, we propose a specific language for specifying
+groupings.<span style="mso-spacerun: yes">  </span>By allowing a use to provide
+that site-specific grouping information, it is possible for data from
+particular sites to be grouped with essentially no errors.<span
+style="mso-spacerun: yes">  </span>The grouping language could also be used to
+specify site-independent grouping heuristics, although to date we have not
+explored this possibility in depth.<span style="mso-spacerun: yes">  </span></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Another
+approach to grouping data is to use general-purpose mechanisms for
+grouping.<span style="mso-spacerun: yes">  </span>For instance, in extracting
+data for the WHIRL system[13], database joins were used to group information in
+different pages; in the WWKB project [14], arbitrary relations between
+extracted fields were learned from examples. (For example, the relation
+“teaches(Professor, Course) “might be learned from examples.<span
+style="mso-spacerun: yes">  </span>These powerful grouping methods have a
+disadvantage in that they require either programming (in the case of<span
+style="mso-spacerun: yes">  </span>the joins used in WHIRL) or detailed
+training data across tuples of objects (in the case of the WWBK project’s
+approach). In comparison to these systems, the main advantage of our system is
+the simplicity of the language and the ease with which is can be learned.<span
+style="mso-spacerun: yes">  </span>Below we will show that despite the
+language’s simplicity it has the ability to cover a large assortment of
+practical grouping problems.</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+remainder of this paper explains the details of and experiments conducted with
+the grouping language.<span style="mso-spacerun: yes">  </span>Section 2
+defines the grammar and semantics of the language as well as many of its key
+benefits.<span style="mso-spacerun: yes">  </span>Section 3 explains how the
+grouping language was implemented using an “industrial-strength”
+wrapper-learning system called Wrapster.<span style="mso-spacerun: yes"> 
+</span>The empirical results of using Wrapster in two different domains
+covering more than 500 web sites are also presented.<span style="mso-spacerun:
+yes">  </span>Finally, section 4 discusses conclusions, limitations, and
+possibilities for further improvement.</span></span></span></p>
+
+<h1><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Definition of The Grouping Language</span></span></span></h1>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Every
+extracted field may have a single expression <span style='mso-bidi-font-style:
+italic'>associated with it that is derived from the </span><i style='mso-bidi-font-style:
+normal'>grouping language</i><span style='mso-bidi-font-style:italic'>.</span><span
+style="mso-spacerun: yes">  </span>An expression defines how to group the field
+with other fields and how records should be segmented and defined.<span
+style="mso-spacerun: yes">  </span>The grouping languages primary purpose is to
+define the relationship between fields in the set <i>F</i> and records in the
+set <i>R</i>.<span style="mso-spacerun: yes">  </span>The key to understanding
+the languages power is to visualize a collection of inter-referenced document,
+or web site, as an organized tree structure.<span style="mso-spacerun: yes"> 
+</span>In this context it can always be said that an ordered traversal of the
+tree will dictate that field <i>x</i> is either before or after field <i>y</i>.<span
+style="mso-spacerun: yes">  </span>The ordering of the site then enables the
+ability to define the <i>scope</i> that a field is active in.<span
+style="mso-spacerun: yes">  </span>All fields that share scope are considered
+to be in the same record.</span></span></span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Scope
+is defined in several different ways.<span style="mso-spacerun: yes"> 
+</span>The field can be grouped either with fields before or after it in the
+same document, with descendant documents that are referenced either before or
+after it, or with ancestor documents that directly or indirectly reference the
+document that contains the field in question.<span style="mso-spacerun: yes"> 
+</span>When a field’s scope is defined to extend within the same document then
+a parameter is given that tells when the field’s scope should end.<span
+style="mso-spacerun: yes">  </span>When fields are grouped with ancestor or
+descendant documents then the field is grouped with every extracted record in
+those documents.</span></span></span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+language also provides a mechanism for segmenting multi-record documents.<span
+style="mso-spacerun: yes">  </span>Segmentation is accomplished by specifying
+as part of the grouping expression that a field is the start of a record.<span
+style="mso-spacerun: yes">  </span>Specifying a field as a starting field of a
+record causes a new record to be generated that contains all of the fields in
+the grouping.<span style="mso-spacerun: yes">  </span>Have multiple record
+starts within the same grouping serves to define sub records.</span></span></span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+complexity of the grouping language can be calculated for any given
+domain.<span style="mso-spacerun: yes">  </span>There are 5 different scope
+operations that act on <i>p</i> page types and <i>f</i> field names.<span
+style="mso-spacerun: yes">  </span>The size of <i>p</i> is dependant on the
+complexity the document collection and the representation using by the
+implementation.<span style="mso-spacerun: yes">  </span>The size of <i>f</i> is
+dependant on the record schema for the domain of interest.<span
+style="mso-spacerun: yes">  </span>Additionally, <i>f</i> can be used in a set <i>S</i>
+thus increasing its complexity to <i>f</i>!.<span style="mso-spacerun: yes"> 
+</span>This means that the complexity <i>C</i></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><i><sub><span style='font-size:5.0pt;
+mso-bidi-font-size:10.0pt'>lang</span></sub></i> of the language can be
+expressed as:</span></span></span></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center'><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:1in;
+ height:18.75pt' o:ole="">
+ <v:imagedata src="./IJCAI_Workshop_-_Wrapster_Associations_files/image002.wmz"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=96 height=25
+src="./IJCAI_Workshop_-_Wrapster_Associations_files/image003.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1084962481">
+ </o:OLEObject>
+</xml><![endif]--></span></span></span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>with
+the 2 multiplier existing because of the option of having a record start
+token.<span style="mso-spacerun: yes">  </span>In practice the values of <i>p</i>
+and <i>f</i> is actually quite low.<span style="mso-spacerun: yes">  </span>For
+example in the job postings domain there <i>f</i> was equal to 5, and <i>p</i>
+was <span style='background:yellow;mso-highlight:yellow'>?</span>.<span
+style="mso-spacerun: yes">  </span>Additionally, in only 15 out of 856
+expressions was the size of <i>S</i> larger than one, and in those cases they
+were always 2.<span style="mso-spacerun: yes">  </span>This effectively removes
+the factorial making the final complexity of the language for the job posting
+domain 2(5)(<span style='background:yellow;mso-highlight:yellow'>?</span>), or
+.</span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><a name="_Ref508695534"><![if !supportLists]>2.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Grammar</a></span></span></span></h2>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+formal grouping language grammar has the following syntax as shown below.<span
+style="mso-spacerun: yes">  </span>The semantics of the language are also
+discussed below and summarized in <span style='mso-field-code:"REF _Ref508779712 \\h"'><i><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Table 1</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003700370039003700310032000000</w:data>
+</xml><![endif]--></span>.</span></span></span></p>
+
+<p class=Code style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:9.35pt;text-indent:0in;tab-stops:63.0pt 76.5pt'><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'>EXPRESSION<span style='mso-tab-count:1'> </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span><b
+style='mso-bidi-font-weight:normal'>SCOPE</b>:<b style='mso-bidi-font-weight:
+normal'>PARAMETER</b>[:recordstart<span style='mso-bidi-font-weight:bold'>]<br>
+</span>SCOPE<span style='mso-tab-count:1'>     </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span>prev|next|prevlink|nextlink|pagetype<br>
+PARAMETER<span style='mso-tab-count:1'> </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span><b
+style='mso-bidi-font-weight:normal'>FIELDNAMES</b>|<b style='mso-bidi-font-weight:
+normal'>PAGETYPE<br>
+</b>FIELDNAMES<span style='mso-tab-count:1'> </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span><b>FIELDNAME</b>[|<b>FIELDNAME</b>]*<br>
+FIELDNAME<span style='mso-tab-count:1'> </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span><i
+style='mso-bidi-font-style:normal'>any valid field name<br>
+</i>PAGETYPE<span style='mso-tab-count:1'>  </span></span></span></span><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><span style='font-family:Symbol;mso-ascii-font-family:
+"Courier New";mso-hansi-font-family:"Courier New";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>®</span></span><span style='mso-tab-count:1'> </span><i
+style='mso-bidi-font-style:normal'>any valid page type<o:p></o:p></i></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>In
+this language every expression first defines the scope of the field.<span
+style="mso-spacerun: yes">  </span>Since the document collection is defined as
+a tree structure (with both inter-document references and document structure
+representing the nodes of the tree), all scope is relative to the field’s
+location in that tree as an ordered traversal is conducted.<span
+style="mso-spacerun: yes">  </span>The scope can take to forms: 1) inner document
+scope, or 2) external document scope.<span style="mso-spacerun: yes"> 
+</span>Inner document scope is represented by the <i>prev</i> and <i>next</i>
+tokens.<span style="mso-spacerun: yes">  </span>Meaning that the scope of the
+field extends to other fields that appear before or after the field
+respectively.<span style="mso-spacerun: yes">  </span>External document scope
+is represented by the <i>prevlink</i>, <i>nextlink</i>, and <i>pagetype</i>
+tokens.<span style="mso-spacerun: yes">  </span>The <i>prevlink</i> and <i>nextlink</i>
+tokens mean that the scope of field is transferred to all descendant documents
+whose references (or links) appear before or after the field respectively.<span
+style="mso-spacerun: yes">  </span>The use of the <i>pagetype</i> token means
+that the scope of this field is transferred to an ancestor or self page type
+and then to all of that pages descendants.<span style="mso-spacerun: yes"> 
+</span>The meaning of a “page type” is defined by the implementing application.<span
+style="mso-spacerun: yes">  </span>Some possible meanings include a specific or
+generalized URL, or an assigned document classification.<span
+style="mso-spacerun: yes">  </span>However, regardless of the meaning of “page
+type” the system must somehow keep track of the referrers of a document
+according to some definition, so that the ancestor relationship can be established.</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Each
+of the scope tokens takes a parameter.<span style="mso-spacerun: yes"> 
+</span>This parameter defines how to limit the scope of the grouping.<span
+style="mso-spacerun: yes">  </span>For the <i>prev</i>, <i>next</i>, <i>prevlink</i>,
+and <i>nextlink</i> tokens the parameter means group this field with all fields
+up until, and excluding, a field of the name given in the parameter is
+encountered.<span style="mso-spacerun: yes">  </span>For the <i>pagetype</i>
+token the parameter means that the field scope only extends to, and including,
+an ancestor document with a page type given by the parameter.<span
+style="mso-spacerun: yes">  </span>Additionally, for all external document
+scopes the scope extends to all fields found in descendant document.<span
+style="mso-spacerun: yes">  </span>This is important for cases where you want
+to group a field with every record in a collection.<span style="mso-spacerun:
+yes">  </span>This is done by setting the scope to the page type of the
+top-most document in the collection.</span></span></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=624 style='width:6.5in;
+ margin-left:5.4pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  background:#CCCCCC;mso-shading:windowtext;mso-pattern:gray-20 auto;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=table style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Token<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;background:#CCCCCC;
+  mso-shading:windowtext;mso-pattern:gray-20 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>Purpose<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  border-top:none;background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>SCOPE<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:
+  white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText2><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>Scope
+  may be any of the following:</span></span></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:9.0pt;margin-bottom:.0001pt;text-indent:-9.0pt;mso-list:l10 level1 lfo36;
+  tab-stops:list 8.1pt'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportLists]><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><b><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>prev</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'> – Group
+  with previous fields.<o:p></o:p></span></span></span></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:9.0pt;margin-bottom:.0001pt;text-indent:-9.0pt;mso-list:l10 level1 lfo36;
+  tab-stops:list 8.1pt'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportLists]><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><b><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>next</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'> – Group
+  with following fields.<o:p></o:p></span></span></span></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:9.0pt;margin-bottom:.0001pt;text-indent:-9.0pt;mso-list:l10 level1 lfo36;
+  tab-stops:list 8.1pt'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportLists]><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><b><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>prevlink</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'> – Group
+  with previous documents references.<o:p></o:p></span></span></span></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:9.0pt;margin-bottom:.0001pt;text-indent:-9.0pt;mso-list:l10 level1 lfo36;
+  tab-stops:list 8.1pt'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportLists]><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><b><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>nextlink</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'> – Group
+  with following document references.<o:p></o:p></span></span></span></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:9.0pt;margin-bottom:.0001pt;text-indent:-9.0pt;mso-list:l10 level1 lfo36;
+  tab-stops:list 8.1pt'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportLists]><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]><b><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>pagetype</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'> – Group
+  with ancestor documents.<o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;background:#E5E5E5;
+  mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=table style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>PARAMETER<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Defines how
+  to limit the scope.<o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;background:#E5E5E5;
+  mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>FIELDNAME<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Any set of
+  field name as defined by the record schema.<o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;background:#E5E5E5;
+  mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>PAGETYPE<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Ancestor
+  document classification.<o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=84 valign=top style='width:63.0pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;background:#E5E5E5;
+  mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  mso-bidi-font-family:"Times New Roman"'>recordstart<o:p></o:p></span></b></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=540 valign=top style='width:405.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-size:8.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Start a new
+  record or sub record.<o:p></o:p></span></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=624 colspan=2 valign=top style='width:6.5in;border:none;mso-border-top-alt:
+  solid windowtext .5pt;background:white;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><a
+  name="_Ref508779712"><i><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Table
+  </span></i></a></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508779712'></span></span></span></span><span
+  style='mso-element:field-begin'></span><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><span
+  style='mso-bookmark:_Ref508779712'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'><span style="mso-spacerun: yes"> </span>SEQ Table
+  \* ARABIC <span style='mso-element:field-separator'></span></span></i></span></span></span></span><![endif]--><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508779712'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>1</span></i></span></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508779712'></span></span></span></span><span
+  style='mso-element:field-end'></span><![endif]--><span style='mso-bookmark:
+  _Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508779712'></span></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'> – Language Semantics</span></i></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+</table>
+
+<p class=MsoHeader style='margin-top:12.0pt;tab-stops:.5in'><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>2.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Example Grouping Rules</span></span></span></h2>
+
+<p class=MsoHeader style='margin-top:12.0pt;tab-stops:.5in'><span
+style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'>This section provides examples of some
+possible grouping rules.<span style="mso-spacerun: yes">  </span>The examples
+all extend from the site defined in the illustrative example given in section
+1.1.</span></span></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:-.05in;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=268 valign=top style='width:200.65pt;border:solid windowtext .5pt;
+  border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><b><span
+  style='font-family:Arial'>Example 1:<br>
+  </span></b></span></span></span><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><i><span
+  style='font-family:Arial'>next:Name:recordstart applied to Name fields</span></i></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-family:Arial'><o:p></o:p></span></span></span></span></p>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>This
+  example shows the simple case of handling a contiguous multi-record
+  document.<span style="mso-spacerun: yes">  </span>Here the <i>next</i>
+  grouping scope is applied to the product name field in order to group every
+  following field until the next product name field is encountered. Because the
+  <i>recordstart</i> option is also given each instance of a Name field
+  signifies a new record.</span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=376 valign=top style='width:281.75pt;border:solid windowtext .5pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><!--[if gte vml 1]><v:group id="_x0000_s1279"
+   style='position:absolute;margin-left:21.25pt;margin-top:12.9pt;width:249.6pt;
+   height:71.1pt;z-index:1;mso-position-horizontal-relative:text;
+   mso-position-vertical-relative:page' coordorigin="5299,3427" coordsize="4992,1368"
+   o:allowoverlap="f">
+   <v:shape id="_x0000_s1262" type="#_x0000_t202" style='position:absolute;
+    left:5299;top:3571;width:1371;height:984' o:regroupid="10" strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1262'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Kites<o:p></o:p></span></b></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Buy a kite<o:p></o:p></span></u></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Box Kite</span></u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Helvetica;
+       mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'><span
+       style='mso-tab-count:1'>           </span>$100</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><br>
+       Stunt Kite</span></u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>$300</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><o:p></o:p></span></u></p>
+       <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1276" type="#_x0000_t202" style='position:absolute;
+    left:8491;top:3427;width:1800;height:1368' o:regroupid="9" strokeweight="1pt">
+    <v:stroke dashstyle="1 1"/>
+    <v:textbox style='mso-next-textbox:#_x0000_s1276'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Name:
+       Box Kite<o:p></o:p></span></b></p>
+       <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       color:windowtext;text-decoration:none;text-underline:none'>Company: -<br>
+       Location: -<br>
+       Order: -<br>
+       Cost: $100<br>
+       Description: -<br>
+       Color: -<br>
+       Size: -<o:p></o:p></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1278" type="#_x0000_t13" style='position:absolute;
+    left:6811;top:3427;width:1440;height:1368' o:regroupid="9" filled="f"
+    strokeweight="1.5pt"/>
+   <w:wrap type="square" anchory="page"/>
+  </v:group><![endif]--><![if !vml]><img width=336 height=111
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image004.gif" align=left
+  v:shapes="_x0000_s1279 _x0000_s1262 _x0000_s1276 _x0000_s1278"><![endif]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=268 valign=top style='width:200.65pt;border-top:none;border-left:
+  solid windowtext .5pt;border-bottom:solid windowtext .5pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><b><span
+  style='font-family:Arial'>Example 2:</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-family:Arial'><br>
+  <i>next:Name:recordstart applied to Name fields <br>
+  prevlink:Cost applied to Cost fields</i><o:p></o:p></span></span></span></span></p>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>In
+  this example the Name field is alternatively extracted from the Box Kite page
+  and designated as the start of a record.<span style="mso-spacerun: yes"> 
+  </span>The Cost field from the parent Products page is also pulled down using
+  the <i>prevlink</i> scope.<span style="mso-spacerun: yes">  </span>Because
+  the scope is restricted by the Cost field parameter the prices are only grouped
+  with their corresponding products.</span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=376 valign=top style='width:281.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><!--[if gte vml 1]><v:group id="_x0000_s1310"
+   style='position:absolute;margin-left:-1.3pt;margin-top:3.35pt;width:270.95pt;
+   height:101.8pt;z-index:2;mso-position-horizontal-relative:text;
+   mso-position-vertical-relative:page' coordorigin="5412,3425" coordsize="5419,1964"
+   o:allowoverlap="f">
+   <v:shape id="_x0000_s1284" type="#_x0000_t202" style='position:absolute;
+    left:5960;top:3425;width:1371;height:984' o:regroupid="14" strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1284'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Kites<o:p></o:p></span></b></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Buy a kite<o:p></o:p></span></u></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Box Kite</span></u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Helvetica;
+       mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'><span
+       style='mso-tab-count:1'>           </span>$100</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><br>
+       Stunt Kite</span></u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>$300</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><o:p></o:p></span></u></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1285" type="#_x0000_t202" style='position:absolute;
+    left:5412;top:4545;width:1097;height:844' o:regroupid="14" strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1285'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Box
+       Kite<o:p></o:p></span></b></p>
+       <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:10.0pt;
+       font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Great for kids<br>
+       <br>
+       <u><span style='color:blue;mso-bidi-font-weight:bold'>Detailed specs<o:p></o:p></span></u></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:line id="_x0000_s1293" style='position:absolute;flip:x' from="5712,4090"
+    to="6041,4541" o:regroupid="14" strokeweight="1pt">
+    <v:stroke endarrow="block"/>
+   </v:line><v:shape id="_x0000_s1298" type="#_x0000_t202" style='position:absolute;
+    left:9031;top:3798;width:1800;height:1368' o:regroupid="14" strokeweight="1pt">
+    <v:stroke dashstyle="1 1"/>
+    <v:textbox style='mso-next-textbox:#_x0000_s1298'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Name:
+       Box Kite<o:p></o:p></span></b></p>
+       <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       color:windowtext;text-decoration:none;text-underline:none'>Company: -<br>
+       Location: -<br>
+       Order: -<br>
+       Cost: $100<br>
+       Description: Great for kids<br>
+       Color: -<br>
+       Size: -<o:p></o:p></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1300" type="#_x0000_t13" style='position:absolute;
+    left:7447;top:3798;width:1440;height:1368' o:regroupid="14" filled="f"
+    strokeweight="1.5pt"/>
+   <w:wrap type="square" anchory="page"/>
+  </v:group><![endif]--><![if !vml]><img width=365 height=139
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image005.gif" align=left
+  v:shapes="_x0000_s1310 _x0000_s1284 _x0000_s1285 _x0000_s1293 _x0000_s1298 _x0000_s1300"><![endif]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=268 valign=top style='width:200.65pt;border-top:none;border-left:
+  solid windowtext .5pt;border-bottom:solid windowtext .5pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><b><span
+  style='font-family:Arial'>Example 3:</span></b></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='font-family:Arial'><br>
+  <i>next:Name:recordstart applied to Name fields <br>
+  prevlink:Cost applied to Cost fields<br>
+  pagetype:Product applied to spec fields</i><o:p></o:p></span></span></span></span></p>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>The
+  addition of the pagetype scope for the color and size specification fields
+  promotes their scope pages that are classified as Product pages, which in
+  this example is represent by the Box Kite page.<span style="mso-spacerun:
+  yes">  </span>The remaining fields could also be grouped in a similar
+  fashion, as illustrated below, to create a complete record.</span></span></span></p>
+  <p class=MsoHeader style='tab-stops:.5in'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><i><span
+  style='font-family:Arial'>pagetype:HomePage applied to Company field<br>
+  pagetype:Products applied to Order fields<br>
+  pagetype:HomePage applied to Location field</span><o:p></o:p></i></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+  <td width=376 valign=top style='width:281.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoHeader style='tab-stops:.5in'><!--[if gte vml 1]><v:group id="_x0000_s1311"
+   style='position:absolute;margin-left:-.2pt;margin-top:10.6pt;width:270pt;
+   height:142.75pt;z-index:3;mso-position-horizontal-relative:text;
+   mso-position-vertical-relative:page' coordorigin="6595,4062" coordsize="5400,2808"
+   o:allowoverlap="f">
+   <v:shape id="_x0000_s1312" type="#_x0000_t202" style='position:absolute;
+    left:7124;top:4062;width:1371;height:984' strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1312'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Kites<o:p></o:p></span></b></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Buy a kite<o:p></o:p></span></u></p>
+       <p class=MsoNormal><u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman";
+       color:blue;mso-bidi-font-weight:bold'>Box Kite</span></u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Helvetica;
+       mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'><span
+       style='mso-tab-count:1'>           </span>$100</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><br>
+       Stunt Kite</span></u><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>        </span>$300</span><u><span
+       style='font-size:6.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+       mso-bidi-font-family:"Times New Roman";color:blue;mso-bidi-font-weight:
+       bold'><o:p></o:p></span></u></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1313" type="#_x0000_t202" style='position:absolute;
+    left:6595;top:5169;width:1097;height:844' strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1313'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Box
+       Kite<o:p></o:p></span></b></p>
+       <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:10.0pt;
+       font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Great for kids<br>
+       <br>
+       <u><span style='color:blue;mso-bidi-font-weight:bold'>Detailed specs<o:p></o:p></span></u></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1314" type="#_x0000_t202" style='position:absolute;
+    left:6595;top:6167;width:1097;height:703' strokeweight="1pt">
+    <v:textbox style='mso-next-textbox:#_x0000_s1314'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Specs<o:p></o:p></span></b></p>
+       <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:10.0pt;
+       font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Color: blue<br>
+       Size: small<o:p></o:p></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:line id="_x0000_s1315" style='position:absolute;flip:x' from="6876,4727"
+    to="7205,5178" strokeweight="1pt">
+    <v:stroke endarrow="block"/>
+   </v:line><v:line id="_x0000_s1316" style='position:absolute;flip:x' from="7115,5947"
+    to="7115,6173" strokeweight="1pt">
+    <v:stroke endarrow="block"/>
+   </v:line><v:shape id="_x0000_s1317" type="#_x0000_t202" style='position:absolute;
+    left:10195;top:4435;width:1800;height:1368' strokeweight="1pt">
+    <v:stroke dashstyle="1 1"/>
+    <v:textbox style='mso-next-textbox:#_x0000_s1317'>
+     <![if !mso]>
+     <table cellpadding=0 cellspacing=0 width="100%">
+      <tr>
+       <td><![endif]>
+       <div>
+       <p class=MsoNormal><b><span style='font-size:7.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'>Name:
+       Box Kite<o:p></o:p></span></b></p>
+       <p class=MsoBodyText3><span style='font-size:6.0pt;mso-bidi-font-size:
+       10.0pt;font-family:Helvetica;mso-bidi-font-family:"Times New Roman";
+       color:windowtext;text-decoration:none;text-underline:none'>Company: -<br>
+       Location: -<br>
+       Order: -<br>
+       Cost: $100<br>
+       Description: Great for kids<br>
+       Color: blue<br>
+       Size: small<o:p></o:p></span></p>
+       </div>
+       <![if !mso]></td>
+      </tr>
+     </table>
+     <![endif]></v:textbox>
+   </v:shape><v:shape id="_x0000_s1318" type="#_x0000_t13" style='position:absolute;
+    left:8611;top:4435;width:1440;height:1368' filled="f" strokeweight="1.5pt"/>
+   <w:wrap type="square" anchory="page"/>
+  </v:group><![endif]--><![if !vml]><img width=363 height=193
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image006.gif" align=left
+  v:shapes="_x0000_s1311 _x0000_s1312 _x0000_s1313 _x0000_s1314 _x0000_s1315 _x0000_s1316 _x0000_s1317 _x0000_s1318"><![endif]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<h2><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>2.3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Key Advantages</span></span></span></h2>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>One
+of the advantages of the grouping language is its simplicity.<span
+style="mso-spacerun: yes">  </span>As noted above, for a fixed domain, there
+are a small finite number of legal grouping expressions.<span
+style="mso-spacerun: yes">  </span>One implication of this is that if a user
+wishes to specify how extracted data is to be grouped together, he or she need
+only assign the proper grouping expression to each extracted field.<span
+style="mso-spacerun: yes">  </span>Because there are a small number of
+expressions it is feasible to assign these grouping expressions with a
+graphical user interface (GUI).</span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>In
+our work, grouping rules were implemented as part of<span style="mso-spacerun:
+yes">  </span>learning web site wrapping system[12].<span style="mso-spacerun:
+yes">  </span>The wrapping system includes a GUI that allows a human user label
+a few training pages on a web site.<span style="mso-spacerun: yes">  </span>The
+highlights the data to be extracted, and specifies<span style="mso-spacerun:
+yes">  </span>not only the field name, but also a grouping rule (if necessary).<span
+style="mso-spacerun: yes">  </span>This was done visually through a simple menu
+selection for a field as shown in <span style='mso-field-code:"REF _Ref508693861 \\h"'><i><span
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Figure 2</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600390033003800360031000000</w:data>
+</xml><![endif]--></span>.<span style="mso-spacerun: yes">  </span></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>After
+labeling, example labels and grouping rules are passed to the learning system,
+which creates a hypothesis, marks up unseen pages and displays them for user
+validation.<span style="mso-spacerun: yes">  </span>Here again the simplicity
+of the grouping language is important; since the learner need only assign a
+label from a fixed set, ordinary classification learning can be used to
+automatically assign grouping expressions.<span style="mso-spacerun: yes"> 
+</span>In our system each extraction rule is associated with a single class
+label that combines the type of the data extracted (e.g., “product name” or
+“job title”) with the grouping expression to be associated with that
+field.<span style="mso-spacerun: yes">  </span>To test the correctness of the
+grouping rules, the user may interactively request that the current hypothesis
+execute against all or a portion of the site so the completed records may be
+viewed in their collated (grouped) format.</span></span></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1026" type="#_x0000_t75" style='width:340.5pt;height:219pt'>
+   <v:imagedata src="./IJCAI_Workshop_-_Wrapster_Associations_files/image007.png"
+    o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=454 height=292
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image008.jpg" v:shapes="_x0000_i1026"><![endif]></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><a
+  name="_Ref508693861"><i><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>Figure
+  </span></i></a></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508693861'></span></span></span></span><span
+  style='mso-element:field-begin'></span><span style='mso-bookmark:_Toc477690627'><span
+  style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><span
+  style='mso-bookmark:_Ref508693861'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'><span style="mso-spacerun: yes"> </span>SEQ Figure
+  \* ARABIC <span style='mso-element:field-separator'></span></span></i></span></span></span></span><![endif]--><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508693861'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>2</span></i></span></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508693861'></span></span></span></span><span
+  style='mso-element:field-end'></span><![endif]--><span style='mso-bookmark:
+  _Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><span style='mso-bookmark:_Ref508693861'></span></span></span></span><span
+  style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'> – Visually Assigning Grouping Rules</span></i></span></span></span></p>
+  </td>
+  <span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+  style='mso-bookmark:_Ref473186027'></span></span></span>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc477690627'><span
+style='mso-bookmark:_Ref473460703'><span style='mso-bookmark:_Ref473186027'>In
+this system, grouping rules are learned on a site-by-site basis.<span
+style="mso-spacerun: yes">  </span>Another possible approach to grouping would
+be to construct a site-independent grouping heuristic, such as that proposed by
+Embley/Xu.<span style="mso-spacerun: yes">  </span>One way to construct such a
+system would be to use the same user labels, but aggregate the training data
+over many sites,<span style="mso-spacerun: yes">  </span>and use this data to
+train a site-independent classifier that associates extracted fields with the
+appropriate grouping expressions.</span></span></span></p>
+
+<h1><span style='mso-bookmark:_Toc477690627'><span style='mso-bookmark:_Ref473460703'><span
+style='mso-bookmark:_Ref473186027'><![if !supportLists]>3<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Experimental Evaluation</span></span></span></h1>
+
+<p class=MsoHeader style='tab-stops:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoHeader style='tab-stops:.5in'>The grouping language described so
+far is simple, but not very expressive.<span style="mso-spacerun: yes"> 
+</span>An important question is the following: to what extent can real-world
+web sites be wrapped using this set of grouping rules?<span
+style="mso-spacerun: yes">  </span>In other words, is the language expressive
+enough to handle real grouping problems?</p>
+
+<p class=MsoNormal>To answer this question, the system was used to wrap 499
+corporate web sites in order to extract their job information.<span
+style="mso-spacerun: yes">  </span>Out of the 499 sites wrapped there was only
+one site that the grouping rules could not express.<span style="mso-spacerun:
+yes">  </span>On this site it was necessary to have a scope overridden if a
+field with a cardinality constraint is observed multiple times<span
+style="mso-spacerun: yes">  </span>(e.g., location is in Atlanta unless
+otherwise noted.)<span style="mso-spacerun: yes">  </span>This is more of an
+implementation detail than a flaw in the grouping rules, but does reveal an
+important consideration.<span style="mso-spacerun: yes">  </span>Some
+interesting statistics from the experiment are shown in <span style='mso-field-code:
+"REF _Ref508694202 \\h"'><i><span style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt'>Table 2</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600390034003200300032000000</w:data>
+</xml><![endif]--></span>.<span style="mso-spacerun: yes">  </span><span
+style='mso-field-code:"REF _Ref508694211 \\h"'><i><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt'>Figure 3</span></i><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600390034003200310031000000</w:data>
+</xml><![endif]--></span> shows the distribution of rule scopes.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr>
+  <td width=319 valign=top style='width:239.4pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <table border=0 cellspacing=0 cellpadding=0 align=left style='border-collapse:
+   collapse;border:none;mso-border-top-alt:solid green 1.5pt;mso-border-bottom-alt:
+   solid green 1.5pt;mso-table-overlap:never;mso-table-lspace:9.0pt;mso-table-rspace:
+   9.0pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:margin;
+   mso-table-left:center;mso-table-top:34.6pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    background:#A6A6A6;mso-shading:white;mso-pattern:gray-35 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableHeader><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+    font-family:Arial;color:white;font-style:normal;mso-bidi-font-style:italic'>Statistic<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border:solid green .75pt;
+    border-left:none;mso-border-left-alt:solid green .75pt;background:#A6A6A6;
+    mso-shading:white;mso-pattern:gray-35 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableHeader><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+    font-family:Arial;color:white;font-style:normal;mso-bidi-font-style:italic'>Value<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>Sites wrapped<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>499<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>Job records extracted<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>10,060<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>Approximate pages crawled<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>330,000<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>Extraction rules used<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>856<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>recordstart option used<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>680<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>Rules scope used<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#A6A6A6;mso-shading:white;mso-pattern:gray-35 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableHeader><![if !supportEmptyParas]>&nbsp;<![endif]><span
+    style='layout-grid-mode:line;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody style='tab-stops:16.65pt'><span style='layout-grid-mode:
+    line;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>       </span>Next<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>717<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody style='tab-stops:16.65pt'><span style='layout-grid-mode:
+    line;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>       </span>Prev<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>12<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody style='tab-stops:16.65pt'><span style='layout-grid-mode:
+    line;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>       </span>Nextlink<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>82<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody style='tab-stops:16.65pt'><span style='layout-grid-mode:
+    line;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>       </span>Prevlink<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>11<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=201 valign=top style='width:150.7pt;border:solid green .75pt;
+    border-top:none;mso-border-top-alt:solid green .75pt;background:white;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody style='tab-stops:16.65pt'><span style='layout-grid-mode:
+    line;mso-bidi-font-weight:bold'><span style='mso-tab-count:1'>       </span>Pagetype<o:p></o:p></span></p>
+    </td>
+    <td width=62 valign=top style='width:46.35pt;border-top:none;border-left:
+    none;border-bottom:solid green .75pt;border-right:solid green .75pt;
+    mso-border-top-alt:solid green .75pt;mso-border-left-alt:solid green .75pt;
+    background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=TableBody><span style='layout-grid-mode:line;mso-bidi-font-weight:
+    bold'>32<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoHeader align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;tab-stops:.5in'><o:p></o:p></p>
+  </td>
+  <td width=319 valign=top style='width:239.4pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><!--[if gte vml 1]><v:shape
+   id="_x0000_s1319" type="#_x0000_t75" style='position:absolute;margin-left:12.8pt;
+   margin-top:-1.45pt;width:207.15pt;height:155.5pt;z-index:4;
+   mso-position-horizontal-relative:text;mso-position-vertical-relative:text'>
+   <v:imagedata src="./IJCAI_Workshop_-_Wrapster_Associations_files/image009.wmz"
+    o:title=""/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1319'/>
+   <w:wrap type="square"/>
+  </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Excel.Chart.8"
+   ShapeID="_x0000_s1319" DrawAspect="Content" ObjectID="_1084962483">
+  </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><img width=276 height=207
+  src="./IJCAI_Workshop_-_Wrapster_Associations_files/image010.gif" align=left
+  hspace=12 v:shapes="_x0000_s1319"><![endif]></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=319 valign=top style='width:239.4pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><a name="_Toc477096825"></a><a name="_Ref508694114"></a><a
+  name="_Ref508694202"><span style='mso-bookmark:_Ref508694114'><span
+  style='mso-bookmark:_Toc477096825'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'>Table </span></i></span></span></a><!--[if supportFields]><span
+  style='mso-bookmark:_Ref508694202'><span style='mso-bookmark:_Ref508694114'><span
+  style='mso-bookmark:_Toc477096825'></span></span></span><span
+  style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref508694202'><span
+  style='mso-bookmark:_Ref508694114'><span style='mso-bookmark:_Toc477096825'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'><span style="mso-spacerun:
+  yes"> </span>SEQ Table \* ARABIC <span style='mso-element:field-separator'></span></span></i></span></span></span><![endif]--><span
+  style='mso-bookmark:_Ref508694202'><span style='mso-bookmark:_Ref508694114'><span
+  style='mso-bookmark:_Toc477096825'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'>2</span></i></span></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Ref508694202'><span style='mso-bookmark:_Ref508694114'><span
+  style='mso-bookmark:_Toc477096825'></span></span></span><span
+  style='mso-element:field-end'></span><![endif]--><span style='mso-bookmark:
+  _Ref508694202'><span style='mso-bookmark:_Ref508694114'><span
+  style='mso-bookmark:_Toc477096825'></span></span></span><span
+  style='mso-bookmark:_Ref508694114'><span style='mso-bookmark:_Toc477096825'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'> – </span></i></span></span><span
+  style='mso-bookmark:_Ref508694114'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'>Job Posting Extraction Statistics</span></i></span></p>
+  </td>
+  <td width=319 valign=top style='width:239.4pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center'><a name="_Ref508694121"></a><a name="_Ref508694211"><span
+  style='mso-bookmark:_Ref508694121'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'>Figure </span></i></span></a><!--[if supportFields]><span
+  style='mso-bookmark:_Ref508694211'><span style='mso-bookmark:_Ref508694121'></span></span><span
+  style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref508694211'><span
+  style='mso-bookmark:_Ref508694121'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'><span style="mso-spacerun: yes"> </span>SEQ Figure
+  \* ARABIC <span style='mso-element:field-separator'></span></span></i></span></span><![endif]--><span
+  style='mso-bookmark:_Ref508694211'><span style='mso-bookmark:_Ref508694121'><i><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt'>3</span></i></span></span><!--[if supportFields]><span
+  style='mso-bookmark:_Ref508694211'><span style='mso-bookmark:_Ref508694121'></span></span><span
+  style='mso-element:field-end'></span><![endif]--><span style='mso-bookmark:
+  _Ref508694211'><span style='mso-bookmark:_Ref508694121'></span></span><span
+  style='mso-bookmark:_Ref508694121'><i><span style='font-size:8.0pt;
+  mso-bidi-font-size:10.0pt'> – Scope Usage</span></i></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>These statistics suggest some interesting information.<span
+style="mso-spacerun: yes">  </span>First of all the high usage of the <i>next</i>
+scope (84%) indicates that most records are simple, or contiguous in nature and
+only require simple grouping.<span style="mso-spacerun: yes">  </span>However,
+a full 15% of other fields did require some more complex scope in order to
+fully express the record.<span style="mso-spacerun: yes">  </span>Of these
+other scope types <i>pagetype</i> was used 10% of the time suggesting the
+important need to associate fields in some sort of global scope.<span
+style="mso-spacerun: yes">  </span>This is also important because the only
+other known system[9] that does complex field grouping did not allow for this
+type of representation.</p>
+
+<p class=MsoNormal>From the results of the job postings domain suggests that
+even though grouping rules are fairly simplistic in nature they are expressive
+enough to cover the vast majority of practical extraction tasks.<span
+style="mso-spacerun: yes">  </span>In order to insure that these results were
+not specific to the domain of job postings another 10 corporate sites were
+chosen and examined for extraction of product information.<span
+style="mso-spacerun: yes">  </span>From this smaller sample set it was shown
+that every site could be expressed with the grouping rules.<span
+style="mso-spacerun: yes">  </span>If fact it appears that in comparison, job
+postings is a more complex grouping task thus the larger experiment is a good
+validation of their usefulness.</p>
+
+<h1><a name="_Ref473186056"><![if !supportLists]>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>Conclusion</a></h1>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Ref473186056'>With the
+demonstrated success[1] of information extraction systems to accurately find
+and extracted fields it becomes clear that the next step is to develop
+algorithms for grouping fields into record structures.<span
+style="mso-spacerun: yes">  </span>Currently the most common answers to this
+problem are to either hard code grouping rules for a particular domain, or make
+naïve assumptions about the contiguous nature of record fields.<span
+style="mso-spacerun: yes">  </span>The work presented in this paper presents a
+system capable of accurately describing complex shared and disjoint fields in a
+simple precise methodology.</span></p>
+
+<p class=MsoBodyTextIndent><span style='mso-bookmark:_Ref473186056'>There are
+obvious limitations to the grouping rules presented here.<span
+style="mso-spacerun: yes">  </span>The most obvious one is that it lacks the
+expressive power of a domain-crafted solution.<span style="mso-spacerun: yes"> 
+</span>However, as was shown with the success of the job posting and product
+information domains it appears that often times a domain specific solution is
+not necessary.<span style="mso-spacerun: yes">  </span>There are other
+limitations of the grouping rules are discussed below and serve as good
+candidates for future research:</span></p>
+
+<p class=MsoNormal style='margin-left:27.35pt;text-indent:-.25in;mso-list:l16 level1 lfo29;
+tab-stops:list 27.0pt'><span style='mso-bookmark:_Ref473186056'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><b>Data listed in columns</b>.<span
+style="mso-spacerun: yes">  </span>In some domains tables are used extensively
+for displaying information.<span style="mso-spacerun: yes">  </span>A common
+paradigm is to display the fields for a record in columnar fashion, with each
+column represented a distinct record.<span style="mso-spacerun: yes"> 
+</span>The current definition of grouping rules uses document order as the
+criteria for grouping.<span style="mso-spacerun: yes">  </span>However,
+document order in this case would interleave the columnar records.<span
+style="mso-spacerun: yes">  </span>A simple solution to this problem is to
+extend the grammar to include a column scope that would group all fields in the
+same column of a table.</span></p>
+
+<p class=MsoNormal style='margin-left:27.35pt;text-indent:-.25in;mso-list:l16 level1 lfo29;
+tab-stops:list 27.0pt'><span style='mso-bookmark:_Ref473186056'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><b>Enforcing a record schema</b>.<span
+style="mso-spacerun: yes">  </span>A simple record schema could be used in
+conjunction with the extraction and grouping.<span style="mso-spacerun: yes"> 
+</span>This would allow for the enforcement of cardinality constraints and
+field type inclusion.<span style="mso-spacerun: yes">  </span>For example if in
+the schema a field is defined with a cardinality of one and there were two
+fields of that type in the same grouping then the closest field to the record
+start could overshadow the other.</span></p>
+
+<p class=MsoNormal style='margin-left:27.35pt;text-indent:-.25in;mso-list:l16 level1 lfo29;
+tab-stops:list 27.0pt'><span style='mso-bookmark:_Ref473186056'><![if !supportLists]><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><b>Producing sub records</b>.<span style="mso-spacerun:
+yes">  </span>Sometimes records are not flat in nature and need to contain sub
+records.<span style="mso-spacerun: yes">  </span>For example when a job posting
+has multiple locations.<span style="mso-spacerun: yes">  </span>It is often
+convenient to express each location as a sub record containing the fields city,
+state, and country.<span style="mso-spacerun: yes">  </span>This should be
+possible by allowing for multiple record starts with in a single grouping.<span
+style="mso-spacerun: yes">  </span>An additional record start would signify
+that a sub record was being defined.<span style="mso-spacerun: yes"> 
+</span>This could also be done with the record schema as discussed in the
+previous point.<span style="mso-spacerun: yes">  </span>While this
+functionality was discussed as part of the grammar in section <span
+style='mso-field-code:"REF _Ref508695534 \\r \\h"'>2.1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003500300038003600390035003500330034000000</w:data>
+</xml><![endif]--></span>, it was never implemented as part of the experimental
+system and therefore left as future research.</span></p>
+
+<span style='mso-bookmark:_Ref473186056'></span>
+
+<p class=MsoHeader style='tab-stops:.5in'><a name="_Toc477690636">Perhaps the
+most important area of research that could be conducted is to use grouping
+rules in a system that learned the rules without training examples from a
+human.<span style="mso-spacerun: yes">  </span>In the rule learning wrapping system
+used to validate this research the user not only marked up training examples,
+but also provided the grouping rules for the marked up fields.<span
+style="mso-spacerun: yes">  </span>The system then extrapolated the rules over
+novel pages.<span style="mso-spacerun: yes">  </span>However, it seems logical
+that if the learning system had the record scheme then it should be able to
+infer the grouping rules from only the marked up fields.<span
+style="mso-spacerun: yes">  </span>This is the approach that was taken by
+Embly/Xu[9] with substantial success.<span style="mso-spacerun: yes"> 
+</span>The question that remains is if the Embly/Xu approach can be extended to
+the more expressive system described in this paper.</a></p>
+
+<h1 style='margin-left:0in;text-indent:0in;mso-list:none;tab-stops:.5in'><span
+style='mso-bookmark:_Toc477690636'>References</span></h1>
+
+<p class=Reference>[1] Line Eikvil. Information Extraction from World Wide Web
+- A Survey. Report #945, July, 1999. ISBN 82-539-0429-0</p>
+
+<p class=Reference>[2] Record-Boundary Discovery in Web Documents, by D.W.
+Embley, Y.S. Jiang, and W.-K. Ng, SIGMOD'99 Proceedings</p>
+
+<p class=Reference>[3] M. Collins and Y. Singer. 1999. Unsupervised models for
+named entity classification. In Proceedings of the Joint SIGDAT Coneference on
+Empirical Methods in Natural Language Processing and Very Large Corpora, pages
+100-110.</p>
+
+<p class=Reference>[4] S. Brin. Extracting patterns and relations from the
+World Wide Web. In Proceedings of the WebDB Workshop (at EDBT'98), 1998</p>
+
+<p class=Reference>[5] N. Kushmerick, D. Weld, and R. Doorenbos. Wrapper
+induction for information extraction. In Proceedings of the 1997 International
+Joint Conference on Artificial Intelligence, pages 729--735, 1997</p>
+
+<p class=Reference>[6] Adelberg, B. (1998). <i>NoDoSE - A Tool for
+Semi-Automatically Extracting Structured and Semistructured Data from Text
+Documents</i>. In L. Haas, A. Tiwary, eds., Proc. SIGMOD'98,ACM SIGMOD Record,
+Vol. 25, pp. 283-294, ACM Press.</p>
+
+<p class=Reference>[7] Kushmerick, N., Weld, D., Doorenbos, R. (1997). <i>Wrapper
+Induction for Information Extraction</i>. International Joint Conference on
+Artificial Intelligence 729-735</p>
+
+<p class=Reference>[8] Ashish, N., &amp; Knoblock, C. (1997). <i>Wrapper
+generation for semistructured Internet sources</i>. Proceedings of the Workshop
+on Management of Semistructured Data. Tucson, Arizona: Available on-line from
+http://www.research.att.com/~suciu/workshop- papers.html</p>
+
+<p class=Reference>[9] Record Location and Reconfiguration in Unstructured
+Multiple-Record Web Documents, by D.W. Embley and Li Xu, WebDB'00 Proceedings</p>
+
+<p class=Reference>[10] NLP assocation of fields paper</p>
+
+<p class=Reference>[11] Soderland S. <i>Learning to extract text-based
+information from the World-Wide Web</i>. In Proceedings of the Third International
+Conference on Knowledge Discovery and Data Mining, KDD-97, pages 251--254,
+Newport Beach, California, August 1997.</p>
+
+<p class=Reference>[12] Reference the other wrapster paper here.</p>
+
+<p class=Reference>[13] <span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:Helvetica'>William W. Cohen <i>WHIRL:
+A Word-based Information Representation Language, </i>submitted for journal
+publication. From <i>Artificial Intelligence</i>, 118, page 163-196</span><span
+style='font-size:10.0pt;font-family:Helvetica'>.<o:p></o:p></span></p>
+
+<p class=Reference><span style='font-size:10.0pt;font-family:Helvetica'>[14] </span>Learning
+to Extract Symbolic Knowledge from the World Wide Web.<br>
+M. Craven, D. DiPasquo, D. Freitag, A. McCallum, T. Mitchell, K. Nigam and S.
+Slattery.<br>
+<em>Proceedings of the 15th National Conference on Artificial Intelligence
+(AAAI-98).</em></p>
+
+</div>
+
+</body>
+
+</html>

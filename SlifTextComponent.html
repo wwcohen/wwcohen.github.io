@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>How to use the SLIF Text Components</title>
+</head>
+<body bgcolor="white">
+
+<h2>How to use the SLIF Text Components</h2> 
+
+<h3>Invocation and basic options</h3>
+
+<p>
+The SLIF text components are distributed as single large JAR file.  To
+run it you will need a copy of Java.  A typical invocation would be
+
+<p>
+<code>
+% java -cp slifTextComponents.jar -Xmx500M SlifTextComponent -labels <i>DIR</i> -saveAs <i>FILE</i> -use <i>COMPONENT1,COMPONENT2,....</i> [<i>OPTIONS</i>]
+</code>
+
+<p>
+where -Xmx500M allocates additional memory for the Java heap, and the additional arguments are as follows:
+<ul>
+
+<li><i>DIR</i> is a directory containing some number of text files to
+annotate.  
+
+<p>A <a href="http://www.cs.cmu.edu/~wcohen/captions.tgz">sample
+directory of files is available</a> as a compressed tarfile.  These
+captions were all taken from PubMedCentral papers, e.g., the file
+"p9770486-fig_4_2" is from Figure 4 of the paper with the <a
+href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">PubMed</a>
+Id of 9770486.
+
+<li><i>FILE</i> is where annotations should be placed.  These are output in 'minorthird format',
+which is explained below.
+
+<li><i>COMPONENT1,...</i> are the names of 'text components' to use to
+</ul>
+
+The components available are:
+  <ul>
+
+  <li><b>CellLine</b>: marks spans that are predicted to be the names
+  of cell lines with 'cellLine', using an entity-tagger trained using
+  the Genia corpus.
+
+  <li><b>CRFonYapex</b>: marks spans that are predicted to be the
+  names of genes or proteins with 'protein', and also
+  'proteinFromCRFonYapex', using a gene-taggertrained using the YAPEX
+  corpus using the CRF algorithm, as described by <a
+  href="http://www.cs.cmu.edu/~wcohen/postscript/ismb-2005.pdf">Kou,
+  Cohen and Murphy (2005)</a>.
+
+  <li><b>CRFonTexas, CRFonGenia</b>: analogous to CRFonYapex, but
+  using gene-taggers trained on different corpora (as outlined in the
+  Kou et al paper.)
+
+  <li><b>SemiCRFOnYapex, SemiCRFOnTexas, SemiCRFOnGenia</b>: analogous
+  to the CRFon* components, but trained with the SemiCRF algorithm.
+
+  <li><b>DictHMMOnYapex, DictHMMOnTexas, DictHMMOnGenia</b>: analogous
+  to the CRFon* components, but trained with the DictHMM algorithm.
+
+  <li><b>Caption</b>: marks spans according to the criteria described
+     by <a
+     href="http://www.cs.cmu.edu/~wcohen/postscript/ismb-2003.pdf">Cohen,
+     Murphy and Wang (2002)</a>: <ul>
+
+       <li>Spans marked as 'imagePointer' are predicted to be image
+       pointers.  For a definition of image pointers, see Cohen,
+       Murphy, and Wang (2002).
+
+       <li>Spans marked as 'bulletStyle' and 'citationStyle' are
+       predicted to be bullet-style and citation-style image pointers,
+       respectively.   
+
+       <li>Spans marked as 'bulletScope' and 'localScope' are predicted
+       to be the <i>scopes</i> of bullet-style and citation-style
+       image pointers, respectively.  
+
+       <li>Spans marked as 'globalScope' are text assumed to pertain
+       to the entire associated image.
+
+       <li>Spans marked as either 'bulletScope', 'localScope', or
+       'globalScope' are marked as 'scope'.  
+
+       <li>Every 'scope' span is associated with a <i>span
+       property</i> called its 'semantics'.  The 'semantics' of a span
+       is the concatenation of all the image pointers associated with
+       that span.
+
+     </ul>
+
+     Additionally, the span labels 'regional' and 'local' are synonyms
+     for bullet-style and citation-style, respectively.
+
+     <p>
+     Briefly, to find out what parts of an image some span
+     <i>S</i> might refer to, you need to (1) find out what 'scope'
+     spans <I>S</i> is inside of and (2) find out what the 'semantics'
+     of these scope spans are.  For instance, if the span 'RAS4' is
+     inside a scope <I>T1</i> with semantics "A" and also inside a
+     scope <I>T2</i> with semantics "BD", then 'RAS4' probably is
+     associated with the parts of the accompanying image labeled A",
+     "B", and "D".
+
+  </ul>
+
+<h3>The Minorthird format for stand-off annotation</h3>
+
+The format for output is the one used by <a
+href="http://minorthird.sourceforge.net">Minorthird</a>.  Specifically, the
+output (in the default format) is a series of lines in one of these
+formats:
+
+<p>
+<code>
+addToType <i>FILE</i> <i>START</i> <i>LENGTH</i> <i>SPANTYPE</i><br>
+setSpanProp <i>FILE</i> <i>START</i> <i>LENGTH</i> semantics <i>LETTERS</i>
+</code>
+
+<p>
+where 
+<ul>
+
+<li><i>FILE</i> is the name of the file containing some span;
+
+<li><i>START</i> and <i>LENGTH</i> are the initial byte position of the span, and its length;
+
+<li><i>SPANTYPE</i> is the type of span (e.g., 'imagePointer',
+'cellLine', 'protein', 'scope', etc.
+
+<li><i>LETTERS</i> is (as noted above) the concatenation of all the
+       image pointers associated with that span 
+
+</ul>
+
+<h3>Other options</h3>
+
+<table border=1>
+<tr><th>Option</th><th>Explanation</th></tr>
+
+<tr><td><code>-help</code></td>
+    <td>Gives brief command line help</td>
+</tr>
+
+<tr><td><code>-gui</code></td>
+    <td>Pops up a window that allows you to interactively fill in the other arguments, monitor the execution of the annotation process, etc.</td>
+</tr>
+
+<tr><td><code>-showLabels</code></td>
+    <td>Pops up a window that displays the set of documents being labeled.
+    (This is not recommended for a large document collection, due to 
+    memory usage.)
+</td>
+</tr>
+
+<tr><td><code>-showResult</code></td>
+    <td>Pops up a window that displays the result of the annotation.
+    (Again, not recommended for a large document collection.)
+</td>
+</tr>
+
+<tr><td><code>-format strings</code></td> <td>Outputs results as a
+    tab-separated table, instead of minorthird format. The first
+    column summarizes the type of the span, the file the span was
+    taken from, and the start and end byte positions, in a
+    colon-separated format. (E.g.,
+    "cellLine:p11029059-fig_4_1:1293:1303".)  The remaining column(s)
+    are the text that is contained in the span (e.g., "HeLa cells",
+    for the span above) almost exactly as it appears in the document; the 
+    only change is that newlines are replaced with spaces.
+ </tr>
+
+</table>
+
+<h3>References</h3>
+
+<ul>
+<li>Zhenzhen Kou, William W. Cohen & Robert F. Murphy (2005): <a href="postscript/ismb-2005.pdf">High-Recall Protein Entity Recognition Using a Dictionary</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ismb/ismb2005.html#KouCM05">ISMB-2005</a>.
+<li>William W. Cohen, Richard Wang & Robert Murphy (2003): <a href="postscript/ismb-2003.pdf">Understanding Captions in Biomedical Publications</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2003.html#CohenWM03">KDD 2003: 499-504</a>.
+<p>
+<li>Robert F. Murphy, Zhenzhen Kou, Juchang Hua, Matthew Joffe, William W. Cohen (2004): <a href="postscript/ksce-2004.pdf">Extracting and Structuring Subcellular Location Information from On-line Journal Articles: The Subcellular Location Image Finder</a> in <a href="recent.html">KSCE-2004</a>.
+<li><a href="http://murphylab.web.cmu.edu/services/SLIF2/">The SLIF home page</a>
+</ul>
+
+<h3>Acknowledgements</h3>
+
+A number of people have contributed to these tools, including William
+Cohen, Zhenzhen Kou, Quinten Mercer, Robert Murphy, Richard Wang, and
+other members of the SLIF team.
+
+The initial development of these tools was supported by grant 017396
+from the Commonwealth of Pennsylvania Tobacco Settlement Fund. Further
+development is supported by National Institutes of Health grant R01
+GM078622.
+
+</BODY>
+</HTML>
+

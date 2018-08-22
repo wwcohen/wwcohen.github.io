@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Annotated Bibliography for Matching</title>
+  </head>
+
+  <body>
+    <h1>Annotated Bibliography for Matching</h1>
+
+    This has been written up primarily to keep my thoughts in order
+    about a current research topic, namely, the interaction between
+    matching and <a
+    href="http://www.stat.cmu.edu/~fienberg/DLindex.html">disclosure
+    limitation</a>.  Don't take anything I say here too seriously
+    <code>:-)</code>
+
+    <p>If you're reading this, you should probably also know: Bill
+    Winkler (mentioned multiple times below) has recently written an
+    <a
+    href="http://www.census.gov/srd/papers/pdf/rrs2006-02.pdf">extensive
+    survey on record linkage work</a>.
+
+    <h2>The statistical literature</h2>
+
+    <ul>
+    <li>Newcombe, et al, "Automatic linkage of vital records"
+    <i>Science</i> 130:954--959, 1959.  Available on-line as part of
+    the <a
+    href="http://www.fcsm.gov/working-papers/1367_1.pdf">background
+    material</a> provided with the <a
+    href="http://www.fcsm.gov/working-papers/RLT_1985.htmlq">Record
+    Linkage Techniques - 1985: Proceedings of the Workshop on Exact
+    Matching Methodologies, Arlington, VA, May 9-10,1985</a>.
+
+    Very early paper describing a linkage application.  Outlines or at
+    least suggests many of the key areas in linking personal records:
+    use of Soundex to handle spelling errors; blocking to limit the
+    number of comparisons; multiple blocking rules to increase number
+    of matches found; estimating probability of match using log-odds
+    and independency assumptions; using self-match probabilities to
+    estimate match probabilities.
+
+    <li>Felligi and Sunter, "A theory for record linkage",
+    <i>Journal of the American Statistical Society</i>, 64:1183--1210,
+    1969.  Also available on-line as part of the <a
+    href="http://www.fcsm.gov/working-papers/1367_1.pdf">background
+    material</a> provided with the <a
+    href="http://www.fcsm.gov/working-papers/RLT_1985.html">Record
+    Linkage Techniques - 1985 Workshop</a>.
+
+    Very clean and influential work on theory of record linkage.
+    Roughly speaking, record linkage is viewed as classification of
+    pairs as "matched" and "unmatched", based on certain computed
+    features of the pairs.  Technically:
+
+        <ul>
+	<li>Felligi-Sunter describe what I would call a generative
+	Bayesian learning approach, where one classifies a pair (a,b) from
+	(A x B) as matched or unmatched based on
+	<code>Prob(features(a,b)|match)</code> and
+	<code>Prob(features(a,b)|nonmatch)</code>, where
+	<code>features(a,b)</code> is some vector of comparison features
+	between records a and b. One implication of this is that every
+	optimal rule for deciding on matches can be obtained by
+	appropriate thresholding the ration
+	<code>Prob(features|match)/Prob(features|nonmatch)</code>.</p>
+
+	<li>Felligi-Sunter further propose to assume that the individual
+	features in the vector features(a,b) are independent (a sort of
+	Naive-Bayes assumption), for tractibility. 
+
+	<li>Finally, Felligi-Sunter propose a way of estimating
+	probabilities of individual match features like "a and b have the
+	same last name and the last name is 'Jones'" based on error
+	models, and the frequency of name 'Jones' in the datasets A, B,
+	and (A intersect B).  
+	</ul>
+
+    <li>William E. Winkler and Yves Thibaudeau, <a
+    href="http://www.census.gov/srd/papers/pdf/rr91-9.pdf"> An
+    Application of the Fellegi-Sunter Model of Record Linkage to the
+    1990 U.S. Census</a>, Number RR91/09.  This paper extends the
+    basic Fellegi-Sunter model in a couple of ways. Most importantly,
+    Winkler proposes using EM and a latent (hidden) match variable for
+    each pairing (a,b).  The variable is one if (a,b) is a match, zero
+    otherwise.  One can use EM and same old independence assumptions
+    to compute models of Prob(features|match).  One can also use it to
+    estimate some of the error parameters in the frequency-based model
+    of Fellegi-Sunter.
+
+    <p>Experimentally, this produces extreme values for some match
+    variables, so Winkler uses some ad hoc smoothing tricks along with
+    EM.  I have another worry: in classifying pairs as match/nonmatch,
+    individual pairs (a,b1) and (a,b2) are not independent.  In fact,
+    their "classes" are highly correlated, since in many cases only
+    one of (a,b1) and (a,b2) can be a match.  The EM formulation
+    glosses over this though.  For some reason I find this more
+    disturbing than the assumption of match-feature independence.
+
+    <p>Winkler also outlines a string-matching scheme to measure
+    agreement between partially matching names, like "Cohen" and
+    "Cohn".  It's not described very completely in this paper, and I
+    won't review it at all, mostly because it seems very ad hoc and
+    it seems that more principled approaches now exist. 
+
+    <p>Experimentally, the results with the methods are a bit unclear.
+    They suggest that partial string matching is important, that EM
+    requires smoothing, and that frequency-based parameter setting is
+    quite important.  Winkler blames the assumption of match-feature
+    independence, and talks about using more general modelling
+    techniques to fix it.
+	
+    <p>Winkler says that the standard way in practise of matching
+    records is an iterative one, in which Fellegi-Sunter parameters
+    are estimated, then records are reviewed, then parameters are
+    adjusted, and that experts are needed to make it all work.
+    He also notes that estimated match/nonmatch probabilities are
+    usually not accurate enough to be useful.
+
+    <li>William E. Winkler, <a
+    href="http://www.census.gov/srd/papers/pdf/rr93-12.pdf">Improved
+    Decision Rules in the Fellegi-Sunter Model of Record Linkage</a>,
+    Numbern RR93/12.  Extends the RR91/09 paper by
+
+        <ul>
+	<li>Using three latent for EM, rather than two.  Intutitively the
+	three classes correspond to matches, nonmatches, and non-matches
+	from the same household.  This seemed a bit ad hoc, but a recent
+	paper by Charniak on unsupervised name matching titled <a
+	href="http://www.cs.brown.edu/people/ec/papers/namestrct.ps.gz">Unsupervised
+	learning of name structure from coreference data</a> (from
+	NAACL-2001) uses a similar model.
+
+	<li>Using linear constraints on the probability model to encourage
+	(force?) EM to find the "right" latent structure (MCECM). The
+	details aren't described but they come from a paper by Meng and
+	Rubin, and apparently it involves constraining the optimization in
+	the "M" step.  It looks like Winkler does something fairly simple
+	in the end, perhaps replacing a parameter p[t+1] (the M-step
+	maximized version of p[t]) with a linear combination of p[t+1] and
+	p[t], and using grid search to find a mixing coefficient alpha
+	that obeys the linear constraints.
+
+	<li>Using models for <code>Prob(features|match)</code> that
+	don't assume independence.  Again, the details aren't
+	presented.
+	</ul>
+    Experimentally, it looks like these tricks help most when the sets
+    of convex constraints and the set of interactions are carefully
+    chosen for the experimental dataset.
+
+    <li>William E. Winkler, <a href="WinklerAsa02.pdf">Methods for
+    Record Linkage and Bayesian Networks</a>.  A much more recent
+    paper ("presented last month in an ASA record linkage session
+    organized by Malay Ghosh"), this paper uses three latent
+    classes, more conventional smoothing methods and a little bit
+    of labeled data to constrain EM, rather than the constraints
+    of RR93/12.  Again a bunch of non-independent models are used
+    for match features, but in this case the independency
+    assumptions don't seem to hurt much. 
+
+    <p>This paper is very much inspired by <a
+    href="http://www.kamalnigam.com/papers/emcat-mlj99.pdf">Kamal
+    Nigam's thesis work on using EM for semi-supervised learning with
+    multinomial naive Bayes.</a> 
+    </ul>
+
+    <h2>String edit based metrics for record linkage</h2>
+
+    <ul>
+    <li>A. Monge and C. Elkan have a couple of papers that describe
+    using the Smith-Waterman string edit distance metric for generic,
+    domain-independent record linkage:
+
+        <ul>
+	<li>"The field-matching problem: algorithm and applications."  In
+	<i>The Proceedings of the Second International Conference on
+	Knowledge Discovery and Data Mining</i>, August 1996.
+	<li>"An efficient domain-independent
+	algorithm for detecting approximately duplicate database
+	records", In <i>The proceedings of the SIGMOD 1997 workshop on
+	data mining and knowledge discovery</i>, May 1997.  
+	</ul>
+
+    <li>Ristad and Yianilos, <a
+    href="http://www.cs.princeton.edu/~ristad/papers/pu-532-96.html">Learning
+    String Edit Distance</a>, IEEE Trans. PAMI, 20(5):522-532, 1998.
+    (There's also a conference-length version from 1994.)  Presents an
+    EM method for learning weights for non-affine edit-distance
+    metrics, given pairs of matches strings.
+
+    <li>Bilenko and Mooney, <a
+    href="http://www.cs.utexas.edu/users/ml/papers/marlin-tr-02.pdf">
+    Learning to Combine Trained Distance Metrics for Duplicate
+    Detection in Databases</a>, Technical Report AI 02-296, Artificial
+    Intelligence Lab, University of Texas at Austin, February 2002.
+
+    <p>Extends the Ristad-Yianilos algorithm for affine edit-distance
+    metrics.  Affine edit distances allow the cost of a sequence of N
+    insertions (or deletions) to be different from N times the cost of
+    a single insertion (or deletion).  
+    </ul>
+
+    <p>
+    A nice description of various edit distance algorithms, together
+    with some probabilistic versions of these algorithms based on
+    HMMs, can be found in the book <a
+    href="http://www.genetics.wustl.edu/eddy/publications/cupbook.html">Biological
+    Sequence Analysis : Probabilistic Models of Proteins and Nucleic
+    Acids</a> by Richard Durbin, Sean R. Eddy, Anders Krogh, and
+    Graeme Mitchison.
+
+    <h2>Matching workshops and other resource pages</h2>
+
+    <ul>
+    <li><a href="http://www.fcsm.gov/working-papers/RLT_1985.html">
+    Record Linkage Techniques - 1985</a>.  Includes PDF of a bunch of
+    <a href="http://www.fcsm.gov/working-papers/1367_1.pdf"> older
+    papers</a> as background.
+
+    <li><a href="http://www.fcsm.gov/working-papers/RLT_1997.html">
+    Record Linkage Techniques 1997</a>. Includes slides from a <a
+    href="http://www.fcsm.gov/working-papers/RLT97_chap12.html">tutorial</a>
+    on record linkage, which gives a nice overview of how the
+    census-bureau types approach this problem, and also some copies of
+    <a
+    href="http://www.fcsm.gov/working-papers/RLT97_chap11.html">relevant
+    papers between since the '85 workshop.</a>.
+
+    <p>There's also two sessions (<a
+    href="http://www.fcsm.gov/working-papers/RLT97_chap5.html">Session
+    5</a>, <a
+    href="http://www.fcsm.gov/working-papers/RLT97_chap8.html">Session
+    8</a>) on record linkage and confidentiality.  There is some
+    interesting material on probabilistic linkage, policy issues, and
+    public attitutes toward privacy and linkage, but little that seems
+    technically relevant to the interaction between disclosure
+    limitation and linkage.  <font size=-1>Comment - I couldn't read
+    many of these papers on Win98, only on linux using an old (v4.0)
+    Acrobat reader.</font> There are more disclosure-relevant papers
+    in the page of notable papers since the '85 workshop:
+
+        <ul>
+	<li><a
+	href="http://www.fcsm.gov/working-papers/fscheuren.pdf">Linking
+	Health Records: Human Rights Concerns</a>, Fritz Scheuren
+	<li><a
+	href="http://www.fcsm.gov/working-papers/marthafair.pdf">Record
+	Linkage in an Information Age Society</a>, Martha E. Fair
+	<li><a
+	href="http://www.fcsm.gov/working-papers/latanyas.pdf">Computational
+	Disclosure Control for Medical Microdata: The Datafly
+	System</a>, Latanya Sweeney </ul> 
+    </ul>
+
+    <!--
+
+    <h2>Other stuff</h2>
+    I still need to write up these:
+    <ul>
+      <li>Refeence-matching bibliographies: Canopies, Bollaker's LikeIt, etc
+      <li>Cohen's WHIRL, Canopies, KDD-2000
+      <li>Tejada's stuff, Hungarian algorithm
+      <li>Charniak's NAACL-2002 stuff
+      <li>TFIDF for self-match in NAACL-2002.
+      <li>LM approaches to estimating self-match probabilities?
+      <li>I should follow up on the RL-97
+      abstract by Robert Burton, National Center for Education
+      Statistics, "Using Record Linkage to Thwart the Data Terrorist".
+    </ul>
+
+    -->
+
+    <hr>
+    <address><a href="mailto:William@wcohen.com"></a></address>
+<!-- Created: Sun Oct 27 13:44:23 Eastern Standard Time 2002 -->
+<!-- hhmts start -->
+Last modified: Mon Mar  6 17:44:56 EST 2006
+<!-- hhmts end -->
+  </body>
+</html>

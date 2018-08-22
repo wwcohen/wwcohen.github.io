@@ -1,0 +1,13 @@
+<html><title>ELEPHANT</title>
+<body onLoad="document.loadsound.submit(); return true" 
+ text="#0000FF" link="#0000FF"
+ vlink="#0000FF" alink="#0000FF">
+<form name="sayelephant" action="selephant.wav"><input type="hidden"></form>
+<form name="loadsound" action="selephant.wav"><input type="hidden"></form>
+<strong>2</strong>  <a href="selephant.wav"><font size=+3>E</font>LEPHANT</a>
+<a href="helephant1.au"><img src="../_lib/asound.gif"></a>
+<a href="helephant2.au"><img src="../_lib/asound.gif"></a>
+<a href="celephant.mov"><img src="../_lib/amovie.gif"></a>
+<br> <hr>
+<h3 align=center><a href="pelephant1.html"><img src="celephant.jpg"></p></a></h3>
+</body></html>

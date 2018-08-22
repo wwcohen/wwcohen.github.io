@@ -1,0 +1,345 @@
+
+> I have been traveling and finally come back. Here is the plan for the
+> possible changes I will make inlined in your comments. Please take a
+> look and let me know what you think. Thanks a lot!
+
+- Section 3.3. Please add to this section:
+
+>> (1) A brief paragraph (three or four sentences) about which aspects
+>>      of your system you view as making theoretical claims about human
+>>      cognition and which you do not. E.g., you might state a commitment
+>>      to your representation (with or without the probabilities) but not
+>>      to the performance and learning mechanisms.
+
+> I have discussed this at the end of page 4.
+
+I see nothing on page 4 of the thesis that distinguishes which aspects
+of your work you consider as theoretical claims from those you view as
+implementation details. This suggests that you don't understand what 
+I'm asking and may not understand the difference. I'm asking that you
+explicitly state some theoretical positions AND that you note other 
+aspects of your system that have a different status. 
+
+In any case, I have asked you to make this distinction in Chapter 3
+and some other chapters because they make different contributions. 
+Discussing the issue once in the introductory chapter will not be 
+sufficient. 
+
+>> (2) A paragraph that discusses how your work is similar to, and differs
+>>      from, Stolcke's system in terms of representation, operators for
+>>      generating candidate grammars, search organization, and evaluation
+>>      function for guiding that search. Acknowledge that, except for
+>>      the "feature learning" mechanism, your approach is nearly identical
+>>      to Stolcke's system, and remove claims that his work (and similar
+>>      work by others) does not address representation learning.
+
+> I will add some discussion about this in Section 3.3. Stolke’s system
+> uses merging and chunking operators, whereas our system greedily
+> creates new nonterminals including recursive grammar rules. 
+
+Your response here concerns me, since your system also uses a chunking
+operator, and Stolcke's system also greedily creates new symbols,
+including recursive grammar rules. I agree there are differences, 
+but you have not stated them here. I'm sure you have read Stoclke's
+work, but this suggests you don't understand it or its similarity 
+to your own. Let me enumerate the similarities; both systems: 
+
+1. Represent knowledge as probabilistic context-free grammars. 
+2. Learn both the grammatical structure and rule probabilities. 
+3. Carry out heuristic search through the space of structures. 
+4. Start that search from a degenerate grammar that has one rewrite
+    rule for each training sentence. 
+5. Find frequent pairs of symbols in adjacent symbols, creates a
+    new chunk symbol for them, and replace them with the chunk in
+    all rewrite rules. 
+6. Have the ability to learn recursive rewrite rules. 
+
+There are also genuine differences, including the details of how the
+systems create recursive rules and your system's use of the learned
+grammar to create additional features. But unless you acknowledge the 
+many similarities, you will be misleading readers and not writing in
+a scholarly manner. 
+
+I should not have to list these connections to Stolcke's work for 
+you, but I have been asking you to discuss them for over a year and
+you have not yet done so. Can you please let me know whether you 
+agree with my analysis and whether you will mention the points 
+above in Chapter 3? 
+
+A related problem is that you don't describe your method for inducing
+grammatical structure in much detail on page 19. This makes it appear
+even more similar to Stolcke's system than it actually is. Discussing
+the above similarities and the differences later in the chapter will
+clarify both the system's operation and its novel contributions.
+
+> Plus, our system is integrated with skill learning, which is not the
+> focus of Stolke’s system.
+
+I don't believe that skill learning is the focus of this chapter, so 
+that distinction is not appropriate here. Please limit your comments
+to the context of the chapter, which is about grammar induction and 
+its use in creating new features. 
+
+>> (3) A few sentences that explain why you chose to approach perceptual
+>>      learning in terms of context-free grammars rather than using
+>>      discrimination nets or connectionist models, both of which have
+>>      a longer history in cognitive psychology. Alternatively, you can
+>>      discuss this at the end of (1) or even in a few sentences at the
+>>      end of the EPAM paragraph.
+
+> I have added some discussion in the second but last paragraph of page
+> 88 that discussed one experiment where we compared our approach with a
+> connectionist model that is closest to our work, deep belief network,
+> and showed that it did not perform as effective as the proposed model.
+
+I hope you mean page 28 here, since page 88 is in another chapter, but
+I'm not talking about experimental comparisons. I'm asking you to tell
+readers your reasons for your initial decision to tackle perceptual 
+feature/chunk learning with context-free grammars, given that the other 
+two paradigms have a longer history in psychology. If you cannot state
+your reasons for going down this path, then you will not convince your
+readers that you had any. If you need help in recovering your reasons, 
+I would be happy to discuss it with you. 
+
+>> - Section 4.4. Please add to this section:
+>>
+>> (1) A brief paragraph (three or four sentences) about which aspects
+>>      of your system you view as making theoretical claims about human
+>>      cognition and which you do not. E.g., your key claim might be
+>>      that parsing based on a perceptual grammar determines how the
+>>      learner explains observed steps in a problem solution, but not
+>>      the details of how this takes place.
+
+> I will add some discussion towards the end of Section 4.4, stating
+> that our claim is representation learning is one of the essential
+> aspects of human knowledge acquisition, and should be modeled in
+> learning agents. We presented one possible implementation of such
+> integration, but this may not be the only way.
+
+Although it's reasonable to repeat, briefly, earlier claims, I'm asking 
+that you state new ones here as well. And again, it will not be enough
+to indicate which aspects of your system you view as making theoretical 
+commitments; you should also specify which aspects are implementation
+details that you needed to produce a running system but to which you
+assign no theoretical merit.
+
+I'm concerned you mentioned integration in your response, as I'm 
+not sure how that relates to my request. I have been asking you to 
+distinguish between theory and implementation for some time now, and
+I'm concerned that you don't understand what I mean. If you would like
+to discuss it, I would be happy to talk.
+
+>> (2) A paragraph that discusses how your work is similar to, and how
+>>      it differs from, either Neves' early approach to learning in
+>>      algebra or, preferably, its relation to Jones and VanLehn's
+>>      Cascade model, which filled in gaps in worked-out solutions
+>>      to physics problems.
+
+> I will add some discussion in Section 4.4 stating Neve’s system
+> assumes the representation of the problem is given, whereas our
+> approach automatically acquires such representation. I believe this 
+> is also true for the Cascade model.
+
+I think you've misunderstood me again here. It will not be enough to
+discuss how Neves' (not Neve's) system and Cascade differ from your
+system. You need to discuss the many ways in which they are similar. 
+You should compare them before you can contrast them. I can enumerate
+the many similarities if you like, but that's really your job and I
+would rather you do it. To me, the most important ones are that all
+three systems learn complex procedures from worked-out solutions and
+that at least Cascade and your system use analytical or explanation-
+based methods to identify appropriate action sides of rules. If you
+fail to acknowledge these points, you'll be suggesting that your work
+is novel along these dimensions, which it is not.
+
+>> Section 5.5. Please add to this section:
+>>
+>> (1) A paragraph about which aspects of your system you view as making
+>>      theoretical claims about human cognition and which you do not.
+>>      Presumably this will be similar to the statement for Chapter 3,
+>>      with the additional statement that perceptual grammars involve
+>>      two dimensions, as do the resulting parse trees. Include a few
+>>      sentences that explain why you chose to approach perceptual
+>>      learning in terms of grammars rather than, say, discrimination
+>>      networks or even multi-layer connectionist models. This can repeat
+>>      the arguments from Chapter 3.
+
+> I will repeat the argument added in Chapter 3.
+
+That will not be sufficient. This chapter is about a different topic, 
+although it builds on earlier ones. So you may want to repeat, more
+briefly, your earlier position (I don't see it as an argument at all), 
+but you should also to make new claims. Presumably these will be
+related to the two-dimensional character of perceptual processing in
+humans. Again, you should note which aspects of your system you do 
+not consider theoretically important, in the sense that, if you had
+implemented them some other way, it would not matter to your account
+of human representation, performance, and learning.
+
+>> (2) A paragraph that discusses how your work is similar to, and how
+>>      it differs from, some other system that learns pCFGs for either
+>>      displays or images. The current text suggests (but does not state
+>>      explicitly) that noone else has developed a system that learns
+>>      2D grammatical structures, but the paper
+>>
+>>     Zu, L., Chen, Y., & Yuille, A. (2009). Unsupervised learning of
+>>        probabilistic grammar-Markov models for object categories. IEEE
+>>        Transactions on Pattern Analysis and Machine Intelligence, 31.
+>>        http://people.csail.mit.edu/leozhu/paper/TPAMI-2007-03-0146-2.pdf
+>>
+>>      appears to address the same issue pretty directly. I'm not sure why
+>>      Ray Mooney didn't point you to this work. I don't care in particular
+>>      about this paper, but I think you should devote at least a few
+>>      sentences to comparing you approach to one similar system.
+
+> The above paper uses a different model and thus cannot be directly
+> applied to 2-D pCFG learning. Adding this discussion may be beyond the
+> scope of this thesis.
+
+As I noted, I don't care about this particular paper, but you should 
+identify at least one piece of work on a similar problem and discuss, 
+in a full paragraph, how your approach is both similiar and different. 
+However, you have not convinced me that the Zu et al. paper is not
+relevant. I believe they describe a system that learns the structures
+of probabilistic grammars for processing two-dimensional images. The
+fact that they encode them as Markov models rather than pCFGs is an
+interesting difference, but it does not make the work irrelevant. 
+
+Your suggestion that discussing this work is out of your thesis' scope
+concerns me. In Section 5.5, you cite other work on learning 2-D pCFGs
+(but please remove the VanLehn and Ball citation here) but note that
+they assume structure. If any earlier research had reported methods
+for learning 2-D pCFG structure, then you should discuss that in more
+detail. Lacking that, you should discuss the next most closely related
+work, even if it did not involve pCFGs. I'm not suggesting the Zu et
+al. work is the right choice, as I'm not an expert in this area, but
+it seems closely related enough to serve if nothing else exists. Again, 
+omitting such a discussion would suggest that your work is more novel
+than it is, which would be unscholarly.
+
+>> Section 6.4. Please add to this section:
+>>
+>> (1) A brief paragraph about whether you are making any psychological
+>>      claims about this module (I'm guessing these are minimal), as
+>>      well as what alternatives you considered in addressing the task.
+>>      In particular, I'd like to hear why you decided that methods for
+>>      defining new predicates from the ILP community were not enough
+>>      for your needs, especially since some of them (especially those
+>>      involving inverse resolution) involve introducing nonterminals
+>>      in simple grammars.
+
+You did not respond to this point. Please discuss theoretical claims
+that are unique to this chapter. The contribution seems to be primarily
+representational, so I'm guessing any claims will be on that front.
+Also, please explain why ILP methods for introducing new terms are 
+not sufficient. I agree that your approach is different, but I don't
+understand its motivation. 
+
+>> (2) A paragraph that discusses two efforts that focused on revising
+>>      or extending representation in the context of problem solving:
+>>      Utgoff's thesis work and our joint work on learning predicates
+>>      for use in Icarus skills. Explain how your approach is similar,
+>>      how it differs, and why you needed new mechanisms.
+
+You did not acknowledge this point, either. I have been asking you 
+for over a year to give credit to Utgoff for his early work on 
+representation change in procedural learning, and this seems like
+an appropriate chapter to do that. I understand that his approach was
+different and, in some ways, very simplistic compared to that in your
+thesis, but he still merits some attention. 
+
+Your work on Icarus also deserves discussion, and you should not simply
+discount it by stating that Icarus only changes conceptual predicates
+and not its perceptual ones. Icarus beliefs are derived directly from
+percepts, and for years we have been discussing ways to eliminate the
+distinction. Often your treatment of related work reads like a set
+of excuses for why you don't need to discuss earlier systems in detail. 
+Instead, it should treat previous efforts seriously and clarify how
+they are similar and how they differ. 
+
+I'm not certain that you should discuss Utgoff's work and the Icarus
+results in this chapter, but you should cover them (not just list 
+them) somewhere, and this one seemed like a reasonable candidate. 
+
+>>  Also, please rewrite the sentence "...there has been considerable
+>>  work on representation change...little has occurred in the context
+>>  of representation learning", which does not make sense to me. If
+>>  you think these two tasks are distinct, you should explain that
+>>  difference here and, hopefully, much earlier.
+
+> I will change representation learning to perceptual-level
+> representation learning to clarify what I meant. I have also added
+> discussion in the last paragraph of page 88 repeating this difference.
+
+>> Section 7.5. This section seems so weak that I'm not sure what
+>> revisions to request. You cite only one paper on article selection
+>> and that appears to report an empirical study. Since the chapter
+>> is ostensibly about representation learning in the context of
+>> background knowledge, I would have expected you to discuss at
+>> least some work on the latter topic. The work you cover seems
+>> marginally related and reads like filler. I don't honestly think
+>> you can salvage this section without a complete rewrite, which
+>> I don't feel is reasonable to request at this point, but I think
+>> it's important that you understand how the text falls short.
+
+At some point, I hope you will take the time to reread this section
+and try to understand why I think it's problematic. 
+
+>> Section 8.8. Please correct the problems I mentioned in the detailed
+>>  comments I sent yesterday. These include:
+>>
+>>  (1) Reorder your text about Debuggy, LMS, ACM (Langley/Ohlsson),
+>>       and Baffes/Mooney to reflect the dates they were published,
+>>       since earlier efforts influenced later ones. Also, describe
+>>       the Langley/Ohlsson work as using machine learning but not the
+>>       Conati/VanLehn work. Also, I would be very happy to see you
+>>       add a paragraph that discusses how your approach differs from,
+>>       and is similar to, Conati's work, but I won't insist on it.
+
+> I will reorder the text accordingly, and not referring Conati and
+> VanLehn’s work as using machine learning, but Bayesion networks.
+
+Stating that Conati and VanLehn used Bayesian networks would not be
+analogous to stating that others used machine learning. The first is
+a representational formalism and the second is a process. I suggest
+that you say Conati and VanLehn used inference over Bayesian networks
+to arrive at models of students' knowledge states. 
+
+>>  (2) In the third paragraph, revise the third sentence to state
+>>       something like "Although these did not focus on modeling
+>>       how representation change affects skill learning, work by
+>>       Utgoff (1984) and by Li et al. (2012) has done so." Then
+>>       add one sentence on each system that notes its contribution
+>>       to this topic. [To be honest, I don't know why you have
+>>       this paragraph here, since it's only marginally relevant
+>>       to the chapter, but, if you're going to include it, it should
+>>       be technically accurate.]
+
+> I will restate the sentence.
+
+Please also add a sentence about each system's contribution, unless
+you have discussed them at length in Chapter 6, in which case you
+can refer back to that discussion. 
+
+>> Chapter 9. Please add, at the end of this chapter, a few paragraphs
+>>      that discuss limitations of your framework and some ideas on
+>>      how to address them in future research. I see now that you
+>>      mention one or two limitations in earlier chapters, but you
+>>      were not consistent about that, and I think the material makes
+>>      more sense here. This request did not appear in the list that
+>>      Ken compiled, but the thesis will be incomplete without it.
+
+> I have added discussions in the last chapter suggesting possible
+> future studies, and stated that the use of perceptual learning is a
+> key feature of SimStudent.
+
+Please make sure that you explicitly acknowledge limitations of your
+research before you discuss ideas for future work. One natural approach
+would be to have N paragraphs (where N > 2), each of which identifies
+some limitation of your current work and then discusses one or more
+ways that future work might address it. 
+
+I'm not sure why you mention perceptual learning is a key feature here, 
+since that's not directly related to limitations or future work. I 
+think it's great to end the thesis with a comment to that effect, 
+but it's important not to confuse the two issues. 

@@ -1,0 +1,100 @@
+#!/usr/bin/perl
+
+##############################################################################
+#build the "bonkomatic" game
+##############################################################################
+
+$Debug=1;
+
+chdir('/home/wcohen/dict/stuff/_bonk/') || die("can't cd");
+
+#read sfx files
+@Sfx = ();
+opendir(SFX,'sfx') || die("can't open sound effects dir");
+while ($f = readdir(SFX)) {
+    print "file: $f\n" if $Debug>2;
+    #skip special files
+    next if $f =~ /^\./;
+    next if $f =~ /^_/;
+    push(@Sfx,$f);
+}
+closedir(SFX);
+print "// read ",$#Sfx," sound files\n" if $Debug;
+print "sound files: ",join(';',@Sfx),"\n" if $Debug>2;
+
+open(KB,">index.html") || die("can't write kb.html");
+print KB <<END_HEADER;
+<html>
+<script language="JavaScript">
+<!-- hiding
+   var Text = "";
+   function n(url) {
+	document.noiseform.action = "sfx/" + url;
+	document.noiseform.submit();
+   }
+   function ins(letter,url) {
+      n(url);	
+      Text = Text + letter;
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function bs() {
+      Text = Text.substring(0,Text.length-1);
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function clr() {
+      Text = "";
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+// -->
+</script>
+<head>
+<title>Bonk-a-matic!!</title>
+</head>
+<body bgcolor="#00CC00">
+<hr>
+<a href="../index.html"><img src="../_lib/abooks.gif"></a><br>
+<hr>
+<font size=+5>
+<form name="kb">
+<h1 align=center>
+  <input type="text" name="kbout" value="">
+  <a href="sfx/_backspace.wav" OnClick="bs()"><img align="bottom" src="back.gif"></a>
+  <a href="sfx/_clear.au" OnClick="clr()"><img align="bottom" src="clear.gif"></a>
+</h2>
+<h2 align=center>
+END_HEADER
+
+print "// printed header\n" if $Debug;
+
+@abc = ('A','B','C','D','E','F','G','br',
+	'H','I','J','K','L','M','N','br',
+	'O','P','Q','R','S','T','U','br',
+	'V','W','X','Y','Z');
+
+sub randomly { rand() <=> 0.5; }
+@Sfx = sort randomly @Sfx;
+
+foreach $a (@abc) {
+    if ($a eq 'br') {
+	print KB "<br>\n";
+	next;
+    }
+    $f = pop(@Sfx);
+    print KB 
+     "<input type=\"button\" value=\"$a\" onClick=\"ins('$a','$f')\">\n";
+}
+print "// generated keyboard\n" if $Debug;
+
+print KB <<END_FOOT;
+</form>
+
+</h3>
+<form name="noiseform" action="sfx/_clink.au"><input type="hidden"></form>
+</font>
+</body>
+<html>
+END_FOOT
+

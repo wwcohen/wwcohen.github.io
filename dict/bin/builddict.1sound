@@ -1,0 +1,386 @@
+#!/usr/bin/perl
+
+##############################################################################
+#build a javascript "dictionary" game 
+#
+# - document expected directories, files, etc
+# 
+##############################################################################
+
+$Debug=1;
+
+#mime types
+@Image = ('gif','jpeg','jpg','jpe');
+@Sound = ('au','snd','wav');
+@Video = ('mpeg','mpg','mpe','qt','mov');
+@Text = ('txt','text');
+
+#directories
+$Root = "/home/wcohen/dict";
+$Lib  = "$Root/lib";
+$Subj = "$Root/subj";
+
+#standard buttons/sounds
+$Videof = &mimefile("$Lib/amovie",@Image);
+$Soundf = &mimefile("$Lib/asound",@Image);
+$Booksf = &mimefile("$Lib/abooks",@Image);
+$Video_button = $Videof ? "<img src=\"$Videof\">" : "Video" ;
+$Sound_button = $Soundf ? "<img src=\"$Soundf\">" : "Sound" ;
+$Books_button = $Booksf ? "<img src=\"$Booksf\">" : "Other Dictionaries" ;
+
+$Gooff  = &mimefile("$Lib/agoof",@Sound);
+print STDERR "warning - no goof file!\n" unless $Gooff;
+$Clickf = &mimefile("$Lib/aclick",@Sound) || &mimefile("$Lib/agoof",@Sound);
+
+##############################################################################
+#parse options
+##############################################################################
+
+require "getopts.pl";
+&Getopts("hc:d:");
+if ($opt_h) {
+    print "syntax: $0 -h [-c columns] [-d directory]\n";
+    exit;
+}
+$opt_c = 2 unless $opt_c;
+$Columns = $opt_c;
+
+# print the top file
+open(TOP,">$Subj/0top.html") || die("can't write 0top.html");
+print TOP <<"END_TOP";
+<html>
+<head><title>Dictionary: Top</title></head>
+<frameset cols="40%,60%">
+  <frame name="dict" src="0menu.html">
+  <frame name="view"  src="0pickone.html">
+</frameset>
+</html>
+END_TOP
+close TOP;
+
+# print the explanation of the menu
+open(PICK,">$Subj/0pickone.html") || die("can't write 0pickone.html");
+print PICK <<"END_PICK";
+<html>
+<head><title>Dictionary Menu: Help</title></head>
+<body>
+Pick a picture to go to the dictionary. 
+</body>
+</html>
+END_PICK
+close PICK;
+
+#print the menu file
+open(MENU,">$Subj/0menu.html") || die("can't write menu file");
+print MENU <<END_HEADER;
+<html>
+<head><title>Dictionary Listing</title></head>
+END_HEADER
+
+print MENU "<body>\n";
+print MENU "<h2 align=center>\n";
+opendir(DIRS,$Subj);
+while ($d=readdir(DIRS)) {
+    next if $d =~ /^\./;
+    next unless (-d "$Subj/$d");
+    $imagef = $titlef = "";
+    $imagef = &mimefile("$Subj/$d/apicture",@Image);
+    $titlef = &mimefile("$Subj/$d/atitle",@Text);
+    $title = &filetext($titlef,"A dictionary");
+    $title =~ s/\n//g;
+    $icon = $imagef ? "<img src=\"$imagef\" align=\"bottom\">" : $title; 
+    print MENU "<a href=\"$Subj/$d/0dict.html\">\n";
+    print MENU "  $icon\n";
+    print MENU "</a>\n";
+}
+closedir(DIRS);
+print MENU "</h2></body></html>\n";
+close(MENU);
+
+$Menuf = "$Subj/0menu.html";
+
+#check that the pickone file is there
+
+if (!(-e "$Lib/0pickone.html")) {
+    print STDERR "warning - no 0pickone.html file!\n";
+}
+$Pickonef = "$Lib/0pickone.html";
+
+# do subdirectories
+
+opendir(DIRS,$Subj);
+while ($d=readdir(DIRS)) {
+    next if $d =~ /^\./;
+    subjdict("$Subj/$d") if (-d "$Subj/$d"); 
+
+}
+closedir(DIRS);
+
+##############################################################################
+#create a dictionary for a subdirectory
+##############################################################################
+sub subjdict
+{
+    local($d) = @_;
+    chdir($d) || die("can't go to directory $d");
+
+    print STDERR "directory=$d\n" if $Debug;
+
+    open(DICT,">0dict.html") || die("can't write 0dict.html");
+    open(VIEW,">0view.html") || die("can't write 0view.html");
+
+    ########################################################################
+    # find out what's in the dictionary
+    ########################################################################
+
+    #find the stuff for the main page
+    $Hellof = &mimefile('ahello',@Sound);
+    if ($Hellof) {
+	$Hello_form = &soundform('hello',$Hellof);
+	$Hello = "onLoad=\"document.hello.submit(); return 1\"";
+    } else {
+	$Hello_form = &soundform('hello',$Gooff);
+	$Hello = "";
+	$Hellof = $Gooff;
+    }
+
+    $Backgroundf = &mimefile('abackground',@Image);
+    if ($Backgroundf) {
+	$Background = "background=\"$Backgroundf\"";
+    } else {
+	$Bgcolorf = &mimefile('abgcolor',@Text);
+	if ($Bgcolorf) {  
+	    $Bgcolor = &filetext($Bgcolorf,'#0000FF');
+	    $Background = "bgcolor=\"$Bgcolor\""; 
+	}
+    }
+
+    $Imagef = &mimefile('apicture',@Image);
+    $Image = "<img src=\"$Imagef\">" if $Imagef;
+
+    $Colorf = &mimefile('acolor',@Text);
+    $Color = &filetext($Colorf,'#0000FF');
+    $Color =~ s/\n//g;
+
+    $Titlef = &mimefile('atitle',@Text);
+    $Title = &filetext($Titlef,'A Dictionary');
+    $Title =~ s/\n//g;
+
+    $Linef = &mimefile('aline',@Image);
+    $Line = $Linef ? "<p><img src=\"$Linef\"></p>" : "<hr>";
+
+    if ($Debug) {
+	print STDERR "// hellof=$Hellof\n";
+	print STDERR "// backgroundf=$Backgroundf\n";
+	print STDERR "// imagef=$Imagef\n";
+	print STDERR "// colorf=$Colorf\n";
+	print STDERR "// color=$Color\n";
+    }
+
+    #collect the words in the dictionary---i.e.,
+    #every file of the form sglob.au or sglob.wav
+    @Words = ();
+    while ($sfile = <s*.au s*.wav>) {
+	($word) = $sfile =~ /s(\w+)/;
+	push(@Words,$word);
+    }
+    print STDERR "// words: ",join(' ',@Words),"\n" if $Debug;
+
+   #########################################################################
+   #print the top file, empty view file, and the header of the dictionary
+   #########################################################################
+
+    print VIEW <<"END_VIEW";
+<html>
+<head><title>$Title: Viewer</title></head>
+<body $Background>
+</html>
+END_VIEW
+    close VIEW;
+
+print DICT <<"END_DICT";
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>$Title: Control Panel</title></head>
+<body
+   $Hello 
+   $Background
+   text="$Color" link="$Color" vlink="$Color" alink="$Color"
+>
+$Hello_form
+<a href=\"$Subj/0menu.html\">$Books_button</a><br>
+$Line
+<a href=\"$Hellof\"">
+  <h1 align=\"center\">$Image<br>$Title</h1>
+</a>
+$Line
+END_DICT
+
+
+    #########################################################################
+    #print the dictionary entries in a table
+
+    local($n,$word); 
+    $n = 0;
+    print DICT "\n\n<table border=5>\n"; 
+    foreach $word (@Words) {
+        #new row if appropriate
+        if ($n % $Columns == 0) {
+            print DICT "<tr>\n";
+        }
+	print DICT "<td>",&dictentry($word,"$d/p$word" . "0.html"),"</td>\n";
+	if ($n % $Columns == $Columns - 1) {
+	    print DICT "</tr>\n";
+	}
+	$n++;
+    }
+    print DICT "</tr>\n" unless $n % $Columns == $Columns;
+    print DICT "</table>\n";
+    close DICT;
+
+    ########################################################################
+    #print the pages
+
+    local($sayf,$soundf,@imagef);
+    foreach $word (@Words) {
+        print STDERR "// creating pages for word $word\n";  
+        $sayf = &mimefile("s$word",@Sound);
+        @imagef = &mimefiles("c$word",@Image);
+        print STDERR "//   $word images (",$#imagef+1,") ",
+                     join(',',@imagef),"\n";
+        if (@imagef == 0) {
+            &wordpage($word,'',$sayf,"p$word"."0","p$word"."0");
+        } else {
+            foreach $i (0..$#imagef) {
+		$soundf = $i==0 ? $sayf : $Clickf;
+                $j = ($i+1) % ($#imagef+1);
+                &wordpage($word,$imagef[$i],$soundf,"p$word$i","p$word$j");
+            }
+        } 
+    } 
+
+    #print the footer
+    print DICT "</font></body></html>\n";
+}
+
+##############################################################################
+#other subroutines
+##############################################################################
+
+#find a file of designated type
+sub mimefile
+{
+    local($stem,@exts) = @_;
+    foreach $ext (@exts) {
+	return "$stem.$ext" if (-e "$stem.$ext");
+    }
+    return "";
+}
+
+#find a file of designated type
+sub mimefiles
+{
+    local($stem,@exts) = @_;
+    local($f,@files);
+
+    foreach $ext (@exts) { 
+	while ($f = <$stem*.$ext>) {
+	    push(@files,$f) if ($f =~ /$stem\d*\.$ext/);
+	}
+    }
+    return @files;
+}
+
+#return text of a file
+sub filetext
+{
+    local($file,$default) = @_;
+    local(@tmp);
+    return $default unless $file; 
+    open(TEXT,$file) || return $default;
+    @tmp = <TEXT>;
+    close(TEXT);
+    return join('',@tmp);
+}
+
+#a form to produce a sound
+sub soundform 
+{
+    local($form,$file) = @_;
+    #seems to need at least one input somewhere...
+    "<form name=\"$form\" action=\"$file\"><input type=\"hidden\"></form>"; 
+}
+
+#produce word for a dictionary entry
+sub dictentry
+{
+    local($word,$page,$text) = @_;
+    $text = &wordtext($word) unless $text;
+    "<form><input type=\"button\" value=\"$text\" onClick=\"v('$page')\">";
+}
+
+#convert a word into text appropriate for a dictionary entry
+sub wordtext
+{
+    local($word) = @_;
+    $text = $word; 
+    $text =~ s/_/ /go; 
+    $text =~ tr/[a-z]/[A-Z/; 
+    $text;		       
+}
+
+#generate a page for a word given an image (maybe empty)
+#a sound to play on loading, a name for the page, and
+#a name for the page to load when the image is clicked on
+sub wordpage 
+{
+    local($wrd,$imagef,$soundf,$page,$nextpage) = @_;
+    local($sayf,$say_form,$sound_form,$sound_fun,$hearf,$videof);
+
+    #print STDERR "wordpage: $word/$imagef/$soundf/$page/$nextpage\n";
+
+    #for pronouncing the word
+    $sayf = &mimefile("s$wrd",@Sound);
+    unless ($sayf) {
+        print STDERR "warning - no say file for $wrd!\n";
+        $sayf = $Gooff;
+    }
+    $say_form = &soundform("say$wrd",$sayf);
+
+    #for making the designated sound
+    $sound_form = &soundform("loadsound",$soundf);
+    $sound_fun =  "onLoad=\"document.loadsound.submit(); return true\""
+       if $soundf;
+
+    #print the page
+    open(PAGE,">$page.html") || die("can't create $page.html");
+    print PAGE "<html><title>",&wordtext($wrd),"</title>\n";
+    print PAGE "<body $sound_fun $Background\n";
+    print PAGE " text=\"$Color\" link=\"$Color\"\n"; 
+    print PAGE " vlink=\"$Color\" alink=\"$Color\">\n";
+    print PAGE $say_form,"\n";
+    print PAGE $sound_form,"\n";
+    print PAGE "<a href=\"$sayf\">",&wordtext($wrd),"</a>\n";
+    $hearf = &mimefile("h$wrd",@Sound);
+    if ($hearf) {
+        print PAGE "<a href=\"$hearf\">$Sound_button</a>\n";
+    }
+    $videof = &mimefile("c$wrd",@Video);
+    if ($videof) {
+        print PAGE "<a href=\"$videof\">$Video_button</a>\n";
+    }
+    print PAGE "$Line\n";
+    if ($imagef) {
+        print PAGE "<a href=\"$nextpage.html\">\n";
+        print PAGE " <p><img src=\"$imagef\"></p>\n" if $imagef;
+        print PAGE "</a>\n";
+    }
+    print PAGE "</body></html>\n";
+    close(PAGE);
+}

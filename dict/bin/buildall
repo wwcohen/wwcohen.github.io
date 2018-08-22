@@ -1,0 +1,6 @@
+#!/bin/csh
+
+/home/wcohen/dict/bin/builddict 
+/home/wcohen/dict/bin/buildtrie
+/home/wcohen/dict/bin/buildbonk
+

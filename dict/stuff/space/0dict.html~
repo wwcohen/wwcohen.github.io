@@ -1,0 +1,50 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>Charlie's Space Dictionary: Control Panel</title></head>
+<body
+   onLoad="document.hello.submit(); return 1" 
+   background="abackground.jpg"
+   text="#0000FF" link="#0000FF" vlink="#0000FF" alink="#0000FF"
+>
+<form name="hello" action="ahello.wav"><input type="hidden"></form>
+<a href="/home/wcohen/dict/subj/0menu.html"><img src="/home/wcohen/dict/lib/abooks.gif"></a><h4 align=right><a href="http://tommy.jsc.nasa.gov/~woodfill/SPACEED/SEHHTML/color.html
+"><img src="/home/wcohen/dict/lib/awww.gif"></a>>/h4>
+<br>
+<p><img src="aline.gif"></p>
+<a href="ahello.wav"">
+  <h1 align="center"><img src="apicture.jpg"><br>Charlie's Space Dictionary</h1>
+</a>
+<p><img src="aline.gif"></p>
+
+
+<table border=5>
+<tr>
+<td><form><input type="button" value="ASTRONAUT" onClick="v('/home/wcohen/dict/subj/space/pastronaut0.html')"></td>
+<td><form><input type="button" value="COMMAND MODULE" onClick="v('/home/wcohen/dict/subj/space/pcommand_module0.html')"></td>
+<td><form><input type="button" value="JUPITER" onClick="v('/home/wcohen/dict/subj/space/pjupiter0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="LUNAR LANDER" onClick="v('/home/wcohen/dict/subj/space/plunar_lander0.html')"></td>
+<td><form><input type="button" value="MARS" onClick="v('/home/wcohen/dict/subj/space/pmars0.html')"></td>
+<td><form><input type="button" value="MOON" onClick="v('/home/wcohen/dict/subj/space/pmoon0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="PLUTO" onClick="v('/home/wcohen/dict/subj/space/ppluto0.html')"></td>
+<td><form><input type="button" value="ROCKET" onClick="v('/home/wcohen/dict/subj/space/procket0.html')"></td>
+<td><form><input type="button" value="SATURN" onClick="v('/home/wcohen/dict/subj/space/psaturn0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="SPACE SHUTTLE" onClick="v('/home/wcohen/dict/subj/space/pspace_shuttle0.html')"></td>
+<td><form><input type="button" value="SPACE STATION" onClick="v('/home/wcohen/dict/subj/space/pspace_station0.html')"></td>
+<td><form><input type="button" value="VENUS" onClick="v('/home/wcohen/dict/subj/space/pvenus0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="EARTH" onClick="v('/home/wcohen/dict/subj/space/pearth0.html')"></td>
+</tr>
+</table>

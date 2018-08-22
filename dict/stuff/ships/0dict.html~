@@ -1,0 +1,50 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>Charlie's Ship Dictionary : Control Panel</title></head>
+<body
+   onLoad="document.hello.submit(); return 1" 
+   bgcolor="#123453"
+   text="#FFFBF0 " link="#FFFBF0 " vlink="#FFFBF0 " alink="#FFFBF0 "
+>
+<form name="hello" action="ahello.au"><input type="hidden"></form>
+<a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a><br>
+<hr>
+<a href="ahello.au"><img align="left" src="apicture.jpg"><h1>Charlie's Ship Dictionary </h1></a>
+<br clear="left">
+<hr>
+
+
+<table border=5 width=130>
+<tr>
+<td><a onClick="v('paircraft_carrier0.html')"><font size=+3>A</font>IRCRAFT CARRIER</a></td>
+<td><a onClick="v('palvin0.html')"><font size=+3>A</font>LVIN</a></td>
+<td><a onClick="v('pcontainer_ship0.html')"><font size=+3>C</font>ONTAINER SHIP</a></td>
+</tr>
+<tr>
+<td><a onClick="v('pferryboat0.html')"><font size=+3>F</font>ERRYBOAT</a></td>
+<td><a onClick="v('phydrofoil0.html')"><font size=+3>H</font>YDROFOIL</a></td>
+<td><a onClick="v('picebreaker0.html')"><font size=+3>I</font>CEBREAKER</a></td>
+</tr>
+<tr>
+<td><a onClick="v('ppassenger_ship0.html')"><font size=+3>P</font>ASSENGER SHIP</a></td>
+<td><a onClick="v('pro_ro0.html')"><font size=+3>R</font>O RO</a></td>
+<td><a onClick="v('psailboat0.html')"><font size=+3>S</font>AILBOAT</a></td>
+</tr>
+<tr>
+<td><a onClick="v('psubmarine0.html')"><font size=+3>S</font>UBMARINE</a></td>
+<td><a onClick="v('psubmersible0.html')"><font size=+3>S</font>UBMERSIBLE</a></td>
+<td><a onClick="v('ptall_ship0.html')"><font size=+3>T</font>ALL SHIP</a></td>
+</tr>
+<tr>
+<td><a onClick="v('ptanker0.html')"><font size=+3>T</font>ANKER</a></td>
+<td><a onClick="v('ptitanic0.html')"><font size=+3>T</font>ITANIC</a></td>
+<td><a onClick="v('ptugboat0.html')"><font size=+3>T</font>UGBOAT</a></td>
+</tr>
+</tr>
+</table>

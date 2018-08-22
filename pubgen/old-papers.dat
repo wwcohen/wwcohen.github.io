@@ -1,0 +1,88 @@
+xa|2004|Anthony Tomasic et al|Learning to Navigate Web Forms|Workshop on Information Integration on the Web (IIWeb-2004)|postscript/iiweb-2004.pdf|pdf
+sx|2004|Sunita Sarawagi & William W. Cohen|Semi-Markov Conditional Random Fields for Information Extraction|Neural Information Processing Systems (NIPS-2004)|postscript/semiCRF.pdf|pdf
+sxat|2004|William W. Cohen, Einat Minkov & Anthony Tomasic|Learning to Understad Web Site Update Requests|submitted for publication|postscript/webmaster.pdf|pdf
+sat|2004|William W. Cohen, Vitor R. Carvalho & Tom Mitchell|Learning to Classify Email into "Speech  Acts"|EMNLP-2004 (to appear)|postscript/speech-acts.pdf|pdf
+sxa|2004|Vitor R. Carvalho & William W. Cohen|Learning to Extract Signature and Reply Lines from Email|Conference on Email and Anti-Spam 2004 (to appear)|postscript/email-2004.pdf|pdf
+sa|2004|Yifen Huang, Dinesh Govindaraju, Tom Mitchell, Vitor Rocha de Carvalho & William Cohen|Inferring Ongoing Activities of Workstation Users by Clustering Email|Conference on Email and Anti-Spam 2004 (to appear)|postscript/ceas-2004.pdf|pdf
+sm|2004|Pradeep Ravikumar & William W. Cohen|A Hierarchical Graphical Model for Record Linkage|UAI-2004 (to appear)|postscript/uai-2004.pdf|pdf
+smx|2004|William W. Cohen & Sunita Sarawagi|Exploiting Dictionaries in Named Entity Extraction: Combining Semi-Markov Extraction Processes and Data Integration Methods|KDD-2004 (to appear)|postscript/kdd-04-csmm.pdf|pdf
+xgs|2003|William W. Cohen|Learning and Discovering Structure in Web Pages|IEEE Data Eng. Bull. 26(3): 3-10 (2003)|postscript/deb-2003.pdf|pdf
+sm|2003|Mikael Bilenko, Ray Mooney, William Cohen, Pradeep Ravikumar & Steve Fienberg|Adaptive Name-Matching in Information Integration|IEEE Intelligent Systems|postscript/intelligent-systems-2003.pdf|pdf
+sax|2003|William Cohen, Zhenzhen Kou & Robert F. Murphy|Extracting Information from Text and Images for Location Proteomics|BioKDD 2003|postscript/kdd-2003-bio-ws.doc|word
+sm|2003|William Cohen, Pradeep Ravikumar & Stephen Fienberg|A Comparison of String Metrics for Matching Names and Records|KDD-2003 Workshop on Data Cleaning and Object Consolidation|postscript/kdd-2003-match-ws.pdf|pdf
+sm|2003|William Cohen, Pradeep Ravikumar & Stephen Fienberg|A Comparison of String Distance Metrics for Name-Matching Tasks|IIWeb Workshop 2003|postscript/ijcai-ws-2003.pdf|pdf
+sxa|2003|William Cohen, Richard Wang & Robert Murphy|Understanding Captions in Biomedical Publications|KDD-2003|postscript/ismb-2003.pdf|pdf
+sxa|2003|William Cohen|Infrastructure Components for Large-Scale Information Extraction Systems|IAAI-2003|postscript/iaai-2003.pdf|pdf
+s|2003|Cheng Zhai, William Cohen & John Lafferty|Beyond Independent Topical Relevance: Methods and Evaluation Metrics for Subtopic Retrieval|SIGIR-2003|postscript/sigir-2003.pdf|pdf
+tax|2002|William Cohen|Improving A Page Classifier with Anchor Extraction and Link Analysis|NIPS-2002|postscript/nips-2002.pdf|pdf
+m|2002|William Cohen & Jacob Richman|Learning to Match and Cluster Large High-Dimensional Data Sets For Data Integration|KDD-2002|postscript/kdd-2002.pdf|pdf
+frxa|2002|William Cohen, Matthew Hurst & Lee S. Jensen|A Flexible Learning System for Wrapping Tables and Lists in HTML Documents|WWW-2002|http://www2002.org/CDROM/refereed/355/index.html|html
+sfrxa|2003|William Cohen, Matthew Hurst & Lee S. Jensen|A Flexible Learning System for Wrapping Tables and Lists in HTML Documents|"Web Document Analysis: Challenges and Opportunities", ed. Antonacopoulos & Hu; Word Scientific Publishing|postscript/ws-chap-2002.pdf|pdf
+a|2001|Lee S. Jensen & William Cohen|Grouping Extracted Fields|Proceedings of the IJCAI-2001 Workshop on Adaptive Text Extraction and Mining|postscript/IJCAI_Workshop_-_Wrapster_Associations.htm|html
+g|2001|Dallan Quass, Andrew McCallum & William Cohen|Unlocking the Information in Text|"The Future of Software", Winter 2000/2001|http://www.futureofsoftware.net/wc0010/wc0010.asp|html
+cm|2001|Chumki Basu, Haym Hirsh, William Cohen & Craig Neville-Manning|Technical Paper Recommendation: A Study in Combining Multiple Information Sources|The Journal of Artificial Intelligence Research} v14, pp 231-252|http://www.cs.washington.edu/research/jair/abstracts/basu01a.html|html|
+xg|2000|William Cohen, Andrew McCallum, Dallan Quass|Learning to Understand the Web|IEEE Data Engineering Bulletin, September 2000, v23, pp 17-24|http://www.research.microsoft.com/research/db/debull/A00sept/cohen.ps|ps
+sfm|2000|William Cohen, David McAllester, and Henry Kautz|Hardening Soft Information Sources|KDD-2000|postscript/kdd-2000.ps|ps
+ts|2000|William Cohen|Automatically extracting features for concept learning from the Web|ICML-2000|postscript/ml-2000.ps|ps
+scm|2000|William Cohen and Wei Fan|Web-Collaborative Filtering: Recommending Music by Crawling The Web|WWW-2000|http://www9.org/w9cdrom/266/266.html|html
+sm|2000|William Cohen|Data Integration using Similarity Joins and a Word-based Information Representation Language|ACM Transactions on Information Systems, v18, pp 288-321|postscript/tois-whirl.pdf|pdf
+rs|1999|William Cohen and Yoram Singer|Simple, Fast, and Effective Rule Learner|AAAI-99|postscript/aaai-99-slipper.ps|ps
+m|1999|William Cohen|Recognizing Structure in Web Pages using Similarity Queries|AAAI-99|postscript/aaai-99-extract.ps|ps
+m|2000|William Cohen|WHIRL: A Word-based Information Representation Language|Artificial Intelligence, 118, pp 163-196|postscript/aij-whirl-overview.ps|ps
+ai|2000|William Cohen & Prem Devanbu|Automatically Exploring	Hypotheses about Fault Prediction: a Comparative Study of Inductive Logic Programming Methods|International Journal of	Software Engineering and Knowledge Engineering, v9, p 519-546||
+mx|1999|William Cohen and Wei Fan|Learning Page-Independent Heuristics for Extracting Data from Web Pages|WWW-99|http://www8.org/w8-papers/5a-search-query/learning/index.html|html
+xm|1999|William Cohen|Reasoning about Textual Similarity in a Web-Based Information Access|Autonomous Agents and Multi-Agent Systems, v2, pages 65-86|postscript/jnl-agents.ps.gz|ps.gz
+st|1999|William Cohen, Rob Schapire, Yoram Singer|Learning to Order Things|Journal of  Artificial Intelligence Research, v10, pages 243-270|http://www.jair.org/abstracts/cohen99a.html|html
+rt|1999|William Cohen & Yoram Singer|Context-sensitive learning methods for text categorization|ACM Transactions on Information Systems}, v17, pp 171-173|postscript/tois-sigir.pdf|pdf|
+mg|1998|William Cohen|The WHIRL Approach to Information Integration|IEEE Intelligent Systems, pp 20-23|http://www.computer.org/intelligent/ex1998/pdf/x5012.pdf|pdf
+mt|1998|William Cohen & Haym Hirsh|Joins that Generalize: Text Classification Using WHIRL|KDD-98|postscript/kdd-98.ps|ps
+cr|1998|Chumki Basu, Haym Hirsh, William Cohen|Using Social and Content-Based Information in Recommendation|AAAI-98|postscript/aaai-98-collab.ps|ps
+m|1998|William Cohen|Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity|SIGMOD-98|postscript/sigmod-98.ps|ps
+m|1998|William Cohen|A Web-based Information System that Reasons with Structured Collections of Text|Autonomous Agents '98|postscript/agents-98.ps|ps
+m|1998|William Cohen|The WHIRL Approach to Integration: An Overview|The AAAI-98 Workshop on AI and Information Integration|postscript/aaai-98-ws.ps|ps
+fi|1998|William Cohen|Hardness Results for Learning First-Order Representations and Programming by Demonstration|Machine Learning, v30,pp 57-88||
+m|1997|William Cohen|Knowledge Integration for Structured Information Sources Containing Text (Extended Abstract)|The SIGIR-97 Workshop on Networked Information Retrieval|postscript/sigir-ws-97.ps|ps
+ia|1997|William Cohen and Prem Devanbu|A Comparative Study of Inductive Logic Programming Methods for Software Fault Prediction|ICML-97|postscript/ml-97-faults.ps|ps
+rta|1997|William Cohen and Daniel Kudenko|Transferring and Retraining Learned Information Filters|AAAI-97|postscript/aaai-97-transfer.ps|ps
+srt|1996|William Cohen|Learning Trees and Rules with Set-valued Features|AAAI-96|postscript/aaai-96.ps|ps
+sf|1996|William Cohen|The Dual DFA Learning Problem: Hardness Results for Programming by Demonstration and Learning First-Order Representations (Extended Abstract)|COLT-96|postscript/colt-96.ps|ps
+satr|1996|William Cohen|Learning Rules that Classify E-Mail|The 1996 AAAI Spring Symposium on Machine Learning in Information Access|postscript/aaai-ss-96.ps|ps
+atr|1996|William Cohen and Yoram Singer|Learning to Query the Web|The 1996 AAAI Workshop on Internet-Based Information Systems|postscript/aaai-ws-96.ps|ps
+str|1996|William Cohen and Yoram Singer|Context-sensitive learning methods for text categorization|SIGIR-96|postscript/sigir-96.ps|ps
+if|1996|William Cohen|Pac-learning non-recursive prolog clauses|Artificial Intelligence, 79(1), pages 1-38||
+|1996|William Cohen|Adaptive mapping and navigation by teams of simple robots|Robotics and Autonomous Systems, v18, pp 411--434||
+ti|1995|William Cohen|Learning to Classify English Text with ILP Methods|Advances in Inductive Logic Programming, Ed. L. De Raedt, IOS Press, 1995, in IOS Frontiers in AI and Applications series|postscript/ilp-95.ps|ps
+trs|1995|William Cohen|Fast effective rule induction|ICML-95|postscript/ml-95-ripper.ps|ps
+it|1995|William Cohen|Text categorization and relational learning|ICML-95|postscript/ml-95-ir.ps|ps
+fi|1995|William Cohen and C. David Page Jr|Polynomial learnability and inductive logic programming: Methods and results|New Generation Computing, 13(3)||
+fi|1995|William Cohen|Pac-learning recursive logic programs: Efficient algorithms|Journal of Artificial Intelligence Research, Volume 2, pages 501-539|http://www.cs.washington.edu/research/jair/home.html|html
+fi|1995|William Cohen|Pac-learning recursive logic programs: Negative results.|Journal of Artificial Intelligence Research, Volume 2, pages 541-573|http://www.cs.washington.edu/research/jair/home.html|html|
+iar|1995|William Cohen|Inductive specification recovery: Understanding software by learning from example behaviors|Automated Software Engineering, 2(2)||
+f|1994|L. Thorn McCarty and William Cohen|The case for explicit exceptions|Methods of Logic in Computer Science, 1(1)||
+|1994|Haym Hirsh and William Cohen|Learning from data with bounded inconsistency: Theoretical and experimental results.|Computational learning theory and natural learning systems (Volume I), ed. S. Hanson, G. Drastal, and R. Rivest, MIT Press||
+sf|1994|William Cohen and Haym Hirsh|Learning the CLASSIC description logic: Theoretical and experimental results|KR-94|postscript/kr-94.ps|ps
+f|1994|William Cohen and Haym Hirsh|Learnability of description logics with equality constraints|Machine Learning, 17(2/3)||
+fai|1994|William Cohen|Recovering Software Specifications with Inductive Logic Programming|AAAI-94|postscript/aaai-94-rc.ps|ps
+fe|1994|William Cohen, Russell Greiner, and Dale Schuurmans|Probabilistic hill-climbing|Computational learning theory and natural learning systems (Volume II),ed. S. Hanson, T. Petsch, M. Kearns, and R. Rivest, MIT Press||
+fe|1994|William Cohen|Incremental abductive EBL|Machine Learning, 15(1)||
+ie|1994|William Cohen|Grammatically biased learning: learning logic programs using an explicit antecedent description language|Artificial Intelligence, v68, pp 303-366||
+fi|1993|William Cohen|Cryptographic limitations on learning one-clause logic programs|AAAI-93|postscript/aaai-93-cryptlim.ps|ps
+|1993|P. S. Rosenbloom, H. Hirsh, Cohen, and B. D. Smith|Two frameworks for integrating knowledge in induction|Seventh Annual Workshop on Space Operations, Applications, and Research (SOAR '93), K. Krishen, editor, NASA Conference Publication 3240||
+i|1993|William Cohen|Rapid prototyping of ILP systems using explicit bias|Proceedings of the 1993 IJCAI Workshop on Inductive Logic Programming|postscript/ijcai-ws-93.ps|ps|
+fi|1993|William Cohen|Pac-learning a restricted class of recursive logic programs|AAAI-93|postscript/aaai-93-force2.ps|ps|
+r|1993|William Cohen|Efficient pruning methods for separate-and-conquer rule learning systems|IJCAI-93||
+f|1992|William Cohen, Alex Borgida, and Haym Hirsh|Computing least common subsumers in description logics|AAAI-92||
+fe|1992|William Cohen|Using distribution-free learning theory to analyze solution path caching mechanisms|Computational Intelligence, 8(2)||
+e|1992|William Cohen|Desiderata for generalization-to-n algorithms|Analogical and Inductive Inference: International Workshop AII'92, ed. K. P. Jantke, Proceedings published by Springer-Verlag as Lectures in Artificial Intelligence Series #642||
+ie|1992|William Cohen|Compiling prior knowledge into an explicit bias|ICML-92|postscript/ml-92.ps|ps|
+e|1992|William Cohen|Abductive explanation based learning: A solution to the multiple inconsistent explanation problem|Machine Learning, 8(2)||
+e|1991|William Cohen|The generality of overgenerality|IWML-91|postscript/ml-91.ps|ps|
+e|1990|William Cohen|Learning from textbook knowledge: A case study|AAAI-90|||
+e|1990|William Cohen|Learning approximate control rules of high utility|ICML-90|postscript/ml-90-axaebl.ps|ps|
+e|1990|William Cohen|An analysis of representation shift in concept learning|ICML-90|postscript/ml-90-repshift.ps|ps|
+e|1988|William Cohen|Generalizing number and learning from multiple examples in explanation-based learning|ICML-88|||
+a|1987|G. Miller, D. Rosenthal, W. Cohen, and M. Johnston|Expert systems tools for hubble space telescope scheduling|Proceedings of the 1987 Goddard Conference on SpaceApplications of Artificial Intelligence and Robotics||
+a|1987|T. Hornick, W. Cohen, and G. Miller|A natural language query system for hubble space telescope proposal selection|Proceedings of the 1987 Goddard Conference on Space Applications of Artificial Intelligence and Robotics||
+a|1986|K. Bartlett, W. Cohen, A. De Geus, and G. Hachtel|Synthesis and optimization of multi-level logic under timing constraints|IEEE Transactions on Computer-Aided Design, October 1986||
+a|1985|A. De Geus and W. Cohen|Optimization of combinational logic using a rule-based expert system|IEEE Design and Test of Computers, August 1985||
+a|1985|W. Cohen, K. Bartlett, and A. De Geus|Impact of metarules in a rule-based expert system for gate level optimization|Proceedings of the IEEE International Symposium on Circuits and Systems||

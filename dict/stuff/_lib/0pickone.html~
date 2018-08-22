@@ -1,0 +1,25 @@
+<html>
+<head><title>Charlie's Dictionaries</title></head>
+<body onLoad="document.explain.submit(); return 1">
+<form name="hello" action="ahello.wav"><input type="hidden"></form>
+<a href="0dict.html" onClick="vr('/home/wcohen/dict/subj/0menu.html')"><img src="/home/wcohen/dict/lib/abooks.gif"></a><br>
+<p><img src="aline.gif"></p>
+<a href="ahello.wav"">
+  <h1 align="center"><img src="apicture.jpg"><br>Charlie's Space Dictionary</h1>
+</a>
+<p><img src="aline.gif"></p>
+
+
+<table border=5>
+<tr>
+<td><form><input type="button" value="ASTRONAUT" onClick="v('pastronaut0.html')"></td>
+<td><form><input type="button" value="LUNAR LANDER" onClick="v('plunar_lander0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="SPACE SHUTTLE" onClick="v('pspace_shuttle0.html')"></td>
+<td><form><input type="button" value="EARTH" onClick="v('pearth0.html')"></td>
+</tr>
+<tr>
+<td><form><input type="button" value="ROCKET" onClick="v('procket0.html')"></td>
+</tr>
+</table>

@@ -1,0 +1,26 @@
+<head><title>Charlie's Dictionary</title></head>
+<body>
+<h1>Charlie's Dictionary</h1>
+
+<h2>Using the dictionary</h2>
+
+<ul>
+<li>
+<a href="stuff/index.html"><img src="stuff/_lib/abooks.gif" align="bottom"><a/>
+Clicking on this icon always takes you to the 
+<a href="stuff/index.html">main menu</a> for the dictionary.  
+</a> 
+</li>
+<li>
+Most words that appear have audio to go along with them. Clicking
+on the words will usually read them aloud.
+</li>
+<li>
+<strong>Known bugs:</strong> For reasons I don't understand the
+dictionary buttons don't work properly the <em>first</em> time you open
+a subject dictionary.  The workaround is to immediately go back to the
+main menu, then re-enter the subject dictionary; then things will work.
+</li>
+</ul>
+
+</body>

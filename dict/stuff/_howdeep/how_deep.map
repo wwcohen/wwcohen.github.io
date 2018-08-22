@@ -1,0 +1,22 @@
+default map_default.html
+
+rect map_default.html 50,0 200,33
+rect alvinspecs.html 391,322 491,392 
+rect whale.html 271,103 450,165 
+rect jim_suit.html 12,34 61,102 
+rect elephant_seal.html 8,113 117,170 
+rect jason.html 243,435 335,505 
+rect deep_sea_fish.html 407,608 513,681
+rect shinkai.html 45,475 178,536 
+rect military_submarine.html 443,46 592,98 
+rect sealink.html 65,60 170,104 
+rect beebe.html 174,46 222,101 
+rect scuba.html 223,35 319,77
+rect freedive.html 329,33 422,63 
+rect octopus.html 142,361 201,397 
+rect sponge.html 508,393 555,454 
+rect trieste.html 256,752 432,827 
+rect titanic.html 450,236 528,308 
+rect amphipod.html 126,712 182,764 
+rect algae.html 343,64 373,87
+rect op_squid_facts.html 119,121 269,192

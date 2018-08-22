@@ -1,0 +1,36 @@
+# This maps all types of audio data (audio/basic, audio/x-aiff,
+# etc.) to the viewer 'showaudio'.  Note that '%s' means 'put the
+# datafile name here when the viewer is executed'.
+#audio/*; sfplay %s
+audio/basic; /home/wcohen/dict/bin/safely.play -au %s >& /dev/null
+audio/x-wav; /home/wcohen/dict/bin/safely.play -wav %s >& /dev/null
+
+
+# This maps all types of images (image/gif, image/jpeg, etc.)
+# to the viewer 'xv'.
+image/*; xv %s
+
+# This maps MPEG video data to the viewer 'mpeg_play'.
+#video/mpeg; mpeg_play -dither threshold -loop %s
+video/mpeg; /home/wcohen/dict/bin/safely.view -mpeg %s  >& /dev/null
+video/quicktime; /home/wcohen/dict/bin/safely.view -qt %s  >& /dev/null
+video/x-msvideo; /home/wcohen/dict/bin/safely.view -avi %s  >& /dev/null
+
+application/postscript; ghostview %s
+application/x-dvi; xdvi %s
+
+#application/x-nemesis;           nem -X %s
+#application/x-ferret;            linus -X %s
+#application/x-bbau;            nem -audio `cat %s`
+
+#application/x-mif; fmopen %s
+
+#application/x-manifold; /usr/local/bin/imaux %s
+
+#x-conference/x-cooltalk; /usr/local/insoft/cooltalk/cooltalk %s
+
+# streaming audio
+audio/x-pac; pacdec | audout; stream-buffer-size=4096; \
+        description="PAC Audio"; x11-bitmap="/usr/lib/Zmail/bitmaps/sound.xbm"
+audio/x-epac; epacdec | audout; stream-buffer-size=4096; \
+        description="EPAC Audio"; x11-bitmap="/usr/lib/Zmail/bitmaps/sound.xbm"

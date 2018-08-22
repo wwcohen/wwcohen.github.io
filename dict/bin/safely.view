@@ -1,0 +1,16 @@
+#!/bin/csh
+
+#view a movie, disallowing any conflicts 
+if ("$2" == "") then
+    echo usage: safely.view [-mpeg|-avi] file
+endif
+
+if ( "$1" == "-mpeg" ) then
+    mpeg_play -quiet -loop $2 &
+    sleep 45
+    kill %mpeg_play
+else
+    xanim $2 &
+    sleep 60
+    kill %anim
+endif 

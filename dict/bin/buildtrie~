@@ -1,0 +1,215 @@
+#!/usr/bin/perl
+
+##############################################################################
+#build a trie of dictionary words
+##############################################################################
+
+$Debug=1;
+
+chdir('/home/wcohen/dict/stuff/_spell/') || die("can't cd");
+
+#colors: red, green
+$Red =   "#FF0404";
+$Green = "#04FC04";
+
+#read dictionary files
+opendir(DIRS,"..");
+@dirs = readdir(DIRS);
+@dirs = sort(@dirs); 
+closedir(DIRS);
+print "// dirs: @dirs\n" if $Debug;
+@Words = ();
+foreach $d (@dirs) {
+    next if $d =~ /^\./;
+    next if $d =~ /^\_/;
+    while ($file = <../$d/p*0.html>) {
+	print "// file: $file\n" if $Debug>2;
+	($word) = $file =~ /p(\w*)0.html/;
+	$word =~  tr/a-z/A-Z/;
+	push(@Words,$word);
+	$File{$word} = "'$file'";
+    }
+}
+$File{''} = "'../_spell/0view.html'";
+
+
+sub bylength { length($a) <=> length($b) || rand() <=> 0.5};
+
+@Words = sort bylength @Words; 
+@Letters = ('_','A','B','C','D','E','F','G','H','I','J','K','L',
+	    'M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+
+#formatted version
+@Abc = ('A','B','C','D','E','F','G','br',
+	'H','I','J','K','L','M','N','br',
+	'O','P','Q','R','S','T','U','br',
+	'V','W','X','Y','Z');
+
+sub randomly { rand() <=> 0.5; }
+
+
+##############################################################################
+#print top-level frames stuff
+
+    open(TOP,">index.html") || die("can't write index.html");
+    print TOP <<"END_TOP";
+<html>
+<head><title>Easy Speller</title></head>
+<frameset cols="40%,60%">
+<frame name="dict" src="kb.html">
+<frame name="view"  src="0view.html">
+</frameset>
+</html>
+END_TOP
+    close TOP;
+
+    open(VIEW,">0view.html") || die("can't write 0view.html");
+    print VIEW <<"END_VIEW";
+<html>
+<head><title>Easy Speller: Viewer</title></head>
+<body background="wd_floor.gif">
+</html>
+END_VIEW
+    close VIEW;
+
+
+##############################################################################
+#build the trie
+##############################################################################
+
+&trie("",@Words);
+
+sub trie
+{
+	local($pref,@suffs) = @_;
+	local(%cont,$w,$sayfile);
+	print "pref: $pref\n";
+
+	foreach $a (@Letters) {
+		@nsuff = grep(/^$a/,@suffs);
+		@nsuff = grep(s/^$a//,@nsuff);
+		if (@nsuff) {
+			$ncont++;
+			$cont{$a} = 1;
+			&trie($pref.$a, @nsuff);
+		}		
+	}
+	&print_kb($pref,*cont,@suffs); 	
+}
+
+sub print_kb
+{
+	local($pref,*mark,@suff) = @_;
+	local($prev,$loadact); 
+
+	if ($pref) {
+	    ($prev) = ($pref =~ /(.*)./); 
+	} else {
+	    $prev = "";
+	}
+	if ($File{$pref}) {
+	    $loadact = "v(" . $File{$pref} . ")";
+	}  else {
+#	    $loadact = "n('../_lib/aclick.wav')";
+	    $loadact = "n('clink.au')";
+	}
+
+	open(KB,">kb$pref.html") || die("can't write bk$pref.htlm");
+	print KB <<END_HEADER;
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function n(url) {
+	document.noiseform.action = url;
+	document.noiseform.submit();
+	return 1;
+   }
+   function v(url) {
+        parent.view.location.href=url;
+	return 1;
+   }
+// -->
+</script>
+<head>
+<title>Spell</title>
+</head>
+<body onLoad="$loadact"  
+ background="wd_floor.gif" link="$Green" alink="$Green" vlink="$Green">
+<hr>
+<img align="right" src="smouse2.gif">
+<img align="left" src="smouse1.gif">
+<h3 align="center">
+  <a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a>
+</h3>
+<br clear>
+<form name="kb">
+<h1 align=center>
+  <input type="text" name="kbout" value="$pref"><br>
+</h1>
+<font color="$Red">
+<h2 align=center>
+END_HEADER
+
+    print "// printed header\n" if $Debug>1;
+
+    foreach $a (@Abc) {
+	if ($a eq 'br') {
+	    print KB "<br>\n";
+	    next;
+	}
+	if ($mark{$a}) {		
+	    print KB "<font size=+7>";
+	    print KB "<a href=\"kb$pref$a.html\"> $a </a>";
+	    print KB "</font>";
+	} else {
+	    print KB "<font size=+7>$a</font>";
+	}		
+    }
+    print KB "<br>\n";
+    $bsky="<a href=\"kb$prev.html\"><img align=top src=\"back.gif\"></a>";
+    $clrky="<a href=\"kb.html\" onClick=\"n('flush.au')\"><img align=top src=\"clear.gif\"></a>";
+    if ($mark{'_'}) {		
+	$bar = "<img align=top src=\"greenbar.gif\">";
+	$spky="<a href=\"kb$pref" . "_" . ".html\"> $bar </a>";  
+    } else {
+	$bar = "<img align=top src=\"redbar.gif\">";
+	$spky = $bar;
+    }
+    print KB $bsky,$spky,$clrky;
+    print "// generated keyboard for prefix $pref\n" if $Debug;
+    print KB "<hr></form></h2></font>\n";
+
+    #print remaining words
+    if (length($pref) > 0) {
+	print "// suff(",$#suff+1,")",join(',',@suff),"\n" if $Debug>1;
+	foreach $s (@suff) {
+	    $sw = $pref . $s;
+	    ($dir,$stem) = $File{$sw} =~ m#'../(\w+)/p([\w_]+)0.html'#;
+	    ($sayfile,@junk) = <../$dir/s$stem.*>;
+	    if ($sayfile) {
+		$sw =~ tr/_/ /;
+		print KB 
+		    "<font size=+4><a href=\"$sayfile\">$sw</a></font>";
+		print KB 
+		    "<a href=\"kb$pref.html\""
+			. "onClick=\"v('../$dir/p$stem" . "0.html')\">" 
+			. "<img src=\"mousezip.gif\"></a><br>\n";
+		print "// suff: $sw -> $sayfile\n" if $Debug>1;
+	    } else {
+		print "// suff: $sw -> ??? d=$dir s=$stem\n";
+	    }
+	}
+    }
+
+    print KB <<END_FOOT;
+<form name="noiseform" action="clink.au"><input type="hidden"></form>
+</body>
+<html>
+END_FOOT
+
+}
+
+
+
+
+

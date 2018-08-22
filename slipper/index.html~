@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>The SLIPPER Rule Learning System</title>
+  </head>
+
+  <body>
+    <h1>The SLIPPER Rule Learning System</h1>
+
+    <p>
+    SLIPPER is a rule-learning system.  Formally, it is based on <a
+    href="http://www.cs.huji.ac.il/~singer/papers/impbst.ps.gz">confidence-rated
+    boosting</a>, a variant of AdaBoost developed by <a
+    href="http://www.cs.princeton.edu/~schapire/">Rob Schapire</a> and
+    <a href="http://www.cs.huji.ac.il/~singer/">Yoram Singer</a> in
+    1999.  The code is based on <a href="http://wcohen.com">William
+    Cohen's</a> widely-used <a
+    href="http://wcohen.com/postscript/ml-95-ripper.ps">RIPPER</a>
+    learning system. A detailed description of the SLIPPER algorithm
+    can be found in a technical paper by Cohen and Singer in AAAI-99,
+    titled <a href="http://wcohen.com/postscript/aaai-99-slipper.ps">A
+    Simple, Fast, and Effective Rule Learner</a>.
+
+    <p>Like RIPPER, SLIPPER is fast, robust, and easy to use, and its
+    hypotheses are compact and easy to understand. Like RIPPER,
+    SLIPPER supports <a
+    href="http://wcohen.com/postscript/aaai-96.ps">set-valued
+    features</a>, which makes it useful for text categorization using
+    a "bag of words" representation of text.  Unlike RIPPER, SLIPPER
+    is unencumbered by patent constraints, and it is freely available
+    for research purposes.
+
+    <p><a
+    href="http://software.cs.rutgers.edu/slipper/slipper_license.html">A
+    version of SLIPPER suitable for academic and research use</a> can
+    be downloaded from Rutgers University.  (Thanks to <a
+    href="http://www.cs.rutgers.edu/~hirsh/">Haym Hirsh</a> for making
+    this legally possible.)  It is available as C source code,
+    compiling under the GNU C compiler, or as executables for Linux or
+    Windows. (For Windows, <a href="http://www.cygwin.com">Cygwin</a>
+    must be installed.  Cygwin is a free package of Unix-compatible
+    tools and libraries.)
+
+    <p>Information about commercial licensing is also available on request.
+    <p>
+    For licensing information or support questions, contact William Cohen
+    at <a href="mailto:slipper@wcohen.com">slipper@wcohen.com</a>
+
+    <hr>
+    <address><a href="mailto:William@wcohen.com"></a></address>
+<!-- Created: Mon Mar 24 15:30:12 Eastern Standard Time 2003 -->
+<!-- hhmts start -->
+Last modified: Mon Mar 24 15:45:46 Eastern Standard Time 2003
+<!-- hhmts end -->
+  </body>
+</html>

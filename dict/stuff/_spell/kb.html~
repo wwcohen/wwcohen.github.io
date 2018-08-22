@@ -1,0 +1,36 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function n(url) {
+	document.noiseform.action = url;
+	document.noiseform.submit();
+	return 1;
+   }
+   function v(url) {
+        parent.view.location.href=url;
+	return 1;
+   }
+// -->
+</script>
+<head>
+<title>Spell</title>
+</head>
+<body onLoad="v('../_spell/0view.html')"  
+ bgcolor="" link="#04FC04" alink="#04FC04" vlink="#04FC04">
+<hr>
+<a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a>
+<hr>
+<form name="kb">
+<h1 align=center>
+  <input type="text" name="kbout" value=""><br>
+</h1>
+<font color="#FF0404">
+<h2 align=center>
+<font size=+7><a href="kbA.html"> A </a></font><font size=+7><a href="kbB.html"> B </a></font><font size=+7><a href="kbC.html"> C </a></font><font size=+7><a href="kbD.html"> D </a></font><font size=+7><a href="kbE.html"> E </a></font><font size=+7><a href="kbF.html"> F </a></font><font size=+7><a href="kbG.html"> G </a></font><br>
+<font size=+7><a href="kbH.html"> H </a></font><font size=+7><a href="kbI.html"> I </a></font><font size=+7><a href="kbJ.html"> J </a></font><font size=+7>K</font><font size=+7><a href="kbL.html"> L </a></font><font size=+7><a href="kbM.html"> M </a></font><font size=+7>N</font><br>
+<font size=+7><a href="kbO.html"> O </a></font><font size=+7><a href="kbP.html"> P </a></font><font size=+7>Q</font><font size=+7><a href="kbR.html"> R </a></font><font size=+7><a href="kbS.html"> S </a></font><font size=+7><a href="kbT.html"> T </a></font><font size=+7><a href="kbU.html"> U </a></font><br>
+<font size=+7><a href="kbV.html"> V </a></font><font size=+7><a href="kbW.html"> W </a></font><font size=+7>X</font><font size=+7><a href="kbY.html"> Y </a></font><font size=+7>Z</font><br>
+<a href="kb.html"><img align=top src="back.gif"></a>[____________________]<a href="kb.html" onClick="n('flush.au')"><img align=top src="clear.gif"></a><hr></form></h2></font>
+<form name="noiseform" action="clink.au"><input type="hidden"></form>
+</body>
+<html>

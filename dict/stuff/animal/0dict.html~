@@ -1,0 +1,58 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>Charlie's Animal Dictionary : Control Panel</title></head>
+<body
+   return 1 
+   
+   text="#0000FF" link="#0000FF" vlink="#0000FF" alink="#0000FF"
+>
+<form name="hello" action="ahello.wav"><input type="hidden"></form>
+<a target="Second Window" href="http://www.mindspring.com/~zoonet/ "><img align=right src="../_lib/awww.gif"></a><a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a><br clear=right>
+<hr>
+<a href="ahello.wav"><img align="left" src="apicture.jpg"><h1>Charlie's Animal Dictionary </h1></a>
+<br clear="left">
+<hr>
+
+
+<table border=5 width=140>
+<tr>
+<td><a href="0dict.html" onClick="v('pbear0.html')"><font size=+3>B</font>EAR</a></td>
+<td><a href="0dict.html" onClick="v('pcamel0.html')"><font size=+3>C</font>AMEL</a></td>
+<td><a href="0dict.html" onClick="v('pchimpanzee0.html')"><font size=+3>C</font>HIMPANZEE</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('pcrocodile0.html')"><font size=+3>C</font>ROCODILE</a></td>
+<td><a href="0dict.html" onClick="v('pdeer0.html')"><font size=+3>D</font>EER</a></td>
+<td><a href="0dict.html" onClick="v('pelephant0.html')"><font size=+3>E</font>LEPHANT</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('pemu0.html')"><font size=+3>E</font>MU</a></td>
+<td><a href="0dict.html" onClick="v('pflamingo0.html')"><font size=+3>F</font>LAMINGO</a></td>
+<td><a href="0dict.html" onClick="v('pgiraffe0.html')"><font size=+3>G</font>IRAFFE</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('pgorilla0.html')"><font size=+3>G</font>ORILLA</a></td>
+<td><a href="0dict.html" onClick="v('phippo0.html')"><font size=+3>H</font>IPPO</a></td>
+<td><a href="0dict.html" onClick="v('plion0.html')"><font size=+3>L</font>ION</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('porangutan0.html')"><font size=+3>O</font>RANGUTAN</a></td>
+<td><a href="0dict.html" onClick="v('ppeacock0.html')"><font size=+3>P</font>EACOCK</a></td>
+<td><a href="0dict.html" onClick="v('praccoon0.html')"><font size=+3>R</font>ACCOON</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('prhino0.html')"><font size=+3>R</font>HINO</a></td>
+<td><a href="0dict.html" onClick="v('psnake0.html')"><font size=+3>S</font>NAKE</a></td>
+<td><a href="0dict.html" onClick="v('ptiger0.html')"><font size=+3>T</font>IGER</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('ptortoise0.html')"><font size=+3>T</font>ORTOISE</a></td>
+<td><a href="0dict.html" onClick="v('ptoucan0.html')"><font size=+3>T</font>OUCAN</a></td>
+</tr>
+</table>

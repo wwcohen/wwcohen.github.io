@@ -1,0 +1,272 @@
+#!/usr/bin/perl
+
+##############################################################################
+#build the "bonkomatic" game
+#
+#to do---complete typing in a specified target word
+#   - read in list of targets
+#   - loading them into viewer
+#   - cartoon "guide"
+##############################################################################
+
+$Debug=1;
+
+chdir('/Users/wcohen/Desktop/dict/stuff/_bonk/') || die("can't cd");
+
+#read sfx files
+@Sfx = ();
+opendir(SFX,'sfx') || die("can't open sound effects dir");
+while ($f = readdir(SFX)) {
+    print "file: $f\n" if $Debug>2;
+    #skip special files
+    next if $f =~ /^\./;
+    next if $f =~ /^_/;
+    push(@Sfx,$f);
+}
+closedir(SFX);
+print "// read ",$#Sfx," sound files\n" if $Debug;
+print "sound files: ",join(';',@Sfx),"\n" if $Debug>2;
+
+#read dictionary files
+opendir(DIRS,"..");
+@dirs = readdir(DIRS);
+@dirs = sort(@dirs); 
+closedir(DIRS);
+print "// dirs: @dirs\n" if $Debug;
+@Words = ();
+foreach $d (@dirs) {
+    next if $d =~ /^\./;
+    next if $d =~ /^\_/;
+    while ($file = <../$d/p*0.html>) {
+	print "// file: $file\n" if $Debug>2;
+	($word) = $file =~ /p(\w*)0.html/;
+	$word =~  tr/_/ /;
+	$word =~  tr/a-z/A-Z/;
+	$word = "'$word'";
+	push(@Words,$word);
+	$File{$word} = "'$file'";
+    }
+}
+
+sub bylength { length($a) <=> length($b) || rand() <=> 0.5};
+
+@Words = sort bylength @Words; 
+@Files = ();
+foreach $w (@Words) {
+    push(@Files,$File{$w});
+}
+
+$JoinedFiles = join(",",@Files);
+$JoinedWords = join(",",@Words);
+
+
+print "// files: $JoinedFiles\n" if $Debug>2;
+print "// words: $JoinedWords\n" if $Debug>2;
+
+##############################################################################
+#print top-level frames stuff
+
+    open(TOP,">index.html") || die("can't write index.html");
+    print TOP <<"END_TOP";
+<html>
+<head><title>Bonk-o-matic: Top</title></head>
+<frameset cols="40%,60%">
+<frame name="dict" src="0kb.html"/>
+<frameset rows="10%,90%">
+<frame name="sound" src="0sound.html"/>
+<frame name="view" src="0view.html"/>
+</frameset>
+</html>
+END_TOP
+    close TOP;
+
+    open(SOUND,">0sound.html") || die("can't write 0sound.html");
+    print SOUND <<"END_SOUND";
+<html>
+<head><title>$Title: Sound Player</title></head>
+<body $Background>
+</html>
+END_SOUND
+    close SOUND;
+
+    open(VIEW,">0view.html") || die("can't write 0view.html");
+    print VIEW <<"END_VIEW";
+<html>
+<head><title>Bonk-o-matic: viewer</title></head>
+<body background="green.gif">
+</html>
+END_VIEW
+    close VIEW;
+
+
+##############################################################################
+#print the two keyboards
+##############################################################################
+
+
+$game = "<a href=\"0play.html\"><img src=\"wormhead.gif\"></a>";
+$nogame = "<a href=\"0kb.html\"><img src=\"blank.gif\"></a>";
+$direct = "<a target=\"sound\" href=\"helpspell.au\"><img src=\"worm.gif\"></a>";
+$next = 
+ "<a target=\"sound\" href=\"../_lib/aclick.wav\" OnClick=\"next()\"><img src=\"next.gif\"></a>";
+
+#find unquoted text of first word
+($tw) = ($Words[0] =~ /'(.*)'/);
+$target = 
+ "<input type=\"text\" name=\"targettext\" value=\"$tw\"><br><hr>";
+
+&print_kb("0kb.html",$game,"''","''");
+&print_kb("0play.html",$nogame,$Words[0],$Files[0],"$direct $next",$target);
+
+
+##############################################################################
+#subroutine to print keyboard
+##############################################################################
+
+sub print_kb
+{
+    local($filename,$link,$w0,$f0,$controls,$target) = @_; 
+
+    print "// creating $filename\n" if $Debug;
+
+    $loadact = "";
+#    if ($target) {
+#	$loadact = "onLoad=\"next()\"";
+#    }
+    $bskey = "<a target=\"sound\" href=\"sfx/_backspace.wav\" OnClick=\"bs()\"><img align=top src=\"back.gif\"></a>";
+    $clearkey = "<a target=\"sound\" href=\"sfx/_clear.au\" OnClick=\"clr()\"><img align=top src=\"clear.gif\"></a>";
+
+    open(KB,">$filename") || die("can't write $filename");
+    print KB <<END_HEADER;
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+	  this[i+1] = initArray.arguments[i]
+   }
+   var Text = "";
+   var NewText = "";
+   var Words = new initArray($JoinedWords);
+   var Files = new initArray($JoinedFiles);
+   var Ptr = 0;
+   var Target = $w0;
+   var ViewFile = $f0;
+   function succ() {
+       vw(ViewFile);
+       return 1;
+   }
+   function vw(url) {
+       parent.view.location.href=url;
+       return 1;
+   }
+   function next() {
+      Text = "";
+      document.kb.kbout.value = Text;	
+      Ptr++; 
+      if (Ptr >= Words.length) Ptr=0;
+      Target = Words[Ptr];
+      ViewFile = Files[Ptr];
+      document.kb.targettext.value = Target;	
+      return 1;
+   }
+   function n(url) {
+       //wwc: added target
+       document.noiseform.target = "sound";
+       document.noiseform.action = "sfx/" + url;
+       document.noiseform.submit();
+	return 1;
+   }
+   function ins(letter,url) {
+      if (Target!="") { 
+	  NewText = Text + letter;
+	  len = NewText.length; 
+	  if (NewText == Target ) {
+	      n("_applause.au");	
+	      Text = NewText;
+	      document.kb.kbout.value = Text;	
+	      setTimeout("succ()",3000);
+	      return 1;
+	  } else if (NewText.substring(0,len) == Target.substring(0,len)) {
+	      n(url);	
+	      Text = NewText;
+	      document.kb.kbout.value = Text;	
+	  } else {
+	      n("_clink.au");
+	      return 1;
+	  }
+      } else {	  
+	  n(url);	
+	  Text = Text + letter;
+	  document.kb.kbout.value = Text;	
+	  return 1;	
+      }
+   }
+   function bs() {
+      Text = Text.substring(0,Text.length-1);
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function clr() {
+      Text = "";
+      document.kb.kbout.value = Text;	
+      setTimeout("vw('../_bonk/0view.html')",1000); 
+      return 1;	
+   }
+// -->
+</script>
+<head>
+<title>Bonk-a-matic!!</title>
+</head>
+<body background="green.gif" $loadact>
+<hr>
+<a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a>$link
+<hr>
+<form name="kb">
+<h1 align=center>
+  $controls$target<br>
+  <input type="text" name="kbout" value=""><br>
+</h1>
+<h2 align=center>
+END_HEADER
+
+    print "// printed header\n" if $Debug;
+
+    @abc = ('A','B','C','D','E','F','G','H','I','br',
+	    'J','K','L','M','N','O','P','Q','R','br',
+	    'S','T','U','V','W','X','Y','Z','br');
+
+    sub randomly { rand() <=> 0.5; }
+    @sounds = sort randomly @Sfx;
+
+    foreach $a (@abc) {
+	if ($a eq 'br') {
+	    print KB "<br>\n";
+	    next;
+	}
+	$f = pop(@sounds);
+	print KB 
+	    "<input type=\"button\" value=\" $a \" onClick=\"ins('$a','$f')\">\n";
+    }
+    #space bar
+    $f = pop(@sounds);
+    $bar = '[' . (' ' x 20) . ']'; 
+    print KB $bskey;
+    print KB 
+    " <input type=\"button\" value=\"$bar\" onClick=\"ins(' ','$f')\"> ";
+    print KB $clearkey;
+
+    print "// generated keyboard\n" if $Debug;
+
+
+    print KB <<END_FOOT;
+</form>
+</h3>
+<form name="noiseform" action="sfx/_clink.au"><input type="hidden"></form>
+</font>
+</body>
+<html>
+END_FOOT
+
+}

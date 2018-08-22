@@ -1,0 +1,126 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+	  this[i+1] = initArray.arguments[i]
+   }
+   var Text = "";
+   var NewText = "";
+   var Words = new initArray('ROV','EMU','MPM','BEAR','TANK','UNIT','DEER','MOON','SEAL','MARS','GOLD','OPAL','LION','CRANE','BERYL','WHALE','SNAKE','ALVIN','TRAIN','TERRY','EARTH','RHINO','CAMEL','RO RO','VENUS','HIPPO','TIGER','PLUTO','AIRBUS','GARNET','BOMBER','TOUCAN','CUTTER','TANKER','ROCKET','GRADER','LOADER','TURTLE','SATURN','YARDER','JUPITER','TITANIC','GIRAFFE','HABITAT','FIGHTER','BACKHOE','TUGBOAT','VOLCANO','MISSILE','BOMBER1','AZURITE','GUNSHIP','PEACOCK','ROVPROV','BIPLANE','EMERALD','DIAMOND','AIRBOAT','GORILLA','RACCOON','SAILBOAT','FORKLIFT','SAPPHIRE','AMETHYST','ELEPHANT','FLAMINGO','TORTOISE','CONCORDE','TALL SHIP','HYDROFOIL','CASSORITE','ASTRONAUT','BULLDOZER','FERRYBOAT','SUBMARINE','JUMBO JET','BLACKBIRD','DESTROYER','ORANGUTAN','CROCODILE','ICEBREAKER','SPORTS CAR','LIGHTHOUSE','CHIMPANZEE','VTOL PLANE','DUMP TRUCK','FLOATPLANE','HOVERCRAFT','HELICOPTER','FIRE TRUCK','MOTORCYCLE','SKID STEER','RESCUE BOAT','FLYING BOAT','SUBMERSIBLE','LUNAR ROVER','SIGNAL FLAG','CARGO PLANE','FLUORAPATITE','SPRUCE GOOSE','BRAZILIANITE','MOTOR DIGGER','KILLER WHALE','LUNAR LANDER','SPACE SHUTTLE','SPACE STATION','COMMAND MODULE','PASSENGER SHIP','CONTAINER SHIP','PROPELLER PLANE','CRAWLER TRACTOR','AIRCRAFT CARRIER','FIRE FIGHTING PLANE','CRAWLER TRANSPORTER');
+   var Files = new initArray('../underwater/prov0.html','../animal/pemu0.html','../rocks/pmpm0.html','../animal/pbear0.html','../trucks/ptank0.html','../trucks/punit0.html','../animal/pdeer0.html','../space/pmoon0.html','../underwater/pseal0.html','../space/pmars0.html','../rocks/pgold0.html','../rocks/popal0.html','../animal/plion0.html','../trucks/pcrane0.html','../rocks/pberyl0.html','../underwater/pwhale0.html','../animal/psnake0.html','../underwater/palvin0.html','../trucks/ptrain0.html','../trucks/pterry0.html','../space/pearth0.html','../animal/prhino0.html','../animal/pcamel0.html','../ships/pro_ro0.html','../space/pvenus0.html','../animal/phippo0.html','../animal/ptiger0.html','../space/ppluto0.html','../planes/pairbus0.html','../rocks/pgarnet0.html','../planes/pbomber0.html','../animal/ptoucan0.html','../ships/pcutter0.html','../ships/ptanker0.html','../space/procket0.html','../trucks/pgrader0.html','../trucks/ploader0.html','../underwater/pturtle0.html','../space/psaturn0.html','../trucks/pyarder0.html','../space/pjupiter0.html','../underwater/ptitanic0.html','../animal/pgiraffe0.html','../underwater/phabitat0.html','../planes/pfighter0.html','../trucks/pbackhoe0.html','../ships/ptugboat0.html','../rocks/pvolcano0.html','../ships/pmissile0.html','../planes/pbomber10.html','../rocks/pazurite0.html','../planes/pgunship0.html','../animal/ppeacock0.html','../ships/provprov0.html','../planes/pbiplane0.html','../rocks/pemerald0.html','../rocks/pdiamond0.html','../ships/pairboat0.html','../animal/pgorilla0.html','../animal/praccoon0.html','../ships/psailboat0.html','../trucks/pforklift0.html','../rocks/psapphire0.html','../rocks/pamethyst0.html','../animal/pelephant0.html','../animal/pflamingo0.html','../animal/ptortoise0.html','../planes/pconcorde0.html','../ships/ptall_ship0.html','../ships/phydrofoil0.html','../rocks/pcassorite0.html','../space/pastronaut0.html','../trucks/pbulldozer0.html','../ships/pferryboat0.html','../underwater/psubmarine0.html','../planes/pjumbo_jet0.html','../planes/pblackbird0.html','../ships/pdestroyer0.html','../animal/porangutan0.html','../animal/pcrocodile0.html','../ships/picebreaker0.html','../trucks/psports_car0.html','../ships/plighthouse0.html','../animal/pchimpanzee0.html','../planes/pvtol_plane0.html','../trucks/pdump_truck0.html','../planes/pfloatplane0.html','../ships/phovercraft0.html','../planes/phelicopter0.html','../trucks/pfire_truck0.html','../trucks/pmotorcycle0.html','../trucks/pskid_steer0.html','../ships/prescue_boat0.html','../planes/pflying_boat0.html','../underwater/psubmersible0.html','../space/plunar_rover0.html','../ships/psignal_flag0.html','../planes/pcargo_plane0.html','../rocks/pfluorapatite0.html','../planes/pspruce_goose0.html','../rocks/pbrazilianite0.html','../trucks/pmotor_digger0.html','../underwater/pkiller_whale0.html','../space/plunar_lander0.html','../space/pspace_shuttle0.html','../space/pspace_station0.html','../space/pcommand_module0.html','../ships/ppassenger_ship0.html','../ships/pcontainer_ship0.html','../planes/ppropeller_plane0.html','../trucks/pcrawler_tractor0.html','../ships/paircraft_carrier0.html','../planes/pfire_fighting_plane0.html','../space/pcrawler_transporter0.html');
+   var Ptr = 0;
+   var Target = '';
+   var ViewFile = '';
+   function succ() {
+       vw(ViewFile);
+       return 1;
+   }
+   function vw(url) {
+       parent.view.location.href=url;
+       return 1;
+   }
+   function next() {
+      Text = "";
+      document.kb.kbout.value = Text;	
+      Ptr++; 
+      if (Ptr >= Words.length) Ptr=0;
+      Target = Words[Ptr];
+      ViewFile = Files[Ptr];
+      document.kb.targettext.value = Target;	
+      return 1;
+   }
+   function n(url) {
+       //wwc: added target
+       document.noiseform.target = "sound";
+       document.noiseform.action = "sfx/" + url;
+       document.noiseform.submit();
+	return 1;
+   }
+   function ins(letter,url) {
+      if (Target!="") { 
+	  NewText = Text + letter;
+	  len = NewText.length; 
+	  if (NewText == Target ) {
+	      n("_applause.au");	
+	      Text = NewText;
+	      document.kb.kbout.value = Text;	
+	      setTimeout("succ()",3000);
+	      return 1;
+	  } else if (NewText.substring(0,len) == Target.substring(0,len)) {
+	      n(url);	
+	      Text = NewText;
+	      document.kb.kbout.value = Text;	
+	  } else {
+	      n("_clink.au");
+	      return 1;
+	  }
+      } else {	  
+	  n(url);	
+	  Text = Text + letter;
+	  document.kb.kbout.value = Text;	
+	  return 1;	
+      }
+   }
+   function bs() {
+      Text = Text.substring(0,Text.length-1);
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function clr() {
+      Text = "";
+      document.kb.kbout.value = Text;	
+      setTimeout("vw('../_bonk/0view.html')",1000); 
+      return 1;	
+   }
+// -->
+</script>
+<head>
+<title>Bonk-a-matic!!</title>
+</head>
+<body background="green.gif" >
+<hr>
+<a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a><a href="0play.html"><img src="wormhead.gif"></a>
+<hr>
+<form name="kb">
+<h1 align=center>
+  <br>
+  <input type="text" name="kbout" value=""><br>
+</h1>
+<h2 align=center>
+<input type="button" value=" A " onClick="ins('A','bloop2.au')">
+<input type="button" value=" B " onClick="ins('B','bloop1.au')">
+<input type="button" value=" C " onClick="ins('C','cuckoo.au')">
+<input type="button" value=" D " onClick="ins('D','beep_arcade.au')">
+<input type="button" value=" E " onClick="ins('E','chirp.au')">
+<input type="button" value=" F " onClick="ins('F','Bottle.au')">
+<input type="button" value=" G " onClick="ins('G','F_Troop.au')">
+<input type="button" value=" H " onClick="ins('H','drip.au')">
+<input type="button" value=" I " onClick="ins('I','Rocket.au')">
+<br>
+<input type="button" value=" J " onClick="ins('J','squish.au')">
+<input type="button" value=" K " onClick="ins('K','splat.au')">
+<input type="button" value=" L " onClick="ins('L','sci_fi_gun.au')">
+<input type="button" value=" M " onClick="ins('M','drums.au')">
+<input type="button" value=" N " onClick="ins('N','Garbage.au')">
+<input type="button" value=" O " onClick="ins('O','bark.au')">
+<input type="button" value=" P " onClick="ins('P','doorbell.au')">
+<input type="button" value=" Q " onClick="ins('Q','WaterDraining.au')">
+<input type="button" value=" R " onClick="ins('R','toot.au')">
+<br>
+<input type="button" value=" S " onClick="ins('S','cowbell.au')">
+<input type="button" value=" T " onClick="ins('T','bong.au')">
+<input type="button" value=" U " onClick="ins('U','cymbal.au')">
+<input type="button" value=" V " onClick="ins('V','whistle.au')">
+<input type="button" value=" W " onClick="ins('W','Kick.au')">
+<input type="button" value=" X " onClick="ins('X','richochet.au')">
+<input type="button" value=" Y " onClick="ins('Y','Whoosh.au')">
+<input type="button" value=" Z " onClick="ins('Z','swish.au')">
+<br>
+<a target="sound" href="sfx/_backspace.wav" OnClick="bs()"><img align=top src="back.gif"></a> <input type="button" value="[                    ]" onClick="ins(' ','Gun-1.au')"> <a target="sound" href="sfx/_clear.au" OnClick="clr()"><img align=top src="clear.gif"></a></form>
+</h3>
+<form name="noiseform" action="sfx/_clink.au"><input type="hidden"></form>
+</font>
+</body>
+<html>

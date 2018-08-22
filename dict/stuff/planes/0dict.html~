@@ -1,0 +1,45 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   function v(url) {
+       parent.view.location.href=url;
+   }
+// -->
+</script>
+<head><title>Charlie's Plane Dictionary : Control Panel</title></head>
+<body
+   onLoad="document.hello.submit(); return 1" 
+   background="abackground.jpg"
+   text="#F000000 " link="#F000000 " vlink="#F000000 " alink="#F000000 "
+>
+<form name="hello" action="../_lib/aintro.au"><input type="hidden"></form>
+<a target="_top" href="../index.html"><img src="../_lib/abooks.gif"></a><br>
+<hr>
+<a href="../_lib/aintro.au"><img align="left" src="apicture.jpg"><h1>Charlie's Plane Dictionary </h1></a>
+<br clear="left">
+<hr>
+
+
+<table border=5 width=140>
+<tr>
+<td><a href="0dict.html" onClick="v('pairbus0.html')"><font size=+3>A</font>IRBUS</a></td>
+<td><a href="0dict.html" onClick="v('pbiplane0.html')"><font size=+3>B</font>IPLANE</a></td>
+<td><a href="0dict.html" onClick="v('pblackbird0.html')"><font size=+3>B</font>LACKBIRD</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('pbomber0.html')"><font size=+3>B</font>OMBER</a></td>
+<td><a href="0dict.html" onClick="v('pcargo_plane0.html')"><font size=+3>C</font>ARGO PLANE</a></td>
+<td><a href="0dict.html" onClick="v('pconcorde0.html')"><font size=+3>C</font>ONCORDE</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('pfighter0.html')"><font size=+3>F</font>IGHTER</a></td>
+<td><a href="0dict.html" onClick="v('pfire_fighting_plane0.html')"><font size=+3>F</font>IRE FIGHTING PLANE</a></td>
+<td><a href="0dict.html" onClick="v('pfloatplane0.html')"><font size=+3>F</font>LOATPLANE</a></td>
+</tr>
+<tr>
+<td><a href="0dict.html" onClick="v('phelicopter0.html')"><font size=+3>H</font>ELICOPTER</a></td>
+<td><a href="0dict.html" onClick="v('pjumbo_jet0.html')"><font size=+3>J</font>UMBO JET</a></td>
+<td><a href="0dict.html" onClick="v('ppropeller_plane0.html')"><font size=+3>P</font>ROPELLER PLANE</a></td>
+</tr>
+</tr>
+</table>

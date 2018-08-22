@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>      <meta content="Carnegie Mellon University" name="author"/>      <meta content="index,follow" name="robots"/>
+
+
+<link href="https://www.cmu.edu/common/standard-v4/css/reset.css" media="all" rel="stylesheet" type="text/css"/><link href="https://www.cmu.edu/common/standard-v4/css/screen.css" media="screen" rel="stylesheet" type="text/css"/><!--[if gte IE 5.5000]><![if lt IE 7]>
+																													      <link rel="stylesheet" href="https://www.cmu.edu/common/standard-v4/css/ie.css" type="text/css"  media="screen" />
+      <![endif]><![endif]--><!--[if gte IE 7]><![if lt IE 8]>
+				      <link rel="stylesheet" href="https://www.cmu.edu/common/standard-v4/css/ie7.css" type="text/css"  media="screen" />
+      <![endif]><![endif]--><link href="https://www.cmu.edu/common/standard-v4/css/khaki-content.css" media="screen" rel="stylesheet" type="text/css"/><link href="https://www.cmu.edu/common/standard-v4/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+
+<script language="JavaScript" src="https://www.cmu.edu/common/standard-v4/js/jquery-min.js" type="text/javascript"></script><script language="JavaScript" src="https://www.cmu.edu/common/standard-v4/js/jquery.tablesorter.min.js" type="text/javascript"></script><script language="JavaScript" src="https://www.cmu.edu/common/standard-v4/js/scripts.js" type="text/javascript"></script><script language="JavaScript" src="https://www.cmu.edu/__utm.js" type="text/javascript"></script>
+
+<title>CV's for Students in the Master of Science Program in the Machine Learning-Machine Learning Department - Carnegie Mellon University</title>
+</head>
+<body>
+<h1 id="titleHead">
+  CV's for Students in the Master of Science in Machine Learning Program in the Machine Learning Department - Carnegie Mellon University
+</h1>
+  
+  <div id="main">
+    <div id="contentWrapper">
+      <div class="content2Column" id="mainContent">
+        <div class="boxTop"></div>
+        <div class="content">
+          <h1>Master of Science in Machine Learning: Internships</h1>
+
+<p><b>The program:</b> The Master of Science in Machine Learning is
+part of CMU's Machine Learning Department, which is made up of a
+multi-disciplinary team of faculty and students across several
+academic departments. Machine learning is dedicated to furthering the
+scientific understanding of automated learning, and to producing the
+next generation of tools for data analysis and decision making based
+on that understanding.</p>
+
+<p>The MS program in Machine Learning is a small and extremely
+selective three-semester program.  Students in the program follow a
+rigorous curriculum, similar to curriculum used by the PhD students in
+machine learning, and interact closely with the Machine Learning
+faculty on research projects. MS students are also encouraged to use
+the summer after their second semester for an internship.</p>
+
+<p><b>Students available for internships:</b> Below is a list of
+students that are currently available for internships, along with
+information about their interests and abilities. You are welcome to
+contact them directly using the contact information on their CV's.
+</p>
+
+<ul>
+<li><a href="bin_deng_cv.pdf">Bin Deng</a></li>
+  <ul>
+  <li>University of Kansas, PhD in Rehabilitation Science
+  <li>Tsinghua University, BS in Biological Science
+  <li>Research interests: Big data analysis
+  <li>Advisor: Eric Xing
+  </ul>
+<li><a href="james_dyuck_cv.pdf">James Duyck</a></li>
+  <ul>
+  <li>MIT, B.S. in Mathematics with Computer Science
+  <li>Research interests: Pattern recognition, Computer vision
+  <li>Advisors: Drew Bagnell, Martial Hebert
+  </ul>
+<li><a href="dexter_lee_cv.pdf">Min Hyung (Dexter) Lee</a></li>
+  <ul>
+  <li>Hong Kong University of Science and Technology, B.S. in Computer Science and Mathematics
+  <li>Research interests: Deep learning, machine learning in time series analysis, and applications of NLP.
+  <li>Advisor: Emma Brunskill
+  </ul>
+<li><a href="joe_runde_cv.pdf">Joe Runde</a></li>
+  <ul>
+  <li>Oregon State University, B.S. in Computer Science
+  <li>Research interests: Tutoring systems, big data.
+  <li>Advisor: Emma Brunskill
+  </ul>
+<li><a href="fish_tung_cv.pdf">Hsiao-Yu (Fish) Tung</a> (and <a href="http://sfish0101.bitbucket.org/">her home page</a>)</li>
+  <ul>
+  <li>National Taiwan University, B.S. in Electrical Engineering
+  <li>Research interests: Spectral Methods, Statistical Modeling & Machine Learning Theory.
+  <li>Advisor: Alex Smola
+  </ul>
+<li><a href="yan_xia_cv.pdf">Yan Xia</a></li>
+  <ul>
+  <li>University of Kansas, PhD in Biochemistry & Molecular Biology
+  <li>Wuhan University, BS in Life Science
+  <li>Research interests: Application of machine learning in drug discovery and development.
+  <li>Advisor: Ziv Bar-Joseph
+  </ul>
+</ul>
+
+If you would like to advertise an internship to these students, please
+send a one-paragraph description of your position by email to Diane
+Stidle (diane@cs.cmu.edu).
+
+        </div>
+        <div class="boxBottom"></div>
+      </div>
+    </div>
+    <div id="footer"><ul class="contact"><li class="first">Machine Learning Department</li><li>5000 Forbes Avenue, Gates Hillman Center 8203, Pittsburgh, PA 15213</li><li>(412) 268-1299</li></ul><ul class="links"><li class="first"><a href="http://www.cmu.edu" title="Carnegie Mellon University">Carnegie Mellon Home</a></li></ul></div>
+  </div>
+  <div id="pageFooter"></div>
+</div>
+</body>
+
+<!--This website design is tied to the university content management systemprovided by Carnegie Mellon's Computing Services. If you're interested inusing this design, please visit http://www.cmu.edu/cms to learn more.-->
+</html>

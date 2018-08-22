@@ -1,0 +1,132 @@
+<html><head><title>Tag Cloud</title>
+</head>
+<body>
+<h2>What I did</h2>
+<pre>
+
+ - I used Yahoo Site explorer and wget to download 1000 pages from
+ dailykos and redstate.com.  I believe this is the top 1000 pages on
+ the site by #inlinks.  I filtered these to get blog entries, including
+ comments.
+
+ - I extracted the words from dkos & redstate blog entries, and the
+ corresponding comments, using a perl script (that uses an extendable
+ perl HTML parser, and site-specific "class" tags on the comment and
+ entry DOM nodes).  The redstate comments are a little messier, since
+ I could not easily strip out signatures.
+
+ - I tokenized, stoplisted, counted a bunch of word frequencies, and
+ saved all the words that appear >= 5 times in dkos entries, redstate
+ entries, dkos comments, redstate comments, etc.
+
+ - I estimating a bunch of relative-frequency/MI sort of statistics.
+ What seemed most reasonable was to look for "non-general English"
+ words that are "more common in context X than context Y", which
+ I express with this score
+
+ log[ P(w|X) / P(w|Y)*P(w|GE) ]
+
+ Stats for "general English" were from the brown corpus.  I smoothed
+ with a Dirichlet, and probably more importantly, by replacing zero
+ counts for P(w) with counts of 4 (since I only stored counts>=5).
+
+ Then for each X,Y I looked at, I took the top 200 scoring words,
+ broke them into 10 equal-frequency bins, and built a "tagcloud"
+ visualization of them.  The top 200 ignored a handful of stuff that I
+ decided was noise: signature line tokens, like ----; words like
+ "pstin", which seem to be poorly-tokenized dkos words; date, time and
+ number words; and words like kos, dailykos, entry, diary, fold, and
+ email.
+
+===================================================================
+X		  Y			  file name               
+===================================================================
+dkos entries	  redstate blog entries	  <a href="blue-red-entry.html">blue-red-entry.html</a>
+dkos comments	  redstate blog comments  <a href="blue-red-comment.html">blue-red-comment.html</a>
+dkos anything	  redstate blog anything  <a href="blue-red-all.html">blue-red-all.html</a>       
+redstate entries  dkos entries 		  <a href="red-blue-entry.html">red-blue-entry.html</a>     
+redstate comments dkos comments		  <a href="red-blue-comment.html">red-blue-comment.html</a>   
+redstate anything dkos anything		  <a href="red-blue-all.html">red-blue-all.html</a>       
+redstate comment  redstate entry	  <a href="redComment-redEntry.html">redComment-redEntry.html</a>     
+dkos comment	  dkos entry		  <a href="blueComment-blueEntry.html">blueComment-blueEntry.html</a>   
+===================================================================
+
+ For a few other context's I scored as 
+
+ log [ P(w|X)*P(W|Y) / P(w|GE) ]
+
+ ie "non-general English" words that are "common in both context X and
+ context Y"
+
+===================================================================
+X,Y			  file name               
+===================================================================
+dkos,redstate comments	  <a href="blue+red-comment.html">blue+red-comment.html</a>        
+dkos,redstate entries	  <a href="blue+red-entry.html">blue+red-entry.html</a>          
+dkos,redstate anything	  <a href="blue+red-all.html">blue+red-all.html</a>
+===================================================================
+
+ - I also wrote code to pick up subject-matter 'tags' from dailykos
+ (like the delicious tagging scheme), which turned out to be pretty
+ noisy (eg, "republican" and "repulican party" are both tags, as are
+ "iraq" and "iraq war".)  I set up some additional contexts X = "dkos
+ comments for entries tagged with something that contains the word T"
+ and compared them to Y="all dkos comments"
+
+===================================================================
+T		file name		
+===================================================================
+elections	<a href="blueElections-blue-comment.html">blueElections-blue-comment.html</a>
+iraq		<a href="blueIraq-blue-comment.html">blueIraq-blue-comment.html</a>
+media		<a href="blueMedia-blue-comment.html">blueMedia-blue-comment.html</a>
+===================================================================
+
+ - Sizes of all of this, in words:
+
+==============================
+brown                   480098  
+
+dkos-all               3351061 
+dkos-comment           3311702 
+dkos-entry               39359   
+
+redstate-all           1152883
+redstate-comment.freq   940241
+redstate-entry          212642  
+
+dkos-iraq-comment       341238  
+dkos-elections-comment  256129  
+dkos-media-comment      160413  
+==============================
+
+</pre>
+
+<h2>Observations</h2>
+
+<ul>
+<li>Redstate has way less comment text total than dkos, but way more
+entry text.  There are also more entries in redstate than dkos (788 vs
+351) so the amount of entry text may simply be more because dkos has a
+bunch of high-inlink pages that are not comment-containing.
+
+<li>Dems are way <a href="blueComment-blueEntry.html">less polite</a> in comments than in blog entries.
+Republicans, <a href="redComment-redEntry.html">not so much.</a>
+
+<li>There are apparently pretty big differences in vocabulary in
+comments pertaining to different entries (e.g., <a
+href="blueMedia-blue-comment.html">media</a> vs <a
+href="blueIraq-blue-comment.html">Iraq</a>).  There doesn't seem to be
+a major impact of the actual vocabulary used in the entries though -
+eg I don't see the term "iraq" in the <a
+href="blueIraq-blue-comment.html">Iraq-related comments</a>).
+
+<li>A lot of the "vocabulary" from the comments may be user names.
+
+<li>There seems to be a lot of argumentation in the <a href="blue+red-comment.html">comment sections</a>
+(agree, aren't, doesn't, don't, etc)
+
+<ul>
+
+
+</body>
+</html>

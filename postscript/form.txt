@@ -1,0 +1,152 @@
+
+
+==================================================================
+ILP-2000 REVIEW FORM: COMMENTS FOR THE AUTHORS
+==================================================================
+
+
+CODE:    <paper number>
+AUTHORS: <author(s) name(s)>
+TITLE:   <paper title>
+
+----------------------------------------------------------------
+
+SUBJECT: IN ONE SENTENCE, STATE WHAT THE PAPER IS REALLY ABOUT. 
+
+<Your one-sentence summary of what the paper is really about > 
+
+----------------------------------------------------------------
+
+SIGNIFICANCE: HOW IMPORTANT IS THE WORK REPORTED? 
+HOW DIFFICULT IS THE PROBLEM IT ATTACKS? 
+WHAT LESSON(S) DOES THE PAPER OFFER THE SCIENTIFIC COMMUNITY?
+
+
+<Your comments on significance>
+
+
+RATE THE SIGNIFICANCE ON A SCALE OF 1 (INSIGNIFICANT) 
+TO 5 (HIGHLY SIGNIFICANT):   
+
+<rating from 1 to 5>
+
+----------------------------------------------------------------
+
+ORIGINALITY: TO WHAT EXTENT IS THE REPORTED WORK NEW? 
+TO WHAT EXTENT ARE THE TECHNIQUES, METHODS, OR FINDINGS NEW? 
+
+
+<Your comments on originality>
+
+
+RATE THE ORIGINALITY ON A SCALE OF 1 (UNORIGINAL) 
+TO 5 (HIGHLY ORIGINAL):   
+
+<rating from 1 to 5>
+
+----------------------------------------------------------------
+
+CORRECTNESS: IS THE PAPER TECHNICALLY SOUND? TO WHAT EXTENT DOES 
+THE PAPER DISCUSS RELEVANT RESEARCH?
+
+
+<Your comments on correctness>
+
+
+RATE THE CORRECTNESS ON A SCALE OF 1 (CONTAINS MAJOR ERRORS OR OMISSIONS) 
+TO 5 (VIRTUALLY FLAWLESS):   
+
+<rating from 1 to 5>
+
+----------------------------------------------------------------
+
+EVALUATION: DO THE AUTHORS CAREFULLY EVALUATE THEIR APPROACH 
+THROUGH SYSTEMATIC EXPERIMENTS, THEORETICAL ANALYSIS, 
+OR SOME CHALLENGING, APPLICATION-SPECIFIC DEMONSTRATION? 
+HOW MUCH INSIGHT RESULTS FROM THE EVALUATION?
+
+		
+<Your comments on evaluation>
+
+
+RATE THE EVALUATION ON A SCALE OF 1 (POOR) 
+TO 5 (EXCELLENT):   
+
+<rating from 1 to 5>
+
+----------------------------------------------------------------
+
+PRESENTATION: DOES THE PAPER DESCRIBE THE METHOD(S) IN SUFFICIENT
+DETAIL FOR A READER TO REPLICATE THE RESULTS?  IS THE PAPER
+WELL-ORGANISED, THE EXPOSITION CLEAR AND UNDERSTANDABLE, AND THE
+ENGLISH LANGUAGE PROPERLY USED?  IS THE PAPER INAPPROPRIATELY LONG OR
+INAPPROPRIATELY SHORT?
+
+
+<Your comments on clarity>
+
+
+RATE THE PRESENTATION ON A SCALE OF 1 (POOR) 
+TO 5 (EXCELLENT):   
+
+<rating from 1 to 5>
+
+------------------------------------------------------------------
+
+OTHER COMMENTS: ANYTHING ELSE?
+
+< Other comments>
+
+------------------------------------------------------------------
+
+RECOMMENDATION:  
+
+   < Accept >
+   < Leaning to accept >
+   < Leaning to reject >
+   < Reject >
+
+
+REVIEWER'S CONFIDENCE ON A SCALE OF 1 (LOW) TO 5 (HIGH):  
+
+<rating from 1 to 5>
+
+
+ASSUMING THAT, FOR SOME REASON, THIS PAPER IS NOT ACCEPTED AS A
+CONFERENCE PAPER (for presentation and inclusion in Springer
+proceedings) WOULD YOU RECOMMEND IT FOR ACCEPTANCE IN THE
+WORK-IN-PROGRESS TRACK (for poster session and inclusion in informal
+printed report):
+
+   < Accept >
+   < Leaning to accept >
+   < Leaning to reject >
+   < Reject >
+
+
+==================================================================
+ILP-2000 REVIEW FORM: COMMENTS FOR THE PROGRAM CHAIRS ONLY
+==================================================================
+
+
+ANYTHING YOU WOULD LIKE TO SAY TO THE PROGRAMME CHAIRS?
+
+<Your comments>
+
+PROGRAM COMMITTEE MEMBER:
+
+<Name of program committee responsible for this review> 
+
+REVIEWER'S NAME AND AFFILIATION : (Only if not the responsible PC member)
+
+<Reviewer's name and affiliation>
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+

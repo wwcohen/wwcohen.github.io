@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+
+##############################################################################
+#build an easy interface to some words
+##############################################################################
+
+$Debug=1;
+
+chdir('/home/wcohen/dict/stuff/_easy/') || die("can't cd");
+
+#read dictionary files
+opendir(DIRS,"..");
+@dirs = readdir(DIRS);
+@dirs = sort(@dirs); 
+closedir(DIRS);
+print "// dirs: @dirs\n" if $Debug;
+@Words = ();
+foreach $d (@dirs) {
+    next if $d =~ /^\./;
+    next if $d =~ /^\_/;
+    while ($thumb = <../$d/t*.*>) {
+	($word) = $thumb =~ /t([a-z_]*)\./;
+	$file = "../$d/p$word" . "0.html";
+	$word =~  tr/a-z/A-Z/;
+	push(@Words,$word);
+	$File{$word} = "$file";
+	$Thumb{$word} = "$thumb";
+	print "thumb: $thumb\nword: $word\nfile: $file\n";
+    }
+}
+
+##############################################################################
+#print top-level frames stuff
+
+    open(TOP,">index.html") || die("can't write index.html");
+    print TOP <<"END_TOP";
+<html>
+<head><title>By the Pictures</title></head>
+<frameset cols="40%,60%">
+<frame name="dict" src="thumb.html">
+<frame name="view"  src="0view.html">
+</frameset>
+</html>
+END_TOP
+    close TOP;
+
+    open(VIEW,">0view.html") || die("can't write 0view.html");
+    print VIEW <<"END_VIEW";
+<html>
+<head><title>Picture Viewer</title></head>
+<body>
+</html>
+END_VIEW
+    close VIEW;
+
+
+##############################################################################
+#build the viewer page
+##############################################################################
+
+open(THUMB,">thumb.html") || die("can't write bk$pref.htlm");
+print THUMB <<END_HEADER;
+<html>
+<head>
+<title>By the Pictures</title>
+</head>
+<body>
+<h3 align="center">
+<a target="_top" href="../index.html">
+<img align="center" src="../_lib/abooks.gif">
+</a>
+END_HEADER
+
+foreach $w (@Words) {
+	$f = $File{$w};
+	$t = $Thumb{$w};
+	print THUMB 
+	  "<a href=\"$f\" target=\"view\"><img align=\"center\" src=\"$t\"></a>\n";
+}
+
+    print THUMB <<END_FOOT;
+</h3>
+<form name="noiseform" action="clink.au"><input type="hidden"></form>
+</body>
+<html>
+END_FOOT
+
+
+
+
+
+
+

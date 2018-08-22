@@ -1,0 +1,45 @@
+<html>
+<script language="JavaScript">
+<!-- hiding
+   var Text = "";
+   function n(url) {
+	document.noiseform.action = "sfx/" + url;
+	document.noiseform.submit();
+   }
+   function ins(letter,url) {
+      n(url);	
+      Text = Text + letter;
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function bs(url) {
+      n(url);	
+      Text = Text.substring(0,Text.length-1);
+      document.kb.kbout.value = Text;	
+      return 1;	
+   }
+   function ent(url) {
+      if (Text=="AA") n("bark.au");	
+      else if (Text=="BB") n("drip.au");		
+      else if (Text=="CC") n("cuckoo.au");		
+      else n("splat.au");	
+      return 1;	
+   }
+// -->
+</script>
+<head>
+<title>Bonk-a-matic</title>
+</head>
+<body>
+<form name="kb">
+<input type="text" name="kbout" value=Text><br>
+<input type="button" value="A" onClick="ins('A','bark.au')">
+<input type="button" value="B" onClick="ins('B','drip.au')">
+<input type="button" value="C" onClick="ins('C','cuckoo.au')">
+<input type="button" value="<-" onClick="bs('BS.wav')">
+<input type="button" value="<-/" onClick="ent('NULL.au')">
+<input type="hidden"> 
+</form>	
+<form name="noiseform" action="bark.au"><input type="hidden"></form>
+</body>
+</html>

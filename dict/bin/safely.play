@@ -1,0 +1,14 @@
+#!/bin/csh
+
+#play a sound, disallowing any conflicts 
+if ("$2" == "") then
+    echo 'usage: safely.play [-wav|-au] file'
+endif
+
+if ( "$1" == "-wav" ) then
+    killall -9 wavplay 
+    wavplay -q $2 
+else
+    killall -9 showaudio 
+    showaudio $2 
+endif 
