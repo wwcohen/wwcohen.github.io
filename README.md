@@ -1,1 +1,1 @@
-# wwcohen.github.io - will move my CMU account pointed to by wcohen.com here, sometime soon!
+# wwcohen.github.io - will move my CMU account here, sometime soon!
