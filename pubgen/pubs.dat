@@ -1,14 +1,19 @@
-C|xgn|2018|http://arxiv.org/abs/1809.00782|arxiv.org/abs/1809.00782||
+W|tn|2018|bioasq-2018.pdf|BioASQ-2018||
+Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu
+AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer
+recent.html
+==========
+C|xgn|2018|http://arxiv.org/abs/1809.00782|EMNLP-2018||
 Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen
 Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
 recent.html
 ==========
-C|xgn|2018|http://arxiv.org/abs/1806.05662|arxiv.org/abs/1806.05662||
+C|xgn|2018|http://arxiv.org/abs/1806.05662|NIPS-2018||
 Zhilin Yang, Jake (Junbo) Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun
 GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
 recent.html
 ==========
-C|xgan|2018|naacl-mage-2018.pdf|NAACL||Magethread.in
+C|xgan|2018|naacl-mage-2018.pdf|NAACL-2018||Magethread.in
 Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov
 Neural Models for Reasoning over Multiple Mentions using Coreference
 recent.html

@@ -2,16 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title> Publications of William W. Cohen</title>
   <link rel="self" href="http://www.cs.cmu.edu/~wcohen/pubs-atom.xml"/>
-  <updated>2018-09-11T04:17:27Z</updated>
-  <published>2018-09-11T04:17:27Z</published>
+  <updated>2018-11-12T09:43:36Z</updated>
+  <published>2018-11-12T09:43:36Z</published>
   <author><name>William W. Cohen</name></author>
   <id>http://wcohen.com/pubs-rss.xml</id>
+  <entry>
+    <title>AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer</title>
+    <link href="http://wcohen.com/postscript/bioasq-2018.pdf"/>
+    <id>http://wcohen.com/postscript/bioasq-2018.pdf</id>
+    <updated></updated>
+    <summary>AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer by Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu: Published 2018 in BioASQ-2018</summary>
+  </entry>
   <entry>
     <title>Neural Models for Reasoning over Multiple Mentions using Coreference</title>
     <link href="http://wcohen.com/postscript/naacl-mage-2018.pdf"/>
     <id>http://wcohen.com/postscript/naacl-mage-2018.pdf</id>
     <updated></updated>
-    <summary>Neural Models for Reasoning over Multiple Mentions using Coreference by Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov: Published 2018 in NAACL</summary>
+    <summary>Neural Models for Reasoning over Multiple Mentions using Coreference by Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov: Published 2018 in NAACL-2018</summary>
   </entry>
   <entry>
     <title>Never-Ending Learning   </title>
