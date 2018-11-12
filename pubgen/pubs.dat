@@ -1,16 +1,26 @@
-W|tn|2018|bioasq-2018.pdf|BioASQ-2018||
-Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu
-AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer
-recent.html
-==========
-C|xgn|2018|http://arxiv.org/abs/1809.00782|EMNLP-2018||
-Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen
-Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
+C|xgn|2018|http://arxiv.org/abs/1804.09238|NIPS-2018||
+Haitian Sun, William W. Cohen, Lidong Bing
+Semi-Supervised Learning with Declaratively Specified Entropy Constraints
 recent.html
 ==========
 C|xgn|2018|http://arxiv.org/abs/1806.05662|NIPS-2018||
 Zhilin Yang, Jake (Junbo) Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun
 GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
+recent.html
+==========
+W|tn|2018|bioasq-2018.pdf|BioASQ-2018||
+Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu
+AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer
+recent.html
+==========
+C|xn|2018|http://arxiv.org/abs/1809.09600|EMNLP-2018||
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhutdinov, Christopher D. Manning
+HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
+recent.html
+==========
+C|xgn|2018|http://arxiv.org/abs/1809.00782|EMNLP-2018||
+Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen
+Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
 recent.html
 ==========
 C|xgan|2018|naacl-mage-2018.pdf|NAACL-2018||Magethread.in
