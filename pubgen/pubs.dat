@@ -18,7 +18,7 @@ William W. Cohen, Matthew Siegler, Alex Hofer
 Neural Query Language: A Knowledge Base Query Language for Tensorflow
 recent.html
 ==========
-|xgn|2019|http://arxiv.org/abs/1904.09537|preparation||
+|sxgn|2019|http://arxiv.org/abs/1904.09537|preparation||
 Haitian Sun, Tania Bedrax-Weiss, William W. Cohen
 PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text
 recent.html
@@ -33,7 +33,7 @@ Haitian Sun, William W. Cohen, Lidong Bing
 Semi-Supervised Learning with Declaratively Specified Entropy Constraints
 recent.html
 ==========
-C|xgn|2018|http://arxiv.org/abs/1806.05662|NIPS-2018||
+C|sxgn|2018|http://arxiv.org/abs/1806.05662|NIPS-2018||
 Zhilin Yang, Jake (Junbo) Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun
 GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
 recent.html
@@ -43,22 +43,22 @@ Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu
 AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer
 recent.html
 ==========
-C|xn|2018|http://arxiv.org/abs/1809.09600|EMNLP-2018||
+C|sxn|2018|http://arxiv.org/abs/1809.09600|EMNLP-2018||
 Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhutdinov, Christopher D. Manning
 HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
 recent.html
 ==========
-C|xgn|2018|http://arxiv.org/abs/1809.00782|EMNLP-2018||
+C|sxgn|2018|http://arxiv.org/abs/1809.00782|EMNLP-2018||
 Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen
 Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
 recent.html
 ==========
-C|xgan|2018|naacl-mage-2018.pdf|NAACL-2018||Magethread.in
+C|sxgan|2018|naacl-mage-2018.pdf|NAACL-2018||Magethread.in
 Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov
 Neural Models for Reasoning over Multiple Mentions using Coreference
 recent.html
 ==========
-J|xa|2017|cacm-2017.pdf|CACM||
+J|sxa|2017|cacm-2017.pdf|CACM||
 T. Mitchell, W. Cohen, E. Hruschka, P. Talukdar, B. Yang, J. Betteridge, A. Carlson, B. Dalvi, M. Gardner, B. Kisiel, J. Krishnamurthy, N. La, K. Mazaitis, T. Mohamed, N. Nakashole, E. Platanios, A. Ritter, M. Samadi, B. Settles, R. Wang, D. Wijaya, A. Gupta, X. Chen, A. Saparov,M. Greaves, J. Welling
 Never-Ending Learning   
 recent.html
@@ -68,12 +68,12 @@ Fan Yang, Jiazhong Nie, William W. Cohen, Ni Lao
 Learning to Organize Knowledge with N-Gram Machines
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-06744
 ==========
-C|na|2017|http://arxiv.org/abs/1711.03953|arxiv.org 1711.03953||
+C|sna|2017|http://arxiv.org/abs/1711.03953|arxiv.org 1711.03953||
 Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, and William W. Cohen
 Breaking the Softmax Bottleneck: A High-Rank RNN Language Model
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-03953
 ==========
-C|niga|2017|nips-2017-diffrule.pdf|NIPS-2017||
+C|sniga|2017|nips-2017-diffrule.pdf|NIPS-2017||
 Fan Yang, Zhilin Yang, William W. Cohen
 Differentiable Learning of Logical Rules for Knowledge Base Reasoning
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangYC17
@@ -83,7 +83,7 @@ Zihang Dai, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov
 Good Semi-supervised Learning that Requires a Bad GAN
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DaiYYCS17
 ==========
-|ngi|2017|http://arxiv.org/abs/1707.05390|arxiv.org 1707.05390||TensorlogThread.in
+|sngi|2017|http://arxiv.org/abs/1707.05390|arxiv.org 1707.05390||TensorlogThread.in
 William W. Cohen and Fan Yang
 TensorLog: Deep Learning Meets Probabilistic Databases
 recent.html
@@ -98,7 +98,7 @@ Bhuwan Dhingra, Kathryn Mazaitis, William W. Cohen
 Quasar: Datasets for Question Answering by Search and Reading
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraMC17
 ==========
-|gan|2017|http://arxiv.org/abs/1703.02620|arxiv 1703.02620||Magethread.end
+|sgan|2017|http://arxiv.org/abs/1703.02620|arxiv 1703.02620||Magethread.end
 Bhuwan Dhingra, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov
 Linguistic Knowledge as Memory for Recurrent Neural Networks
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraYCS17
@@ -108,7 +108,7 @@ Bhuwan Dhingra, Hanxiao Liu, Ruslan Salakhutdinov, and William W. Cohen
 A Comparative Study of Word Embeddings for Reading Comprehension
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraLSC17
 ==========
-|nax|2017|http://arxiv.org/abs/1704.02298|RecSys-2017||
+|snax|2017|http://arxiv.org/abs/1704.02298|RecSys-2017||
 Rose Catherine, William W. Cohen
 TransNets: Learning to Transform for Recommendation
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/CatherineC17
@@ -118,7 +118,7 @@ Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang
 Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction
 http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/BingCD17
 ==========
-|nla|2017|http://arxiv.org/abs/1606.01549|ACL-2017||
+|snla|2017|http://arxiv.org/abs/1606.01549|ACL-2017||
 Bhuwan Dhingra, Hanxiao Liu, William W. Cohen, and Ruslan Salakhutdinov
 Gated-Attention Readers for Text Comprehension
 http://dblp.uni-trier.de/rec/bibtex/conf/acl/DhingraLYCS17
@@ -163,7 +163,7 @@ Zhilin Yang, Ye Yuan, Yuexin Wu, Ruslan Salakhutdinov, William W. Cohen
 Encode, Review, and Decode: Reviewer Module for Caption Generation
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangYWSC16
 ==========
-C|ci|2016|recsys-2016.pdf|RecSys 2016||
+C|sci|2016|recsys-2016.pdf|RecSys 2016||
 Rose Catherine and William W. Cohen
 Personalized Recommendations using Knowledge Graphs: A Probabilistic Logic Programming Approach
 http://dblp.uni-trier.de/rec/bibtex/conf/recsys/CatherineC16
@@ -188,7 +188,7 @@ Zhilin Yang, Jei Tang, and William W. Cohen
 Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs
 http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/YangTC16
 ==========
-|Gnax|2016|http://arxiv.org/abs/1603.08861|ICML-2016||
+|sGnax|2016|http://arxiv.org/abs/1603.08861|ICML-2016||
 Zhilin Yang, Ruslan Salakhutdinov, William Cohen
 Revisiting Semi-Supervised Learning with Graph Embeddings
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangCS16
@@ -213,7 +213,7 @@ Evgenia Wasserman Pritsker, William Cohen and Einat Minkov
 Learning to Identify the Best Contexts for Knowledge-Based WSD
 http://dblp.uni-trier.de/rec/bibtex/conf/emnlp/PritskerCM15
 ==========
-J|xga|2015|ai-mag-2015.pdf|AI Magazine 2015||
+J|sxga|2015|ai-mag-2015.pdf|AI Magazine 2015||
 Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen 
 Using semantics and statistics to turn data into knowledge
 http://dblp.uni-trier.de/rec/bibtex/journals/aim/PujaraMGC15

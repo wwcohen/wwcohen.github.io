@@ -2,10 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title> Publications of William W. Cohen</title>
   <link rel="self" href="http://www.cs.cmu.edu/~wcohen/pubs-atom.xml"/>
-  <updated>2018-11-12T09:53:37Z</updated>
-  <published>2018-11-12T09:53:37Z</published>
+  <updated>2019-10-10T17:36:44Z</updated>
+  <published>2019-10-10T17:36:44Z</published>
   <author><name>William W. Cohen</name></author>
   <id>http://wcohen.com/pubs-rss.xml</id>
+  <entry>
+    <title>From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer</title>
+    <link href="http://wcohen.com/postscript/psb-2020.pdf"/>
+    <id>http://wcohen.com/postscript/psb-2020.pdf</id>
+    <updated></updated>
+    <summary>From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer by Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu: Published 2020 in PSB-2020</summary>
+  </entry>
   <entry>
     <title>AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer</title>
     <link href="http://wcohen.com/postscript/bioasq-2018.pdf"/>
