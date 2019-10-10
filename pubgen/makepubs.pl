@@ -21,7 +21,7 @@
 );
 @keys = qw(n x l g m t r e f i c a d G);
 
-$thisYear = 2019;
+$thisYear = 2020;
 $os = shift || 'unix';
 print "os is $os\n";
 
