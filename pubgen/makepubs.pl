@@ -50,7 +50,7 @@ while ($line = <F>) {
   $year{$bibEntry} = $yr;
   $someYear{$yr}++;
   #stuff for rss feed
-  $bibFile{$bibEntry} = "postscript/$file" unless $file=~/http/;
+  $bibFile{$bibEntry} = "postscript/$file" unless $file=~/https?/;
   $bibTitle{$bibEntry} = $title;
   $bibVenue{$bibEntry} = $cite;
   $bibAuth{$bibEntry} = $auth;
@@ -229,7 +229,7 @@ sub hlink {
   my($href,$anchorText) = @_;
   if ($href=~/NONE/ || $href=~/DBLP-id/) {
     return "<i>$anchorText</i>";
-  } elsif ($href=~m[postscript/(http://.*)]) {
+  } elsif ($href=~m[postscript/(https?://.*)]) {
     return '<a href="' . $1 . '">' . $anchorText . '</a>' ;
   } else {
     return '<a href="' . $href . '">' . $anchorText . '</a>' ;
