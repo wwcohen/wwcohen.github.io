@@ -1,11 +1,21 @@
-|n|2019|https://arxiv.org/abs/1911.06111|preparation||
-Andrew O. Arnold, William W. Cohen
-Instance-based Transfer Learning for Multilingual Deep Retrieval
+C|nx|2020|https://openreview.net/forum?id=BJlguT4YPr|ICLR-2020||
+William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler
+Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base 
+recent.html
+==========
+C|nx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020||
+Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen
+Differentiable Reasoning over a Virtual Knowledge Base
 recent.html
 ==========
 |an|2020|psb-2020.pdf|PSB-2020||
 Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu
 From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer
+recent.html
+==========
+|n|2019|https://arxiv.org/abs/1911.06111|preparation||
+Andrew O. Arnold, William W. Cohen
+Instance-based Transfer Learning for Multilingual Deep Retrieval
 recent.html
 ==========
 |xn|2019|http://arxiv.org/abs/1906.01081|ACL-2019||
@@ -18,12 +28,12 @@ William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler
 Differentiable Representations For Multihop Inference Rules
 recent.html
 ==========
-|ixgn|2019|http://arxiv.org/abs/1905.06209|preparation||
+|ixgn|2019|http://arxiv.org/abs/1905.06209|arxiv||
 William W. Cohen, Matthew Siegler, Alex Hofer
 Neural Query Language: A Knowledge Base Query Language for Tensorflow
 recent.html
 ==========
-|sxgn|2019|http://arxiv.org/abs/1904.09537|preparation||
+C|sxgn|2019|http://arxiv.org/abs/1904.09537|EMNLP-2018||
 Haitian Sun, Tania Bedrax-Weiss, William W. Cohen
 PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text
 recent.html
@@ -58,9 +68,14 @@ Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdin
 Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
 recent.html
 ==========
-C|sxgan|2018|naacl-mage-2018.pdf|NAACL-2018||Magethread.in
+C|sxgan|2018|https://www.aclweb.org/anthology/N18-2007/|NAACL-2018||Magethread.in
 Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov
 Neural Models for Reasoning over Multiple Mentions using Coreference
+recent.html
+==========
+W|nax|2018|https://www.aclweb.org/anthology/W18-6122/|W-NUT 2018||
+Vidhisha Balachandran and  Dheeraj Rajagopal and , Rose Catherine Kanjirathinkal and William W. Cohen
+Learning to Define Terms in the Software Domain
 recent.html
 ==========
 J|sxa|2017|cacm-2017.pdf|CACM||
