@@ -1,14 +1,19 @@
-C|nx|2020|https://openreview.net/forum?id=BJlguT4YPr|ICLR-2020||
+J|sngi|2020|https://jair.org/index.php/jair/article/view/11944/26561|JAIR|TensorlogThread.in|
+William W. Cohen, Fan Yang, and Kathryn Rivard Mazaitis
+TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure
+recent.html
+==========
+C|nx|2020|https://arxiv.org/abs/2002.06115|ICLR-2020|
 William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler
 Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base 
 recent.html
 ==========
-C|nx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020||
+C|nx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020|
 Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen
 Differentiable Reasoning over a Virtual Knowledge Base
 recent.html
 ==========
-|an|2020|psb-2020.pdf|PSB-2020||
+|an|2020|psb-2020.pdf|PSB-2020|
 Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu
 From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer
 recent.html
@@ -16,6 +21,11 @@ recent.html
 |n|2019|https://arxiv.org/abs/1911.06111|preparation||
 Andrew O. Arnold, William W. Cohen
 Instance-based Transfer Learning for Multilingual Deep Retrieval
+recent.html
+==========
+|an|2019|https://arxiv.org/pdf/1909.06146.pdf|EMNLP-2019||
+Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu
+PubMedQA: A Dataset for Biomedical Research Question Answering
 recent.html
 ==========
 |xn|2019|http://arxiv.org/abs/1906.01081|ACL-2019||
@@ -68,7 +78,7 @@ Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdin
 Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text
 recent.html
 ==========
-C|sxgan|2018|https://www.aclweb.org/anthology/N18-2007/|NAACL-2018||Magethread.in
+C|sxgan|2018|https://www.aclweb.org/anthology/N18-2007/|NAACL-2018|Magethread.in
 Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov
 Neural Models for Reasoning over Multiple Mentions using Coreference
 recent.html
@@ -103,7 +113,7 @@ Zihang Dai, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov
 Good Semi-supervised Learning that Requires a Bad GAN
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DaiYYCS17
 ==========
-|sngi|2017|http://arxiv.org/abs/1707.05390|arxiv.org 1707.05390||TensorlogThread.in
+|sngi|2017|http://arxiv.org/abs/1707.05390|arxiv.org 1707.05390|TensorlogThread.in
 William W. Cohen and Fan Yang
 TensorLog: Deep Learning Meets Probabilistic Databases
 recent.html
@@ -118,7 +128,7 @@ Bhuwan Dhingra, Kathryn Mazaitis, William W. Cohen
 Quasar: Datasets for Question Answering by Search and Reading
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraMC17
 ==========
-|sgan|2017|http://arxiv.org/abs/1703.02620|arxiv 1703.02620||Magethread.end
+|sgan|2017|http://arxiv.org/abs/1703.02620|arxiv 1703.02620|Magethread.end
 Bhuwan Dhingra, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov
 Linguistic Knowledge as Memory for Recurrent Neural Networks
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraYCS17
@@ -163,7 +173,7 @@ Lidong Bing, Bhuwan Dhingra, Kathryn Mazaitis, Jong Hyuk Park, William W. Cohen
 Bootstrapping Distantly Supervised IE using Joint Learning and Small Well-structured Corpora
 http://dblp.uni-trier.de/rec/bibtex/conf/aaai/BingDMPC17
 ==========
-|ngi|2016|http://arxiv.org/abs/1605.06523|arxiv.org 1605.06523||TensorlogThread.end
+|ngi|2016|http://arxiv.org/abs/1605.06523|arxiv.org 1605.06523|TensorlogThread.end
 William W. Cohen
 TensorLog: A Differentiable Deductive Database
 http://dblp.uni-trier.de/rec/bibtex/journals/corr/Cohen16b

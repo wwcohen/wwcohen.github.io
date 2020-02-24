@@ -57,21 +57,31 @@ while ($line = <F>) {
 
   #################### handle threads
   
-  if (defined($thread)) {
-      print "thread $thread contains [$yr $file $cite]\n";
-  }
+  push(@bib,$bibEntry); 
 
-  push(@bib,$bibEntry) if (!defined($thread) || $thread!~/.in/);
-  if ($thread =~ /\.end/) {
-    ($t,$dummy) = split(/\./,$thread);
-    $root{$t} = $bibEntry;
-  }
-  if ($thread =~ /\.in/) {
-    ($t,$dummy) = split(/\./,$thread);
-    $r = $root{$t};
-    $earlier{$r} .= "; " if $earlier{$r};
-    $earlier{$r} .= $bibEntry;
-  }
+#  if ($thread !~ /\S/) {
+#    $thread = '';
+#  }
+#  if ($thread) {
+#      print "thread $thread contains [$yr $file $cite]\n";
+#  }
+
+  # thread stuff is broken?
+#  if (!$thread || $thread!~/.in/) {
+#    print "pushing [$yr $file $cite]\n";
+#
+#  } elsif ($thread =~ /\.end/) {
+#    print "$thread is end [$yr $file $cite]\n";
+#    ($t,$dummy) = split(/\./,$thread);
+#    $root{$t} = $bibEntry;
+#  } elsif ($thread =~ /\.in/) {
+#    print "$thread is in [$yr $file $cite]\n";
+#    ($t,$dummy) = split(/\./,$thread);
+#    $r = $root{$t};
+#    $earlier{$r} .= "; " if $earlier{$r};
+#    $earlier{$r} .= $bibEntry;
+#  }
+
 }
 
 print "loaded ",scalar(@bib)," entries\n";

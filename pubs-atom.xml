@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title> Publications of William W. Cohen</title>
   <link rel="self" href="http://www.cs.cmu.edu/~wcohen/pubs-atom.xml"/>
-  <updated>2020-01-27T13:37:39Z</updated>
-  <published>2020-01-27T13:37:39Z</published>
+  <updated>2020-02-24T13:07:39Z</updated>
+  <published>2020-02-24T13:07:39Z</published>
   <author><name>William W. Cohen</name></author>
   <id>http://wcohen.com/pubs-rss.xml</id>
   <entry>
@@ -432,6 +432,13 @@
     <id>http://wcohen.com/postscript/cogsci-2012.pdf</id>
     <updated></updated>
     <summary>Shallow learning as a pathway for successful learning both for tutors and tutees by Noboru Matsuda, Evelyn Yarzebinski, Victoria Keiser, Rohan Raizada, William W. Cohen, Gabriel Stylianides, Kenneth R. Koedinger: Published 2012 in CogSci-2012</summary>
+  </entry>
+  <entry>
+    <title>Problem Order Implications for Learning Transfer</title>
+    <link href="http://wcohen.com/postscript/its-2012-order.pdf"/>
+    <id>http://wcohen.com/postscript/its-2012-order.pdf</id>
+    <updated></updated>
+    <summary>Problem Order Implications for Learning Transfer by Nan Li, William W. Cohen, and Ken Koedinger: Published 2012 in ITS-2012</summary>
   </entry>
   <entry>
     <title>Efficient Cross-Domain Learning of Complex Skills</title>
@@ -1232,6 +1239,20 @@
     <summary>Joins that Generalize: Text Classification Using WHIRL by William W. Cohen &amp; Haym Hirsh: Published 1998 in KDD 1998: 169-173</summary>
   </entry>
   <entry>
+    <title>Recommendation as Classification: Using Social and Content-Based Information in Recommendation.</title>
+    <link href="http://wcohen.com/postscript/aaai-98-collab.ps"/>
+    <id>http://wcohen.com/postscript/aaai-98-collab.ps</id>
+    <updated></updated>
+    <summary>Recommendation as Classification: Using Social and Content-Based Information in Recommendation. by Chumki Basu, Haym Hirsh, William W. Cohen: Published 1998 in AAAI/IAAI 1998: 714-720</summary>
+  </entry>
+  <entry>
+    <title>Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity</title>
+    <link href="http://wcohen.com/postscript/sigmod-98.ps"/>
+    <id>http://wcohen.com/postscript/sigmod-98.ps</id>
+    <updated></updated>
+    <summary>Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity by William W. Cohen: Published 1998 in SIGMOD Conference 1998: 201-212</summary>
+  </entry>
+  <entry>
     <title>A Web-based Information System that Reasons with Structured Collections of Text</title>
     <link href="http://wcohen.com/postscript/agents-98.ps"/>
     <id>http://wcohen.com/postscript/agents-98.ps</id>
@@ -1244,6 +1265,20 @@
     <id>http://wcohen.com/postscript/aaai-98-ws.ps</id>
     <updated></updated>
     <summary>The WHIRL Approach to Integration: An Overview by William W. Cohen: Published 1998 in IIWeb 1998 (informal proceedings)</summary>
+  </entry>
+  <entry>
+    <title>Knowledge Integration for Structured Information Sources Containing Text (Extended Abstract)</title>
+    <link href="http://wcohen.com/postscript/sigir-ws-97.ps"/>
+    <id>http://wcohen.com/postscript/sigir-ws-97.ps</id>
+    <updated></updated>
+    <summary>Knowledge Integration for Structured Information Sources Containing Text (Extended Abstract) by William W. Cohen: Published 1997 in SIGIR Workshop on Networked IR (informal proceedings)</summary>
+  </entry>
+  <entry>
+    <title>A Comparative Study of Inductive Logic Programming Methods for Software Fault Prediction</title>
+    <link href="http://wcohen.com/postscript/ml-97-faults.ps"/>
+    <id>http://wcohen.com/postscript/ml-97-faults.ps</id>
+    <updated></updated>
+    <summary>A Comparative Study of Inductive Logic Programming Methods for Software Fault Prediction by William W. Cohen and Prem Devanbu: Published 1997 in ICML 1997: 66-74</summary>
   </entry>
   <entry>
     <title>Transferring and Retraining Learned Information Filters</title>
@@ -1260,6 +1295,13 @@
     <summary>Learning Trees and Rules with Set-valued Features by William W. Cohen: Published 1996 in  AAAI/IAAI, Vol. 1 1996: 709-716</summary>
   </entry>
   <entry>
+    <title>The Dual DFA Learning Problem: Hardness Results for Programming by Demonstration and Learning First-Order Representations (Extended Abstract)</title>
+    <link href="http://wcohen.com/postscript/colt-96.ps"/>
+    <id>http://wcohen.com/postscript/colt-96.ps</id>
+    <updated></updated>
+    <summary>The Dual DFA Learning Problem: Hardness Results for Programming by Demonstration and Learning First-Order Representations (Extended Abstract) by William W. Cohen: Published 1996 in COLT 1996: 29-40</summary>
+  </entry>
+  <entry>
     <title>Learning Rules that Classify E-Mail</title>
     <link href="http://wcohen.com/postscript/aaai-ss-96.ps"/>
     <id>http://wcohen.com/postscript/aaai-ss-96.ps</id>
@@ -1272,6 +1314,13 @@
     <id>http://wcohen.com/postscript/aaai-ws-96.ps</id>
     <updated></updated>
     <summary>Learning to Query the Web by William W. Cohen and Yoram Singer: Published 1996 in AAAI Workshop on Internet-Based Information Access Systems 1996</summary>
+  </entry>
+  <entry>
+    <title>Context-sensitive learning methods for text categorization</title>
+    <link href="http://wcohen.com/postscript/sigir-96.ps"/>
+    <id>http://wcohen.com/postscript/sigir-96.ps</id>
+    <updated></updated>
+    <summary>Context-sensitive learning methods for text categorization by William W. Cohen and Yoram Singer: Published 1996 in SIGIR 1996: 307-315</summary>
   </entry>
   <entry>
     <title>Learning to Classify English Text with ILP Methods</title>
@@ -1300,6 +1349,13 @@
     <id>http://wcohen.com/postscript/kr-94.ps</id>
     <updated></updated>
     <summary>Learning the CLASSIC description logic: Theoretical and experimental results by William W. Cohen and Haym Hirsh: Published 1994 in KR 1994: 121-133</summary>
+  </entry>
+  <entry>
+    <title>Recovering Software Specifications with Inductive Logic Programming</title>
+    <link href="http://wcohen.com/postscript/aaai-94-rc.ps"/>
+    <id>http://wcohen.com/postscript/aaai-94-rc.ps</id>
+    <updated></updated>
+    <summary>Recovering Software Specifications with Inductive Logic Programming by William W. Cohen: Published 1994 in AAAI 1994: 142-148</summary>
   </entry>
   <entry>
     <title>Grammatically biased learning: learning logic programs using an explicit antecedent description language</title>
