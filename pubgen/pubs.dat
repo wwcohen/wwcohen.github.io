@@ -1,24 +1,24 @@
+C|an|2021|https://openreview.net/forum?id=yRJUNfGzdsT|ICLR2021||
+Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen
+Open Question Answering Over Tables and Text
+recent.html
+==========
 |en|2020|https://arxiv.org/abs/2012.00893|preparation||
 Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen
 Evaluating Explanations: How much do explanations from the teacher aid students?
 recent.html
 ==========
-|an|2020|https://arxiv.org/abs/2010.14439|preparation||
+|san|2020|https://arxiv.org/abs/2010.14439|preparation||
 Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen
 Differentiable Open-Ended Commonsense Reasoning
 recent.html
 ==========
-|an|2020|https://arxiv.org/abs/2010.10439|preparation||
-Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen
-Open Question Answering Over Tables and Text
-recent.html
-==========
-C|n|2020|https://arxiv.org/abs/2004.03658|NeurIPS2020||
+C|sn|2020|https://arxiv.org/abs/2004.03658|NeurIPS2020||
 Haitian Sun, Andrew O. Arnold, Tania Bedrax-Weiss, Fernando Pereira, William W. Cohen
 Faithful Embeddings for Knowledge Base Queries
 recent.html
 ==========
-|an|2020|https://arxiv.org/abs/2007.00849|preparation||
+|san|2020|https://arxiv.org/abs/2007.00849|preparation||
 Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen
 Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge
 recent.html
@@ -28,12 +28,12 @@ William W. Cohen, Fan Yang, and Kathryn Rivard Mazaitis
 TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure
 recent.html
 ==========
-C|nx|2020|https://arxiv.org/abs/2002.06115|ICLR-2020|
+C|snx|2020|https://arxiv.org/abs/2002.06115|ICLR-2020|
 William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler
 Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base 
 recent.html
 ==========
-C|nx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020|
+C|snx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020|
 Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen
 Differentiable Reasoning over a Virtual Knowledge Base
 recent.html
@@ -43,7 +43,7 @@ Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu
 From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer
 recent.html
 ==========
-|n|2019|https://arxiv.org/abs/1911.06111|preparation||
+|n|2019|https://arxiv.org/abs/1911.06111|arxiv||
 Andrew O. Arnold, William W. Cohen
 Instance-based Transfer Learning for Multilingual Deep Retrieval
 recent.html
@@ -53,12 +53,12 @@ Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu
 PubMedQA: A Dataset for Biomedical Research Question Answering
 recent.html
 ==========
-|xn|2019|http://arxiv.org/abs/1906.01081|ACL-2019||
+C|xn|2019|http://arxiv.org/abs/1906.01081|ACL-2019||
 Bhuwan Dhingra, Manaal Faruqui, Ankur Parikh, Ming-Wei Chang, Dipanjan Das, William W. Cohen
 Handling Divergent Reference Texts when Evaluating Table-to-Text Generation
 recent.html
 ==========
-|ixgn|2019|http://arxiv.org/abs/1905.10417|preparation||
+|ixgn|2019|http://arxiv.org/abs/1905.10417|arxiv||
 William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler 
 Differentiable Representations For Multihop Inference Rules
 recent.html
