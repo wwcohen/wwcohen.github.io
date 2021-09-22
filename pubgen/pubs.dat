@@ -28,6 +28,11 @@ Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen
 Open Question Answering Over Tables and Text
 recent.html
 ==========
+C|san|2020|https://aclanthology.org/2021.naacl-main.288/|NAACL-2021|FaEThread.in|
+Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen
+Adaptable and Interpretable Neural Memory Over Symbolic Knowledge
+recent.html
+==========
 |en|2020|https://arxiv.org/abs/2012.00893|preparation||
 Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen
 Evaluating Explanations: How much do explanations from the teacher aid students?
@@ -43,7 +48,7 @@ Haitian Sun, Andrew O. Arnold, Tania Bedrax-Weiss, Fernando Pereira, William W. 
 Faithful Embeddings for Knowledge Base Queries
 recent.html
 ==========
-|san|2020|https://arxiv.org/abs/2007.00849|preparation||
+|san|2020|https://arxiv.org/abs/2007.00849|preparation|FaEThread.end|
 Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen
 Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge
 recent.html
@@ -101,6 +106,11 @@ recent.html
 |an|2019|http://arxiv.org/abs/1904.02181|preparation||
 Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu
 Probing Biomedical Embeddings from Language Models
+recent.html
+==========
+J|xna|2019|https://www.worldscientific.com/doi/abs/10.1142/9789813279827_0011|Biocomputing||
+Haohan Wang, Xiang Liu, Yifeng Tao, Wenting Ye, Qiao Jin, William W. Cohen and Eric P. Xing
+Automatic Human-like Mining and Constructing Reliable Genetic Association Database with Deep Reinforcement Learning
 recent.html
 ==========
 C|xgn|2018|http://arxiv.org/abs/1804.09238|NIPS-2018||
