@@ -2,756 +2,750 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body><h3>Papers by William W. Cohen</h3>
-<h3>2021</h3>
+<h3>Papers published in 2021</h3>
 <ol>
-<li>Julian Martin Eisenschlos, Maharshi Gor, Thomas Muller, William W. Cohen (2021): <a href="https://arxiv.org/abs/2109.04312">MATE: Multi-view Attention for Table Transformer Efficiency</a> in <a href="recent.html">EMNLP-2021</a>.
+<li>Julian Martin Eisenschlos, Maharshi Gor, Thomas Muller, William W. Cohen (2021): <a href="https://arxiv.org/abs/2109.04312">MATE: Multi-view Attention for Table Transformer Efficiency</a> in EMNLP-2021.
 </li>
-<li>Bhuwan Dhingra, Jeremy R. Cole, Julian Martin Eisenschlos, Daniel Gillick, Jacob Eisenstein, William W. Cohen (2021): <a href="https://arxiv.org/abs/2106.15110">Time-Aware Language Models as Temporal Knowledge Bases</a> in <a href="recent.html">preparation</a>.
+<li>Bhuwan Dhingra, Jeremy R. Cole, Julian Martin Eisenschlos, Daniel Gillick, Jacob Eisenstein, William W. Cohen (2021): <a href="https://arxiv.org/abs/2106.15110">Time-Aware Language Models as Temporal Knowledge Bases</a> in preparation.
 </li>
-<li>Haitian Sun, William W. Cohen, Ruslan Salakhutdinov (2021): <a href="https://arxiv.org/abs/2106.00200">End-to-End Multihop Retrieval for Compositional Question Answering over Long Documents</a> in <a href="recent.html ## Adapts many of the ideas used for multihop KBQA to a new task - answering multihop questions over a large document.  Retrieval steps in this "DocHopper" system retrieve passages of a document, and the retrieved items are combined with a question neurally: i.e., rather than appending text to a question and re-encoding that discrete object, what is retrieved is a vector summary of the document, which is mixed with the previous question encoding.  This is fast, fully differentiable, allows retrieval of large document subsections, and gets a new SOTA on three datasets">preparation</a>.
+<li>Haitian Sun, William W. Cohen, Ruslan Salakhutdinov (2021): <a href="https://arxiv.org/abs/2106.00200">End-to-End Multihop Retrieval for Compositional Question Answering over Long Documents</a> in preparation.<br><ul><li><font size=-1>Adapts many of the ideas used for multihop KBQA to a new task - answering multihop questions over a large document.  Retrieval steps in this "DocHopper" system retrieve passages of a document, and the retrieved items are combined with a question neurally: i.e., rather than appending text to a question and re-encoding that discrete object, what is retrieved is a vector summary of the document, which is mixed with the previous question encoding.  This is fast, fully differentiable, allows retrieval of large document subsections, and gets a new SOTA on three datasets.</font></ul>
 </li>
-<li>Avishai Zagoury, Einat Minkov, Idan Szpektor, William W. Cohen (2021): <a href="https://arxiv.org/abs/2104.01940">What's the best place for an AI conference, Vancouver or ______: Why completing comparative questions is difficult</a> in <a href="recent.html">AAAI2021</a>.
+<li>Avishai Zagoury, Einat Minkov, Idan Szpektor, William W. Cohen (2021): <a href="https://arxiv.org/abs/2104.01940">What's the best place for an AI conference, Vancouver or ______: Why completing comparative questions is difficult</a> in AAAI2021.
 </li>
-<li>Haitian Sun, Pat Verga, Bhuwan Dhingra, Ruslan Salakhutdinov, William W. Cohen (2021): <a href="https://arxiv.org/abs/2102.07043">Reasoning Over Virtual Knowledge Bases With Open Predicate Relations</a> in <a href="recent.html">ICML2021</a>. <br><ul><li>Modifies the FILM model by using a virtual KB of small text passages containing pairs of entities.  This required adding a Matching-the-Blanks pretraining phase, but got strong results on a number of QA-from-corpora tasks.</ul>
+<li>Haitian Sun, Pat Verga, Bhuwan Dhingra, Ruslan Salakhutdinov, William W. Cohen (2021): <a href="https://arxiv.org/abs/2102.07043">Reasoning Over Virtual Knowledge Bases With Open Predicate Relations</a> in ICML2021.<br><ul><li><font size=-1>Modifies the FILM model by using a virtual KB of small text passages containing pairs of entities.  This required adding a Matching-the-Blanks pretraining phase, but got strong results on a number of QA-from-corpora tasks.</font></ul>
 </li>
-<li>Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen (2021): <a href="https://openreview.net/forum?id=yRJUNfGzdsT">Open Question Answering Over Tables and Text</a> in <a href="recent.html">ICLR2021</a>. <br><ul><li>Answering open QA multi-hop questions over tables and text with a clever ``early fusion'' idea, which proposes and indexes likely reasoning chains, and uses large-document Transformers to merge these noisy evidence chains.</ul>
+<li>Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen (2021): <a href="https://openreview.net/forum?id=yRJUNfGzdsT">Open Question Answering Over Tables and Text</a> in ICLR2021.<br><ul><li><font size=-1>Answering open QA multi-hop questions over tables and text with a clever ``early fusion'' idea, which proposes and indexes likely reasoning chains, and uses large-document Transformers to merge these noisy evidence chains.</font></ul>
 </li>
 </ol>
-<h3>2020</h3>
+<h3>Papers published in 2020</h3>
 <ol>
-<li>Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen (2020): <a href="https://aclanthology.org/2021.naacl-main.288/">Adaptable and Interpretable Neural Memory Over Symbolic Knowledge</a> in <a href="recent.html">NAACL-2021</a>. <br><ul><li>Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second "fact memory" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining.</ul>
+<li>Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen (2020): <a href="https://aclanthology.org/2021.naacl-main.288/">Adaptable and Interpretable Neural Memory Over Symbolic Knowledge</a> in NAACL-2021.<br><ul><li><font size=-1>Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second "fact memory" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining.</font></ul>
 </li>
-<li>Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen (2020): <a href="https://arxiv.org/abs/2012.00893">Evaluating Explanations: How much do explanations from the teacher aid students?</a> in <a href="recent.html">preparation</a>.
+<li>Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen (2020): <a href="https://arxiv.org/abs/2012.00893">Evaluating Explanations: How much do explanations from the teacher aid students?</a> in preparation.
 </li>
-<li>Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen (2020): <a href="https://arxiv.org/abs/2010.14439">Differentiable Open-Ended Commonsense Reasoning</a> in <a href="recent.html">preparation</a>. <br><ul><li>Extends DrKIT's virtual KB to a corpus of documents of common-sense statements ("facts").  In DrFact, entities are replaced by noisy and ambiguous concepts, and navigation is between documents with overlapping sets of mentions.  Also introduces new "open" tasks for common-sense QA.</ul>
+<li>Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen (2020): <a href="https://arxiv.org/abs/2010.14439">Differentiable Open-Ended Commonsense Reasoning</a> in NAACL-2021.<br><ul><li><font size=-1>Extends DrKIT's virtual KB to a corpus of documents of common-sense statements ("facts").  In DrFact, entities are replaced by noisy and ambiguous concepts, and navigation is between documents with overlapping sets of mentions.  Also introduces new "open" tasks for common-sense QA.</font></ul>
 </li>
-<li>Haitian Sun, Andrew O. Arnold, Tania Bedrax-Weiss, Fernando Pereira, William W. Cohen (2020): <a href="https://arxiv.org/abs/2004.03658">Faithful Embeddings for Knowledge Base Queries</a> in <a href="recent.html">NeurIPS2020</a>. <br><ul><li>An extension to Neural Query Language (NQL) which extends the query language to work with a "centroid-sketch" representation of sets.  The centroid encoders a geometric area, and the sketch is a randomized data structure that adds capacity to the sketch, allowing faithful differential logical reasoning to be combined with good generalization.</ul>
+<li>Haitian Sun, Andrew O. Arnold, Tania Bedrax-Weiss, Fernando Pereira, William W. Cohen (2020): <a href="https://arxiv.org/abs/2004.03658">Faithful Embeddings for Knowledge Base Queries</a> in NeurIPS2020.<br><ul><li><font size=-1>An extension to Neural Query Language (NQL) which extends the query language to work with a "centroid-sketch" representation of sets.  The centroid encoders a geometric area, and the sketch is a randomized data structure that adds capacity to the sketch, allowing faithful differential logical reasoning to be combined with good generalization.</font></ul>
 </li>
-<li>Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen (2020): <a href="https://arxiv.org/abs/2007.00849">Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge</a> in <a href="recent.html">preparation</a>. <br><ul><li>Earlier draft of the NAACL paper on FILM (Fact-Injected LM).</ul>
+<li>Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen (2020): <a href="https://arxiv.org/abs/2007.00849">Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge</a> in limbo.<br><ul><li><font size=-1>Earlier draft of the NAACL paper on FILM (Fact-Injected LM).</font></ul>
 </li>
-<li>William W. Cohen, Fan Yang, and Kathryn Rivard Mazaitis (2020): <a href="https://jair.org/index.php/jair/article/view/11944/26561">TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure</a> in <a href="recent.html ## Most complete paper on TensorLog, a predecessor for NQL/EmQL that was a Prolog-like logic instead of a dataflow query language">JAIR</a>.
+<li>William W. Cohen, Fan Yang, and Kathryn Rivard Mazaitis (2020): <a href="https://jair.org/index.php/jair/article/view/11944/26561">TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure</a> in JAIR.
 </li>
-<li>William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler (2020): <a href="https://arxiv.org/abs/2002.06115">Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base </a> in <a href="recent.html">ICLR-2020</a>. <br><ul><li>Paper on Neural Query Language (NQL) a differentiable dataflow query language.  NQL is useful for building KBQA systems that can be trained from denotations, but relies heavily on sparse-matrix operations that are not implemented in all accelerators.</ul>
+<li>William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler (2020): <a href="https://arxiv.org/abs/2002.06115">Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base </a> in ICLR-2020.<br><ul><li><font size=-1>Paper on Neural Query Language (NQL) a differentiable dataflow query language.  NQL is useful for building KBQA systems that can be trained from denotations, but relies heavily on sparse-matrix operations that are not implemented in all accelerators.</font></ul>
 </li>
-<li>Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen (2020): <a href="https://openreview.net/forum?id=SJxstlHFPH">Differentiable Reasoning over a Virtual Knowledge Base</a> in <a href="recent.html">ICLR-2020</a>. <br><ul><li>Describes DrKIT, which allows one to answer multihop chain queries on a "virtual KB"---a corpus of entity-linked documents.  In DrKIT, entity mentions are indexed for neural retrieval with a rich representation of their context, and reasoning consists of navigating between co-occurring mentions.</ul>
+<li>Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen (2020): <a href="https://openreview.net/forum?id=SJxstlHFPH">Differentiable Reasoning over a Virtual Knowledge Base</a> in ICLR-2020.<br><ul><li><font size=-1>Describes DrKIT, which allows one to answer multihop chain queries on a "virtual KB"---a corpus of entity-linked documents.  In DrKIT, entity mentions are indexed for neural retrieval with a rich representation of their context, and reasoning consists of navigating between co-occurring mentions.</font></ul>
 </li>
-<li>Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu (2020): <a href="postscript/psb-2020.pdf">From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer</a> in <a href="recent.html">PSB-2020</a>.
+<li>Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu (2020): <a href="postscript/psb-2020.pdf">From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer</a> in PSB-2020.
 </li>
 </ol>
-<h3>2019</h3>
+<h3>Papers published in 2019</h3>
 <ol>
-<li>Andrew O. Arnold, William W. Cohen (2019): <a href="https://arxiv.org/abs/1911.06111">Instance-based Transfer Learning for Multilingual Deep Retrieval</a> in <a href="recent.html">arxiv</a>.
+<li>Andrew O. Arnold, William W. Cohen (2019): <a href="https://arxiv.org/abs/1911.06111">Instance-based Transfer Learning for Multilingual Deep Retrieval</a> in arxiv.
 </li>
-<li>Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu (2019): <a href="https://arxiv.org/pdf/1909.06146.pdf">PubMedQA: A Dataset for Biomedical Research Question Answering</a> in <a href="recent.html">EMNLP-2019</a>.
+<li>Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu (2019): <a href="https://arxiv.org/pdf/1909.06146.pdf">PubMedQA: A Dataset for Biomedical Research Question Answering</a> in EMNLP-2019.
 </li>
-<li>Bhuwan Dhingra, Manaal Faruqui, Ankur Parikh, Ming-Wei Chang, Dipanjan Das, William W. Cohen (2019): <a href="http://arxiv.org/abs/1906.01081">Handling Divergent Reference Texts when Evaluating Table-to-Text Generation</a> in <a href="recent.html">ACL-2019</a>.
+<li>Bhuwan Dhingra, Manaal Faruqui, Ankur Parikh, Ming-Wei Chang, Dipanjan Das, William W. Cohen (2019): <a href="http://arxiv.org/abs/1906.01081">Handling Divergent Reference Texts when Evaluating Table-to-Text Generation</a> in ACL-2019.
 </li>
-<li>William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler  (2019): <a href="http://arxiv.org/abs/1905.10417">Differentiable Representations For Multihop Inference Rules</a> in <a href="recent.html">arxiv</a>. <br><ul><li>Earlier version of ICLR paper on NQL.</ul>
+<li>William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler  (2019): <a href="http://arxiv.org/abs/1905.10417">Differentiable Representations For Multihop Inference Rules</a> in arxiv.<br><ul><li><font size=-1>Earlier version of ICLR paper on NQL.</font></ul>
 </li>
-<li>William W. Cohen, Matthew Siegler, Alex Hofer (2019): <a href="http://arxiv.org/abs/1905.06209">Neural Query Language: A Knowledge Base Query Language for Tensorflow</a> in <a href="recent.html">arxiv</a>. <br><ul><li>Earlier version of ICLR paper on NQL focusing on the language constructs used.</ul>
+<li>William W. Cohen, Matthew Siegler, Alex Hofer (2019): <a href="http://arxiv.org/abs/1905.06209">Neural Query Language: A Knowledge Base Query Language for Tensorflow</a> in arxiv.<br><ul><li><font size=-1>Earlier version of ICLR paper on NQL focusing on the language constructs used.</font></ul>
 </li>
-<li>Haitian Sun, Tania Bedrax-Weiss, William W. Cohen (2019): <a href="http://arxiv.org/abs/1904.09537">PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text</a> in <a href="recent.html">EMNLP-2019</a>.
+<li>Haitian Sun, Tania Bedrax-Weiss, William W. Cohen (2019): <a href="http://arxiv.org/abs/1904.09537">PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text</a> in EMNLP-2019.
 </li>
-<li>Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu (2019): <a href="http://arxiv.org/abs/1904.02181">Probing Biomedical Embeddings from Language Models</a> in <a href="recent.html">preparation</a>.
+<li>Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu (2019): <a href="http://arxiv.org/abs/1904.02181">Probing Biomedical Embeddings from Language Models</a> in NAACL-2019.
 </li>
-<li>Haohan Wang, Xiang Liu, Yifeng Tao, Wenting Ye, Qiao Jin, William W. Cohen and Eric P. Xing (2019): <a href="https://www.worldscientific.com/doi/abs/10.1142/9789813279827_0011">Automatic Human-like Mining and Constructing Reliable Genetic Association Database with Deep Reinforcement Learning</a> in <a href="recent.html">Biocomputing</a>.
+<li>Haohan Wang, Xiang Liu, Yifeng Tao, Wenting Ye, Qiao Jin, William W. Cohen and Eric P. Xing (2019): <a href="https://www.worldscientific.com/doi/abs/10.1142/9789813279827_0011">Automatic Human-like Mining and Constructing Reliable Genetic Association Database with Deep Reinforcement Learning</a> in Biocomputing.
 </li>
 </ol>
-<h3>2018</h3>
+<h3>Papers published in 2018</h3>
 <ol>
-<li>Haitian Sun, William W. Cohen, Lidong Bing (2018): <a href="http://arxiv.org/abs/1804.09238">Semi-Supervised Learning with Declaratively Specified Entropy Constraints</a> in <a href="recent.html">NIPS-2018</a>.
+<li>Haitian Sun, William W. Cohen, Lidong Bing (2018): <a href="http://arxiv.org/abs/1804.09238">Semi-Supervised Learning with Declaratively Specified Entropy Constraints</a> in NIPS-2018.
 </li>
-<li>Zhilin Yang, Jake (Junbo) Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun (2018): <a href="http://arxiv.org/abs/1806.05662">GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations</a> in <a href="recent.html">NIPS-2018</a>.
+<li>Zhilin Yang, Jake (Junbo) Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun (2018): <a href="http://arxiv.org/abs/1806.05662">GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations</a> in NIPS-2018.
 </li>
-<li>Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu (2018): <a href="postscript/bioasq-2018.pdf">AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer</a> in <a href="recent.html">BioASQ-2018</a>.
+<li>Qiao Jin, Bhuwan Dhingra, William W. Cohen, and Xinghua Lu (2018): <a href="postscript/bioasq-2018.pdf">AttentionMeSH: Simple, Effective and Interpretable Automatic MeSH Indexer</a> in BioASQ-2018.
 </li>
-<li>Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhutdinov, Christopher D. Manning (2018): <a href="http://arxiv.org/abs/1809.09600">HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering</a> in <a href="recent.html">EMNLP-2018</a>.
+<li>Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhutdinov, Christopher D. Manning (2018): <a href="http://arxiv.org/abs/1809.09600">HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering</a> in EMNLP-2018.
 </li>
-<li>Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen (2018): <a href="http://arxiv.org/abs/1809.00782">Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text</a> in <a href="recent.html">EMNLP-2018</a>.
+<li>Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Kathryn Mazaitis, Ruslan Salakhutdinov, and William W. Cohen (2018): <a href="http://arxiv.org/abs/1809.00782">Open Domain Question Answering Using Early Fusion of Knowledge Bases and Text</a> in EMNLP-2018.
 </li>
-<li>Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov (2018): <a href="https://www.aclweb.org/anthology/N18-2007/">Neural Models for Reasoning over Multiple Mentions using Coreference</a> in <a href="recent.html">NAACL-2018</a>.
+<li>Bhuwan Dhingra, Qiao Jin, Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov (2018): <a href="https://www.aclweb.org/anthology/N18-2007/">Neural Models for Reasoning over Multiple Mentions using Coreference</a> in NAACL-2018.
 </li>
-<li>Vidhisha Balachandran and  Dheeraj Rajagopal and , Rose Catherine Kanjirathinkal and William W. Cohen (2018): <a href="https://www.aclweb.org/anthology/W18-6122/">Learning to Define Terms in the Software Domain</a> in <a href="recent.html">W-NUT 2018</a>.
+<li>Vidhisha Balachandran and  Dheeraj Rajagopal and , Rose Catherine Kanjirathinkal and William W. Cohen (2018): <a href="https://www.aclweb.org/anthology/W18-6122/">Learning to Define Terms in the Software Domain</a> in W-NUT 2018.
 </li>
 </ol>
-<h3>2017</h3>
+<h3>Papers published in 2017</h3>
 <ol>
-<li>T. Mitchell, W. Cohen, E. Hruschka, P. Talukdar, B. Yang, J. Betteridge, A. Carlson, B. Dalvi, M. Gardner, B. Kisiel, J. Krishnamurthy, N. La, K. Mazaitis, T. Mohamed, N. Nakashole, E. Platanios, A. Ritter, M. Samadi, B. Settles, R. Wang, D. Wijaya, A. Gupta, X. Chen, A. Saparov,M. Greaves, J. Welling (2017): <a href="postscript/cacm-2017.pdf">Never-Ending Learning   </a> in <a href="recent.html">CACM</a>.
+<li>T. Mitchell, W. Cohen, E. Hruschka, P. Talukdar, B. Yang, J. Betteridge, A. Carlson, B. Dalvi, M. Gardner, B. Kisiel, J. Krishnamurthy, N. La, K. Mazaitis, T. Mohamed, N. Nakashole, E. Platanios, A. Ritter, M. Samadi, B. Settles, R. Wang, D. Wijaya, A. Gupta, X. Chen, A. Saparov,M. Greaves, J. Welling (2017): <a href="postscript/cacm-2017.pdf">Never-Ending Learning   </a> in CACM.
 </li>
-<li>Fan Yang, Jiazhong Nie, William W. Cohen, Ni Lao (2017): <a href="http://arxiv.org/abs/1711.06744">Learning to Organize Knowledge with N-Gram Machines</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-06744">arxiv.org/abs/1711.06744</a>.
+<li>Fan Yang, Jiazhong Nie, William W. Cohen, Ni Lao (2017): <a href="http://arxiv.org/abs/1711.06744">Learning to Organize Knowledge with N-Gram Machines</a> in arxiv.org/abs/1711.06744.
 </li>
-<li>Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, and William W. Cohen (2017): <a href="http://arxiv.org/abs/1711.03953">Breaking the Softmax Bottleneck: A High-Rank RNN Language Model</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-03953">arxiv.org 1711.03953</a>.
+<li>Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, and William W. Cohen (2017): <a href="http://arxiv.org/abs/1711.03953">Breaking the Softmax Bottleneck: A High-Rank RNN Language Model</a> in arxiv.org 1711.03953.
 </li>
-<li>Fan Yang, Zhilin Yang, William W. Cohen (2017): <a href="postscript/nips-2017-diffrule.pdf">Differentiable Learning of Logical Rules for Knowledge Base Reasoning</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangYC17">NIPS-2017</a>.
+<li>Fan Yang, Zhilin Yang, William W. Cohen (2017): <a href="postscript/nips-2017-diffrule.pdf">Differentiable Learning of Logical Rules for Knowledge Base Reasoning</a> in NIPS-2017.
 </li>
-<li>Zihang Dai, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="postscript/nips-2017-badgan.pdf">Good Semi-supervised Learning that Requires a Bad GAN</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/DaiYYCS17">NIPS-2017</a>.
+<li>Zihang Dai, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="postscript/nips-2017-badgan.pdf">Good Semi-supervised Learning that Requires a Bad GAN</a> in NIPS-2017.
 </li>
-<li>William W. Cohen and Fan Yang (2017): <a href="http://arxiv.org/abs/1707.05390">TensorLog: Deep Learning Meets Probabilistic Databases</a> in <a href="recent.html">arxiv.org 1707.05390</a>.
+<li>William W. Cohen and Fan Yang (2017): <a href="http://arxiv.org/abs/1707.05390">TensorLog: Deep Learning Meets Probabilistic Databases</a> in arxiv.org 1707.05390.
 </li>
-<li>Rose Catherine, Kathryn Mazaitis, Maxine Eskenazi, William W. Cohen (2017): <a href="http://arxiv.org/abs/1707.05254">Explainable Entity-based Recommendations with Knowledge Graphs (poster paper)</a> in <a href="recent.html">RecSys-2017</a>.
+<li>Rose Catherine, Kathryn Mazaitis, Maxine Eskenazi, William W. Cohen (2017): <a href="http://arxiv.org/abs/1707.05254">Explainable Entity-based Recommendations with Knowledge Graphs (poster paper)</a> in RecSys-2017.
 </li>
-<li>Bhuwan Dhingra, Kathryn Mazaitis, William W. Cohen (2017): <a href="http://arxiv.org/abs/1707.03904">Quasar: Datasets for Question Answering by Search and Reading</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraMC17">arxiv 1707.03904</a>.
+<li>Bhuwan Dhingra, Kathryn Mazaitis, William W. Cohen (2017): <a href="http://arxiv.org/abs/1707.03904">Quasar: Datasets for Question Answering by Search and Reading</a> in arxiv 1707.03904.
 </li>
-<li>Bhuwan Dhingra, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1703.02620">Linguistic Knowledge as Memory for Recurrent Neural Networks</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraYCS17">arxiv 1703.02620</a>.
+<li>Bhuwan Dhingra, Zhilin Yang, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1703.02620">Linguistic Knowledge as Memory for Recurrent Neural Networks</a> in arxiv 1703.02620.
 </li>
-<li>Bhuwan Dhingra, Hanxiao Liu, Ruslan Salakhutdinov, and William W. Cohen (2017): <a href="http://arxiv.org/abs/1703.00993">A Comparative Study of Word Embeddings for Reading Comprehension</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraLSC17">arxiv 1703.00993</a>.
+<li>Bhuwan Dhingra, Hanxiao Liu, Ruslan Salakhutdinov, and William W. Cohen (2017): <a href="http://arxiv.org/abs/1703.00993">A Comparative Study of Word Embeddings for Reading Comprehension</a> in arxiv 1703.00993.
 </li>
-<li>Rose Catherine, William W. Cohen (2017): <a href="http://arxiv.org/abs/1704.02298">TransNets: Learning to Transform for Recommendation</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/CatherineC17">RecSys-2017</a>.
+<li>Rose Catherine, William W. Cohen (2017): <a href="http://arxiv.org/abs/1704.02298">TransNets: Learning to Transform for Recommendation</a> in RecSys-2017.
 </li>
-<li>Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang (2017): <a href="http://arxiv.org/abs/1703.01557">Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/BingCD17">IJCAI 2017</a>.
+<li>Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang (2017): <a href="http://arxiv.org/abs/1703.01557">Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction</a> in IJCAI 2017.
 </li>
-<li>Bhuwan Dhingra, Hanxiao Liu, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1606.01549">Gated-Attention Readers for Text Comprehension</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/acl/DhingraLYCS17">ACL-2017</a>.
+<li>Bhuwan Dhingra, Hanxiao Liu, William W. Cohen, and Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1606.01549">Gated-Attention Readers for Text Comprehension</a> in ACL-2017.
 </li>
-<li>Zhilin Yang, Junjie Hu, Ruslan Salakhutdinov, William W. Cohen (2017): <a href="http://arxiv.org/abs/1702.02206">Semi-Supervised QA with Generative Domain-Adaptive Nets</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangHSC17">ACL-2017</a>.
+<li>Zhilin Yang, Junjie Hu, Ruslan Salakhutdinov, William W. Cohen (2017): <a href="http://arxiv.org/abs/1702.02206">Semi-Supervised QA with Generative Domain-Adaptive Nets</a> in ACL-2017.
 </li>
-<li>Zhilin Yang, Bhuwan Dhingra, Ye Yuan, Junjie Hu, William W. Cohen, Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1611.01724">Words or Characters? Fine-grained Gating for Reading Comprehension</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangDYHCS16">ICLR 2017</a>.
+<li>Zhilin Yang, Bhuwan Dhingra, Ye Yuan, Junjie Hu, William W. Cohen, Ruslan Salakhutdinov (2017): <a href="http://arxiv.org/abs/1611.01724">Words or Characters? Fine-grained Gating for Reading Comprehension</a> in ICLR 2017.
 </li>
-<li>Zhilin Yang, Ruslan Salakhutdinov, William W. Cohen  (2017): <a href="http://arxiv.org/abs/1703.06345">Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangSC17">ICLR 2017</a>.
+<li>Zhilin Yang, Ruslan Salakhutdinov, William W. Cohen  (2017): <a href="http://arxiv.org/abs/1703.06345">Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks</a> in ICLR 2017.
 </li>
-<li>Lidong Bing, Bhuwan Dhingra, Kathryn Mazaitis, Jong Hyuk Park, William W. Cohen (2017): <a href="http://arxiv.org/abs/1606.03398">Bootstrapping Distantly Supervised IE using Joint Learning and Small Well-structured Corpora</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/aaai/BingDMPC17">AAAI 2017</a>.
+<li>Lidong Bing, Bhuwan Dhingra, Kathryn Mazaitis, Jong Hyuk Park, William W. Cohen (2017): <a href="http://arxiv.org/abs/1606.03398">Bootstrapping Distantly Supervised IE using Joint Learning and Small Well-structured Corpora</a> in AAAI 2017.
 </li>
 </ol>
-<h3>2016</h3>
+<h3>Papers published in 2016</h3>
 <ol>
-<li>William W. Cohen (2016): <a href="http://arxiv.org/abs/1605.06523">TensorLog: A Differentiable Deductive Database</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/Cohen16b">arxiv.org 1605.06523</a>.
+<li>William W. Cohen (2016): <a href="http://arxiv.org/abs/1605.06523">TensorLog: A Differentiable Deductive Database</a> in arxiv.org 1605.06523.
 </li>
-<li>Abhinav Maurya, Kenton Murray, Yandong Liu, Chris Dyer, William W. Cohen and Daniel B. Neill (2016): <a href="http://arxiv.org/abs/1602.04393">Semantic Scan: Detecting Subtle, Spatially Localized Events in Text Streams</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/MauryaMLDCN16">arxiv 1602.04393</a> <b>(won Yelp Dataset Challenge Grand Prize )</b>.
+<li>Abhinav Maurya, Kenton Murray, Yandong Liu, Chris Dyer, William W. Cohen and Daniel B. Neill (2016): <a href="http://arxiv.org/abs/1602.04393">Semantic Scan: Detecting Subtle, Spatially Localized Events in Text Streams</a> in arxiv 1602.04393.<br><ul><li><font size=-1>won Yelp Dataset Challenge Grand Prize </font></ul>
 </li>
-<li>Douglas R. Pierce, David P. Redlawsk, and William W. Cohen (2016): <a href="http://em.rdcu.be/wf/click?upn=KP7O1RED-2BlD0F9LDqGVeSGkOkKPKLsLE67VQlcXrznM-3D_443SnMoetQVzTlRw2Szaz0NKknJYwbdlHMxFMuGJYi1jbemnhvWISdgE0sI608J7-2F9X5K6SrMGQ5YBhTIfZrUcghyTae3gytqZB9IKnvLz62-2BtGK-2BEp3S3XmNfeqAOnwrgpMFHiji-2BOBwZvpEY5PjIcCLMLJ1Geo8DaYsb5cnSCCh9qNxkO2jXj5yIRypWVrzStRPnw3NFl6BJOBiHsoZ5I0-2BatSbL559SplH3znXmY-3D">Social Influences on Online Political Information Search and Evaluation</a> in <a href="recent.html">Political Behavior DOI 10.1007/s11109-016-9374-4</a>.
+<li>Douglas R. Pierce, David P. Redlawsk, and William W. Cohen (2016): <a href="http://em.rdcu.be/wf/click?upn=KP7O1RED-2BlD0F9LDqGVeSGkOkKPKLsLE67VQlcXrznM-3D_443SnMoetQVzTlRw2Szaz0NKknJYwbdlHMxFMuGJYi1jbemnhvWISdgE0sI608J7-2F9X5K6SrMGQ5YBhTIfZrUcghyTae3gytqZB9IKnvLz62-2BtGK-2BEp3S3XmNfeqAOnwrgpMFHiji-2BOBwZvpEY5PjIcCLMLJ1Geo8DaYsb5cnSCCh9qNxkO2jXj5yIRypWVrzStRPnw3NFl6BJOBiHsoZ5I0-2BatSbL559SplH3znXmY-3D">Social Influences on Online Political Information Search and Evaluation</a> in Political Behavior DOI 10.1007/s11109-016-9374-4.
 </li>
-<li>Zhilin Yang, Ye Yuan, Yuexin Wu, Ruslan Salakhutdinov, William W. Cohen (2016): <a href="postscript/nips-2016.pdf">Encode, Review, and Decode: Reviewer Module for Caption Generation</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangYWSC16">NIPS-2016</a>.
+<li>Zhilin Yang, Ye Yuan, Yuexin Wu, Ruslan Salakhutdinov, William W. Cohen (2016): <a href="postscript/nips-2016.pdf">Encode, Review, and Decode: Reviewer Module for Caption Generation</a> in NIPS-2016.
 </li>
-<li>Rose Catherine and William W. Cohen (2016): <a href="postscript/recsys-2016.pdf">Personalized Recommendations using Knowledge Graphs: A Probabilistic Logic Programming Approach</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/recsys/CatherineC16">RecSys 2016</a>.
+<li>Rose Catherine and William W. Cohen (2016): <a href="postscript/recsys-2016.pdf">Personalized Recommendations using Knowledge Graphs: A Probabilistic Logic Programming Approach</a> in RecSys 2016.
 </li>
-<li>Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang (2016): <a href="postscript/wakbc-2016.pdf">Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/akbc/BingCDW16">WAKBC-2016</a>.
+<li>Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang (2016): <a href="postscript/wakbc-2016.pdf">Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction</a> in WAKBC-2016.
 </li>
-<li>Bhuwan Dhingra, Zhong Zhou, Dylan Fitzpatrick, Michael Muehl and William W. Cohen (2016): <a href="postscript/acl-2016-bd.pdf">Tweet2Vec: Character-Based Distributed Representations for Social Media</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/DhingraZFMC16">ACL-2016 (short paper)</a>.
+<li>Bhuwan Dhingra, Zhong Zhou, Dylan Fitzpatrick, Michael Muehl and William W. Cohen (2016): <a href="postscript/acl-2016-bd.pdf">Tweet2Vec: Character-Based Distributed Representations for Social Media</a> in ACL-2016 (short paper).
 </li>
-<li>William Yang Wang and William W. Cohen (2016): <a href="postscript/ijcai-2016-yww.pdf">Learning First-Order Logic Embeddings via Matrix Factorization</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/WangC16">IJCAI-2016</a>.
+<li>William Yang Wang and William W. Cohen (2016): <a href="postscript/ijcai-2016-yww.pdf">Learning First-Order Logic Embeddings via Matrix Factorization</a> in IJCAI-2016.
 </li>
-<li>Zhilin Yang, Jei Tang, and William W. Cohen (2016): <a href="postscript/ijcai-2016-zy.pdf">Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/YangTC16">IJCAI-2016</a>.
+<li>Zhilin Yang, Jei Tang, and William W. Cohen (2016): <a href="postscript/ijcai-2016-zy.pdf">Multi-Modal Bayesian Embeddings for Learning Social Knowledge Graphs</a> in IJCAI-2016.
 </li>
-<li>Zhilin Yang, Ruslan Salakhutdinov, William Cohen (2016): <a href="http://arxiv.org/abs/1603.08861">Revisiting Semi-Supervised Learning with Graph Embeddings</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangCS16">ICML-2016</a>.
+<li>Zhilin Yang, Ruslan Salakhutdinov, William Cohen (2016): <a href="http://arxiv.org/abs/1603.08861">Revisiting Semi-Supervised Learning with Graph Embeddings</a> in ICML-2016.
 </li>
-<li>Zhilin Yang, Ruslan Salakhutdinov, William Cohen (2016): <a href="http://arxiv.org/abs/1603.06270">Multi-Task Cross-Lingual Sequence Tagging from Scratch</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/YangSC16">arxiv 1603.06270</a>.
+<li>Zhilin Yang, Ruslan Salakhutdinov, William Cohen (2016): <a href="http://arxiv.org/abs/1603.06270">Multi-Task Cross-Lingual Sequence Tagging from Scratch</a> in arxiv 1603.06270.
 </li>
-<li>Lidong Bing, Mingyang Ling, Richard C. Wang, William W. Cohen (2016): <a href="postscript/aaai-2016.pdf">Distant IE by Bootstrapping Using Lists and Document Structure</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/BingLWC16">AAAI-2016</a>.
+<li>Lidong Bing, Mingyang Ling, Richard C. Wang, William W. Cohen (2016): <a href="postscript/aaai-2016.pdf">Distant IE by Bootstrapping Using Lists and Document Structure</a> in AAAI-2016.
 </li>
-<li>Bhavana Dalvi and Aditya Mishra and William W. Cohen (2016): <a href="postscript/wsdm-2016.pdf">Hierarchical Semi-supervised Classification with Incomplete Class Hierarchies</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/wsdm/DalviMC16">WSDM-2016</a>.
+<li>Bhavana Dalvi and Aditya Mishra and William W. Cohen (2016): <a href="postscript/wsdm-2016.pdf">Hierarchical Semi-supervised Classification with Incomplete Class Hierarchies</a> in WSDM-2016.
 </li>
 </ol>
-<h3>2015</h3>
+<h3>Papers published in 2015</h3>
 <ol>
-<li>Evgenia Wasserman Pritsker, William Cohen and Einat Minkov (2015): <a href="postscript/emnlp-2015-pritzker.pdf">Learning to Identify the Best Contexts for Knowledge-Based WSD</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/emnlp/PritskerCM15">EMNLP-2015</a>.
+<li>Evgenia Wasserman Pritsker, William Cohen and Einat Minkov (2015): <a href="postscript/emnlp-2015-pritzker.pdf">Learning to Identify the Best Contexts for Knowledge-Based WSD</a> in EMNLP-2015.
 </li>
-<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen  (2015): <a href="postscript/ai-mag-2015.pdf">Using semantics and statistics to turn data into knowledge</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/aim/PujaraMGC15">AI Magazine 2015</a>.
+<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen  (2015): <a href="postscript/ai-mag-2015.pdf">Using semantics and statistics to turn data into knowledge</a> in AI Magazine 2015.
 </li>
-<li>Lidong Bing, Sneha Chaudhari, Richard C. Wang, and William W. Cohen (2015): <a href="postscript/emnlp-2015-baidu.pdf">Improving Distant Supervision for Information Extraction Using Label Propagation Through Lists</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/emnlp/BingCWC15">EMNLP-2015</a>.
+<li>Lidong Bing, Sneha Chaudhari, Richard C. Wang, and William W. Cohen (2015): <a href="postscript/emnlp-2015-baidu.pdf">Improving Distant Supervision for Information Extraction Using Label Propagation Through Lists</a> in EMNLP-2015.
 </li>
-<li>Ni Lao, Einat Minkov, and William W. Cohen (2015): <a href="postscript/acl-2015-ni.pdf">Learning Relational Features with Backward Random Walks</a> in <a href="http://dblp.org/rec/conf/acl/LaoMC15">ACL-2015</a>.
+<li>Ni Lao, Einat Minkov, and William W. Cohen (2015): <a href="postscript/acl-2015-ni.pdf">Learning Relational Features with Backward Random Walks</a> in ACL-2015.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2015): <a href="postscript/acl-2015-yww.pdf">Joint Information Extraction and Reasoning: A Scalable Statistical Relational Learning Approach</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/acl/WangC15">ACL-2015</a>.
+<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2015): <a href="postscript/acl-2015-yww.pdf">Joint Information Extraction and Reasoning: A Scalable Statistical Relational Learning Approach</a> in ACL-2015.
 </li>
-<li>Dana Movshovitz-Attias and William W. Cohen  (2015): <a href="postscript/acl-2015-dana.pdf">KB-LDA: Jointly Learning a Knowledge Base of Hierarchy, Relations, and Facts</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/acl/Movshovitz-Attias15">ACL-2015</a>.
+<li>Dana Movshovitz-Attias and William W. Cohen  (2015): <a href="postscript/acl-2015-dana.pdf">KB-LDA: Jointly Learning a Knowledge Base of Hierarchy, Relations, and Facts</a> in ACL-2015.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2015): <a href="postscript/ijcai-2015.pdf">A Soft Version of Predicate Invention Based on Structured Sparsity</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/ijcai/WangMC15">IJCAI-2015</a>.
+<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2015): <a href="postscript/ijcai-2015.pdf">A Soft Version of Predicate Invention Based on Structured Sparsity</a> in IJCAI-2015.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, Ni Lao, Tom Mitchell, and William W. Cohen (2015): <a href="postscript/mlj-2015-proppr.pdf">Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic</a> in <a href="http://link.springer.com/article/10.1007%2Fs10994-015-5488-x">Machine Learning, 2015</a>.
+<li>William Yang Wang, Kathryn Mazaitis, Ni Lao, Tom Mitchell, and William W. Cohen (2015): <a href="postscript/mlj-2015-proppr.pdf">Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic</a> in Machine Learning, 2015.
 </li>
-<li>Bhavana Dalvi, Einat Minkov, Partha P. Talukdar, and William W. Cohen (2015): <a href="postscript/wsdm-2015.pdf">Automatic Gloss Finding for a Knowledge Base using Ontological Constraints</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/wsdm/DalviMTC15">WSDM-2015</a>.
+<li>Bhavana Dalvi, Einat Minkov, Partha P. Talukdar, and William W. Cohen (2015): <a href="postscript/wsdm-2015.pdf">Automatic Gloss Finding for a Knowledge Base using Ontological Constraints</a> in WSDM-2015.
 </li>
-<li>T. Mitchell, W. Cohen, E. Hruscha, P. Talukdar, J. Betteridge, A. Carlson, B. Dalvi, M. Gardner,B. Kisiel,J. Krishnamurthy, N. Lao, K. Mazaitis, T. Mohammad, N. Nakashole, E. Platanios,A. Ritter, M. Samadi, B. Settles, R.Wang, D.Wijaya, A. Gupta, X. Chen, A. Saparov, M. Greaves, J.Welling (2015): <a href="postscript/aaai-2015.pdf">Never-Ending Learning</a> in <a href="http://dblp.org/rec/conf/aaai/MitchellCHTBCMG15">AAAI-2015</a>.
+<li>T. Mitchell, W. Cohen, E. Hruscha, P. Talukdar, J. Betteridge, A. Carlson, B. Dalvi, M. Gardner,B. Kisiel,J. Krishnamurthy, N. Lao, K. Mazaitis, T. Mohammad, N. Nakashole, E. Platanios,A. Ritter, M. Samadi, B. Settles, R.Wang, D.Wijaya, A. Gupta, X. Chen, A. Saparov, M. Greaves, J.Welling (2015): <a href="postscript/aaai-2015.pdf">Never-Ending Learning</a> in AAAI-2015.
 </li>
-<li>Nan Li, Noboru Matsuda, William W. Cohen, Kenneth R. Koedinger  (2015): <a href="postscript/simstudent-aij-2014.pdf">Integrating representation learning and skill learning in a human-like intelligent agent</a> in <a href="http://www.sciencedirect.com/science/article/pii/S0004370214001349">Artificial Intelligence, 2015, pp. 67-91</a>.
+<li>Nan Li, Noboru Matsuda, William W. Cohen, Kenneth R. Koedinger  (2015): <a href="postscript/simstudent-aij-2014.pdf">Integrating representation learning and skill learning in a human-like intelligent agent</a> in Artificial Intelligence, 2015, pp. 67-91.
 </li>
 </ol>
-<h3>2014</h3>
+<h3>Papers published in 2014</h3>
 <ol>
-<li>Einat Minkov and William W. Cohen (2014): <a href="postscript/nle-2014.pdf">Adaptive graph walk-based similarity measures for parsed text</a> in <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9271313&fileId=S1351324912000393	">Natural Language Engineering 20(03), pp 361-397</a>.
+<li>Einat Minkov and William W. Cohen (2014): <a href="postscript/nle-2014.pdf">Adaptive graph walk-based similarity measures for parsed text</a> in Natural Language Engineering 20(03), pp 361-397.
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen (2014): <a href="http://www.crcpress.com/product/isbn/9781466504080">Block-LDA: Jointly Modeling Entity-Annotated Text and Entity-Entity Links</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/reference/crc/BalasubramanyanC14">Handbook of Mixed Membership Models and Their Applications</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen (2014): <a href="http://www.crcpress.com/product/isbn/9781466504080">Block-LDA: Jointly Modeling Entity-Annotated Text and Entity-Entity Links</a> in Handbook of Mixed Membership Models and Their Applications.
 </li>
-<li>Kathryn Mazaitis, Richard C. Wang, Frank Lin, Bhavana Dalvi, Jakob Bauer, William W. Cohen (2014): <a href="postscript/kbp-2014.pdf">A Tale of Two Entity Linking and Discovery Systems</a> in <a href="recent.html">KBP-TAC 2014</a>.
+<li>Kathryn Mazaitis, Richard C. Wang, Frank Lin, Bhavana Dalvi, Jakob Bauer, William W. Cohen (2014): <a href="postscript/kbp-2014.pdf">A Tale of Two Entity Linking and Discovery Systems</a> in KBP-TAC 2014.
 </li>
-<li>William Yang Wang, Lingpeng Kong, Kathryn Mazaitis, and William W. Cohen (2014): <a href="postscript/emnlp-2014.pdf">Dependency Parsing for Weibo: An Efficient Probabilistic Logic Programming Approach</a> in <a href="http://aclweb.org/anthology/D/D14/D14-1122.pdf">EMNLP-2014</a>.
+<li>William Yang Wang, Lingpeng Kong, Kathryn Mazaitis, and William W. Cohen (2014): <a href="postscript/emnlp-2014.pdf">Dependency Parsing for Weibo: An Efficient Probabilistic Logic Programming Approach</a> in EMNLP-2014.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2014): <a href="postscript/cikm-2014-structure.pdf">Structure Learning via Parameter Learning</a> in <a href="http://dl.acm.org/citation.cfm?doid=2661829.2662022">CIKM-2014</a>.
+<li>William Yang Wang, Kathryn Mazaitis, and William W. Cohen (2014): <a href="postscript/cikm-2014-structure.pdf">Structure Learning via Parameter Learning</a> in CIKM-2014.
 </li>
-<li>Bhavana Dalvi and William W. Cohen (2014): <a href="postscript/wsdm-2016.pdf">Multi-View Hierarchical Semi-supervised Learning by Optimal Assignment of Sets of Labels to Instances</a> in <a href="recent.html">WSDM-2016</a>.
+<li>Bhavana Dalvi and William W. Cohen (2014): <a href="postscript/wsdm-2016.pdf">Multi-View Hierarchical Semi-supervised Learning by Optimal Assignment of Sets of Labels to Instances</a> in WSDM-2016.
 </li>
-<li>Jay Pujara, Hui Miao, Lise Getoor and William W. Cohen (2014): <a href="postscript/aimag-2014.pdf">Using Semantics & Statistics to Turn Data into Knowledge</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/aim/PujaraMGC15">AI Magazine 2014</a>.
+<li>Jay Pujara, Hui Miao, Lise Getoor and William W. Cohen (2014): <a href="postscript/aimag-2014.pdf">Using Semantics & Statistics to Turn Data into Knowledge</a> in AI Magazine 2014.
 </li>
-<li>Tuan-Ahn Hoang and William W. Cohen and Ee-Peng Lim (2014): <a href="postscript/sdm-2014.pdf">On Modeling Community Behaviors and Sentiments in Microblogging</a> in <a href="http://dx.doi.org/10.1137/1.9781611973440.55">SDM-2014</a>.
+<li>Tuan-Ahn Hoang and William W. Cohen and Ee-Peng Lim (2014): <a href="postscript/sdm-2014.pdf">On Modeling Community Behaviors and Sentiments in Microblogging</a> in SDM-2014.
 </li>
-<li>Partha Pratim Talukdar and William W. Cohen (2014): <a href="postscript/ai-stats-2014.pdf">Scaling Graph-based Semi Supervised Learning to Large Number of Labels Using Count-Min Sketch</a> in <a href="http://jmlr.org/proceedings/papers/v33/talukdar14.html">AI-Stats 2014</a>.
+<li>Partha Pratim Talukdar and William W. Cohen (2014): <a href="postscript/ai-stats-2014.pdf">Scaling Graph-based Semi Supervised Learning to Large Number of Labels Using Count-Min Sketch</a> in AI-Stats 2014.
 </li>
-<li>Noboru Matsuda, Gabriel Stylianides, William W. Cohen, & Ken R. Koedinger (2014): <i>Using a Synthetic Peer to Investigate the Effect of Competitive Learning by Teaching in Mathematics Paper</i> in <a href="recent.html">AERA-2014</a>.
+<li>Noboru Matsuda, Gabriel Stylianides, William W. Cohen, & Ken R. Koedinger (2014): <a href="postscript/">Using a Synthetic Peer to Investigate the Effect of Competitive Learning by Teaching in Mathematics Paper</a> in AERA-2014.
 </li>
-<li>N. Matsuda, C. L. Griger, N. Barbalios, G. Stylianides, W. W. Cohen, & K. R. Koedinger. (2014): <a href="http://www.simstudent.org/publications/its2014a">Investigating the Effect of Meta-Cognitive Scaffolding for Learning by Teaching. </a> in <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-07221-0_13">ITS-2014</a>.
+<li>N. Matsuda, C. L. Griger, N. Barbalios, G. Stylianides, W. W. Cohen, & K. R. Koedinger. (2014): <a href="http://www.simstudent.org/publications/its2014a">Investigating the Effect of Meta-Cognitive Scaffolding for Learning by Teaching. </a> in ITS-2014.
 </li>
 </ol>
-<h3>2013</h3>
+<h3>Papers published in 2013</h3>
 <ol>
-<li>Nan Li, William W. Cohen, and Ken Koedinger (2013): <a href="http://link.springer.com/article/10.1007%2Fs40593-013-0005-5">Problem Order Implications for Learning</a> in <a href="recent.html">IJAIE</a>.
+<li>Nan Li, William W. Cohen, and Ken Koedinger (2013): <a href="http://link.springer.com/article/10.1007%2Fs40593-013-0005-5">Problem Order Implications for Learning</a> in IJAIE.
 </li>
-<li>Noboru Matsuda, E. Yarzebinski, V. Keiser, R. Raizada, William W. Cohen, G. J. Stylianides, & K. R. Koedinger (2013): <a href="http://www.simstudent.org/publications/edpsych2013">Cognitive anatomy of tutor learning: Lessons learned with SimStudent. </a> in <a href="recent.html">Journal of Ed Psych, 105(4), 1152-1163. doi: 10.1037/a0031955. </a>.
+<li>Noboru Matsuda, E. Yarzebinski, V. Keiser, R. Raizada, William W. Cohen, G. J. Stylianides, & K. R. Koedinger (2013): <a href="http://www.simstudent.org/publications/edpsych2013">Cognitive anatomy of tutor learning: Lessons learned with SimStudent. </a> in Journal of Ed Psych, 105(4), 1152-1163. doi: 10.1037/a0031955. .
 </li>
-<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen (2013): <a href="postscript/akbc-2013-pujara.pdf">Ontology-Aware Partitioning for Knowledge Graph Identification</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/cikm/PujaraMGC13">AKBC-2013</a>.
+<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen (2013): <a href="postscript/akbc-2013-pujara.pdf">Ontology-Aware Partitioning for Knowledge Graph Identification</a> in AKBC-2013.
 </li>
-<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2013): <a href="postscript/akbc-2013-dalvi.pdf">Classifying Entities into an Incomplete Ontology</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/cikm/DalviCC13">AKBC-2013</a>.
+<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2013): <a href="postscript/akbc-2013-dalvi.pdf">Classifying Entities into an Incomplete Ontology</a> in AKBC-2013.
 </li>
-<li>Douglas Pierce, David P. Redlawsk, and William W. Cohen (2013): <a href="postscript/apsa-2013.pdf">Social Influences on Political Information Search and Evaluation</a> in <a href="recent.html">APSA-2013</a>.
+<li>Douglas Pierce, David P. Redlawsk, and William W. Cohen (2013): <a href="postscript/apsa-2013.pdf">Social Influences on Political Information Search and Evaluation</a> in APSA-2013.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <a href="postscript/cikm-2013-proppr.pdf">Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1305-2254">CIKM-2013</a> <b>(Honorable Mention for Best Paper at CIKM-2013)</b>.
+<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <a href="postscript/cikm-2013-proppr.pdf">Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</a> in CIKM-2013.<br><ul><li><font size=-1>Honorable Mention for Best Paper at CIKM-2013</font></ul>
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <a href="http://arxiv.org/abs/1305.2254">Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</a> in <a href="http://doi.acm.org/10.1145/2505515.2505573">arxiv 1305.2254</a>.
+<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <a href="http://arxiv.org/abs/1305.2254">Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</a> in arxiv 1305.2254.
 </li>
-<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <i>Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</i> in <a href="recent.html">ICML 2103 Workshop on Inferning</a>.
+<li>William Yang Wang, Kathryn Mazaitis, William W. Cohen (2013): <a href="postscript/">Programming with Personalized PageRank: A Locally Groundable First-Order Probabilistic Logic</a> in ICML 2103 Workshop on Inferning.
 </li>
-<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen (2013): <a href="postscript/iswc-2013.pdf">Knowledge Graph Identification</a> in <a href="http://dx.doi.org/10.1007/978-3-642-41335-3_34">ISWC-2013</a> <b>(Best Student Paper at ISWC-2013)</b>.
+<li>Jay Pujara, Hui Miao, Lise Getoor, and William W. Cohen (2013): <a href="postscript/iswc-2013.pdf">Knowledge Graph Identification</a> in ISWC-2013.<br><ul><li><font size=-1>Best Student Paper at ISWC-2013</font></ul>
 </li>
-<li>Ramnath Balasubramanyan, Bhavana Dalvi and William W. Cohen (2013): <a href="postscript/ecml-2013-rb.pdf">From Topic Models to Semi-Supervised Learning: Biasing Mixed-membership Models to Exploit Topic-Indicative Features in Entity Clustering</a> in <a href="http://dx.doi.org/10.1007/978-3-642-40991-2_40">ECML/PKDD-2013</a>.
+<li>Ramnath Balasubramanyan, Bhavana Dalvi and William W. Cohen (2013): <a href="postscript/ecml-2013-rb.pdf">From Topic Models to Semi-Supervised Learning: Biasing Mixed-membership Models to Exploit Topic-Indicative Features in Entity Clustering</a> in ECML/PKDD-2013.
 </li>
-<li>Bhavana Dalvi and William W. Cohen and Jamie Callan (2013): <a href="postscript/ecml-2013-bdm.pdf">Exploratory Learning</a> in <a href="http://dx.doi.org/10.1007/978-3-642-40994-3_9">ECML/PKDD-2013</a>.
+<li>Bhavana Dalvi and William W. Cohen and Jamie Callan (2013): <a href="postscript/ecml-2013-bdm.pdf">Exploratory Learning</a> in ECML/PKDD-2013.
 </li>
-<li>William W. Cohen, David P. Redlawsk and Douglas Pierce (2013): <a href="http://arxiv.org/abs/1306.2558">The Effect of Biased Communications On Both Trusting and Suspicious Voters</a> in <a href="http://arxiv.org/abs/1306.2558">arxiv 1306.2558</a>.
+<li>William W. Cohen, David P. Redlawsk and Douglas Pierce (2013): <a href="http://arxiv.org/abs/1306.2558">The Effect of Biased Communications On Both Trusting and Suspicious Voters</a> in arxiv 1306.2558.
 </li>
-<li>Nan Li, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/edm-2013.pdf">Discovering Student Models With A Clustering Algorithm Using Problem Content    </a> in <a href="http://www.educationaldatamining.org/EDM2013/papers/rn_paper_16.pdf">EDM-2013</a>.
+<li>Nan Li, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/edm-2013.pdf">Discovering Student Models With A Clustering Algorithm Using Problem Content    </a> in EDM-2013.
 </li>
-<li>Nan Li, Yanduong Tian, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/aied-2013.pdf">Integrating Perceptual Learning With External World Knowledge In A Simulated Student</a> in <a href="http://dx.doi.org/10.1007/978-3-642-39112-5_41">AIED-2013</a>.
+<li>Nan Li, Yanduong Tian, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/aied-2013.pdf">Integrating Perceptual Learning With External World Knowledge In A Simulated Student</a> in AIED-2013.
 </li>
-<li>Nan Li, Eliane Stampfer, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/cogsci-2013.pdf">Efficient Cross-Domain Cognitive Model Discovery Using A Simulated Student</a> in <a href="recent.html">CogSci-2013</a>.
+<li>Nan Li, Eliane Stampfer, William W. Cohen, and Ken Koedinger (2013): <a href="postscript/cogsci-2013.pdf">Efficient Cross-Domain Cognitive Model Discovery Using A Simulated Student</a> in CogSci-2013.
 </li>
-<li>Tuan-Ahn Hoang, William W. Cohen, Ee-Peng Lim, Doug Pierce, David Redlawsk (2013): <a href="postscript/asonam-2013.pdf">Politics, Sharing and Emotion in Microblogs</a> in <a href="http://doi.acm.org/10.1145/2492517.2492554">ANOMAN-2013</a>.
+<li>Tuan-Ahn Hoang, William W. Cohen, Ee-Peng Lim, Doug Pierce, David Redlawsk (2013): <a href="postscript/asonam-2013.pdf">Politics, Sharing and Emotion in Microblogs</a> in ANOMAN-2013.
 </li>
-<li>Dana Movshovitz-Attias and William W. Cohen (2013): <a href="postscript/acl-2013.pdf">Natural Language Models for Predicting Programming Comments</a> in <a href="http://aclweb.org/anthology/P/P13/P13-2007.pdf">ACL-2013 (short paper)</a>.
+<li>Dana Movshovitz-Attias and William W. Cohen (2013): <a href="postscript/acl-2013.pdf">Natural Language Models for Predicting Programming Comments</a> in ACL-2013 (short paper).
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen (2013): <a href="postscript/sdm-2013-rb.pdf">Regularization of Latent Variable Models to Obtain Sparsity</a> in <a href="http://dx.doi.org/10.1137/1.9781611972832.46">SDM-2013</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen (2013): <a href="postscript/sdm-2013-rb.pdf">Regularization of Latent Variable Models to Obtain Sparsity</a> in SDM-2013.
 </li>
-<li>Bhavana Dalvi and William W. Cohen (2013): <a href="postscript/sdm-2013-bbd.pdf">Very Fast Similarity Queries on Semi-Structured Data from the Web</a> in <a href="http://dx.doi.org/10.1137/1.9781611972832.57">SDM-2013</a>.
+<li>Bhavana Dalvi and William W. Cohen (2013): <a href="postscript/sdm-2013-bbd.pdf">Very Fast Similarity Queries on Semi-Structured Data from the Web</a> in SDM-2013.
 </li>
 </ol>
-<h3>2012</h3>
+<h3>Papers published in 2012</h3>
 <ol>
-<li>Frank Lin and William W. Cohen (2012): <a href="postscript/icdm-2012.pdf">A General and Scalable Approach to Mixed Membership Clustering</a> in <a href="http://dx.doi.org/10.1109/ICDM.2012.166">ICDM-2012</a>.
+<li>Frank Lin and William W. Cohen (2012): <a href="postscript/icdm-2012.pdf">A General and Scalable Approach to Mixed Membership Clustering</a> in ICDM-2012.
 </li>
-<li>Doug Pierce David P. Redlawsk William W. Cohen, Tae Yano, Ramnath Balasubramanyan (2012): <a href="postscript/apsa-2012.pdf">Social and Affective Responses to Political Information</a> in <a href="recent.html">APSA-2012</a>.
+<li>Doug Pierce David P. Redlawsk William W. Cohen, Tae Yano, Ramnath Balasubramanyan (2012): <a href="postscript/apsa-2012.pdf">Social and Affective Responses to Political Information</a> in APSA-2012.
 </li>
-<li>Freddy Chong Tat Chua, William W. Cohen, Justin Betteridge, and Ee-Peng Lim (2012): <a href="postscript/cikm-2012-freddy.pdf">Community-Based Classification of Noun Phrases in Twitter</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/cikm/ChuaCBL12">CIKM-2012 (short paper)</a>.
+<li>Freddy Chong Tat Chua, William W. Cohen, Justin Betteridge, and Ee-Peng Lim (2012): <a href="postscript/cikm-2012-freddy.pdf">Community-Based Classification of Noun Phrases in Twitter</a> in CIKM-2012 (short paper).
 </li>
-<li>Nan Li, William W. Cohen, Kenneth R. Koedinger (2012): <a href="postscript/ecml-2012-nan.pdf">Learning to Perceive Two-Dimensional Displays Using Probabilistic Grammars</a> in <a href="recent.html">ECML-2012</a>.
+<li>Nan Li, William W. Cohen, Kenneth R. Koedinger (2012): <a href="postscript/ecml-2012-nan.pdf">Learning to Perceive Two-Dimensional Displays Using Probabilistic Grammars</a> in ECML-2012.
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen (2012): <a href="postscript/mlg-2012.pdf">Entropic Regularization of Mixed-membership Network Models using Pseudo-observations</a> in <a href="recent.html">MLG-2012</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen (2012): <a href="postscript/mlg-2012.pdf">Entropic Regularization of Mixed-membership Network Models using Pseudo-observations</a> in MLG-2012.
 </li>
-<li>Nan Li, Abraham Schreiber, William W. Cohen, Kenneth R. Koedinger (2012): <a href="postscript/ecai-2012.pdf">Creating Features from a Learned Grammar in a Simulated Student</a> in <a href="http://dx.doi.org/10.3233/978-1-61499-098-7-534">ECAI-2012</a>.
+<li>Nan Li, Abraham Schreiber, William W. Cohen, Kenneth R. Koedinger (2012): <a href="postscript/ecai-2012.pdf">Creating Features from a Learned Grammar in a Simulated Student</a> in ECAI-2012.
 </li>
-<li>Mahesh Joshi, Mark Dredze, William Cohen and Carolyn Rose (2012): <a href="postscript/emnlp-2012-mahesh.pdf">Multi-Domain Learning: When Do Domains Matter?</a> in <a href="http://aclweb.org/anthology/N/N13/N13-1080.pdf">EMNLP-CoNLL-2012</a>.
+<li>Mahesh Joshi, Mark Dredze, William Cohen and Carolyn Rose (2012): <a href="postscript/emnlp-2012-mahesh.pdf">Multi-Domain Learning: When Do Domains Matter?</a> in EMNLP-CoNLL-2012.
 </li>
-<li>Ni Lao, Amar Subramanya, Fernando Pereira and William W. Cohen (2012): <a href="postscript/emnlp-2012-ni.pdf">Reading The Web with Learned Syntactic-Semantic Inference Rules</a> in <a href="http://www.aclweb.org/anthology/D12-1093">EMNLP-CoNLL-2012</a>.
+<li>Ni Lao, Amar Subramanya, Fernando Pereira and William W. Cohen (2012): <a href="postscript/emnlp-2012-ni.pdf">Reading The Web with Learned Syntactic-Semantic Inference Rules</a> in EMNLP-CoNLL-2012.
 </li>
-<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2012): <a href="postscript/akbc-2012.pdf">Collectively Representing Semi-Structured Data from the Web</a> in <a href="recent.html">AKBC-2012</a> <b>(Honorable Mention for Best Paper at AKBC-2012)</b>.
+<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2012): <a href="postscript/akbc-2012.pdf">Collectively Representing Semi-Structured Data from the Web</a> in AKBC-2012.<br><ul><li><font size=-1>Honorable Mention for Best Paper at AKBC-2012</font></ul>
 </li>
-<li>Ramnath Balasubramanyan, Kathryn Rivard, William W. Cohen, Jelena Jakovljevic and John Woolford (2012): <a href="postscript/bionlp-2012-network.pdf">Evaluating Joint Modeling of Yeast Biology Literature and Protein-Protein Interaction Networks</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/bionlp/Balasubramanyan12">BioNLP-2012</a>.
+<li>Ramnath Balasubramanyan, Kathryn Rivard, William W. Cohen, Jelena Jakovljevic and John Woolford (2012): <a href="postscript/bionlp-2012-network.pdf">Evaluating Joint Modeling of Yeast Biology Literature and Protein-Protein Interaction Networks</a> in BioNLP-2012.
 </li>
-<li>Dana Movshovitz-Attias and William W. Cohen (2012): <a href="postscript/bionlp-2012-abbrev.pdf">Alignment-based Extraction of Abbreviations from Biomedical Text</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/bionlp/Movshovitz-Attias12a">BioNLP-2012</a>.
+<li>Dana Movshovitz-Attias and William W. Cohen (2012): <a href="postscript/bionlp-2012-abbrev.pdf">Alignment-based Extraction of Abbreviations from Biomedical Text</a> in BioNLP-2012.
 </li>
-<li>Dana Movshovitz-Attias and William W. Cohen (2012): <a href="postscript/bionlp-2012-bionell.pdf">Bootstrapping Biomedical Ontologies for Scientific Text using NELL</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/bionlp/Movshovitz-Attias12">BioNLP-2012</a>.
+<li>Dana Movshovitz-Attias and William W. Cohen (2012): <a href="postscript/bionlp-2012-bionell.pdf">Bootstrapping Biomedical Ontologies for Scientific Text using NELL</a> in BioNLP-2012.
 </li>
-<li>Partha Pratim Talukdar and William W. Cohen (2012): <a href="postscript/naacl-ws-2012-partha.pdf">Crowdsourced Comprehension: Predicting Prerequisite Structure in Wikipedia</a> in <a href="recent.html">BEA-2012</a>.
+<li>Partha Pratim Talukdar and William W. Cohen (2012): <a href="postscript/naacl-ws-2012-partha.pdf">Crowdsourced Comprehension: Predicting Prerequisite Structure in Wikipedia</a> in BEA-2012.
 </li>
-<li>Einat Minkov and William W. Cohen (2012): <a href="postscript/textgraph-2012.pdf">Graph Based Similarity Measures for Synonym Extraction from Parsed Text</a> in <a href="recent.html">TextGraphs-2012</a>.
+<li>Einat Minkov and William W. Cohen (2012): <a href="postscript/textgraph-2012.pdf">Graph Based Similarity Measures for Synonym Extraction from Parsed Text</a> in TextGraphs-2012.
 </li>
-<li>Noboru Matsuda, Evelyn Yarzebinski, Victoria Keiser, Rohan Raizada, William W. Cohen, Gabriel Stylianides, Kenneth R. Koedinger (2012): <a href="postscript/cogsci-2012.pdf">Shallow learning as a pathway for successful learning both for tutors and tutees</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/cogsci/MatsudaYKRCSK12">CogSci-2012</a>.
+<li>Noboru Matsuda, Evelyn Yarzebinski, Victoria Keiser, Rohan Raizada, William W. Cohen, Gabriel Stylianides, Kenneth R. Koedinger (2012): <a href="postscript/cogsci-2012.pdf">Shallow learning as a pathway for successful learning both for tutors and tutees</a> in CogSci-2012.
 </li>
-<li>Nan Li, William W. Cohen, and Ken Koedinger (2012): <a href="postscript/its-2012-order.pdf">Problem Order Implications for Learning Transfer</a> in <a href="recent.html">ITS-2012</a>.
+<li>Nan Li, William W. Cohen, and Ken Koedinger (2012): <a href="postscript/its-2012-order.pdf">Problem Order Implications for Learning Transfer</a> in ITS-2012.
 </li>
-<li>Noboru Matsuda, E. Yarzebinski, V. Keiser, V., R. Raizada, G. Stylianides, G., W. W. Cohen, et al. (2012): <a href="http://www.simstudent.org/publications/its2012">Motivational factors for learning by teaching: The effect of a competitive game show in a virtual peer-learning environment.</a> in <a href="recent.html">ITS-2012</a>.
+<li>Noboru Matsuda, E. Yarzebinski, V. Keiser, V., R. Raizada, G. Stylianides, G., W. W. Cohen, et al. (2012): <a href="http://www.simstudent.org/publications/its2012">Motivational factors for learning by teaching: The effect of a competitive game show in a virtual peer-learning environment.</a> in ITS-2012.
 </li>
-<li>Nan Li, William W. Cohen, and Ken Koedinger (2012): <a href="postscript/its-2012-xdom.pdf">Efficient Cross-Domain Learning of Complex Skills</a> in <a href="recent.html">ITS-2012 (short paper)</a>.
+<li>Nan Li, William W. Cohen, and Ken Koedinger (2012): <a href="postscript/its-2012-xdom.pdf">Efficient Cross-Domain Learning of Complex Skills</a> in ITS-2012 (short paper).
 </li>
-<li>Ramnath Balasubramanyan, William W. Cohen, Doug Pierce, and David P. Redlawsk (2012): <a href="postscript/icwsm-2012.pdf">Modeling Polarizing Topics: When Do Different Political Communities Respond Differently to the Same News?</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/icwsm/BalasubramanyanCPR12">ICWSM-2012</a>.
+<li>Ramnath Balasubramanyan, William W. Cohen, Doug Pierce, and David P. Redlawsk (2012): <a href="postscript/icwsm-2012.pdf">Modeling Polarizing Topics: When Do Different Political Communities Respond Differently to the Same News?</a> in ICWSM-2012.
 </li>
-<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2012): <a href="postscript/wsdm-2012-bdd.pdf">WebSets: Extracting Sets of Entities from the Web Using Unsupervised Information Extraction</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/wsdm/DalviCC12">WSDM-2012</a>.
+<li>Bhavana Dalvi, William W. Cohen, and Jamie Callan (2012): <a href="postscript/wsdm-2012-bdd.pdf">WebSets: Extracting Sets of Entities from the Web Using Unsupervised Information Extraction</a> in WSDM-2012.
 </li>
 </ol>
-<h3>2011</h3>
+<h3>Papers published in 2011</h3>
 <ol>
-<li>Ni Lao, Tom Mitchell, and William W. Cohen (2011): <a href="postscript/emnlp-2011.pdf">Random Walk Inference and Learning in A Large Scale Knowledge Base</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/emnlp/LaoMC11">EMNLP-2011</a>.
+<li>Ni Lao, Tom Mitchell, and William W. Cohen (2011): <a href="postscript/emnlp-2011.pdf">Random Walk Inference and Learning in A Large Scale Knowledge Base</a> in EMNLP-2011.
 </li>
-<li>Jacob Eisenstein, Tae Yano, William W. Cohen, Noah A. Smith, and Eric P. Xing (2011): <a href="postscript/emnlp-ws-2011.pdf">Structured Databases of Named Entities from Bayesian Nonparametrics</a> in <a href="recent.html">UNSUP-2011</a>.
+<li>Jacob Eisenstein, Tae Yano, William W. Cohen, Noah A. Smith, and Eric P. Xing (2011): <a href="postscript/emnlp-ws-2011.pdf">Structured Databases of Named Entities from Bayesian Nonparametrics</a> in UNSUP-2011.
 </li>
-<li>Frank Lin and William W. Cohen (2011): <a href="postscript/mlg-2011.pdf">Adaptation of Graph-Based Semi-Supervised Methods to Large-Scale Text Data</a> in <a href="recent.html">MLG-2011</a>.
+<li>Frank Lin and William W. Cohen (2011): <a href="postscript/mlg-2011.pdf">Adaptation of Graph-Based Semi-Supervised Methods to Large-Scale Text Data</a> in MLG-2011.
 </li>
-<li>Nan Li and William W. Cohen and Kenneth R. Koedinger and Noboru Matsuda (2011): <a href="postscript/edm-2011.pdf">A Machine Learning Approach for Automatic Student Model Discovery</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/edm/LiCKM11">EDM-2011</a>.
+<li>Nan Li and William W. Cohen and Kenneth R. Koedinger and Noboru Matsuda (2011): <a href="postscript/edm-2011.pdf">A Machine Learning Approach for Automatic Student Model Discovery</a> in EDM-2011.
 </li>
-<li>Ramnath Balasubramanyan, William W. Cohen, Doug Pierce, and David P. Redlawsk (2011): <a href="postscript/lsm-2011.pdf">What pushes their buttons? Predicting comment polarity from the content of political blog posts</a> in <a href="recent.html ">LSM-2011</a>.
+<li>Ramnath Balasubramanyan, William W. Cohen, Doug Pierce, and David P. Redlawsk (2011): <a href="postscript/lsm-2011.pdf">What pushes their buttons? Predicting comment polarity from the content of political blog posts</a> in LSM-2011.
 </li>
-<li>Noboru Matsuda, Evelyn Yarzebinski, Victoria Keiser, Rohan Raizada, Gabriel J. Stylianides, William W. Cohen, Kenneth R. Koedinger (2011): <a href="postscript/aied-2011.pdf">Learning by Teaching SimStudent - An Initial Classroom Baseline Study comparing with Cognitive Tutor</a> in <a href="http://dx.doi.org/10.1007/978-3-642-21869-9_29">AIED-2011</a>.
+<li>Noboru Matsuda, Evelyn Yarzebinski, Victoria Keiser, Rohan Raizada, Gabriel J. Stylianides, William W. Cohen, Kenneth R. Koedinger (2011): <a href="postscript/aied-2011.pdf">Learning by Teaching SimStudent - An Initial Classroom Baseline Study comparing with Cognitive Tutor</a> in AIED-2011.
 </li>
-<li>Bhavana Dalvi, Jamie Callan, and William W. Cohen  (2011): <a href="postscript/trec-2011.pdf">Entity List Completion Using Set Expansion Techniques</a> in <a href="recent.html">TREC 2011</a>.
+<li>Bhavana Dalvi, Jamie Callan, and William W. Cohen  (2011): <a href="postscript/trec-2011.pdf">Entity List Completion Using Set Expansion Techniques</a> in TREC 2011.
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen (2011): <a href="postscript/sdm-2011-sub.pdf">Block-LDA: Jointly modeling entity-annotated text and entity-entity links</a> in <a href="http://dx.doi.org/10.1137/1.9781611972818.39">SDM-2011</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen (2011): <a href="postscript/sdm-2011-sub.pdf">Block-LDA: Jointly modeling entity-annotated text and entity-entity links</a> in SDM-2011.
 </li>
 </ol>
-<h3>2010</h3>
+<h3>Papers published in 2010</h3>
 <ol>
-<li>Ramnath Balasubramanyan, Frank Lin, and William W. Cohen (2010): <a href="postscript/nipsws-2010-sub.pdf">Node Clustering in Graphs: An Empirical Study</a> in <a href="recent.html">NIPS-2010 Workshop on Networks Across Disciplines</a>.
+<li>Ramnath Balasubramanyan, Frank Lin, and William W. Cohen (2010): <a href="postscript/nipsws-2010-sub.pdf">Node Clustering in Graphs: An Empirical Study</a> in NIPS-2010 Workshop on Networks Across Disciplines.
 </li>
-<li>Philip Stutz, Abraham Bernstein and William W. Cohen (2010): <a href="postscript/iswc-2010.pdf">Signal/Collect: Graph Algorithms for the (Semantic) Web</a> in <a href="http://dx.doi.org/10.1007/978-3-642-17746-0_48">ISWC-2010</a>.
+<li>Philip Stutz, Abraham Bernstein and William W. Cohen (2010): <a href="postscript/iswc-2010.pdf">Signal/Collect: Graph Algorithms for the (Semantic) Web</a> in ISWC-2010.
 </li>
-<li>Einat Minkov and William W. Cohen (2010): <a href="postscript/tois-ghirl.pdf">Improving Graph-Walk Based Similarity with Reranking: Case Studies for Personal Information Management</a> in <a href="http://doi.acm.org/10.1145/1877766.1877770">TOIS-2010</a>.
+<li>Einat Minkov and William W. Cohen (2010): <a href="postscript/tois-ghirl.pdf">Improving Graph-Walk Based Similarity with Reranking: Case Studies for Personal Information Management</a> in TOIS-2010.
 </li>
-<li>Ni Lao and William W. Cohen (2010): <a href="postscript/ecml-2010-ni.pdf">Relational Retrieval Using a Combination of Path-Constrained Random Walks</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml81.html#LaoC10">ECML-2010 and MLJ-2010 Special Issue</a>.
+<li>Ni Lao and William W. Cohen (2010): <a href="postscript/ecml-2010-ni.pdf">Relational Retrieval Using a Combination of Path-Constrained Random Walks</a> in ECML-2010 and MLJ-2010 Special Issue.
 </li>
-<li>Frank Lin and William W. Cohen (2010): <a href="postscript/asonam2010-final.pdf">Semi-Supervised Classification of Network Data Using Very Few Labels</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/asunam/asonam2010.html#LinC10">ASONAM-2010</a>.
+<li>Frank Lin and William W. Cohen (2010): <a href="postscript/asonam2010-final.pdf">Semi-Supervised Classification of Network Data Using Very Few Labels</a> in ASONAM-2010.
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen (2010): <a href="postscript/icml-workshop-2010.pdf">Block-LDA: Jointly modeling entity-annotated text and entity-entity links</a> in <a href="recent.html">ICML-2010 Workshop on Topic Modeling</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen (2010): <a href="postscript/icml-workshop-2010.pdf">Block-LDA: Jointly modeling entity-annotated text and entity-entity links</a> in ICML-2010 Workshop on Topic Modeling.
 </li>
-<li>Frank Lin and William W. Cohen (2010): <a href="postscript/icml2010-pic-final.pdf">Power Iteration Clustering</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2010.html#LinC10">ICML-2010</a>.
+<li>Frank Lin and William W. Cohen (2010): <a href="postscript/icml2010-pic-final.pdf">Power Iteration Clustering</a> in ICML-2010.
 </li>
-<li>Frank Lin and William W. Cohen (2010): <a href="postscript/ecai2010-pic-final.pdf">A Very Fast Method for Clustering Big Text Datasets</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ecai/ecai2010.html#LinC10">ECAI-2010</a>.
+<li>Frank Lin and William W. Cohen (2010): <a href="postscript/ecai2010-pic-final.pdf">A Very Fast Method for Clustering Big Text Datasets</a> in ECAI-2010.
 </li>
-<li>Ni Lao and William W. Cohen (2010): <a href="postscript/kdd-2010-ni.pdf">Fast Query Execution for Retrieval Models based on Path Constrained Random Walks</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2010.html#LaoC10">KDD-2010</a>.
+<li>Ni Lao and William W. Cohen (2010): <a href="postscript/kdd-2010-ni.pdf">Fast Query Execution for Retrieval Models based on Path Constrained Random Walks</a> in KDD-2010.
 </li>
-<li>L. P. Coelho, A. Ahmed, A. Arnold, J. Kangas, A.-S. Sheikh, E. Xing, W. Cohen, and R. F. Murphy (2010): <a href="postscript/lecture-notes-slif-2010.pdf">Structured Literature Image Finder: Extracting Information from Text and Images in Biomedical Literature </a> in <a href="recent.html">Lecture Notes in Bioinformatics</a>.
+<li>L. P. Coelho, A. Ahmed, A. Arnold, J. Kangas, A.-S. Sheikh, E. Xing, W. Cohen, and R. F. Murphy (2010): <a href="postscript/lecture-notes-slif-2010.pdf">Structured Literature Image Finder: Extracting Information from Text and Images in Biomedical Literature </a> in Lecture Notes in Bioinformatics.
 </li>
-<li>A. Ahmed, A. Arnold, L. P. Coelho, J. Kangas, A.-S. Sheikh, E. Xing, W. Cohen, and R. F. Murphy (2010): <a href="postscript/jws-2010.pdf">Structured Literature Image Finder: Parsing Text and Figures in Biomedical Literature</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/journals/ws/AhmedACKSXCM10">Journal of Web Semantics</a>.
+<li>A. Ahmed, A. Arnold, L. P. Coelho, J. Kangas, A.-S. Sheikh, E. Xing, W. Cohen, and R. F. Murphy (2010): <a href="postscript/jws-2010.pdf">Structured Literature Image Finder: Parsing Text and Figures in Biomedical Literature</a> in Journal of Web Semantics.
 </li>
-<li>Nan Li, William W. Cohen, and Kenneth R. Koedinger (2010): <a href="postscript/its-2010-nanli.pdf">A Computational Model of Accelerated Future Learning through Feature Recognition</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/its/its2010-2.html#LiCK10">ITS-2010 (poster)</a>.
+<li>Nan Li, William W. Cohen, and Kenneth R. Koedinger (2010): <a href="postscript/its-2010-nanli.pdf">A Computational Model of Accelerated Future Learning through Feature Recognition</a> in ITS-2010 (poster).
 </li>
-<li>Noboru Matsuda, Victoria Keiser, Rohan Raizada, Arthur Tu, Gabriel Stylianides, William W. Cohen, Kenneth R. Koedinger (2010): <a href="postscript/its-2010-noboru.pdf">Learning by Teaching SimStudent: Technical Accomplishments and an Initial Use with Students</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/its/its2010-1.html#MatsudaKRTSCK10">ITS-2010</a>.
+<li>Noboru Matsuda, Victoria Keiser, Rohan Raizada, Arthur Tu, Gabriel Stylianides, William W. Cohen, Kenneth R. Koedinger (2010): <a href="postscript/its-2010-noboru.pdf">Learning by Teaching SimStudent: Technical Accomplishments and an Initial Use with Students</a> in ITS-2010.
 </li>
 </ol>
-<h3>2009</h3>
+<h3>Papers published in 2009</h3>
 <ol>
-<li>William Cohen (2009): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml2010/CMU-ML-10-102.pdf">Graph Walks and Graphical Models</a> in <a href="recent.html">SCS Technical Report Collection</a>.
+<li>William Cohen (2009): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml2010/CMU-ML-10-102.pdf">Graph Walks and Graphical Models</a> in SCS Technical Report Collection.
 </li>
-<li>William W. Cohen, Natalie Glance, Charles Schafer, Roy Tromble, Yuk Wah Wong (2009): <a href="postscript/locksmith-sub-2009.pdf">Data Integration for Many Data Sources using Context-Sensitive Similarity Metrics</a> in <a href="recent.html">limbo</a>.
+<li>William W. Cohen, Natalie Glance, Charles Schafer, Roy Tromble, Yuk Wah Wong (2009): <a href="postscript/locksmith-sub-2009.pdf">Data Integration for Many Data Sources using Context-Sensitive Similarity Metrics</a> in limbo.
 </li>
-<li>Vitor Carvalho, Ramnath Balasubramanyan and William W. Cohen (2009): <a href="postscript/ceas-2009.pdf">Information Leaks and Suggestions: A Case Study using Mozilla Thunderbird</a> in <a href="recent.html">CEAS-2009</a>.
+<li>Vitor Carvalho, Ramnath Balasubramanyan and William W. Cohen (2009): <a href="postscript/ceas-2009.pdf">Information Leaks and Suggestions: A Case Study using Mozilla Thunderbird</a> in CEAS-2009.
 </li>
-<li>Richard Wang and William W. Cohen (2009): <a href="postscript/emnlp-2009.pdf">Character-level Analysis of Semi-Structured Documents for Set Expansion</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2009.html#WangC09">EMNLP 2009</a>.
+<li>Richard Wang and William W. Cohen (2009): <a href="postscript/emnlp-2009.pdf">Character-level Analysis of Semi-Structured Documents for Set Expansion</a> in EMNLP 2009.
 </li>
-<li>Ramnath Balasubramanyan and William W. Cohen and Matthew Hurst (2009): <a href="postscript/nips-2009-hots.pdf">Modeling corpora of timestamped documents using semisupervised nonparametric topic models</a> in <a href="recent.html">limbo</a>.
+<li>Ramnath Balasubramanyan and William W. Cohen and Matthew Hurst (2009): <a href="postscript/nips-2009-hots.pdf">Modeling corpora of timestamped documents using semisupervised nonparametric topic models</a> in limbo.
 </li>
-<li>Richard Wang and William W. Cohen (2009): <a href="postscript/acl-2009-asia.pdf">Automatic Set Instance Extraction using the Web</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/acl/WangC09">ACL-IJNLP 2009</a>.
+<li>Richard Wang and William W. Cohen (2009): <a href="postscript/acl-2009-asia.pdf">Automatic Set Instance Extraction using the Web</a> in ACL-IJNLP 2009.
 </li>
-<li>Noboru Matsuda, Andrew Lee, William W. Cohen, and Ken Koedinger (2009): <a href="postscript/cogsci-2009.pdf">A Computational Model of How Learner Errors Arise from Weak Prior Knowledge</a> in <a href="recent.html">CogSci-2009</a>.
+<li>Noboru Matsuda, Andrew Lee, William W. Cohen, and Ken Koedinger (2009): <a href="postscript/cogsci-2009.pdf">A Computational Model of How Learner Errors Arise from Weak Prior Knowledge</a> in CogSci-2009.
 </li>
-<li>Amr Ahmed, Andrew Arnold, Luis Pedro Coelho, Joshua Kangas, Abdul-Saboor Sheikk, Eric P. Xing, William W. Cohen, and Robert F. Murphy (2009): <a href="postscript/biolink-2009.pdf">Structured Literature Image Finder</a> in <a href="recent.html">Biolink-2009</a>.
+<li>Amr Ahmed, Andrew Arnold, Luis Pedro Coelho, Joshua Kangas, Abdul-Saboor Sheikk, Eric P. Xing, William W. Cohen, and Robert F. Murphy (2009): <a href="postscript/biolink-2009.pdf">Structured Literature Image Finder</a> in Biolink-2009.
 </li>
-<li>Amr Ahmed, Eric P. Xing, William W. Cohen, and Robert F. Murphy (2009): <a href="postscript/kdd-2009-ahmed.pdf">Structured Correspondence Topic Models for Mining Captioned Figures in Biological Literature</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2009.html#AhmedXCM09">KDD-2009</a>.
+<li>Amr Ahmed, Eric P. Xing, William W. Cohen, and Robert F. Murphy (2009): <a href="postscript/kdd-2009-ahmed.pdf">Structured Correspondence Topic Models for Mining Captioned Figures in Biological Literature</a> in KDD-2009.
 </li>
-<li>Tae Yano, Noah A. Smith, and William W. Cohen (2009): <a href="postscript/naacl2009-tae.pdf">Predicting Response to Political Blog Posts with Topic Models</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/naacl/naacl2009.html#YanoCS09">NAACL-2009</a>.
+<li>Tae Yano, Noah A. Smith, and William W. Cohen (2009): <a href="postscript/naacl2009-tae.pdf">Predicting Response to Political Blog Posts with Topic Models</a> in NAACL-2009.
 </li>
-<li>Ramnath Balasubramanyan, Frank Lin, William W. Cohen, Noah A. Smith, and Matthew Hurst (2009): <a href="postscript/icwsm-2009-saga-final.pdf">From Episodes to Sagas: Understanding the News by Identifying Temporally Related Story Sequences</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icwsm/icwsm2009.html#BalasubramanyanLCHS09">ICWSM-2009 (poster)</a>.
+<li>Ramnath Balasubramanyan, Frank Lin, William W. Cohen, Noah A. Smith, and Matthew Hurst (2009): <a href="postscript/icwsm-2009-saga-final.pdf">From Episodes to Sagas: Understanding the News by Identifying Temporally Related Story Sequences</a> in ICWSM-2009 (poster).
 </li>
-<li>Andrew Arnold and William W. Cohen (2009): <a href="postscript/snas-2009.pdf">Information Extraction as Link Prediction: Using Curated Citation Networks to Improve Gene Detection</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/wasa/wasa2009.html#ArnoldC09">WASA-2009</a>.
+<li>Andrew Arnold and William W. Cohen (2009): <a href="postscript/snas-2009.pdf">Information Extraction as Link Prediction: Using Curated Citation Networks to Improve Gene Detection</a> in WASA-2009.
 </li>
-<li>Andrew Arnold and William W. Cohen (2009): <a href="postscript/icwsm-2009-aa-final.pdf">Information Extraction as Link Prediction: Using Curated Citation Networks to Improve Gene Detection</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/icwsm/ArnoldC09">ICWSM-2009 (poster)</a>.
+<li>Andrew Arnold and William W. Cohen (2009): <a href="postscript/icwsm-2009-aa-final.pdf">Information Extraction as Link Prediction: Using Curated Citation Networks to Improve Gene Detection</a> in ICWSM-2009 (poster).
 </li>
 </ol>
-<h3>2008</h3>
+<h3>Papers published in 2008</h3>
 <ol>
-<li>Richard Wang and William W. Cohen (2008): <a href="postscript/icdm-2008-iseal.pdf">Iterative Set Expansion of Named Entities Using the Web</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icdm/icdm2008.html#WangC08">ICDM-2008</a>.
+<li>Richard Wang and William W. Cohen (2008): <a href="postscript/icdm-2008-iseal.pdf">Iterative Set Expansion of Named Entities Using the Web</a> in ICDM-2008.
 </li>
-<li>Andrew Arnold and William W. Cohen (2008): <a href="postscript/cikm-2008.pdf">Intra-document Structural Frequency Features for Semi-Supervised Domain Adaptation</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/cikm/cikm2008.html#ArnoldC08">CIKM-2008</a>.
+<li>Andrew Arnold and William W. Cohen (2008): <a href="postscript/cikm-2008.pdf">Intra-document Structural Frequency Features for Semi-Supervised Domain Adaptation</a> in CIKM-2008.
 </li>
-<li>Vitor Carvalho, Jonathan L. Elsas, William W. Cohen, and Jaime G. Carbonell (2008): <a href="postscript/cikm08-carvalho.pdf">Suppressing Outliers in Pairwise Preference Ranking</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/cikm/cikm2008.html#CarvalhoECC08">CIKM-2008</a>.
+<li>Vitor Carvalho, Jonathan L. Elsas, William W. Cohen, and Jaime G. Carbonell (2008): <a href="postscript/cikm08-carvalho.pdf">Suppressing Outliers in Pairwise Preference Ranking</a> in CIKM-2008.
 </li>
-<li>Richard Wang, Nico Schlaefer, William W. Cohen, and Eric Nyberg (2008): <a href="postscript/emnlp-2008-richard.pdf">Automatic Set Expansion for List Question Answering</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2008.html#WangSCN08">EMNLP-2008</a>.
+<li>Richard Wang, Nico Schlaefer, William W. Cohen, and Eric Nyberg (2008): <a href="postscript/emnlp-2008-richard.pdf">Automatic Set Expansion for List Question Answering</a> in EMNLP-2008.
 </li>
-<li>Einat Minkov and William W. Cohen (2008): <a href="postscript/emnlp-2008-einat.pdf">Learning Graph Walk Based Similarity Measures for Parsed Text</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2008.html#MinkovC08">EMNLP-2008</a>.
+<li>Einat Minkov and William W. Cohen (2008): <a href="postscript/emnlp-2008-einat.pdf">Learning Graph Walk Based Similarity Measures for Parsed Text</a> in EMNLP-2008.
 </li>
-<li>Andrew Arnold, Ramesh Nallapati and William W. Cohen (2008): <a href="postscript/acl-2008.pdf">Exploiting Feature Hierarchy for Transfer Learning in Named Entity Recognition</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/acl/acl2008.html#ArnoldNC08">ACL-2008</a>.
+<li>Andrew Arnold, Ramesh Nallapati and William W. Cohen (2008): <a href="postscript/acl-2008.pdf">Exploiting Feature Hierarchy for Transfer Learning in Named Entity Recognition</a> in ACL-2008.
 </li>
-<li>Ramnath Balasubramanyan, Vitor Carvalho, and William W. Cohen (2008): <a href="postscript/aaai-ws-2008-cutonce.pdf">CutOnce - Recipient Recommendation and Leak Detection in Action</a> in <a href="recent.html">AAAI-2008 Workshop on Enhanced Messaging</a>.
+<li>Ramnath Balasubramanyan, Vitor Carvalho, and William W. Cohen (2008): <a href="postscript/aaai-ws-2008-cutonce.pdf">CutOnce - Recipient Recommendation and Leak Detection in Action</a> in AAAI-2008 Workshop on Enhanced Messaging.
 </li>
-<li>Einat Minkov, Ramnath Balasubramanyan, and William W. Cohen (2008): <a href="postscript/aaai-ws-2008-einat.pdf">Activity-centric Search in Email</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ceas/ceas2008.html#MinkovBC08">AAAI-2008 Workshop on Enhanced Messaging</a>.
+<li>Einat Minkov, Ramnath Balasubramanyan, and William W. Cohen (2008): <a href="postscript/aaai-ws-2008-einat.pdf">Activity-centric Search in Email</a> in AAAI-2008 Workshop on Enhanced Messaging.
 </li>
-<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Gustavo Lacerda, Kenneth Koedinger (2008): <a href="postscript/simstudent-authoring-submitted.pdf">SimStudent: Building an Intelligent Tutoring System by Tutoring a Synthetic Student</a> in <a href="recent.html">limbo</a>.
+<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Gustavo Lacerda, Kenneth Koedinger (2008): <a href="postscript/simstudent-authoring-submitted.pdf">SimStudent: Building an Intelligent Tutoring System by Tutoring a Synthetic Student</a> in limbo.
 </li>
-<li>Einat Minkov and William W. Cohen (2008): <a href="postscript/tr-einat-2008.pdf">Learning to Walk Structured Text Networks</a> in <a href="recent.html">CMU SCS Technical Report Series (CMU-LTI-08-02)</a>.
+<li>Einat Minkov and William W. Cohen (2008): <a href="postscript/tr-einat-2008.pdf">Learning to Walk Structured Text Networks</a> in CMU SCS Technical Report Series (CMU-LTI-08-02).
 </li>
-<li>Ramesh Nallapati, Amr Ahmed, Eric Xing, and William W. Cohen (2008): <a href="postscript/kdd-2008-ramesh.pdf">Joint Latent Topic Models for Text and Citations</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2008.html#NallapatiAXC08">KDD-2008</a>.
+<li>Ramesh Nallapati, Amr Ahmed, Eric Xing, and William W. Cohen (2008): <a href="postscript/kdd-2008-ramesh.pdf">Joint Latent Topic Models for Text and Citations</a> in KDD-2008.
 </li>
-<li>Ramesh Nallapati and William W. Cohen (2008): <a href="postscript/icwsm-2007-ramesh.pdf">Link-PLSA-LDA: A New Unsupervised Model for Topics and Influence of Blogs</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/icwsm/NallapatiC08">ICWSM-2008</a>.
+<li>Ramesh Nallapati and William W. Cohen (2008): <a href="postscript/icwsm-2007-ramesh.pdf">Link-PLSA-LDA: A New Unsupervised Model for Topics and Influence of Blogs</a> in ICWSM-2008.
 </li>
-<li>Yi-Chia Wang, Mahesh Joshi, William Cohen, and Carolyn Rose (2008): <a href="postscript/icwsm-2007-yichia.pdf">Recovering Implicit Thread Structure in Newsgroup Style Conversations</a> in <a href="http://dblp.uni-trier.de/rec/bibtex/conf/icwsm/WangJCR08">ICWSM-2008</a>.
+<li>Yi-Chia Wang, Mahesh Joshi, William Cohen, and Carolyn Rose (2008): <a href="postscript/icwsm-2007-yichia.pdf">Recovering Implicit Thread Structure in Newsgroup Style Conversations</a> in ICWSM-2008.
 </li>
-<li>Frank Lin and William W. Cohen (2008): <a href="postscript/icwsm-2007-frank-abstract.pdf">The MultiRank Bootstrap Algorithm: SemiSupervised Political Blog Classification and Ranking Using SemiSupervised Link Classification</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icwsm/icwsm2008.html#LinC08">ICWSM-2008  (poster)</a>.
+<li>Frank Lin and William W. Cohen (2008): <a href="postscript/icwsm-2007-frank-abstract.pdf">The MultiRank Bootstrap Algorithm: SemiSupervised Political Blog Classification and Ranking Using SemiSupervised Link Classification</a> in ICWSM-2008  (poster).
 </li>
-<li>Frank Lin and William W. Cohen (2008): <a href="postscript/CMU-LTI-08-003.pdf">The MultiRank Bootstrap Algorithm: SemiSupervised Political Blog Classification and Ranking Using SemiSupervised Link Classification</a> in <a href="recent.html">CMU SCS Technical Report Series (CMU-LTI-08-03)</a>.
+<li>Frank Lin and William W. Cohen (2008): <a href="postscript/CMU-LTI-08-003.pdf">The MultiRank Bootstrap Algorithm: SemiSupervised Political Blog Classification and Ranking Using SemiSupervised Link Classification</a> in CMU SCS Technical Report Series (CMU-LTI-08-03).
 </li>
-<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Gustavo Lacerda, and Kenneth R. Koedinger (2008): <a href="postscript/its-2008-final.pdf">Why Tutored Problem Solving may be better than Example Study: Theoretical Implications from a Simulated-Student Study</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/its/its2008.html#MatsudaCSLK08">ITS-2008</a>.
+<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Gustavo Lacerda, and Kenneth R. Koedinger (2008): <a href="postscript/its-2008-final.pdf">Why Tutored Problem Solving may be better than Example Study: Theoretical Implications from a Simulated-Student Study</a> in ITS-2008.
 </li>
-<li>Vitor Carvalho and William W. Cohen (2008): <a href="postscript/ecir2008.pdf">Ranking Users for Intelligent Message Addressing</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ecir/ecir2008.html#CarvalhoC08">ECIR-2008</a>.
+<li>Vitor Carvalho and William W. Cohen (2008): <a href="postscript/ecir2008.pdf">Ranking Users for Intelligent Message Addressing</a> in ECIR-2008.
 </li>
 </ol>
-<h3>2007</h3>
+<h3>Papers published in 2007</h3>
 <ol>
-<li>Andrew Arnold, Ramesh Nallapati and William W. Cohen (2007): <a href="postscript/icdm-workshop-2007-transfer.pdf">A Comparative Study of Methods for Transductive Transfer Learning</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icdm/icdmw2007.html#ArnoldNC07">ICDM Workshop on Mining and Management of Biological Data</a>.
+<li>Andrew Arnold, Ramesh Nallapati and William W. Cohen (2007): <a href="postscript/icdm-workshop-2007-transfer.pdf">A Comparative Study of Methods for Transductive Transfer Learning</a> in ICDM Workshop on Mining and Management of Biological Data.
 </li>
-<li>Ramesh Nallapati, William W. Cohen, and John Lafferty (2007): <a href="postscript/icdm-workshop-2007-parallel.pdf">Parallelized Variational EM for Latent Dirichlet Allocation: An Experimental Evaluation of Speed and Scalability</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icdm/icdmw2007.html#NallapatiCL07">ICDM Workshop on High Performance Data Mining</a>.
+<li>Ramesh Nallapati, William W. Cohen, and John Lafferty (2007): <a href="postscript/icdm-workshop-2007-parallel.pdf">Parallelized Variational EM for Latent Dirichlet Allocation: An Experimental Evaluation of Speed and Scalability</a> in ICDM Workshop on High Performance Data Mining.
 </li>
-<li>Ramesh Nallapati, Amr Ahmed, William Cohen and Eric Xing (2007): <a href="postscript/icdm-workshop-2007-graphs.pdf">Sparse Word Graphs: A Scalable Algorithm for Capturing Word Correlations in Topic Models</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icdm/icdmw2007.html#NallapatiACX07">ICDM Workshop on High Performance Data Mining</a>.
+<li>Ramesh Nallapati, Amr Ahmed, William Cohen and Eric Xing (2007): <a href="postscript/icdm-workshop-2007-graphs.pdf">Sparse Word Graphs: A Scalable Algorithm for Capturing Word Correlations in Topic Models</a> in ICDM Workshop on High Performance Data Mining.
 </li>
-<li>Richard Wang and William Cohen (2007): <a href="postscript/icdm-2007.pdf">Language-Independent Set Expansion of Named Entities using the Web</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icdm/icdm2007.html#WangC07">ICDM-2007</a>.
+<li>Richard Wang and William Cohen (2007): <a href="postscript/icdm-2007.pdf">Language-Independent Set Expansion of Named Entities using the Web</a> in ICDM-2007.
 </li>
-<li>Einat Minkov and William Cohen (2007): <a href="postscript/webkdd-2007.pdf">Learning to Rank Typed Graph Walks: Local and Global Approaches</a> in <a href="recent.html">WebKDD-2007</a>.
+<li>Einat Minkov and William Cohen (2007): <a href="postscript/webkdd-2007.pdf">Learning to Rank Typed Graph Walks: Local and Global Approaches</a> in WebKDD-2007.
 </li>
-<li>Sarah Zelikovitz, William Cohen, and Haym Hirsh (2007): <a href="http://portal.acm.org/citation.cfm?id=1210459.1210463">Extending WHIRL with background knowledge for improved text classification</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ir/ir10.html#ZelikovitzCH07">Information Retrieval 10(1) pp 35-67</a>.
+<li>Sarah Zelikovitz, William Cohen, and Haym Hirsh (2007): <a href="http://portal.acm.org/citation.cfm?id=1210459.1210463">Extending WHIRL with background knowledge for improved text classification</a> in Information Retrieval 10(1) pp 35-67.
 </li>
-<li>Vitor Carvalho, Wen Wu and William Cohen (2007): <a href="postscript/ceas-2007.pdf">Discovering Leadership Roles in Email Workgroups</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ceas/ceas2007.html#CarvalhoWC07">CEAS-2007</a>.
+<li>Vitor Carvalho, Wen Wu and William Cohen (2007): <a href="postscript/ceas-2007.pdf">Discovering Leadership Roles in Email Workgroups</a> in CEAS-2007.
 </li>
-<li>Zhenzhen Kou, Vitor Carvalho and William Cohen (2007): <a href="postscript/nipsws-2007.pdf">Online Stacked Graphical Learning</a> in <a href="http://bigml.wikispaces.com/">NIPS-07 Workshop on Efficient Machine Learning </a>.
+<li>Zhenzhen Kou, Vitor Carvalho and William Cohen (2007): <a href="postscript/nipsws-2007.pdf">Online Stacked Graphical Learning</a> in NIPS-07 Workshop on Efficient Machine Learning .
 </li>
-<li>Vitor Carvalho and William Cohen (2007): <a href="postscript/cc-predict-submitted.pdf">Recommending Recipients in the Enron Corpus</a> in <a href="recent.html">limbo</a>.
+<li>Vitor Carvalho and William Cohen (2007): <a href="postscript/cc-predict-submitted.pdf">Recommending Recipients in the Enron Corpus</a> in limbo.
 </li>
-<li>Ramesh Nallapati, William Cohen, Susan Ditmore, John Lafferty and Kin Ung (2007): <a href="postscript/topic-tomography-submitted.pdf">Multiscale Topic Tomography</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2007.html#NallapatiDLU07">KDD-2007</a>.
+<li>Ramesh Nallapati, William Cohen, Susan Ditmore, John Lafferty and Kin Ung (2007): <a href="postscript/topic-tomography-submitted.pdf">Multiscale Topic Tomography</a> in KDD-2007.
 </li>
-<li>Noboru Matsuda, William Cohen, Jonathan Sewall, Gustavo Lacerda and Ken Koedinger (2007): <a href="http://www.cs.cmu.edu/~mazda/Doc/AIED2007/index.htm">Predicting students performance with a SimStudent that learns cognitive skills from observation</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aied/aied2007.html#MatsudaCSLK07">AIED-2007</a>.
+<li>Noboru Matsuda, William Cohen, Jonathan Sewall, Gustavo Lacerda and Ken Koedinger (2007): <a href="http://www.cs.cmu.edu/~mazda/Doc/AIED2007/index.htm">Predicting students performance with a SimStudent that learns cognitive skills from observation</a> in AIED-2007.
 </li>
-<li>Noboru Matsuda, William Cohen, Jonathan Sewall, Gustavo Lacerda and Ken Koedinger (2007): <a href="http://www.cs.cmu.edu/~mazda/Doc/UM2007/index.htm">Evaluating a simulated student using real students data for training and testing</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/um/um2007.html#MatsudaCSLK07">UM-2007</a>.
+<li>Noboru Matsuda, William Cohen, Jonathan Sewall, Gustavo Lacerda and Ken Koedinger (2007): <a href="http://www.cs.cmu.edu/~mazda/Doc/UM2007/index.htm">Evaluating a simulated student using real students data for training and testing</a> in UM-2007.
 </li>
-<li>Juchang Hua, Orhan Ayasli, William Cohen and Robert Murphy (2007): <a href="postscript/isbi-2007.pdf">Identifying Fluorescence Microscope Images in Online Journal Publications using Both Image and Text Features</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/isbi/isbi2007.html#HuaACM07">ISBI-2007</a>.
+<li>Juchang Hua, Orhan Ayasli, William Cohen and Robert Murphy (2007): <a href="postscript/isbi-2007.pdf">Identifying Fluorescence Microscope Images in Online Journal Publications using Both Image and Text Features</a> in ISBI-2007.
 </li>
-<li>Vitor Carvalho and William W. Cohen (2007): <a href="postscript/sdm-2007-leak.pdf">Preventing Information Leaks in Email</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sdm/sdm2007.html#CarvalhoC07">SDM-2007</a>.
+<li>Vitor Carvalho and William W. Cohen (2007): <a href="postscript/sdm-2007-leak.pdf">Preventing Information Leaks in Email</a> in SDM-2007.
 </li>
-<li>Zhenzhen Kou and William W. Cohen (2007): <a href="postscript/sdm-2007-stack.pdf">Stacked Graphical Models for Efficient Inference in Markov Random Fields</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sdm/sdm2007.html#KouC07">SDM-2007</a>.
+<li>Zhenzhen Kou and William W. Cohen (2007): <a href="postscript/sdm-2007-stack.pdf">Stacked Graphical Models for Efficient Inference in Markov Random Fields</a> in SDM-2007.
 </li>
-<li>Zhenzhen Kou, William W. Cohen, and Robert F. Murphy (2007): <a href="postscript/psb-2007-stack.pdf">A Stacked Graphical Model for Associating Information from Text And Images In Figures</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/psb/psb2007.html#KouCM07">PSB-2007</a>.
+<li>Zhenzhen Kou, William W. Cohen, and Robert F. Murphy (2007): <a href="postscript/psb-2007-stack.pdf">A Stacked Graphical Model for Associating Information from Text And Images In Figures</a> in PSB-2007.
 </li>
 </ol>
-<h3>2006</h3>
+<h3>Papers published in 2006</h3>
 <ol>
-<li>Richard C. Wang, Anthony Tomasic, Robert E. Frederking, William W. Cohen (2006): <a href="postscript/CMU-LTI-08-004.pdf">Learning to Extract Gene-Protein Names from Weakly-Labeled Text</a> in <a href="recent.html">CMU SCS Technical Report Series (CMU-LTI-08-04)</a>.
+<li>Richard C. Wang, Anthony Tomasic, Robert E. Frederking, William W. Cohen (2006): <a href="postscript/CMU-LTI-08-004.pdf">Learning to Extract Gene-Protein Names from Weakly-Labeled Text</a> in CMU SCS Technical Report Series (CMU-LTI-08-04).
 </li>
-<li>Noboru Matsuda, William Cohen & Ken Koedinger (2006): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml/CMU-ML-06-106.pdf">What characterizes a better demonstration for cognitive modeling by demonstration? </a> in <a href="recent.html">CMU SCS Technical Report Series (CMU-ML-06-106)</a>.
+<li>Noboru Matsuda, William Cohen & Ken Koedinger (2006): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml/CMU-ML-06-106.pdf">What characterizes a better demonstration for cognitive modeling by demonstration? </a> in CMU SCS Technical Report Series (CMU-ML-06-106).
 </li>
-<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Kenneth R. Koedinger (2006): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml/CMU-ML-06-105.pdf">Applying Machine Learning to Cognitive Modeling for Cognitive Tutors</a> in <a href="recent.html">CMU SCS Technical Report Series (CMU-ML-06-105)</a>.
+<li>Noboru Matsuda, William W. Cohen, Jonathan Sewall, Kenneth R. Koedinger (2006): <a href="http://reports-archive.adm.cs.cmu.edu/anon/ml/CMU-ML-06-105.pdf">Applying Machine Learning to Cognitive Modeling for Cognitive Tutors</a> in CMU SCS Technical Report Series (CMU-ML-06-105).
 </li>
-<li>Einat Minkov and William W. Cohen (2006): <a href="postscript/ceas2006.pdf">An Email and Meeting Assistant using Graph Walks</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ceas/ceas2006.html#MinkovC06">CEAS-2006</a>.
+<li>Einat Minkov and William W. Cohen (2006): <a href="postscript/ceas2006.pdf">An Email and Meeting Assistant using Graph Walks</a> in CEAS-2006.
 </li>
-<li>Einat Minkov, Andrew Ng and William W. Cohen (2006): <a href="postscript/sigir2006.pdf">Contextual Search and Name Disambiguation in Email using Graphs </a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2006.html#MinkovCN06">SIGIR-2006</a>.
+<li>Einat Minkov, Andrew Ng and William W. Cohen (2006): <a href="postscript/sigir2006.pdf">Contextual Search and Name Disambiguation in Email using Graphs </a> in SIGIR-2006.
 </li>
-<li>Vitor Carvalho and William W. Cohen (2006): <a href="postscript/kdd2006.pdf">Single-Pass Online Learning: Performance, Voting Schemes and Online Feature Selection</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2006.html#CarvalhoC06">KDD-2006 </a>.
+<li>Vitor Carvalho and William W. Cohen (2006): <a href="postscript/kdd2006.pdf">Single-Pass Online Learning: Performance, Voting Schemes and Online Feature Selection</a> in KDD-2006 .
 </li>
-<li>Vitor Carvalho and William W. Cohen (2006): <a href="postscript/hlt-acts-2006.pdf">Improving Email Speech Act Analysis via N-gram Selection</a> in <a href="recent.html">HLT/NAACL ACTS Workshop 2006</a>.
+<li>Vitor Carvalho and William W. Cohen (2006): <a href="postscript/hlt-acts-2006.pdf">Improving Email Speech Act Analysis via N-gram Selection</a> in HLT/NAACL ACTS Workshop 2006.
 </li>
-<li>Einat Minkov, Richard C.Wang, Anthony Tomasic and William W. Cohen (2006): <a href="postscript/hlt2006.pdf">NER Systems that Suit Users Preferences: Adjusting the Recall-Precision Trade-off for Entity Extraction</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/naacl/naacl2006.html#MinkovWTC06">HLT/NAACL-2006 (short paper)</a>.
+<li>Einat Minkov, Richard C.Wang, Anthony Tomasic and William W. Cohen (2006): <a href="postscript/hlt2006.pdf">NER Systems that Suit Users Preferences: Adjusting the Recall-Precision Trade-off for Entity Extraction</a> in HLT/NAACL-2006 (short paper).
 </li>
-<li>William W. Cohen (2006): <a href="postscript/bio-ont-ws-2006.pdf">A Graph-Search Framework for GeneId Ranking (Extended Abstract)</a> in <a href="recent.html">BioNLP'06</a>.
+<li>William W. Cohen (2006): <a href="postscript/bio-ont-ws-2006.pdf">A Graph-Search Framework for GeneId Ranking (Extended Abstract)</a> in BioNLP'06.
 </li>
-<li>William W. Cohen & Einat Minkov (2006): <a href="http://www.biomedcentral.com/content/pdf/1471-2105-7-440.pdf">A Graph-Search Framework for Associating Gene Identifiers with Documents</a> in <a href="http://www.biomedcentral.com/1471-2105/7/440">BMC Bioinformatics</a>.
+<li>William W. Cohen & Einat Minkov (2006): <a href="http://www.biomedcentral.com/content/pdf/1471-2105-7-440.pdf">A Graph-Search Framework for Associating Gene Identifiers with Documents</a> in BMC Bioinformatics.
 </li>
 </ol>
-<h3>2005</h3>
+<h3>Papers published in 2005</h3>
 <ol>
-<li>Einat Minkov, Richard C. Wang, and William W. Cohen (2005): <a href="postscript/hlt-2005.pdf">Extracting Personal Names from Email: Applying Named Entity Recognition to Informal Text</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/naacl/naacl2005.html#MinkovWC05">EMNLP/HLT-2005</a>.
+<li>Einat Minkov, Richard C. Wang, and William W. Cohen (2005): <a href="postscript/hlt-2005.pdf">Extracting Personal Names from Email: Applying Named Entity Recognition to Informal Text</a> in EMNLP/HLT-2005.
 </li>
-<li>Edoardo M. Airoldi, William W. Cohen, Stephen Fienberg (2005): <a href="postscript/csna-2005.pdf">Bayesian methods for frequent terms in text: Models of contagion and the Delta square statistic</a> in <a href="recent.html">CSNA-2005</a>.
+<li>Edoardo M. Airoldi, William W. Cohen, Stephen Fienberg (2005): <a href="postscript/csna-2005.pdf">Bayesian methods for frequent terms in text: Models of contagion and the Delta square statistic</a> in CSNA-2005.
 </li>
-<li>William W. Cohen, Einat Minkov & Anthony Tomasic (2005): <a href="postscript/webmaster.pdf">Learning to Understand Web Site Update Requests</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2005.html#CohenMT05">IJCAI-2005</a>.
+<li>William W. Cohen, Einat Minkov & Anthony Tomasic (2005): <a href="postscript/webmaster.pdf">Learning to Understand Web Site Update Requests</a> in IJCAI-2005.
 </li>
-<li>William W. Cohen & Vitor Carvalho (2005): <a href="postscript/ijcai-2005-stack.pdf">Stacked Sequential Learning</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2005.html#CohenC05">IJCAI-2005</a>.
+<li>William W. Cohen & Vitor Carvalho (2005): <a href="postscript/ijcai-2005-stack.pdf">Stacked Sequential Learning</a> in IJCAI-2005.
 </li>
-<li>Vitor Carvalho & William W. Cohen (2005): <a href="postscript/sigir-2005.pdf">On the Collective Classification of Email Speech Acts</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2005.html#CarvalhoC05">SIGIR 2005</a>.
+<li>Vitor Carvalho & William W. Cohen (2005): <a href="postscript/sigir-2005.pdf">On the Collective Classification of Email Speech Acts</a> in SIGIR 2005.
 </li>
-<li>Zhenzhen Kou, William W. Cohen & Robert F. Murphy (2005): <a href="postscript/ismb-2005.pdf">High-Recall Protein Entity Recognition Using a Dictionary</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ismb/ismb2005.html#KouCM05">ISMB-2005</a>.
+<li>Zhenzhen Kou, William W. Cohen & Robert F. Murphy (2005): <a href="postscript/ismb-2005.pdf">High-Recall Protein Entity Recognition Using a Dictionary</a> in ISMB-2005.
 </li>
-<li>Carolyn Rose, Pinar Donmez, G. Gweon, A. Knight, B. Junker, W. Cohen, K. Koedinger, N. Hefferman (2005): <a href="postscript/aied-2005.pdf">Automatic and Semi-Automatic Skill Coding with a View Towards Supporting On-Line Assessment</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aied/aied2005.html#RoseDGKJCKH05">AIED-2005</a>.
+<li>Carolyn Rose, Pinar Donmez, G. Gweon, A. Knight, B. Junker, W. Cohen, K. Koedinger, N. Hefferman (2005): <a href="postscript/aied-2005.pdf">Automatic and Semi-Automatic Skill Coding with a View Towards Supporting On-Line Assessment</a> in AIED-2005.
 </li>
-<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/japan-ws-2005.pdf">An Intelligent Authoring System with Programming by Demonstration.</a> in <a href="recent.html">Proceedings of the Japan National Conference on Information and Systems in Education</a>.
+<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/japan-ws-2005.pdf">An Intelligent Authoring System with Programming by Demonstration.</a> in Proceedings of the Japan National Conference on Information and Systems in Education.
 </li>
-<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/ilp-2005-late.pdf">Building Cognitive Tutors with Programming by Demonstration</a> in <a href="recent.html">ILP-2005 (late-breaking paper)</a>.
+<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/ilp-2005-late.pdf">Building Cognitive Tutors with Programming by Demonstration</a> in ILP-2005 (late-breaking paper).
 </li>
-<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/aaai-ws-2005.pdf">Applying Programming by Demonstration in an Intelligent Authoring Tool for Cognitive Tutors</a> in <a href="recent.html">AAAI Workshop on Human Comprehensible Machine Learning</a>.
+<li>Noboru Matsuda, William Cohen & Ken Koedinger (2005): <a href="postscript/aaai-ws-2005.pdf">Applying Programming by Demonstration in an Intelligent Authoring Tool for Cognitive Tutors</a> in AAAI Workshop on Human Comprehensible Machine Learning.
 </li>
 </ol>
-<h3>2004</h3>
+<h3>Papers published in 2004</h3>
 <ol>
-<li>Einat Minkov, Richard Wang & William Cohen  (2004): <a href="postscript/coref-2004.pdf">Extracting Personal Names from Emails: Applying Named Entity Recognition to Informal Text</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/naacl/naacl2005.html#MinkovWC05">NAACL-2005</a>.
+<li>Einat Minkov, Richard Wang & William Cohen  (2004): <a href="postscript/coref-2004.pdf">Extracting Personal Names from Emails: Applying Named Entity Recognition to Informal Text</a> in NAACL-2005.
 </li>
-<li>Sunita Sarawagi & William W. Cohen (2004): <a href="postscript/semiCRF.pdf">Semi-Markov Conditional Random Fields for Information Extraction</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips2004.html#SarawagiC04">NIPS 2004</a>.
+<li>Sunita Sarawagi & William W. Cohen (2004): <a href="postscript/semiCRF.pdf">Semi-Markov Conditional Random Fields for Information Extraction</a> in NIPS 2004.
 </li>
-<li>Robert F. Murphy, Zhenzhen Kou, Juchang Hua, Matthew Joffe, William W. Cohen (2004): <a href="postscript/ksce-2004.pdf">Extracting and Structuring Subcellular Location Information from On-line Journal Articles: The Subcellular Location Image Finder</a> in <a href="recent.html">KSCE-2004</a>.
+<li>Robert F. Murphy, Zhenzhen Kou, Juchang Hua, Matthew Joffe, William W. Cohen (2004): <a href="postscript/ksce-2004.pdf">Extracting and Structuring Subcellular Location Information from On-line Journal Articles: The Subcellular Location Image Finder</a> in KSCE-2004.
 </li>
-<li>Pradeep Ravikumar, William W. Cohen, Stephen E. Fienberg (2004): <a href="postscript/psdm-2004.pdf">A Secure Protocol for Computing String Distance Metrics</a> in <a href="recent.html">PSDM-2004</a>.
+<li>Pradeep Ravikumar, William W. Cohen, Stephen E. Fienberg (2004): <a href="postscript/psdm-2004.pdf">A Secure Protocol for Computing String Distance Metrics</a> in PSDM-2004.
 </li>
-<li>Anthony Tomasic, William W. Cohen, Einat Minkov (2004): <a href="postscript/iiweb-2004.pdf">Learning to Navigate Web Forms</a> in <a href="recent.html">IIWeb 2004</a>.
+<li>Anthony Tomasic, William W. Cohen, Einat Minkov (2004): <a href="postscript/iiweb-2004.pdf">Learning to Navigate Web Forms</a> in IIWeb 2004.
 </li>
-<li>William W. Cohen, Vitor Carvalho & Tom Mitchell (2004): <a href="postscript/speech-acts.pdf">Learning to Classify Email into "Speech Acts"</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/emnlp/emnlp2004.html#CohenCM04">EMNLP 2004</a>.
+<li>William W. Cohen, Vitor Carvalho & Tom Mitchell (2004): <a href="postscript/speech-acts.pdf">Learning to Classify Email into "Speech Acts"</a> in EMNLP 2004.
 </li>
-<li>Vitor Carvalho & William W. Cohen (2004): <a href="postscript/email-2004.pdf">Learning to Extract Signature and Reply Lines from Email</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ceas/ceas2004.html#CarvalhoC04">CEAS 2004</a>.
+<li>Vitor Carvalho & William W. Cohen (2004): <a href="postscript/email-2004.pdf">Learning to Extract Signature and Reply Lines from Email</a> in CEAS 2004.
 </li>
-<li>Yifen Huang, Dinesh Govindaraju, Tom Mitchell, Vitor Carvalho & William W. Cohen (2004): <a href="postscript/ceas-2004.pdf">Inferring Ongoing Activities of Workstation Users by Clustering Email</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ceas/ceas2004.html#HuangGMCC04">CEAS 2004</a>.
+<li>Yifen Huang, Dinesh Govindaraju, Tom Mitchell, Vitor Carvalho & William W. Cohen (2004): <a href="postscript/ceas-2004.pdf">Inferring Ongoing Activities of Workstation Users by Clustering Email</a> in CEAS 2004.
 </li>
-<li>Pradeep Ravikumar & William W. Cohen (2004): <a href="postscript/uai-2004.pdf">A Hierarchical Graphical Model for Record Linkage</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/uai/uai2004.html#RavikumarC04">UAI 2004</a>.
+<li>Pradeep Ravikumar & William W. Cohen (2004): <a href="postscript/uai-2004.pdf">A Hierarchical Graphical Model for Record Linkage</a> in UAI 2004.
 </li>
-<li>William W. Cohen & Sunita Sarawagi (2004): <a href="postscript/kdd-04-csmm.pdf">Exploiting Dictionaries in Named Entity Extraction: Combining Semi-Markov Extraction Processes and Data Integration Methods</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2004.html#CohenS04">KDD 2004: 89-98</a>.
+<li>William W. Cohen & Sunita Sarawagi (2004): <a href="postscript/kdd-04-csmm.pdf">Exploiting Dictionaries in Named Entity Extraction: Combining Semi-Markov Extraction Processes and Data Integration Methods</a> in KDD 2004: 89-98.
 </li>
 </ol>
-<h3>2003</h3>
+<h3>Papers published in 2003</h3>
 <ol>
-<li>William W. Cohen (2003): <a href="postscript/deb-2003.pdf">Learning and Discovering Structure in Web Pages</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/debu/debu26.html#Cohen03">IEEE Data Eng. Bull. 26(3): 3-10 (2003)</a>.
+<li>William W. Cohen (2003): <a href="postscript/deb-2003.pdf">Learning and Discovering Structure in Web Pages</a> in IEEE Data Eng. Bull. 26(3): 3-10 (2003).
 </li>
-<li>Mikael Bilenko, Ray Mooney, William W. Cohen, Pradeep Ravikumar & Steve Fienberg (2003): <a href="postscript/intelligent-systems-2003.pdf">Adaptive Name-Matching in Information Integration</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/expert/expert18.html#BilenkoMCRF03">IEEE Intelligent Systems 18(5): 16-23 (2003)</a>.
+<li>Mikael Bilenko, Ray Mooney, William W. Cohen, Pradeep Ravikumar & Steve Fienberg (2003): <a href="postscript/intelligent-systems-2003.pdf">Adaptive Name-Matching in Information Integration</a> in IEEE Intelligent Systems 18(5): 16-23 (2003).
 </li>
-<li>William W. Cohen, Zhenzhen Kou & Robert F. Murphy (2003): <a href="postscript/kdd-2003-bio-ws.doc">Extracting Information from Text and Images for Location Proteomics</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/biokdd2003.html#KouCM03">BIOKDD 2003: 2-9</a>.
+<li>William W. Cohen, Zhenzhen Kou & Robert F. Murphy (2003): <a href="postscript/kdd-2003-bio-ws.doc">Extracting Information from Text and Images for Location Proteomics</a> in BIOKDD 2003: 2-9.
 </li>
-<li>William W. Cohen, Pradeep Ravikumar & Stephen Fienberg (2003): <a href="postscript/kdd-2003-match-ws.pdf">A Comparison of String Metrics for Matching Names and Records</a> in <i>KDD Workshop on Data Cleaning and Object Consolidation</i>.
+<li>William W. Cohen, Pradeep Ravikumar & Stephen Fienberg (2003): <a href="postscript/kdd-2003-match-ws.pdf">A Comparison of String Metrics for Matching Names and Records</a> in KDD Workshop on Data Cleaning and Object Consolidation.
 </li>
-<li>William W. Cohen, Pradeep Ravikumar & Stephen Fienberg (2003): <a href="postscript/ijcai-ws-2003.pdf">A Comparison of String Distance Metrics for Name-Matching Tasks</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai2003iiweb.html#CohenRF03">IIWeb 2003: 73-78</a>.
+<li>William W. Cohen, Pradeep Ravikumar & Stephen Fienberg (2003): <a href="postscript/ijcai-ws-2003.pdf">A Comparison of String Distance Metrics for Name-Matching Tasks</a> in IIWeb 2003: 73-78.
 </li>
-<li>William W. Cohen, Richard Wang & Robert Murphy (2003): <a href="postscript/ismb-2003.pdf">Understanding Captions in Biomedical Publications</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2003.html#CohenWM03">KDD 2003: 499-504</a>.
+<li>William W. Cohen, Richard Wang & Robert Murphy (2003): <a href="postscript/ismb-2003.pdf">Understanding Captions in Biomedical Publications</a> in KDD 2003: 499-504.
 </li>
-<li>William W. Cohen (2003): <a href="postscript/iaai-2003.pdf">Infrastructure Components for Large-Scale Information Extraction Systems</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/iaai/iaai2003.html#Cohen03">IAAI 2003: 71-78</a>.
+<li>William W. Cohen (2003): <a href="postscript/iaai-2003.pdf">Infrastructure Components for Large-Scale Information Extraction Systems</a> in IAAI 2003: 71-78.
 </li>
-<li>Cheng Zhai, William W. Cohen & John Lafferty (2003): <a href="postscript/sigir-2003.pdf">Beyond Independent Topical Relevance: Methods and Evaluation Metrics for Subtopic Retrieval</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir2003.html#ZhaiCL03">SIGIR 2003: 10-17</a> <b>(Won Ten-Year "Test of Time" Award at SIGIR 2014)</b>.
+<li>Cheng Zhai, William W. Cohen & John Lafferty (2003): <a href="postscript/sigir-2003.pdf">Beyond Independent Topical Relevance: Methods and Evaluation Metrics for Subtopic Retrieval</a> in SIGIR 2003: 10-17.<br><ul><li><font size=-1>Won Ten-Year "Test of Time" Award at SIGIR 2014</font></ul>
 </li>
-<li>William W. Cohen, Matthew Hurst & Lee S. Jensen (2003): <a href="postscript/ws-chap-2002.pdf">A Flexible Learning System for Wrapping Tables and Lists in HTML Documents</a> in <i>Web Document Analysis: Challenges and Opportunities, ed. Antonacopoulos & Hu, Word Scientific Publishing</i>.
+<li>William W. Cohen, Matthew Hurst & Lee S. Jensen (2003): <a href="postscript/ws-chap-2002.pdf">A Flexible Learning System for Wrapping Tables and Lists in HTML Documents</a> in Web Document Analysis: Challenges and Opportunities, ed. Antonacopoulos & Hu, Word Scientific Publishing.
 </li>
 </ol>
-<h3>2002</h3>
+<h3>Papers published in 2002</h3>
 <ol>
-<li>William W. Cohen (2002): <a href="postscript/nips-2002.pdf">Improving A Page Classifier with Anchor Extraction and Link Analysis</a> in <i>NIPS 2002</i>.
+<li>William W. Cohen (2002): <a href="postscript/nips-2002.pdf">Improving A Page Classifier with Anchor Extraction and Link Analysis</a> in NIPS 2002.
 </li>
-<li>William W. Cohen & Jacob Richman (2002): <a href="postscript/kdd-2002.pdf">Learning to Match and Cluster Large High-Dimensional Data Sets For Data Integration</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2002.html#CohenR02">KDD 2002: 475-480</a>.
+<li>William W. Cohen & Jacob Richman (2002): <a href="postscript/kdd-2002.pdf">Learning to Match and Cluster Large High-Dimensional Data Sets For Data Integration</a> in KDD 2002: 475-480.
 </li>
-<li>William W. Cohen, Matthew Hurst & Lee S. Jensen (2002): <a href="http://www2002.org/CDROM/refereed/355/index.html">A Flexible Learning System for Wrapping Tables and Lists in HTML Documents</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/www/www2002.html#CohenHJ02">WWW 2002: 232-241</a>.
+<li>William W. Cohen, Matthew Hurst & Lee S. Jensen (2002): <a href="http://www2002.org/CDROM/refereed/355/index.html">A Flexible Learning System for Wrapping Tables and Lists in HTML Documents</a> in WWW 2002: 232-241.
 </li>
 </ol>
-<h3>2001</h3>
+<h3>Papers published in 2001</h3>
 <ol>
-<li>William W. Cohen & Jacob Richman (2001): <i>Learning to Match and Cluster Entity Names</i> in <i>Proc. of the ACM SIGIR-2001 Workshop on Mathematical/Formal Methods in IR</i>.
+<li>William W. Cohen & Jacob Richman (2001): <a href="postscript/">Learning to Match and Cluster Entity Names</a> in Proc. of the ACM SIGIR-2001 Workshop on Mathematical/Formal Methods in IR.
 </li>
-<li>Lee S. Jensen & William W. Cohen (2001): <a href="postscript/IJCAI_Workshop_-_Wrapster_Associations.htm">Grouping Extracted Fields</a> in <i>Proc. of the IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</i>.
+<li>Lee S. Jensen & William W. Cohen (2001): <a href="postscript/IJCAI_Workshop_-_Wrapster_Associations.htm">Grouping Extracted Fields</a> in Proc. of the IJCAI-2001 Workshop on Adaptive Text Extraction and Mining.
 </li>
-<li>Lee S. Jensen & William W. Cohen (2001): <i>A Structured Wrapper Induction System for Extracting Information from Semi-Structured Documents</i> in <i>Proc. of the IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</i>.
+<li>Lee S. Jensen & William W. Cohen (2001): <a href="postscript/NONE">A Structured Wrapper Induction System for Extracting Information from Semi-Structured Documents</a> in Proc. of the IJCAI-2001 Workshop on Adaptive Text Extraction and Mining.
 </li>
-<li>Chumki Basu, Haym Hirsh, William W. Cohen & Craig Neville-Manning (2001): <a href="http://www.cs.washington.edu/research/jair/abstracts/basu01a.html">Technical Paper Recommendation: A Study in Combining Multiple Information Sources</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/jair/jair14.html#BasuHCN01">J. Artif. Intell. Res. (JAIR) 14: 231-252 (2001)</a>.
+<li>Chumki Basu, Haym Hirsh, William W. Cohen & Craig Neville-Manning (2001): <a href="http://www.cs.washington.edu/research/jair/abstracts/basu01a.html">Technical Paper Recommendation: A Study in Combining Multiple Information Sources</a> in J. Artif. Intell. Res. (JAIR) 14: 231-252 (2001).
 </li>
-<li>William W. Cohen (2001): <i>Issues in Extracting Information from the Web (Extended Abstract)</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/iwpt/iwpt2001.html#Cohen01">IWPT 2001</a>.
+<li>William W. Cohen (2001): <a href="postscript/NONE">Issues in Extracting Information from the Web (Extended Abstract)</a> in IWPT 2001.
 </li>
 </ol>
-<h3>2000</h3>
+<h3>Papers published in 2000</h3>
 <ol>
-<li>William W. Cohen (2000): <i>Extracting Information from the Web for Concept Learning and Collaborative Filtering</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/alt/alt2000.html#Cohen00">ALT 2000: 1-12</a>.
+<li>William W. Cohen (2000): <a href="postscript/NONE">Extracting Information from the Web for Concept Learning and Collaborative Filtering</a> in ALT 2000: 1-12.
 </li>
-<li>William W. Cohen, Andrew McCallum, Dallan Quass (2000): <a href="http://www.research.microsoft.com/research/db/debull/A00sept/cohen.ps">Learning to Understand the Web</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/debu/debu23.html#CohenMQ00">IEEE Data Eng. Bull. 23(3): 17-24 (2000)</a>.
+<li>William W. Cohen, Andrew McCallum, Dallan Quass (2000): <a href="http://www.research.microsoft.com/research/db/debull/A00sept/cohen.ps">Learning to Understand the Web</a> in IEEE Data Eng. Bull. 23(3): 17-24 (2000).
 </li>
-<li>Jaime G. Carbonell, Yiming Yang, William W. Cohen (2000): <i>Special Issue of Machine Learning on Information Retrieval - Introduction</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml39.html#CarbonellYC00">Machine Learning 39(2/3): 99-101 (2000)</a>.
+<li>Jaime G. Carbonell, Yiming Yang, William W. Cohen (2000): <a href="postscript/NONE">Special Issue of Machine Learning on Information Retrieval - Introduction</a> in Machine Learning 39(2/3): 99-101 (2000).
 </li>
-<li>William W. Cohen, David McAllester, and Henry Kautz (2000): <a href="postscript/kdd-2000.ps">Hardening Soft Information Sources</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd2000.html#CohenKM00">KDD 2000: 255-259</a>.
+<li>William W. Cohen, David McAllester, and Henry Kautz (2000): <a href="postscript/kdd-2000.ps">Hardening Soft Information Sources</a> in KDD 2000: 255-259.
 </li>
-<li>William W. Cohen (2000): <a href="postscript/ml-2000.ps">Automatically extracting features for concept learning from the Web</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml2000.html#Cohen00">ICML 2000: 159-166</a>.
+<li>William W. Cohen (2000): <a href="postscript/ml-2000.ps">Automatically extracting features for concept learning from the Web</a> in ICML 2000: 159-166.
 </li>
-<li>William W. Cohen and Wei Fan (2000): <a href="http://www9.org/w9cdrom/266/266.html">Web-Collaborative Filtering: Recommending Music by Crawling The Web</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/cn/cn33.html#CohenF00">Computer Networks 33(1-6): 685-698 (2000)</a>.
+<li>William W. Cohen and Wei Fan (2000): <a href="http://www9.org/w9cdrom/266/266.html">Web-Collaborative Filtering: Recommending Music by Crawling The Web</a> in Computer Networks 33(1-6): 685-698 (2000).
 </li>
-<li>William W. Cohen and Wei Fan (2000): <a href="http://www9.org/w9cdrom/266/266.html">Web-Collaborative Filtering: Recommending Music by Crawling The Web</a> in <i>WWW 2000</i>.
+<li>William W. Cohen and Wei Fan (2000): <a href="http://www9.org/w9cdrom/266/266.html">Web-Collaborative Filtering: Recommending Music by Crawling The Web</a> in WWW 2000.
 </li>
-<li>William W. Cohen (2000): <a href="postscript/tois-whirl.pdf">Data Integration using Similarity Joins and a Word-based Information Representation Language</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/tois/tois18.html#Cohen00">ACM Trans. Inf. Syst. 18(3): 288-321 (2000)</a>.
+<li>William W. Cohen (2000): <a href="postscript/tois-whirl.pdf">Data Integration using Similarity Joins and a Word-based Information Representation Language</a> in ACM Trans. Inf. Syst. 18(3): 288-321 (2000).
 </li>
-<li>William W. Cohen (2000): <a href="postscript/aij-whirl-overview.ps">WHIRL: A Word-based Information Representation Language</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ai/ai118.html#Cohen00">Artif. Intell. 118(1-2): 163-196 (2000)</a>.
+<li>William W. Cohen (2000): <a href="postscript/aij-whirl-overview.ps">WHIRL: A Word-based Information Representation Language</a> in Artif. Intell. 118(1-2): 163-196 (2000).
 </li>
-<li>William W. Cohen & Prem Devanbu (2000): <i>Automatically Exploring	Hypotheses about Fault Prediction: a Comparative Study of Inductive Logic Programming Methods</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ijseke/ijseke9.html#CohenD99">International Journal of Software Engineering and Knowledge Engineering 9(5): 519-546 (1999)</a>.
+<li>William W. Cohen & Prem Devanbu (2000): <a href="postscript/NONE">Automatically Exploring Hypotheses about Fault Prediction: a Comparative Study of Inductive Logic Programming Methods</a> in International Journal of Software Engineering and Knowledge Engineering 9(5): 519-546 (1999).
 </li>
 </ol>
-<h3>1999</h3>
+<h3>Papers published in 1999</h3>
 <ol>
-<li>William W. Cohen and Yoram Singer (1999): <a href="postscript/aaai-99-slipper.ps">Simple, Fast, and Effective Rule Learner</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai99.html#CohenS99">AAAI/IAAI 1999: 335-342</a>.
+<li>William W. Cohen and Yoram Singer (1999): <a href="postscript/aaai-99-slipper.ps">Simple, Fast, and Effective Rule Learner</a> in AAAI/IAAI 1999: 335-342.
 </li>
-<li>William W. Cohen (1999): <i>What Can We Learn from the Web</i> in <i>ICML 1999</i>.
+<li>William W. Cohen (1999): <a href="postscript/NONE">What Can We Learn from the Web</a> in ICML 1999.
 </li>
-<li>William W. Cohen (1999): <a href="postscript/aaai-99-extract.ps">Recognizing Structure in Web Pages using Similarity Queries</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai99.html#Cohen99">AAAI/IAAI 1999: 59-66</a>.
+<li>William W. Cohen (1999): <a href="postscript/aaai-99-extract.ps">Recognizing Structure in Web Pages using Similarity Queries</a> in AAAI/IAAI 1999: 59-66.
 </li>
-<li>William W. Cohen and Wei Fan (1999): <a href="http://www8.org/w8-papers/5a-search-query/learning/index.html">Learning Page-Independent Heuristics for Extracting Data from Web Pages</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/cn/cn31.html#CohenF99">Computer Networks 31(11-16): 1641-1652 (1999)</a>.
+<li>William W. Cohen and Wei Fan (1999): <a href="http://www8.org/w8-papers/5a-search-query/learning/index.html">Learning Page-Independent Heuristics for Extracting Data from Web Pages</a> in Computer Networks 31(11-16): 1641-1652 (1999).
 </li>
-<li>William W. Cohen and Wei Fan (1999): <a href="http://www8.org/w8-papers/5a-search-query/learning/index.html">Learning Page-Independent Heuristics for Extracting Data from Web Pages</a> in <i>WWW 1999</i>.
+<li>William W. Cohen and Wei Fan (1999): <a href="http://www8.org/w8-papers/5a-search-query/learning/index.html">Learning Page-Independent Heuristics for Extracting Data from Web Pages</a> in WWW 1999.
 </li>
-<li>William W. Cohen (1999): <a href="postscript/jnl-agents.ps.gz">Reasoning about Textual Similarity in a Web-Based Information Access</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/aamas/aamas2.html#Cohen99">Autonomous Agents and Multi-Agent Systems 2(1): 65-86 (1999)</a>.
+<li>William W. Cohen (1999): <a href="postscript/jnl-agents.ps.gz">Reasoning about Textual Similarity in a Web-Based Information Access</a> in Autonomous Agents and Multi-Agent Systems 2(1): 65-86 (1999).
 </li>
-<li>William W. Cohen (1999): <i>A Demonstration of WHIRL (demonstration abstract)</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir99.html#Cohen99">SIGIR 1999: 327</a>.
+<li>William W. Cohen (1999): <a href="postscript/NONE">A Demonstration of WHIRL (demonstration abstract)</a> in SIGIR 1999: 327.
 </li>
-<li>William W. Cohen (1999): <i>Some Practical Observations on Integration of Web Information</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/webdb/webdb1999.html#Cohen99">WebDB (Informal Proc.) 1999: 55-60</a>.
+<li>William W. Cohen (1999): <a href="postscript/NONE">Some Practical Observations on Integration of Web Information</a> in WebDB (Informal Proc.) 1999: 55-60.
 </li>
-<li>William W. Cohen, Rob Schapire, Yoram Singer (1999): <a href="http://www.jair.org/abstracts/cohen99a.html">Learning to Order Things</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/jair/jair10.html#CohenSS99">J. Artif. Intell. Res. (JAIR) 10: 243-270 (1999)</a>.
+<li>William W. Cohen, Rob Schapire, Yoram Singer (1999): <a href="http://www.jair.org/abstracts/cohen99a.html">Learning to Order Things</a> in J. Artif. Intell. Res. (JAIR) 10: 243-270 (1999).
 </li>
-<li>William W. Cohen & Yoram Singer (1999): <a href="postscript/tois-sigir.pdf">Context-sensitive learning methods for text categorization</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/tois/tois17.html#CohenS99">ACM Trans. Inf. Syst. 17(2): 141-173 (1999)</a>.
+<li>William W. Cohen & Yoram Singer (1999): <a href="postscript/tois-sigir.pdf">Context-sensitive learning methods for text categorization</a> in ACM Trans. Inf. Syst. 17(2): 141-173 (1999).
 </li>
 </ol>
-<h3>1998</h3>
+<h3>Papers published in 1998</h3>
 <ol>
-<li>William W. Cohen (1998): <a href="http://www.computer.org/intelligent/ex1998/pdf/x5012.pdf">The WHIRL Approach to Information Integration</a> in <i>IEEE Intelligent Systems, Sept/Oct 1998, pp 20--23</i>.
+<li>William W. Cohen (1998): <a href="http://www.computer.org/intelligent/ex1998/pdf/x5012.pdf">The WHIRL Approach to Information Integration</a> in IEEE Intelligent Systems, Sept/Oct 1998, pp 20--23.
 </li>
-<li>William W. Cohen & Haym Hirsh (1998): <a href="postscript/kdd-98.ps">Joins that Generalize: Text Classification Using WHIRL</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kdd/kdd98.html#CohenH98">KDD 1998: 169-173</a>.
+<li>William W. Cohen & Haym Hirsh (1998): <a href="postscript/kdd-98.ps">Joins that Generalize: Text Classification Using WHIRL</a> in KDD 1998: 169-173.
 </li>
-<li>Chumki Basu, Haym Hirsh, William W. Cohen (1998): <a href="postscript/aaai-98-collab.ps">Recommendation as Classification: Using Social and Content-Based Information in Recommendation.</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai98.html#BasuHC98">AAAI/IAAI 1998: 714-720</a>.
+<li>Chumki Basu, Haym Hirsh, William W. Cohen (1998): <a href="postscript/aaai-98-collab.ps">Recommendation as Classification: Using Social and Content-Based Information in Recommendation.</a> in AAAI/IAAI 1998: 714-720.
 </li>
-<li>William W. Cohen (1998): <a href="postscript/sigmod-98.ps">Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod98.html#Cohen98">SIGMOD Conference 1998: 201-212</a> <b>(Won Ten-Year "Test of Time" Award at SIGMOD 2008)</b>.
+<li>William W. Cohen (1998): <a href="postscript/sigmod-98.ps">Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity</a> in SIGMOD Conference 1998: 201-212.<br><ul><li><font size=-1>Won Ten-Year "Test of Time" Award at SIGMOD 2008</font></ul>
 </li>
-<li>William W. Cohen (1998): <i>Providing Database-like Access to the Web Using Queries Based on Textual Similarity (demonstration abstract)</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod98.html#Cohen98a">SIGMOD Conference 1998: 558-560</a>.
+<li>William W. Cohen (1998): <a href="postscript/NONE">Providing Database-like Access to the Web Using Queries Based on Textual Similarity (demonstration abstract)</a> in SIGMOD Conference 1998: 558-560.
 </li>
-<li>William W. Cohen (1998): <a href="postscript/agents-98.ps">A Web-based Information System that Reasons with Structured Collections of Text</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/agents/agents98.html#Cohen98">Agents 1998: 400-407</a>.
+<li>William W. Cohen (1998): <a href="postscript/agents-98.ps">A Web-based Information System that Reasons with Structured Collections of Text</a> in Agents 1998: 400-407.
 </li>
-<li>William W. Cohen (1998): <a href="postscript/aaai-98-ws.ps">The WHIRL Approach to Integration: An Overview</a> in <i>IIWeb 1998 (informal proceedings)</i>.
+<li>William W. Cohen (1998): <a href="postscript/aaai-98-ws.ps">The WHIRL Approach to Integration: An Overview</a> in IIWeb 1998 (informal proceedings).
 </li>
-<li>William W. Cohen (1998): <i>Hardness Results for Learning First-Order Representations and Programming by Demonstration</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml30.html#Cohen98">Machine Learning 30(1): 57-87 (1998)</a>.
+<li>William W. Cohen (1998): <a href="postscript/NONE">Hardness Results for Learning First-Order Representations and Programming by Demonstration</a> in Machine Learning 30(1): 57-87 (1998).
 </li>
 </ol>
-<h3>1997</h3>
+<h3>Papers published in 1997</h3>
 <ol>
-<li>William W. Cohen (1997): <a href="postscript/sigir-ws-97.ps">Knowledge Integration for Structured Information Sources Containing Text (Extended Abstract)</a> in <i>SIGIR Workshop on Networked IR (informal proceedings)</i>.
+<li>William W. Cohen (1997): <a href="postscript/sigir-ws-97.ps">Knowledge Integration for Structured Information Sources Containing Text (Extended Abstract)</a> in SIGIR Workshop on Networked IR (informal proceedings).
 </li>
-<li>William W. Cohen and Prem Devanbu (1997): <a href="postscript/ml-97-faults.ps">A Comparative Study of Inductive Logic Programming Methods for Software Fault Prediction</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml1997.html#CohenD97">ICML 1997: 66-74</a>.
+<li>William W. Cohen and Prem Devanbu (1997): <a href="postscript/ml-97-faults.ps">A Comparative Study of Inductive Logic Programming Methods for Software Fault Prediction</a> in ICML 1997: 66-74.
 </li>
-<li>William W. Cohen and Daniel Kudenko (1997): <a href="postscript/aaai-97-transfer.ps">Transferring and Retraining Learned Information Filters</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai97.html#CohenK97">AAAI/IAAI 1997: 583-590</a>.
+<li>William W. Cohen and Daniel Kudenko (1997): <a href="postscript/aaai-97-transfer.ps">Transferring and Retraining Learned Information Filters</a> in AAAI/IAAI 1997: 583-590.
 </li>
-<li>William W. Cohen, Robert E. Schapire, Yoram Singer (1997): <i>Learning to Order Things</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/nips/nips1997.html#CohenSS97">NIPS 1997</a>.
+<li>William W. Cohen, Robert E. Schapire, Yoram Singer (1997): <a href="postscript/NONE">Learning to Order Things</a> in NIPS 1997.
 </li>
 </ol>
-<h3>1996</h3>
+<h3>Papers published in 1996</h3>
 <ol>
-<li>William W. Cohen (1996): <a href="postscript/aaai-96.ps">Learning Trees and Rules with Set-valued Features</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai96-1.html#Cohen96"> AAAI/IAAI, Vol. 1 1996: 709-716</a>.
+<li>William W. Cohen (1996): <a href="postscript/aaai-96.ps">Learning Trees and Rules with Set-valued Features</a> in  AAAI/IAAI, Vol. 1 1996: 709-716.
 </li>
-<li>William W. Cohen (1996): <a href="postscript/colt-96.ps">The Dual DFA Learning Problem: Hardness Results for Programming by Demonstration and Learning First-Order Representations (Extended Abstract)</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/colt/colt1996.html#Cohen96">COLT 1996: 29-40</a>.
+<li>William W. Cohen (1996): <a href="postscript/colt-96.ps">The Dual DFA Learning Problem: Hardness Results for Programming by Demonstration and Learning First-Order Representations (Extended Abstract)</a> in COLT 1996: 29-40.
 </li>
-<li>William W. Cohen (1996): <a href="postscript/aaai-ss-96.ps">Learning Rules that Classify E-Mail</a> in <i>AAAI Spring Symposium on ML and IR 1996</i>.
+<li>William W. Cohen (1996): <a href="postscript/aaai-ss-96.ps">Learning Rules that Classify E-Mail</a> in AAAI Spring Symposium on ML and IR 1996.
 </li>
-<li>William W. Cohen and Yoram Singer (1996): <a href="postscript/aaai-ws-96.ps">Learning to Query the Web</a> in <i>AAAI Workshop on Internet-Based Information Access Systems 1996</i>.
+<li>William W. Cohen and Yoram Singer (1996): <a href="postscript/aaai-ws-96.ps">Learning to Query the Web</a> in AAAI Workshop on Internet-Based Information Access Systems 1996.
 </li>
-<li>William W. Cohen and Yoram Singer (1996): <a href="postscript/sigir-96.ps">Context-sensitive learning methods for text categorization</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/sigir/sigir96.html#CohenS96">SIGIR 1996: 307-315</a>.
+<li>William W. Cohen and Yoram Singer (1996): <a href="postscript/sigir-96.ps">Context-sensitive learning methods for text categorization</a> in SIGIR 1996: 307-315.
 </li>
-<li>William W. Cohen (1996): <i>Adaptive mapping and navigation by teams of simple robots</i> in <i>Robotics and Autonomous Systems, 18: 411-434 (1996)</i>.
+<li>William W. Cohen (1996): <a href="postscript/">Adaptive mapping and navigation by teams of simple robots</a> in Robotics and Autonomous Systems, 18: 411-434 (1996).
 </li>
 </ol>
-<h3>1995</h3>
+<h3>Papers published in 1995</h3>
 <ol>
-<li>William W. Cohen (1995): <i>Pac-learning non-recursive prolog clauses</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ai/ai79.html#Cohen95">Artif. Intell. 79(1): 1-38 (1995)</a>.
+<li>William W. Cohen (1995): <a href="postscript/">Pac-learning non-recursive prolog clauses</a> in Artif. Intell. 79(1): 1-38 (1995).
 </li>
-<li>William W. Cohen (1995): <i>Inductive Specification Recovery: Understanding Software by Learning from Example Behaviors</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ase/ase2.html#Cohen95">Autom. Softw. Eng. 2(2): 107-129 (1995)</a>.
+<li>William W. Cohen (1995): <a href="postscript/">Inductive Specification Recovery: Understanding Software by Learning from Example Behaviors</a> in Autom. Softw. Eng. 2(2): 107-129 (1995).
 </li>
-<li>William W. Cohen (1995): <a href="postscript/ilp-95.ps">Learning to Classify English Text with ILP Methods</a> in <i>Advances in ILP, ed. L. de Readt, IOS Press</i>.
+<li>William W. Cohen (1995): <a href="postscript/ilp-95.ps">Learning to Classify English Text with ILP Methods</a> in Advances in ILP, ed. L. de Readt, IOS Press.
 </li>
-<li>William W. Cohen (1995): <a href="postscript/ml-95-ripper.ps">Fast effective rule induction</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml1995.html#Cohen95">ICML 1995: 115-123</a>.
+<li>William W. Cohen (1995): <a href="postscript/ml-95-ripper.ps">Fast effective rule induction</a> in ICML 1995: 115-123.
 </li>
-<li>William W. Cohen (1995): <a href="postscript/ml-95-ir.ps">Text categorization and relational learning</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/icml1995.html#Cohen95a">ICML 1995: 124-132</a>.
+<li>William W. Cohen (1995): <a href="postscript/ml-95-ir.ps">Text categorization and relational learning</a> in ICML 1995: 124-132.
 </li>
-<li>William W. Cohen and C. David Page Jr (1995): <i>Polynomial learnability and inductive logic programming: Methods and results</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ngc/ngc13.html#CohenP95">New Generation Comput. 13(3&4): 369-409 (1995)</a>.
+<li>William W. Cohen and C. David Page Jr (1995): <a href="postscript/">Polynomial learnability and inductive logic programming: Methods and results</a> in New Generation Comput. 13(3&4): 369-409 (1995).
 </li>
-<li>William W. Cohen (1995): <a href="http://www.cs.washington.edu/research/jair/home.html">Pac-learning recursive logic programs: Efficient algorithms</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/jair/jair2.html#Cohen95">J. Artif. Intell. Res. (JAIR) 2: 501-539 (1995)</a>.
+<li>William W. Cohen (1995): <a href="http://www.cs.washington.edu/research/jair/home.html">Pac-learning recursive logic programs: Efficient algorithms</a> in J. Artif. Intell. Res. (JAIR) 2: 501-539 (1995).
 </li>
-<li>William W. Cohen (1995): <a href="http://www.cs.washington.edu/research/jair/home.html">Pac-learning recursive logic programs: Negative results</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/jair/jair2.html#Cohen95a">J. Artif. Intell. Res. (JAIR) 2: 541-573 (1995)</a>.
+<li>William W. Cohen (1995): <a href="http://www.cs.washington.edu/research/jair/home.html">Pac-learning recursive logic programs: Negative results</a> in J. Artif. Intell. Res. (JAIR) 2: 541-573 (1995).
 </li>
 </ol>
-<h3>1994</h3>
+<h3>Papers published in 1994</h3>
 <ol>
-<li>William W. Cohen (1994): <i>Pac-learning nondeterminate Clauses</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai94-1.html#Cohen94a">AAAI 1994: 676-681</a>.
+<li>William W. Cohen (1994): <a href="postscript/NONE">Pac-learning nondeterminate Clauses</a> in AAAI 1994: 676-681.
 </li>
-<li>L. Thorn McCarty and William W. Cohen (1994): <i>The case for explicit exceptions</i> in <i>Methods of Logic in Computer Science, 1(1)</i>.
+<li>L. Thorn McCarty and William W. Cohen (1994): <a href="postscript/">The case for explicit exceptions</a> in Methods of Logic in Computer Science, 1(1).
 </li>
-<li>Haym Hirsh and William W. Cohen (1994): <i>Learning from data with bounded inconsistency: Theoretical and experimental results</i> in <i>Computational learning theory and natural learning systems (Volume I), MIT Press.</i>.
+<li>Haym Hirsh and William W. Cohen (1994): <a href="postscript/">Learning from data with bounded inconsistency: Theoretical and experimental results</a> in Computational learning theory and natural learning systems (Volume I), MIT Press..
 </li>
-<li>William W. Cohen and Haym Hirsh (1994): <a href="postscript/kr-94.ps">Learning the CLASSIC description logic: Theoretical and experimental results</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/kr/kr94.html#CohenH94">KR 1994: 121-133</a>.
+<li>William W. Cohen and Haym Hirsh (1994): <a href="postscript/kr-94.ps">Learning the CLASSIC description logic: Theoretical and experimental results</a> in KR 1994: 121-133.
 </li>
-<li>William W. Cohen and Haym Hirsh (1994): <i>Learnability of description logics with equality constraints</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml17.html#CohenH94">Machine Learning 17(2-3): 169-199 (1994)</a>.
+<li>William W. Cohen and Haym Hirsh (1994): <a href="postscript/">Learnability of description logics with equality constraints</a> in Machine Learning 17(2-3): 169-199 (1994).
 </li>
-<li>William W. Cohen (1994): <a href="postscript/aaai-94-rc.ps">Recovering Software Specifications with Inductive Logic Programming</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai94-1.html#Cohen94">AAAI 1994: 142-148</a>.
+<li>William W. Cohen (1994): <a href="postscript/aaai-94-rc.ps">Recovering Software Specifications with Inductive Logic Programming</a> in AAAI 1994: 142-148.
 </li>
-<li>William W. Cohen, Russell Greiner, and Dale Schuurmans (1994): <i>Probabilistic hill-climbing</i> in <i>Computational learning theory and natural learning systems (Volume II), MIT Press.</i>.
+<li>William W. Cohen, Russell Greiner, and Dale Schuurmans (1994): <a href="postscript/">Probabilistic hill-climbing</a> in Computational learning theory and natural learning systems (Volume II), MIT Press..
 </li>
-<li>William W. Cohen (1994): <i>Incremental abductive EBL</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml15.html#Cohen94">Machine Learning 15(1): 5-24 (1994)</a>.
+<li>William W. Cohen (1994): <a href="postscript/">Incremental abductive EBL</a> in Machine Learning 15(1): 5-24 (1994).
 </li>
-<li>William W. Cohen (1994): <a href="postscript/aij-grendel.pdf">Grammatically biased learning: learning logic programs using an explicit antecedent description language</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ai/ai68.html#Cohen94a">Artif. Intell. 68(2): 303-366 (1994)</a>.
+<li>William W. Cohen (1994): <a href="postscript/aij-grendel.pdf">Grammatically biased learning: learning logic programs using an explicit antecedent description language</a> in Artif. Intell. 68(2): 303-366 (1994).
 </li>
 </ol>
-<h3>1993</h3>
+<h3>Papers published in 1993</h3>
 <ol>
-<li>William W. Cohen (1993): <a href="postscript/aaai-93-cryptlim.ps">Cryptographic limitations on learning one-clause logic programs</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai93.html#Cohen93">AAAI 1993: 80-85</a>.
+<li>William W. Cohen (1993): <a href="postscript/aaai-93-cryptlim.ps">Cryptographic limitations on learning one-clause logic programs</a> in AAAI 1993: 80-85.
 </li>
-<li>P. S. Rosenbloom, H. Hirsh, Cohen, and B. D. Smith (1993): <i>Two frameworks for integrating knowledge in induction</i> in <i>Proc. of the Seventh Annual Workshop on Space Operations, Applications, and Research (SOAR '93)</i>.
+<li>P. S. Rosenbloom, H. Hirsh, Cohen, and B. D. Smith (1993): <a href="postscript/">Two frameworks for integrating knowledge in induction</a> in Proc. of the Seventh Annual Workshop on Space Operations, Applications, and Research (SOAR '93).
 </li>
-<li>William W. Cohen (1993): <a href="postscript/ijcai-ws-93.ps">Rapid prototyping of ILP systems using explicit bias</a> in <i>Proc. of the 1993 IJCAI Workshop on Inductive Logic Programming</i>.
+<li>William W. Cohen (1993): <a href="postscript/ijcai-ws-93.ps">Rapid prototyping of ILP systems using explicit bias</a> in Proc. of the 1993 IJCAI Workshop on Inductive Logic Programming.
 </li>
-<li>William W. Cohen (1993): <a href="postscript/aaai-93-force2.ps">Pac-learning a restricted class of recursive logic programs</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai93.html#Cohen93a">AAAI 1993: 86-92</a>.
+<li>William W. Cohen (1993): <a href="postscript/aaai-93-force2.ps">Pac-learning a restricted class of recursive logic programs</a> in AAAI 1993: 86-92.
 </li>
-<li>William W. Cohen (1993): <a href="postscript/ijcai-93.ps">Efficient pruning methods for separate-and-conquer rule learning systems</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/ijcai/ijcai93.html#Cohen93">IJCAI 1993: 988-994</a>.
+<li>William W. Cohen (1993): <a href="postscript/ijcai-93.ps">Efficient pruning methods for separate-and-conquer rule learning systems</a> in IJCAI 1993: 988-994.
 </li>
-<li>William W. Cohen (1993): <i>Learnability of Restricted Logic Programs</i> in <i>Proc. of the Third International Workshop on Inductive Logic Programming (ILP-93)</i>.
+<li>William W. Cohen (1993): <a href="postscript/">Learnability of Restricted Logic Programs</a> in Proc. of the Third International Workshop on Inductive Logic Programming (ILP-93).
 </li>
-<li>William W. Cohen (1993): <i>A Review of `Creating a Memory of Causal Relationships' by Michael Pazzani</i> in <i>Machine Learning (1993)</i>.
+<li>William W. Cohen (1993): <a href="postscript/">A Review of `Creating a Memory of Causal Relationships' by Michael Pazzani</a> in Machine Learning (1993).
 </li>
 </ol>
-<h3>1992</h3>
+<h3>Papers published in 1992</h3>
 <ol>
-<li>William W. Cohen and Haym Hirsh (1992): <i>Learnability of Description Logics</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/colt/colt1992.html#CohenH92">COLT 1992: 116-127</a>.
+<li>William W. Cohen and Haym Hirsh (1992): <a href="postscript/NONE">Learnability of Description Logics</a> in COLT 1992: 116-127.
 </li>
-<li>William W. Cohen, Alex Borgida, and Haym Hirsh (1992): <i>Computing least common subsumers in description logics</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai92.html#CohenBH92">AAAI 1992: 754-760</a>.
+<li>William W. Cohen, Alex Borgida, and Haym Hirsh (1992): <a href="postscript/">Computing least common subsumers in description logics</a> in AAAI 1992: 754-760.
 </li>
-<li>William W. Cohen (1992): <i>Using distribution-free learning theory to analyze solution path caching mechanisms</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ci/ci8.html#Cohen92">Computational Intelligence 8: 336-375 (1992)</a>.
+<li>William W. Cohen (1992): <a href="postscript/">Using distribution-free learning theory to analyze solution path caching mechanisms</a> in Computational Intelligence 8: 336-375 (1992).
 </li>
-<li>William W. Cohen (1992): <i>Desiderata for generalization-to-n algorithms</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aii/aii92.html#Cohen92">AII 1992: 140-150</a>.
+<li>William W. Cohen (1992): <a href="postscript/">Desiderata for generalization-to-n algorithms</a> in AII 1992: 140-150.
 </li>
-<li>William W. Cohen (1992): <a href="postscript/ml-92.ps">Compiling prior knowledge into an explicit bias</a> in <i>ICML 1992: 102-110</i>.
+<li>William W. Cohen (1992): <a href="postscript/ml-92.ps">Compiling prior knowledge into an explicit bias</a> in ICML 1992: 102-110.
 </li>
-<li>William W. Cohen (1992): <i>Abductive explanation based learning: A solution to the multiple inconsistent explanation problem</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/journals/ml/ml8.html#Cohen92">Machine Learning 8: 167-219 (1992)</a>.
+<li>William W. Cohen (1992): <a href="postscript/">Abductive explanation based learning: A solution to the multiple inconsistent explanation problem</a> in Machine Learning 8: 167-219 (1992).
 </li>
 </ol>
-<h3>1991</h3>
+<h3>Papers published in 1991</h3>
 <ol>
-<li>William W. Cohen (1991): <a href="postscript/ml-91.ps">The generality of overgenerality</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/ml1991.html#Cohen91">ICML 1991: 490-494</a>.
+<li>William W. Cohen (1991): <a href="postscript/ml-91.ps">The generality of overgenerality</a> in ICML 1991: 490-494.
 </li>
 </ol>
-<h3>1990</h3>
+<h3>Papers published in 1990</h3>
 <ol>
-<li>William W. Cohen (1990): <i>Learning from textbook knowledge: A case study</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/aaai/aaai90.html#Cohen90"> AAAI 1990: 743-748</a>.
+<li>William W. Cohen (1990): <a href="postscript/">Learning from textbook knowledge: A case study</a> in  AAAI 1990: 743-748.
 </li>
-<li>William W. Cohen (1990): <a href="postscript/ml-90-axaebl.ps">Learning approximate control rules of high utility</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/ml1990.html#Cohen90a">ICML 1990: 268-276</a>.
+<li>William W. Cohen (1990): <a href="postscript/ml-90-axaebl.ps">Learning approximate control rules of high utility</a> in ICML 1990: 268-276.
 </li>
-<li>William W. Cohen (1990): <a href="postscript/ml-90-repshift.ps">An analysis of representation shift in concept learning</a> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/ml1990.html#Cohen90">ICML 1990: 104-112</a>.
+<li>William W. Cohen (1990): <a href="postscript/ml-90-repshift.ps">An analysis of representation shift in concept learning</a> in ICML 1990: 104-112.
 </li>
-<li>William W. Cohen (1990): <i>Learning from Examples and an "Abductive Theory"</i> in <i>Proc. of the 1990 AAAI Spring Symposium on Abduction</i>.
+<li>William W. Cohen (1990): <a href="postscript/">Learning from Examples and an "Abductive Theory"</a> in Proc. of the 1990 AAAI Spring Symposium on Abduction.
 </li>
 </ol>
-<h3>1988</h3>
+<h3>Papers published in 1988</h3>
 <ol>
-<li>William W. Cohen (1988): <i>Generalizing number and learning from multiple examples in explanation-based learning</i> in <a href="http://www.informatik.uni-trier.de/~ley/db/conf/icml/ml1988.html#Cohen88">ICML 1988: 256-269</a>.
+<li>William W. Cohen (1988): <a href="postscript/">Generalizing number and learning from multiple examples in explanation-based learning</a> in ICML 1988: 256-269.
 </li>
-<li>William W. Cohen, Jack Mostow & Alex Borgida (1988): <i>Generalizing number in explanation-based learning</i> in <i>Proc. of the 1988 AAAI Spring Symposium on Explanation-Based Learning</i>.
+<li>William W. Cohen, Jack Mostow & Alex Borgida (1988): <a href="postscript/">Generalizing number in explanation-based learning</a> in Proc. of the 1988 AAAI Spring Symposium on Explanation-Based Learning.
 </li>
 </ol>
-<h3>1987</h3>
+<h3>Papers published in 1987</h3>
 <ol>
-<li>G. Miller, D. Rosenthal, W. Cohen, and M. Johnston (1987): <i>Expert systems tools for hubble space telescope scheduling</i> in <i>Proc. of the Goddard Conference on Space Applications of Artificial Intelligence and Robotics</i>.
+<li>G. Miller, D. Rosenthal, W. Cohen, and M. Johnston (1987): <a href="postscript/">Expert systems tools for hubble space telescope scheduling</a> in Proc. of the Goddard Conference on Space Applications of Artificial Intelligence and Robotics.
 </li>
-<li>T. Hornick, W. Cohen, and G. Miller (1987): <i>A natural language query system for hubble space telescope proposal selection</i> in <i>Proc. of the Goddard Conference on Space Applications of Artificial Intelligence and Robotics</i>.
+<li>T. Hornick, W. Cohen, and G. Miller (1987): <a href="postscript/">A natural language query system for hubble space telescope proposal selection</a> in Proc. of the Goddard Conference on Space Applications of Artificial Intelligence and Robotics.
 </li>
 </ol>
-<h3>1986</h3>
+<h3>Papers published in 1986</h3>
 <ol>
-<li>K. Bartlett, W. Cohen, Aart De Geus, and G. Hachtel (1986): <i>Synthesis and optimization of multi-level logic under timing constraints</i> in <i>Proc. of the IEEE International Conference on Computer-Aided Design</i>.
+<li>K. Bartlett, W. Cohen, Aart De Geus, and G. Hachtel (1986): <a href="postscript/">Synthesis and optimization of multi-level logic under timing constraints</a> in Proc. of the IEEE International Conference on Computer-Aided Design.
 </li>
 </ol>
-<h3>1985</h3>
+<h3>Papers published in 1985</h3>
 <ol>
-<li>A. De Geus and W. Cohen (1985): <i>Optimization of combinational logic using a rule-based expert system</i> in <i>IEEE Design and Test of Computers</i>.
+<li>A. De Geus and W. Cohen (1985): <a href="postscript/">Optimization of combinational logic using a rule-based expert system</a> in IEEE Design and Test of Computers.
 </li>
-<li>W. Cohen, K. Bartlett, and A. De Geus (1985): <i>Impact of metarules in a rule-based expert system for gate level optimization</i> in <i>Proc. of the IEEE Int'l Symp. on Circuits and Systems</i>.
+<li>W. Cohen, K. Bartlett, and A. De Geus (1985): <a href="postscript/">Impact of metarules in a rule-based expert system for gate level optimization</a> in Proc. of the IEEE Int'l Symp. on Circuits and Systems.
 </li>
 </ol>
-<h3>1984</h3>
+<h3>Papers published in 1984</h3>
 <ol>
-<li>W. Cohen, K. Bartlett, and A. De Geus (1984): <i>Impact of metarules in a rule-based expert system for gate level optimization</i> in <i>Proc. of the IEEE Int'l Symp. on Circuits and Systems</i>.
+<li>W. Cohen, K. Bartlett, and A. De Geus (1984): <a href="postscript/">Impact of metarules in a rule-based expert system for gate level optimization</a> in Proc. of the IEEE Int'l Symp. on Circuits and Systems.
 </li>
-<li>Karl Garrison, David Gregory, William W. Cohen & Aart De Geus, (1984): <i>Automatic Area and Performance Optimization of Combinatorial Logic</i> in <i>Proc. of the IEEE International Conference on Computer-Aided Design</i>.
+<li>Karl Garrison, David Gregory, William W. Cohen & Aart De Geus, (1984): <a href="postscript/">Automatic Area and Performance Optimization of Combinatorial Logic</a> in Proc. of the IEEE International Conference on Computer-Aided Design.
 </li>
 </ol>
-<p align="center">[<a href="pubs-s.html">Selected papers</a>| By topic: <a href="pubs-n.html">Deep Learning</a>|  <a href="pubs-x.html">Info Extraction/Reading</a>|  <a href="pubs-l.html">Topic Modeling</a>|  <a href="pubs-g.html">Learning in Graphs</a>|  <a href="pubs-m.html">Matching/Data Integration</a>|  <a href="pubs-t.html">Text Categorization</a>|  <a href="pubs-r.html">Rule Learning</a>|  <a href="pubs-e.html">Explanation-Based Learning</a>|  <a href="pubs-f.html">Formal Results</a>|  <a href="pubs-i.html">Inductive Logic Programming</a>|  <a href="pubs-c.html">Collaborative Filtering</a>|  <a href="pubs-a.html">Applications</a>|  <a href="pubs-d.html">Intelligent Tutoring</a>|  <a href="pubs-k.html">Neural Knowledge Representation</a>|  <a href="pubs-G.html">GNAT System</a>|  By year: <a href="pubs.html">All papers</a>]</p>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-2090677-1;
-urchinTracker();
-</script>
+<p align="center">[<a href="pubs-s.html">Selected papers</a>| By topic: <a href="pubs-G.html">GNAT System</a>|  <a href="pubs-a.html">Applications</a>|  <a href="pubs-c.html">Collaborative Filtering</a>|  <a href="pubs-d.html">Intelligent Tutoring</a>|  <a href="pubs-e.html">Explanation-Based Learning</a>|  <a href="pubs-f.html">Formal Results</a>|  <a href="pubs-g.html">Learning in Graphs</a>|  <a href="pubs-i.html">Inductive Logic Programming</a>|  <a href="pubs-k.html">Neural Knowledge Representation</a>|  <a href="pubs-l.html">Topic Modeling</a>|  <a href="pubs-m.html">Matching/Data Integration</a>|  <a href="pubs-n.html">Deep Learning</a>|  <a href="pubs-r.html">Rule Learning</a>|  <a href="pubs-t.html">Text Categorization</a>|  <a href="pubs-x.html">Info Extraction/Reading</a>|  By year: <a href="pubs.html">All papers</a>]</p>
 </body></html>
