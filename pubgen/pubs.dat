@@ -11,8 +11,8 @@ recent.html
 |kan|2021|https://arxiv.org/abs/2106.00200|preparation||
 Haitian Sun, William W. Cohen, Ruslan Salakhutdinov
 End-to-End Multihop Retrieval for Compositional Question Answering over Long Documents
-recent.html ## Adapts many of the ideas used for multihop KBQA to a new task - answering multihop questions over a large document.  Retrieval steps in this "DocHopper" system retrieve passages of a document, and the retrieved items are combined with a question neurally: i.e., rather than appending text to a question and re-encoding that discrete object, what is retrieved is a vector summary of the document, which is mixed with the previous question encoding.  This is fast, fully differentiable, allows retrieval of large document subsections, and gets a new SOTA on three datasets
-==========
+recent.html
+========== ## Adapts many of the ideas used for multihop KBQA to a new task - answering multihop questions over a large document.  Retrieval steps in this "DocHopper" system retrieve passages of a document, and the retrieved items are combined with a question neurally: i.e., rather than appending text to a question and re-encoding that discrete object, what is retrieved is a vector summary of the document, which is mixed with the previous question encoding.  This is fast, fully differentiable, allows retrieval of large document subsections, and gets a new SOTA on three datasets.
 |an|2021|https://arxiv.org/abs/2104.01940|AAAI2021||
 Avishai Zagoury, Einat Minkov, Idan Szpektor, William W. Cohen
 What's the best place for an AI conference, Vancouver or ______: Why completing comparative questions is difficult
@@ -22,52 +22,52 @@ recent.html
 Haitian Sun, Pat Verga, Bhuwan Dhingra, Ruslan Salakhutdinov, William W. Cohen
 Reasoning Over Virtual Knowledge Bases With Open Predicate Relations
 recent.html
-========== ## Modifies the FILM model by using a virtual KB of small text passages containing pairs of entities.  This required adding a Matching-the-Blanks pretraining phase, but got strong results on a number of QA-from-corpora tasks
+========== ## Modifies the FILM model by using a virtual KB of small text passages containing pairs of entities.  This required adding a Matching-the-Blanks pretraining phase, but got strong results on a number of QA-from-corpora tasks.
 C|kan|2021|https://openreview.net/forum?id=yRJUNfGzdsT|ICLR2021||
 Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen
 Open Question Answering Over Tables and Text
 recent.html
-========== ## Answering open QA multi-hop questions over tables and text with a clever ``early fusion'' idea, which proposes and indexes likely reasoning chains, and uses large-document Transformers to merge these noisy evidence chains
+========== ## Answering open QA multi-hop questions over tables and text with a clever ``early fusion'' idea, which proposes and indexes likely reasoning chains, and uses large-document Transformers to merge these noisy evidence chains.
 C|ksan|2020|https://aclanthology.org/2021.naacl-main.288/|NAACL-2021|FaEThread.in|
 Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen
 Adaptable and Interpretable Neural Memory Over Symbolic Knowledge
 recent.html
-========== ## Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second "fact memory" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining
+========== ## Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second "fact memory" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining.
 |en|2020|https://arxiv.org/abs/2012.00893|preparation||
 Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen
 Evaluating Explanations: How much do explanations from the teacher aid students?
 recent.html
 ==========
-|ksan|2020|https://arxiv.org/abs/2010.14439|preparation||
+|ksan|2020|https://arxiv.org/abs/2010.14439|NAACL-2021||
 Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen
 Differentiable Open-Ended Commonsense Reasoning
 recent.html
-========== ## Extends DrKIT's virtual KB to a corpus of documents of common-sense statements ("facts").  In DrFact, entities are replaced by noisy and ambiguous concepts, and navigation is between documents with overlapping sets of mentions.  Also introduces new "open" tasks for common-sense QA
+========== ## Extends DrKIT's virtual KB to a corpus of documents of common-sense statements ("facts").  In DrFact, entities are replaced by noisy and ambiguous concepts, and navigation is between documents with overlapping sets of mentions.  Also introduces new "open" tasks for common-sense QA.
 C|ksn|2020|https://arxiv.org/abs/2004.03658|NeurIPS2020||
 Haitian Sun, Andrew O. Arnold, Tania Bedrax-Weiss, Fernando Pereira, William W. Cohen
 Faithful Embeddings for Knowledge Base Queries
 recent.html
-========== ## An extension to Neural Query Language (NQL) which extends the query language to work with a "centroid-sketch" representation of sets.  The centroid encoders a geometric area, and the sketch is a randomized data structure that adds capacity to the sketch, allowing faithful differential logical reasoning to be combined with good generalization
-|ksan|2020|https://arxiv.org/abs/2007.00849|preparation|FaEThread.end|
+========== ## An extension to Neural Query Language (NQL) which extends the query language to work with a "centroid-sketch" representation of sets.  The centroid encoders a geometric area, and the sketch is a randomized data structure that adds capacity to the sketch, allowing faithful differential logical reasoning to be combined with good generalization.
+|ksan|2020|https://arxiv.org/abs/2007.00849|limbo|FaEThread.end|
 Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen
 Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge
 recent.html
-========== ## Earlier draft of the NAACL paper on FILM (Fact-Injected LM)
+========== ## Earlier draft of the NAACL paper on FILM (Fact-Injected LM).
 J|ksngi|2020|https://jair.org/index.php/jair/article/view/11944/26561|JAIR|TensorlogThread.in|
 William W. Cohen, Fan Yang, and Kathryn Rivard Mazaitis
 TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure
-recent.html ## Most complete paper on TensorLog, a predecessor for NQL/EmQL that was a Prolog-like logic instead of a dataflow query language
+recent.html ## Most complete paper on TensorLog, a predecessor for NQL/EmQL that was a Prolog-like logic instead of a dataflow query language.
 ==========
 C|ksnx|2020|https://arxiv.org/abs/2002.06115|ICLR-2020|
 William W. Cohen, Haitian Sun, R. Alex Hofer, Matthew Siegler
 Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base 
 recent.html
-========== ## Paper on Neural Query Language (NQL) a differentiable dataflow query language.  NQL is useful for building KBQA systems that can be trained from denotations, but relies heavily on sparse-matrix operations that are not implemented in all accelerators
+========== ## Paper on Neural Query Language (NQL) a differentiable dataflow query language.  NQL is useful for building KBQA systems that can be trained from denotations, but relies heavily on sparse-matrix operations that are not implemented in all accelerators.
 C|ksnx|2020|https://openreview.net/forum?id=SJxstlHFPH|ICLR-2020|
 Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen
 Differentiable Reasoning over a Virtual Knowledge Base
 recent.html
-========== ## Describes DrKIT, which allows one to answer multihop chain queries on a "virtual KB"---a corpus of entity-linked documents.  In DrKIT, entity mentions are indexed for neural retrieval with a rich representation of their context, and reasoning consists of navigating between co-occurring mentions
+========== ## Describes DrKIT, which allows one to answer multihop chain queries on a "virtual KB"---a corpus of entity-linked documents.  In DrKIT, entity mentions are indexed for neural retrieval with a rich representation of their context, and reasoning consists of navigating between co-occurring mentions.
 |an|2020|psb-2020.pdf|PSB-2020|
 Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu
 From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer
@@ -92,18 +92,18 @@ recent.html
 William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler 
 Differentiable Representations For Multihop Inference Rules
 recent.html
-========== ## Earlier version of ICLR paper on NQL
+========== ## Earlier version of ICLR paper on NQL.
 |kixgn|2019|http://arxiv.org/abs/1905.06209|arxiv||
 William W. Cohen, Matthew Siegler, Alex Hofer
 Neural Query Language: A Knowledge Base Query Language for Tensorflow
 recent.html
-========== ## Earlier version of ICLR paper on NQL focusing on the language constructs used
+========== ## Earlier version of ICLR paper on NQL focusing on the language constructs used.
 C|sxgn|2019|http://arxiv.org/abs/1904.09537|EMNLP-2019||
 Haitian Sun, Tania Bedrax-Weiss, William W. Cohen
 PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text
 recent.html
 ==========
-|an|2019|http://arxiv.org/abs/1904.02181|preparation||
+|an|2019|http://arxiv.org/abs/1904.02181|NAACL-2019||
 Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu
 Probing Biomedical Embeddings from Language Models
 recent.html
@@ -356,7 +356,7 @@ http://www.sciencedirect.com/science/article/pii/S0004370214001349
 J||2014|nle-2014.pdf|Natural Language Engineering 20(03), pp 361-397
 Einat Minkov and William W. Cohen
 Adaptive graph walk-based similarity measures for parsed text
-http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9271313&fileId=S1351324912000393	
+http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9271313&fileId=S1351324912000393
 ==========
 |slg|2014|http://www.crcpress.com/product/isbn/9781466504080|Handbook of Mixed Membership Models and Their Applications|
 Ramnath Balasubramanyan and William W. Cohen
@@ -1235,7 +1235,7 @@ http://www.informatik.uni-trier.de/~ley/db/journals/ai/ai118.html#Cohen00
 ==========
 J|ai|2000|NONE|International Journal of Software Engineering and Knowledge Engineering 9(5): 519-546 (1999)|faultThread.end
 William W. Cohen & Prem Devanbu
-Automatically Exploring	Hypotheses about Fault Prediction: a Comparative Study of Inductive Logic Programming Methods
+Automatically Exploring Hypotheses about Fault Prediction: a Comparative Study of Inductive Logic Programming Methods
 http://www.informatik.uni-trier.de/~ley/db/journals/ijseke/ijseke9.html#CohenD99
 ==========
 J|mx|1999|http://www8.org/w8-papers/5a-search-query/learning/index.html|Computer Networks 31(11-16): 1641-1652 (1999)|www199Thread.end

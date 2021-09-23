@@ -4,10 +4,24 @@
 <body><h3>Selected and/or recent papers by William W. Cohen</h3>
 <h3>Recent papers: 2021</h3>
 <ol>
+<li>Julian Martin Eisenschlos, Maharshi Gor, Thomas Muller, William W. Cohen (2021): <a href="https://arxiv.org/abs/2109.04312">MATE: Multi-view Attention for Table Transformer Efficiency</a> in EMNLP-2021.
+</li>
+<li>Bhuwan Dhingra, Jeremy R. Cole, Julian Martin Eisenschlos, Daniel Gillick, Jacob Eisenstein, William W. Cohen (2021): <a href="https://arxiv.org/abs/2106.15110">Time-Aware Language Models as Temporal Knowledge Bases</a> in preparation.
+</li>
+<li>Haitian Sun, William W. Cohen, Ruslan Salakhutdinov (2021): <a href="https://arxiv.org/abs/2106.00200">End-to-End Multihop Retrieval for Compositional Question Answering over Long Documents</a> in preparation.<br><ul><li><font size=-1>Adapts many of the ideas used for multihop KBQA to a new task - answering multihop questions over a large document.  Retrieval steps in this "DocHopper" system retrieve passages of a document, and the retrieved items are combined with a question neurally: i.e., rather than appending text to a question and re-encoding that discrete object, what is retrieved is a vector summary of the document, which is mixed with the previous question encoding.  This is fast, fully differentiable, allows retrieval of large document subsections, and gets a new SOTA on three datasets.</font></ul>
+</li>
+<li>Avishai Zagoury, Einat Minkov, Idan Szpektor, William W. Cohen (2021): <a href="https://arxiv.org/abs/2104.01940">What's the best place for an AI conference, Vancouver or ______: Why completing comparative questions is difficult</a> in AAAI2021.
+</li>
+<li>Haitian Sun, Pat Verga, Bhuwan Dhingra, Ruslan Salakhutdinov, William W. Cohen (2021): <a href="https://arxiv.org/abs/2102.07043">Reasoning Over Virtual Knowledge Bases With Open Predicate Relations</a> in ICML2021.<br><ul><li><font size=-1>Modifies the FILM model by using a virtual KB of small text passages containing pairs of entities.  This required adding a Matching-the-Blanks pretraining phase, but got strong results on a number of QA-from-corpora tasks.</font></ul>
+</li>
+<li>Wenhu Chen, Ming-Wei Chang, Eva Schlinger, William Wang, William W. Cohen (2021): <a href="https://openreview.net/forum?id=yRJUNfGzdsT">Open Question Answering Over Tables and Text</a> in ICLR2021.<br><ul><li><font size=-1>Answering open QA multi-hop questions over tables and text with a clever ``early fusion'' idea, which proposes and indexes likely reasoning chains, and uses large-document Transformers to merge these noisy evidence chains.</font></ul>
+</li>
 </ol>
 <h3>Recent papers: 2020</h3>
 <ol>
 <li>Pat Verga, Haitian Sun, Livio Baldini Soares, and William W. Cohen (2020): <a href="https://aclanthology.org/2021.naacl-main.288/">Adaptable and Interpretable Neural Memory Over Symbolic Knowledge</a> in NAACL-2021.<br><ul><li><font size=-1>Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second "fact memory" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining.</font></ul>
+</li>
+<li>Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen (2020): <a href="https://arxiv.org/abs/2012.00893">Evaluating Explanations: How much do explanations from the teacher aid students?</a> in preparation.
 </li>
 <li>Bill Yuchen Lin, Haitian Sun, Bhuwan Dhingra, Manzil Zaheer, Xiang Ren, William W. Cohen (2020): <a href="https://arxiv.org/abs/2010.14439">Differentiable Open-Ended Commonsense Reasoning</a> in NAACL-2021.<br><ul><li><font size=-1>Extends DrKIT's virtual KB to a corpus of documents of common-sense statements ("facts").  In DrFact, entities are replaced by noisy and ambiguous concepts, and navigation is between documents with overlapping sets of mentions.  Also introduces new "open" tasks for common-sense QA.</font></ul>
 </li>
@@ -21,10 +35,26 @@
 </li>
 <li>Bhuwan Dhingra, Manzil Zaheer, Vidhisha Balachandran, Graham Neubig, Ruslan Salakhutdinov, William W. Cohen (2020): <a href="https://openreview.net/forum?id=SJxstlHFPH">Differentiable Reasoning over a Virtual Knowledge Base</a> in ICLR-2020.<br><ul><li><font size=-1>Describes DrKIT, which allows one to answer multihop chain queries on a "virtual KB"---a corpus of entity-linked documents.  In DrKIT, entity mentions are indexed for neural retrieval with a rich representation of their context, and reasoning consists of navigating between co-occurring mentions.</font></ul>
 </li>
+<li>Yifeng Tao, Chunhui Cai, William W. Cohen, Xinghua Lu (2020): <a href="postscript/psb-2020.pdf">From genome to phenome: Predicting multiple cancer phenotypes based on somatic genomic alternations bia the genomic impact transformer</a> in PSB-2020.
+</li>
 </ol>
 <h3>Recent papers: 2019</h3>
 <ol>
+<li>Andrew O. Arnold, William W. Cohen (2019): <a href="https://arxiv.org/abs/1911.06111">Instance-based Transfer Learning for Multilingual Deep Retrieval</a> in arxiv.
+</li>
+<li>Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu (2019): <a href="https://arxiv.org/pdf/1909.06146.pdf">PubMedQA: A Dataset for Biomedical Research Question Answering</a> in EMNLP-2019.
+</li>
+<li>Bhuwan Dhingra, Manaal Faruqui, Ankur Parikh, Ming-Wei Chang, Dipanjan Das, William W. Cohen (2019): <a href="http://arxiv.org/abs/1906.01081">Handling Divergent Reference Texts when Evaluating Table-to-Text Generation</a> in ACL-2019.
+</li>
+<li>William W. Cohen, Haitian Sun, Alex Hofer, Matthew Siegler  (2019): <a href="http://arxiv.org/abs/1905.10417">Differentiable Representations For Multihop Inference Rules</a> in arxiv.<br><ul><li><font size=-1>Earlier version of ICLR paper on NQL.</font></ul>
+</li>
+<li>William W. Cohen, Matthew Siegler, Alex Hofer (2019): <a href="http://arxiv.org/abs/1905.06209">Neural Query Language: A Knowledge Base Query Language for Tensorflow</a> in arxiv.<br><ul><li><font size=-1>Earlier version of ICLR paper on NQL focusing on the language constructs used.</font></ul>
+</li>
 <li>Haitian Sun, Tania Bedrax-Weiss, William W. Cohen (2019): <a href="http://arxiv.org/abs/1904.09537">PullNet: Open Domain Question Answering with Iterative Retrieval on Knowledge Bases and Text</a> in EMNLP-2019.
+</li>
+<li>Qiao Jin, Bhuwan Dhingra, William W. Cohen, Xinghua Lu (2019): <a href="http://arxiv.org/abs/1904.02181">Probing Biomedical Embeddings from Language Models</a> in NAACL-2019.
+</li>
+<li>Haohan Wang, Xiang Liu, Yifeng Tao, Wenting Ye, Qiao Jin, William W. Cohen and Eric P. Xing (2019): <a href="https://www.worldscientific.com/doi/abs/10.1142/9789813279827_0011">Automatic Human-like Mining and Constructing Reliable Genetic Association Database with Deep Reinforcement Learning</a> in Biocomputing.
 </li>
 </ol>
 <h3>Selected other papers</h3>

@@ -85,30 +85,36 @@ def write_bib(fp, bib_entries):
 def filter_bib(bib, lo_year, hi_year, topic_key):
   def good_year(d):
     y = int(d['year'])
-    return lo_year <= y <= hi_year
+    return lo_year <= y and y <= hi_year
   def good_topic(d):
     return not topic_key or topic_key in d['topics']
   return [d for d in bib if (good_year(d) and good_topic(d))]
 
 def run_main():
   bib = load_pubs_data()
+  print('loaded', len(bib), 'publications')
   # selected publications
+  print('preparing selected pubs bibliography')
   with open('../pubs-s.html', 'w') as fp:
     write_header(fp, "Selected and/or recent papers by William W. Cohen")
     for y in [THIS_YEAR, THIS_YEAR-1, THIS_YEAR-2]:
+      print('- recent papers from',y)
       write_subheader(fp, f"Recent papers: {y}")
-      write_bib(fp, filter_bib(bib, int(y), int(y), 's'))
+      write_bib(fp, filter_bib(bib, int(y), int(y), None))
+    print('- other selected papers')
     write_subheader(fp, "Selected other papers")
     write_bib(fp, filter_bib(bib, 0, THIS_YEAR-3, 's'))
     write_footer(fp)
   # by topic
   for k in TOPIC_NAME.keys():
+    topic = TOPIC_NAME[k]
+    print('preparing topic bibliography for', topic)
     with open(f"../pubs-{k}.html", 'w') as fp:
-      topic = TOPIC_NAME[k]
       write_header(fp, f"William W. Cohen's Papers: {topic}")
       write_bib(fp, filter_bib(bib, 0, 9999, k))
       write_footer(fp)
   # all by year
+  print('preparing by-year bibliography')
   years = set([d.get('year') for d in bib])
   with open("../pubs.html", "w") as fp:
     write_header(fp, "Papers by William W. Cohen")
