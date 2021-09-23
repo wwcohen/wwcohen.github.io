@@ -126,7 +126,7 @@
     "year": "2020",
     "topics": "ksan",
     "url": "https://arxiv.org/abs/2007.00849",
-    "cite": "limbo",
+    "cite": "arxiv",
     "thread": "FaEThread.end",
     "doi": "recent.html",
     "comment": "Earlier draft of the NAACL paper on FILM (Fact-Injected LM)."
@@ -140,8 +140,8 @@
     "url": "https://jair.org/index.php/jair/article/view/11944/26561",
     "cite": "JAIR",
     "thread": "TensorlogThread.in",
-    "doi": "recent.html ## Most complete paper on TensorLog, a predecessor for NQL/EmQL that was a Prolog-like logic instead of a dataflow query language.",
-    "comment": ""
+    "doi": "",
+    "comment": "Most complete paper on TensorLog, a predecessor of NQL/EmQL that was a Prolog-like logic, not a dataflow query language."
   },
   {
     "title": "Scalable Neural Methods for Reasoning With a Symbolic Knowledge Base ",
