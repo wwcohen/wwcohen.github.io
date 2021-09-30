@@ -1,5 +1,17 @@
 [
   {
+    "title": "Multilingual Fact Linking",
+    "authors": "Keshav Kolluru, Martin Rezk, Pat Verga, William W. Cohen, Partha Talukdar",
+    "venues": "",
+    "year": "2021",
+    "topics": "an",
+    "url": "https://arxiv.org/abs/2109.14364",
+    "cite": "AKBC-2021",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "MATE: Multi-view Attention for Table Transformer Efficiency",
     "authors": "Julian Martin Eisenschlos, Maharshi Gor, Thomas Muller, William W. Cohen",
     "venues": "",
