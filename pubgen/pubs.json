@@ -1,5 +1,17 @@
 [
   {
+    "title": "Mention Memory: incorporating textual knowledge into Transformers through entity mention attention",
+    "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Fei Sha, William Cohen",
+    "venues": "",
+    "year": "2021",
+    "topics": "an",
+    "url": "https://arxiv.org/abs/2110.06176",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": "Similar to the Entities-as-Experts model, but uses a much larger memory of entity mentions, which allows the model to potentially provide meaningful provenance for information. The model, called TOME, outperforms Entities-as-Experts on several tasks, and required some non-trivial technical innovations relating to memory pre-training and efficient retrieval."
+  },
+  {
     "title": "Multilingual Fact Linking",
     "authors": "Keshav Kolluru, Martin Rezk, Pat Verga, William W. Cohen, Partha Talukdar",
     "venues": "",
