@@ -1,5 +1,17 @@
 [
   {
+    "title": "ConditionalQA: A Complex Reading Comprehension Dataset with Conditional Answers",
+    "authors": "ConditionalQA: A Complex Reading Comprehension Dataset with Conditional Answers",
+    "venues": "",
+    "year": "2021",
+    "topics": "kan",
+    "url": "https://arxiv.org/abs/2110.06884",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": "A novel dataset with (1) long context documents containing information that is related in logically complex ways; (2) multi-hop questions that require compositional logical reasoning. Intended as a more realistic version of ShARC, a QA task considered in 'End-to-End Multihop Retrieval for Compositional Question Answering over Long Documents'"
+  },
+  {
     "title": "Mention Memory: incorporating textual knowledge into Transformers through entity mention attention",
     "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Fei Sha, William Cohen",
     "venues": "",
