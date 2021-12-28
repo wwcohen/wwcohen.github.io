@@ -1,7 +1,19 @@
 [
   {
+    "title": "Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations",
+    "authors": "Siddhant Arora, Danish Pruthi, Norman Sadeh, William W. Cohen, Zachary C. Lipton, Graham Neubig",
+    "venues": "C",
+    "year": "2021",
+    "topics": "en",
+    "url": "https://arxiv.org/abs/2112.09669",
+    "cite": "AAAI-2022",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "ConditionalQA: A Complex Reading Comprehension Dataset with Conditional Answers",
-    "authors": "ConditionalQA: A Complex Reading Comprehension Dataset with Conditional Answers",
+    "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
     "venues": "",
     "year": "2021",
     "topics": "kan",
@@ -120,7 +132,7 @@
     "comment": "Most recent paper on Fact-Injected Language Model (FILM), which includes an Entities-as-Experts style memory of neural entity encodings, plus a second \"fact memory\" of KG triples.  FILM has good results on KBQA tasks, and allows one to use an edited KB with retraining."
   },
   {
-    "title": "Evaluating Explanations: How much do explanations from the teacher aid students?",
+    "title": "Evaluating Explanations: How Much Do Explanations From the Teacher Aid Students?",
     "authors": "Danish Pruthi, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen",
     "venues": "",
     "year": "2020",
