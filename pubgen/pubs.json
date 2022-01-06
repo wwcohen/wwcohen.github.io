@@ -12,6 +12,16 @@
     "comment": ""
   },
   {
+    "title": "Investigating the Effect of Background Knowledge on Natural Questions",
+    "authors": "Vidhisha Balachandran and Bhuwan Dhingra and Haitian Sun and Michael Collins and William W. Cohen",
+    "venues": "C",
+    "year": "2021",
+    "topics": "n",
+    "url": "https://aclanthology.org/2021.deelio-1.3.pdf",
+    "cite": "DeeLIO-2021",
+    "comment": "Proceedings of Deep Learning Inside Out (DeeLIO): The 2nd Workshop on Knowledge Extraction and Integration for Deep Learning Architectures"
+  },
+  {
     "title": "ConditionalQA: A Complex Reading Comprehension Dataset with Conditional Answers",
     "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
     "venues": "",
