@@ -1,9 +1,21 @@
 [
   {
+    "title": "Transformer Memory as a Differentiable Search Index",
+    "authors": "Yi Tay, Vinh Q. Tran, Mostafa Dehghani, Jianmo Ni, Dara Bahri, Harsh Mehta, Zhen Qin, Kai Hui, Zhe Zhao, Jai Gupta, Tal Schuster, William W. Cohen and Donald Metzler",
+    "venues": "C",
+    "year": "2022",
+    "topics": "en",
+    "url": "https://arxiv.org/abs/2202.06991",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "Explain, Edit, and Understand: Rethinking User Study Design for Evaluating Model Explanations",
     "authors": "Siddhant Arora, Danish Pruthi, Norman Sadeh, William W. Cohen, Zachary C. Lipton, Graham Neubig",
     "venues": "C",
-    "year": "2021",
+    "year": "2022",
     "topics": "en",
     "url": "https://arxiv.org/abs/2112.09669",
     "cite": "AAAI-2022",
