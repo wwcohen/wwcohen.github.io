@@ -52,7 +52,7 @@
     "year": "2021",
     "topics": "kan",
     "url": "https://arxiv.org/abs/2110.06176",
-    "cite": "preparation",
+    "cite": "ICLR 2021",
     "thread": "",
     "doi": "recent.html",
     "comment": "Similar to the Entities-as-Experts model, but uses a much larger memory of entity mentions, which allows the model to potentially provide meaningful provenance for information. The model, called TOME, outperforms Entities-as-Experts on several tasks, and required some non-trivial technical innovations relating to memory pre-training and efficient retrieval."
