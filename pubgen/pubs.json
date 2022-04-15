@@ -1,5 +1,17 @@
 [
   {
+    "title": "Augmenting Pre-trained Language Models with QA-Memory for Open-Domain Question Answering",
+    "authors": "Wenhu Chen, Pat Verga, Michiel de Jong, John Wieting, William W. Cohen",
+    "venues": "",
+    "year": "2022",
+    "topics": "ken",
+    "url": "https://arxiv.org/abs/2204.04581",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": "Extends the techniques of Mention Memory in several important ways. (1) The memory is a memory of generated question-answer pairs, which is more interpretable than neural entity-mention encodings; (2) it is based on pre-trained T5, not a custom Transformer; and (3) it allows use of the token-level encoding of retrieved QA pairs as well as neural encodings of them for reasoning.  Using QA pairs instead of passages allows a clever pre-training trick for learning to retrieve, and the model greatly outperfoms a prior similar model (i.e., RePAQ) on smaller QA benchmarks."
+  },
+  {
     "title": "Transformer Memory as a Differentiable Search Index",
     "authors": "Yi Tay, Vinh Q. Tran, Mostafa Dehghani, Jianmo Ni, Dara Bahri, Harsh Mehta, Zhen Qin, Kai Hui, Zhe Zhao, Jai Gupta, Tal Schuster, William W. Cohen and Donald Metzler",
     "venues": "C",
