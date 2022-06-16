@@ -1,5 +1,17 @@
 [
   {
+    "title": "Reasoning over Logically Interacted Conditions for Question Answering",
+    "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
+    "venues": "",
+    "year": "2022",
+    "topics": "ken",
+    "url": "https://arxiv.org/abs/2205.12898",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "Augmenting Pre-trained Language Models with QA-Memory for Open-Domain Question Answering",
     "authors": "Wenhu Chen, Pat Verga, Michiel de Jong, John Wieting, William W. Cohen",
     "venues": "",
