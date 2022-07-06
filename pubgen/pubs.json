@@ -1,5 +1,17 @@
 [
   {
+    "title": "QA Is the New KR: Question-Answer Pairs as Knowledge Bases",
+    "authors": "Wenhu Chen, William W. Cohen, Michiel De Jong, Nitish Gupta, Alessandro Presta, Pat Verga, John Wieting",
+    "venues": "",
+    "year": "2022",
+    "topics": "nkgx",
+    "url": "https://arxiv.org/abs/2207.00630",
+    "cite": "preparation",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "Reasoning over Logically Interacted Conditions for Question Answering",
     "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
     "venues": "",
