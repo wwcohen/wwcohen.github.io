@@ -6,7 +6,19 @@
     "year": "2022",
     "topics": "nkgx",
     "url": "https://arxiv.org/abs/2207.00630",
-    "cite": "preparation",
+    "cite": "AAAI-2023",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
+    "title": "Correcting Diverse Factual Errors in Abstractive Summarization via Post-Editing and Language Model Infilling",
+    "authors": "Vidhisha Balachandran, Hannaneh Hajishirzi, William Cohen, Yulia Tsvetkov",
+    "venues": "",
+    "year": "2022",
+    "topics": "nkx",
+    "url": "https://arxiv.org/abs/2210.12378",
+    "cite": "EMNLP-2022",
     "thread": "",
     "doi": "recent.html",
     "comment": ""
