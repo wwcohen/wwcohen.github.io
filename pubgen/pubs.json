@@ -12,6 +12,18 @@
     "comment": ""
   },
   {
+    "title": "FiDO: Fusion-in-Decoder optimized for stronger performance and faster inference",
+    "authors": "Michiel de Jong, Yury Zemlyanskiy, Joshua Ainslie, Nicholas FitzGerald, Sumit Sanghai, Fei Sha, William Cohen",
+    "venues": "",
+    "year": "2022",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2212.08153",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "QA Is the New KR: Question-Answer Pairs as Knowledge Bases",
     "authors": "Wenhu Chen, William W. Cohen, Michiel De Jong, Nitish Gupta, Alessandro Presta, Pat Verga, John Wieting",
     "venues": "",
