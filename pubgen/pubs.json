@@ -24,6 +24,30 @@
     "comment": ""
   },
   {
+    "title": "Beyond Contrastive Learning: A Variational Generative Model for Multilingual Retrieval",
+    "authors": "John Wieting, Jonathan H. Clark, William W. Cohen, Graham Neubig, Taylor Berg-Kirkpatrick",
+    "venues": "",
+    "year": "2022",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2212.10726",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
+    "title": "Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks",
+    "authors": "Wenhu Chen, Xueguang Ma, Xinyi Wang, William W. Cohen",
+    "venues": "",
+    "year": "2022",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2211.12588",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "QA Is the New KR: Question-Answer Pairs as Knowledge Bases",
     "authors": "Wenhu Chen, William W. Cohen, Michiel De Jong, Nitish Gupta, Alessandro Presta, Pat Verga, John Wieting",
     "venues": "",
