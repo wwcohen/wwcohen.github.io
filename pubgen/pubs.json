@@ -25,6 +25,20 @@
     "comment": ""
   },
   {
+
+    "title": "Pre-computed memory or on-the-fly encoding? A hybrid approach to retrieval augmentation makes the most of your compute",
+    "authors": "Wenhu Chen, Hexiang Hu, Xi Chen, Pat Verga, William W. Cohen",
+    "venues": "",
+    "year": "2022",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2210.02928",
+    "cite": "EACL 2023",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+
+  {
     "title": "FiDO: Fusion-in-Decoder optimized for stronger performance and faster inference",
     "authors": "Michiel de Jong, Yury Zemlyanskiy, Joshua Ainslie, Nicholas FitzGerald, Sumit Sanghai, Fei Sha, William Cohen",
     "venues": "",
