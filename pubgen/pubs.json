@@ -26,7 +26,7 @@
   },
   {
 
-    "title": "Pre-computed memory or on-the-fly encoding? A hybrid approach to retrieval augmentation makes the most of your compute",
+    "title": "MuRAG: Multimodal Retrieval-Augmented Generator for Open Question Answering over Images and Text",
     "authors": "Wenhu Chen, Hexiang Hu, Xi Chen, Pat Verga, William W. Cohen",
     "venues": "",
     "year": "2022",
