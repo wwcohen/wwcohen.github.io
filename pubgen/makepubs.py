@@ -5,7 +5,7 @@ import re
 TOPIC_NAME = dict(
     m='Matching/Data Integration',
     t='Text Categorization',
-    x='Info Extraction/Reading',
+    x='Info Extraction/Reading/QA',
     l='Topic Modeling',
     g='Learning in Graphs',
     d='Intelligent Tutoring',
