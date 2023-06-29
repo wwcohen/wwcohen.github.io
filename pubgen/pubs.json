@@ -19,7 +19,7 @@
     "year": "2023",
     "topics": "nx",
     "url": "https://arxiv.org/abs/2301.10448",
-    "cite": "progress",
+    "cite": "ICML-2023",
     "thread": "",
     "doi": "recent.html",
     "comment": ""
@@ -56,7 +56,7 @@
     "year": "2022",
     "topics": "nx",
     "url": "https://arxiv.org/abs/2212.08153",
-    "cite": "progress",
+    "cite": "ACL-2023 (Findings)",
     "thread": "",
     "doi": "recent.html",
     "comment": ""
@@ -83,7 +83,7 @@
     "cite": "EACL-2023",
     "thread": "",
     "doi": "recent.html",
-    "comment": ""
+    "comment": "One of two winners of an Outstanding Paper Award."
   },
   {
     "title": "Beyond Contrastive Learning: A Variational Generative Model for Multilingual Retrieval",
@@ -92,7 +92,7 @@
     "year": "2022",
     "topics": "nx",
     "url": "https://arxiv.org/abs/2212.10726",
-    "cite": "progress",
+    "cite": "ACL-2023",
     "thread": "",
     "doi": "recent.html",
     "comment": ""
