@@ -13,6 +13,19 @@
   },
   {
 
+    "title": "GLIMMER: generalized late-interaction memory reranker",
+    "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Sumit Sanghai, William W. Cohen, Joshua Ainslie",
+    "venues": "",
+    "year": "2023",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2306.10231",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
+
     "title": "Pre-computed memory or on-the-fly encoding? A hybrid approach to retrieval augmentation makes the most of your compute",
     "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Joshua Ainslie, Sumit Sanghai, Fei Sha, William W. Cohen",
     "venues": "",
