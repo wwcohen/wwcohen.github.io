@@ -14,6 +14,19 @@
   },
   {
 
+    "title": "Subject-driven Text-to-Image Generation via Apprenticeship Learning",
+    "authors": "Wenhu Chen, Hexiang Hu, Yandong Li, Nataniel Ruiz, Xuhui Jia, Ming-Wei Chang, William W. Cohen",
+    "venues": "",
+    "year": "2023",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2304.00186",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
+
     "title": "Pre-computed memory or on-the-fly encoding? A hybrid approach to retrieval augmentation makes the most of your compute",
     "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Joshua Ainslie, Sumit Sanghai, Fei Sha, William W. Cohen",
     "venues": "",
