@@ -10,6 +10,7 @@ TOPIC_NAME = dict(
     g='Learning in Graphs',
     d='Intelligent Tutoring',
     r='Rule Learning',
+    R='Retrieval Augmented LMs',
     c='Collaborative Filtering',
     a='Applications',
     f='Formal Results',
