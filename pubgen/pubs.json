@@ -1,6 +1,19 @@
 [
   {
 
+    "title": "Answering Ambiguous Questions with a Database of Questions, Answers, and Revisions",
+    "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
+    "venues": "",
+    "year": "2023",
+    "topics": "nxkR",
+    "url": "https://arxiv.org/abs/2308.08661",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": "Following up the 'QA is the new KR' paper, we present a new collection of question-answer pairs automatically generated from Wikipedia which are more specific and ambiiguous than generated questions used in prior work, and show that this can be used to answer ambiguous questions.  On the challenging ASQA benchmark, which requires generating long-form answers that summarize the multiple answers to an ambiguous question, our method improves performance by 10-15%.  The new queston DB can also be used to improve diverse passage retrieval."
+  },
+  {
+
     "title": "GLIMMER: generalized late-interaction memory reranker",
     "authors": "Michiel de Jong, Yury Zemlyanskiy, Nicholas FitzGerald, Sumit Sanghai, William W. Cohen, Joshua Ainslie",
     "venues": "",
