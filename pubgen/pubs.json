@@ -1,6 +1,19 @@
 [
   {
 
+    "title": "MEMORY-VQ: Compression for Tractable Internet-Scale Memory",
+    "authors": "Yury Zemlyanskiy, Michiel de Jong, Luke Vilnis, Santiago Ontañón, William W. Cohen, Sumit Sanghai, Joshua Ainslie",
+    "venues": "",
+    "year": "2023",
+    "topics": "nxR",
+    "url": "https://arxiv.org/abs/2308.14903",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
+
     "title": "Answering Ambiguous Questions with a Database of Questions, Answers, and Revisions",
     "authors": "Haitian Sun, William W. Cohen, Ruslan Salakhutdinov",
     "venues": "",
