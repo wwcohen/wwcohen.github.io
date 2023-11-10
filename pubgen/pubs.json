@@ -1,5 +1,17 @@
 [
   {
+    "title": "SEMQA: Semi-Extractive Multi-Source Question Answering",
+    "authors": "Tal Schuster, Adam D. Lelkes, Haitian Sun, Jai Gupta, Jonathan Berant, William W. Cohen, Donald Metzler",
+    "venues": "",
+    "year": "2023",
+    "topics": "nxR",
+    "url": "https://arxiv.org/abs/2311.04886",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
 
     "title": "MEMORY-VQ: Compression for Tractable Internet-Scale Memory",
     "authors": "Yury Zemlyanskiy, Michiel de Jong, Luke Vilnis, Santiago Ontañón, William W. Cohen, Sumit Sanghai, Joshua Ainslie",
