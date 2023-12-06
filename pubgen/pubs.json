@@ -1,5 +1,17 @@
 [
   {
+    "title": "Characterizing Tradeoffs in Language Model Decoding with Informational Interpretations",
+    "authors": "Chung-Ching Chang, William W. Cohen, Yun-Hsuan Sung",
+    "venues": "",
+    "year": "2023",
+    "topics": "nx",
+    "url": "https://arxiv.org/abs/2311.10083",
+    "cite": "progress",
+    "thread": "",
+    "doi": "recent.html",
+    "comment": ""
+  },
+  {
     "title": "SEMQA: Semi-Extractive Multi-Source Question Answering",
     "authors": "Tal Schuster, Adam D. Lelkes, Haitian Sun, Jai Gupta, Jonathan Berant, William W. Cohen, Donald Metzler",
     "venues": "",
