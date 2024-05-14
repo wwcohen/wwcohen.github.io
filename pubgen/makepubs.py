@@ -19,7 +19,9 @@ TOPIC_NAME = dict(
     n='Deep Learning',
     k='Neural Knowledge Representation',
     G='GNAT System',
+    p='Prediction-powered inference'
 )
+
 VENUE_TYPE = dict(
     C='Conference',
     J='Journal',
