@@ -1,5 +1,17 @@
 [
   {
+      "title": "Stratified Prediction-Powered Inference for Hybrid Language Model Evaluation",
+      "authors": "Adam Fisch, Joshua Maynez, R. Alex Hofer, Bhuwan Dhingra, Amir Globerson and William W. Cohen",
+      "venues": "",
+      "year": "2024",
+      "topics": "a",
+      "url": "http://arxiv.org/abs/2405.06034",
+      "cite": "progress",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
     "title": "Bayesian Prediction-Powered Inference",
     "authors": "R. Alex Hofer, Joshua Maynez, Bhuwan Dhingra, Adam Fisch, Amir Globerson and William W. Cohen",
     "venues": "",
@@ -10,6 +22,18 @@
     "thread": "",
     "doi": "recent.html",
     "comment": ""
+  },
+  {
+      "title": "Instruct-Imagen: Imagen Generation with Multi-modal Instruction",
+      "authors": "Hexiang Hu, Kelvin C.K. Chan, Yu-Chuan Su, Wenhu Chen, Yandong Li, Kihyuk Sohn, Yang Zhao, Xue Ben, William W. Cohen, Ming-Wei Chan, Xuhui Jia",
+      "venues": "",
+      "year": "2023",
+      "topics": "nx",
+      "url": "https://arxiv.org/abs/2401.01952",
+      "cite": "CVPR",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
   },
   {
     "title": "Characterizing Tradeoffs in Language Model Decoding with Informational Interpretations",
