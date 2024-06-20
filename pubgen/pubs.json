@@ -5,7 +5,7 @@
       "venues": "",
       "year": "2024",
       "topics": "a",
-      "url": "http://arxiv.org/abs/2405.06034",
+      "url": "https://arxiv.org/abs/2406.04291",
       "cite": "progress",
       "thread": "",
       "doi": "recent.html",
@@ -33,7 +33,7 @@
       "cite": "CVPR",
       "thread": "",
       "doi": "recent.html",
-      "comment": ""
+      "comment": "Accepted as an oral presentation (one of 90 orals out of 11,500 submissions)."
   },
   {
     "title": "Characterizing Tradeoffs in Language Model Decoding with Informational Interpretations",
