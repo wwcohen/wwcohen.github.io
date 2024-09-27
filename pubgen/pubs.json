@@ -1,12 +1,36 @@
 [
   {
+      "title": "Watch Your Steps: Observable and Modular Chains of Thought",
+      "authors": "Cassandra A. Cohen, William W. Cohen",
+      "venues": "",
+      "year": "2024",
+      "topics": "a",
+      "url": "https://arxiv.org/abs/2409.15359",
+      "cite": "preparation",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "Stratified Prediction-Powered Inference for Hybrid Language Model Evaluation",
       "authors": "Adam Fisch, Joshua Maynez, R. Alex Hofer, Bhuwan Dhingra, Amir Globerson and William W. Cohen",
       "venues": "",
       "year": "2024",
       "topics": "a",
       "url": "https://arxiv.org/abs/2406.04291",
-      "cite": "progress",
+      "cite": "NeurIPS-2024",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
+      "title": "ICAL: Continual Learning of Multimodal Agents by Transforming Trajectories into Actionable Insights",
+      "authors": "Gabriel Sarch, Lawrence Jang, Michael J. Tarr, William W. Cohen, Kenneth Marino, Katerina Fragkiadaki",
+      "venues": "",
+      "year": "2024",
+      "topics": "a",
+      "url": "https://arxiv.org/abs/2406.14596",
+      "cite": "NeurIPS-2024",
       "thread": "",
       "doi": "recent.html",
       "comment": ""
