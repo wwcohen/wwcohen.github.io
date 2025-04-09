@@ -1,5 +1,17 @@
 [
   {
+      "title": "CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation",
+      "authors": "Jixuan Leng, Chengsong Huang, Langlin Huang, Bill Yuchen Lin, William W. Cohen, Haohan Wang, Jiaxin Huang",
+      "venues": "",
+      "year": "2025",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2504.00043",
+      "cite": "preparation",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "Watch Your Steps: Observable and Modular Chains of Thought",
       "authors": "Cassandra A. Cohen, William W. Cohen",
       "venues": "",
