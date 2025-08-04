@@ -1,5 +1,17 @@
 [
   {
+      "title": "Semi-structured LLM Reasoners Can Be Rigorously Audited",
+      "authors": "Jixuan Leng, Cassandra A. Cohen, Zhixian Zhang, Chenyan Xiong, William W. Cohen",
+      "venues": "",
+      "year": "2025",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2505.24217",
+      "cite": "preparation",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs with Controllable Puzzle Generation",
       "authors": "Jixuan Leng, Chengsong Huang, Langlin Huang, Bill Yuchen Lin, William W. Cohen, Haohan Wang, Jiaxin Huang",
       "venues": "",
