@@ -48,13 +48,25 @@
       "comment": ""
   },
   {
-      "title": "ICAL: Continual Learning of Multimodal Agents by Transforming Trajectories into Actionable Insights",
+      "title": "{VLM} Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
       "authors": "Gabriel Sarch, Lawrence Jang, Michael J. Tarr, William W. Cohen, Kenneth Marino, Katerina Fragkiadaki",
       "venues": "",
       "year": "2024",
       "topics": "a",
-      "url": "https://arxiv.org/abs/2406.14596",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8ac50fd0a4eeeb1f077b17bb7c5353c3-Abstract-Conference.html",
       "cite": "NeurIPS-2024",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
+      "title": "From Observation to Abstractions: Efficient In-Context Learning from Human Feedback and Visual Demonstrations for {VLM} Agents",
+      "authors": "Gabriel_Herbert_Sarch, Lawrence Jang, Michael J. Tarr, William W. Cohen, Kenneth Marino, Katerina Fragkiadaki",
+      "venues": "",
+      "year": "2024",
+      "topics": "a",
+      "url": "https://openreview.net/pdf?id=WwCEKRB9Yv",
+      "cite": "Training Agents with Foundation Models Workshop at RLC 2024",
       "thread": "",
       "doi": "recent.html",
       "comment": ""
