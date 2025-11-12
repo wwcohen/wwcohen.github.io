@@ -1,5 +1,17 @@
 [
   {
+      "title": "Multiple Prediction Powered Inference",
+      "authors": "Charlie Cowen-Breen, Alekh Agarwal, Stephen Bates, William W. Cohen, Jacob Eisenstein, Amir Globerson, Adam Fisch",
+      "venues": "",
+      "year": "2025",
+      "topics": "an",
+      "url": "https://openreview.net/pdf?id=gJZ5rf2bS4",
+      "cite": "preparation",
+      "thread": "",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "Semi-structured LLM Reasoners Can Be Rigorously Audited",
       "authors": "Jixuan Leng, Cassandra A. Cohen, Zhixian Zhang, Chenyan Xiong, William W. Cohen",
       "venues": "",
