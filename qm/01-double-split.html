@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Quantum Weirdness for AI Researchers (or anyone else): Chapter 1</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<!--- mathjax --->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+<body bgcolor="white">
+
+<h1>The double-slit experiment</h1>
+
+<h2>An ML Model for Light as Particles</h2>
+
+<i>mystery around quantum - hard to understand, hard math - not much
+  that doesn't either wave hands wildly and say weird-sounding things
+  or dive right into college-level physics, which is not easy.  there
+  legend is that anything quantum is just incomprehensible and
+  required completely radical ways of thinking about things.  Eg,
+  Richard Feynman's famous quote, "I think I can safely say that
+  nobody understands quantum mechanics".
+</i>
+
+
+  From <a href="https://www.feynmanlectures.caltech.edu/">Richard
+    Feynman's lectures</a> there's a better quote:
+
+<blockquote>
+Because atomic behavior is so unlike ordinary experience, it is very
+difficult to get used to, and it appears peculiar and mysterious to
+everyone—both to the novice and to the experienced physicist. Even the
+experts do not understand it the way they would like to, and it is
+perfectly reasonable that they should not, ... So we have to learn
+about them in a sort of abstract or imaginative fashion and not by
+connection with our direct experience.
+</blockquote>
+
+<i>
+what's true now though is that there are tens of thousands of people
+that understand AI and modern ML, and this actually has some
+connections to QM - we understand what models do via the math, not
+direct experience; behavior of models can be counterintuitive; and
+importantly it no longer seems odd to study things though the lens
+of a mathematical model instead of via "direct experience".
+
+
+my goal is to explain some of the weirdness, with math that's
+simplifed enough to be manageable, but accurate enough to be
+explanatory.  I'm an AI person so I'm using notation and math from
+ML where I can, so if you are coming from a similar place you are in
+good shape.
+
+</i>
+
+I will start with the whole wave-particle duality and the famous
+double slit experiment.
+
+<blockquote>
+  Wave–particle duality is the concept in quantum mechanics that
+  fundamental entities of the universe, like photons and electrons,
+  exhibit particle or wave properties according to the experimental
+  circumstances. It expresses the inability of the classical concepts
+  such as particle or wave to fully describe the behavior of quantum
+  objects. During the 19th and early 20th centuries, light was found
+  to behave as a wave, then later was discovered to have a
+  particle-like behavior, whereas electrons behaved like particles in
+  early experiments, then later were discovered to have wave-like
+  behavior. The concept of duality arose to name these seeming
+  contradictions. -- <a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality">Wikipedia </a>
+</blockquote>
+
+<i>grab some more quotes about the weirdness and/or summarize it.
+</i>
+
+<i>
+  Plan: <ul>
+    <li>light as particles, reviewing the math we need for that (just some linear algebra)
+      in case you don't have it. this is trivial.
+    <li>then discuss the quantum story for light, which is just our
+      linear model with complex numbers thrown in, and an operation
+      at the end which maps those to probabilities.
+
+      I include a review imaginary numbers, not used a lot in ML, in
+      case you need it, then adapt our model for waves.  basically:
+      imaginary numbers are 2-D vectors, used here to model angles;
+      multiplying them is adding angles, but when they get large
+      enough they wrap around, so $2\pi=0$; and when we add them up
+      they can cancel.
+</i>
+
+
+<center>
+<img src="double slit/Slide1.png" height="auto" width="auto" alt="Double slit experiment">
+</center>
+
+<p>
+The model: $$ \textbf{v} = \left[ p(a|s), ~ p(b|s) \right], ~~~~
+\textbf{M} = \left[ \begin{array}{rrr}p(c|a) & p(d|a) & p(e|a) \\
+p(c|b) & p(d|b) & p(e|b) \end{array} \right], ~~~ \textbf{D} =
+\textbf{v} \textbf{M} $$ <p/>
+</BODY>
+</HTML>
+
