@@ -39,10 +39,10 @@ def load_pubs_data():
 
 def write_header(fp, title):
   fp.write(f"<html><head><title>{title}</title>\n")
-  fp.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"/>\n")
+  fp.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">')
   fp.write("</head>\n")
-  fp.write(f"<body><h3>{title}</h3>\n")
-
+  fp.write(f"<body><main class='container'><header><h3>{title}</h3>\n</header>\n<section>\n")
+  
 def write_subheader(fp, subhead):
   fp.write(f"<h3>{subhead}</h3>\n")
 
@@ -55,7 +55,7 @@ def write_footer(fp):
     fp.write(f" <a href=\"pubs-{k1}.html\">{topic}</a>| ")
   fp.write(" By year: <a href=\"pubs.html\">All papers</a>")
   fp.write("]</p>\n")
-  fp.write("</body></html>\n")
+  fp.write("</section></body></html>\n")
 
 def hyperlink(href, anchor_text):
   if href.find("http") < 0:
