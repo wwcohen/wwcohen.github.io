@@ -105,12 +105,20 @@
     $$ p(e | s) = p( b | s ) p ( e | b) + p( c | s ) p ( e | c)
     $$
 
-    So if we know how many photons are produced by the light source, we can
-    easily predict how many will hit the detector.  So these probabilities are
-    all we need.
+    and the equations for the other detectors are similar.  So: if we
+    know how many photons are produced by the light source, we can
+    easily predict how many will hit the detector.  These
+    probabilities are all we need for the model.
   </p>
       
-  <p>In matrix notation, we end up this model for the probability of a
+  <p>These probability computations are repetitive, but very easy to
+  write down in matrix notation, which is widely used in
+  ML.  <strong>If you aren't up on your matrix math</strong>, read
+  through this a <a href="01-aside-matrices.html">gentle
+  introduction</a> that explains what you'll need to know (to follow
+  along in this document).
+
+  <p>In matrix notation, we have this model for the probability of a
     particle leaving the light source and hitting any of the three
     detectors:
 
