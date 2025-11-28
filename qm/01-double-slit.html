@@ -1,43 +1,19 @@
+
 <html>
 <head>
-<title>Quantum Weirdness for AI Researchers (or anyone else): Chapter 1</title>
+<title>Quantum Weirdness for ML Researchers: Chapter 1</title>
 <!--- mathjax  and pic --->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 
 <body>
-  <main class="container">
-    <header>
-      <h1>The double-slit experiment</h1>
-    </header>
-    <section>
-      
+<main class="container">
+<header><h1>The Double Slit Experiment</h1></header>
+<section>
 
       <h2>An ML Model for Light as Particles</h2>
 
-      <i>mystery around quantum - hard to understand, hard math - not much
-	that doesn't either wave hands wildly and say weird-sounding things
-	or dive right into college-level physics, which is not easy.  there
-	legend is that anything quantum is just incomprehensible and
-	required completely radical ways of thinking about things.  Eg,
-	Richard Feynman's famous quote, "I think I can safely say that
-	nobody understands quantum mechanics".
-      </i>
-
-
-      From <a href="https://www.feynmanlectures.caltech.edu/">Richard
-	Feynman's lectures</a> there's a better quote:
-      
-      <blockquote>
-	Because atomic behavior is so unlike ordinary experience, it is very
-	difficult to get used to, and it appears peculiar and mysterious to
-	everyone—both to the novice and to the experienced physicist. Even the
-	experts do not understand it the way they would like to, and it is
-	perfectly reasonable that they should not, ... So we have to learn
-	about them in a sort of abstract or imaginative fashion and not by
-	connection with our direct experience.
-      </blockquote>
 
       <i>
 	what's true now though is that there are tens of thousands of people
@@ -94,27 +70,19 @@
       
       
       <center>
-	<img src="double slit/Slide1.png" height="auto" width="auto" alt="Double slit experiment">
+	<img src="double-slit/Slide1.png" height="auto" width="auto" alt="Double slit experiment">
       </center>
       
-      <p>
-	The model: $$ \textbf{v} = \left[ p(a|s), ~ p(b|s) \right], ~~~~
+      <p><i>do the math slow first.</i> In matrix notation, we have this model
+	for the probability of a particle leaving the light source and
+	hitting any of the three detectors:
+
+	$$ \textbf{v} = \left[ p(a|s), ~ p(b|s) \right], ~~~~
 	\textbf{M} = \left[ \begin{array}{rrr}p(c|a) & p(d|a) & p(e|a) \\
 	p(c|b) & p(d|b) & p(e|b) \end{array} \right], ~~~ \textbf{D} =
 	\textbf{v} \textbf{M} $$ <p/>
 
-	<details>
-	  <summary style="color:SteelBlue;text-decoration:underline;">Background on Matrices</summary>
-	  <h2>A gentle introduction to matrices</h2>
-	  <i>matrices as paths and organizing add/multiply operations - neural nets as matrices - 
-	    softmax and other "non-linearities"
-	  </i>
-	</details>
 
-	</section>
 
-  </main>
-
-</body>
-</html>
+</section></main></body></html>
 

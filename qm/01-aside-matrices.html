@@ -1,0 +1,94 @@
+
+<html>
+<head>
+<title>Quantum Weirdness for ML Researchers: Chapter 1</title>
+<!--- mathjax  and pic --->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+
+<body>
+<main class="container">
+<header><h1>Matrices and ML</h1></header>
+<section>
+
+	  <h2>A gentle introduction to matrices</h2>
+
+	  <p>If you're not familiar with matrices, they are simply a
+	  convenient and widely-used way of organizing lots of
+	  additionals and multiplications.</p>
+
+	  <p>Here's a more down-to-earth example of when you might use
+	    matrices.  Raphael needs get three items, which I'll
+	    abbreviate (a, b, c), in different quantities (6, 1, 1).
+	    These items are available at two different stores for
+	    different prices.  Which store will be cheaper for Raphael
+	    to do his shopping?</p>
+
+	  <center>
+	    <img src="double-slit/Slide2.png" height="auto" width="auto" alt="Double slit experiment">
+	  </center>
+
+	  <p>This is an easy question to solve, as shown above: if he
+	    does the math, Raphael will discover that he would pay
+	    $1.20 less at Food Lion (f) than Giant Eagle (e).  The
+	    computation he needs to do is just to multiple the
+	    quantity needed for each item on his list by the cost in a
+	    store, and then add these numbers up, for each store.</p>
+
+	  <p>A matrix is just a table of numbers.  We can write down
+	    all the numbers we need here in two matrices:
+
+	    $$ \textbf{r} = \left[ 6 ~ 1 ~ 1 \right], ~~~ 
+	    \textbf{P} = \left[ \begin{array}{rr}1.00 & 0.80 \\ 1.50 & 1.00 \\ 4.00 & 4.50 \end{array} \right]
+	    $$
+	    If a matrix has just one row, like the one I labeled <b>r</b> above,
+	    then it's called "row vector", and if it has just one column,
+	    it's called called a "column vector".  I will usually use boldfaced lower-case 
+	    letters for matrices that are vectors and boldfaced upper-case letters otherwise.</p>
+
+	  <p>
+	    Let's give these numbers names so we can follow the operations we need to do easily.
+	    I will use \( r_a \) for the number of apples Raphael needs, use
+	    use \( p_{a, e} \) for the price of apples at Giant Eagle'sand so on.
+	    So then
+	    $$ \textbf{r} = \left[ 6 ~ 1 ~ 1 \right] = \left[ r_a ~ r_b ~ r_c \right]
+	    $$
+	    and
+	    $$
+	    \textbf{P} = \left[ \begin{array}{rr} 1.00 & 0.80 \\ 1.50 & 1.00 \\ 4.00 & 4.50 \end{array} \right]
+	      = \left[ \begin{array}{rr} p_{a,e} & p_{a,f} \\ p_{b,e} & p_{b,f} \\ p_{c,e} & c_{c,f} \end{array} \right]
+	    $$
+	    And the computation we want to do is to find the total price for Raphael in each store, which if we wrote out
+	    as a row vector would be
+	    $$ \left[ (r_a  p_{a,e} + r_b  p_{b,e} + r_c  p_{c,e}) ~~~~ 
+	              (r_a  p_{a,f} + r_b  p_{b,f} + r_c  p_{c,f}) \right]
+	    $$
+	    </p>
+
+	    <p><i>general matrix multiplication rule...<i>
+
+	    <p>There are other ways that matrices can be combined.
+	      One is just to stick them together side-by-side, or
+	      "stack" them: so if Raphael was going to shop with Shaun
+	      and Shaun's shopping list was the same except with no
+	      apples I might combine those two lists into a
+	      matrix <b>Q</b> like this $$ \textbf{Q} = \left[
+	      \begin{array}{rrr}6 & 1 & 1 \\ 0 & 1 & 1 \end{array}
+	      \right] $$ (Notice I need to add zeros to Shaun's list
+	      to make it the same length as Raphael's, so I can
+	      combine them.)
+
+	    On the
+	    upper right of the figure there's a graph diagram that
+	    illustrates exactly what computation he needs to do: he
+	    needs to take each
+	  </p>
+
+	  <i>matrices as paths and organizing add/multiply operations - neural nets as matrices - 
+	    softmax and other "non-linearities"
+	  </i>
+
+
+</section></main></body></html>
+
