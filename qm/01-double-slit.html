@@ -39,20 +39,24 @@
       particle-like behavior, whereas electrons behaved like particles in
       early experiments, then later were discovered to have wave-like
       behavior. The concept of duality arose to name these seeming
-      contradictions. -- <a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality">Wikipedia </a>
+      contradictions.
+      <footer>
+	<a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality">Wikipedia </a>
+      </footer>
     </blockquote>
 
     The two-slit experiment is a simple illustration of wave-particle
     duality.  We will start out by walking though the particle-based
-    analysis.
+    analysis of the two-slit experiment.
   </p>
 
   <h2>Light as particles</h2>
 
-  <p>The two-slit experiment is shown on the left in the figure below.  There
-    is a light source \( s \) pointed at some sort of black screen \( a \),
-    which has two narrow slits in it, \( b \) and \( c \).  Behind the screen
-    is another one \( d \), on which are mounted three detectors \(e, f, g \).
+  <p>The two-slit experiment is shown on the left in the figure below.
+    There is a light source \( s \) pointed at some sort of black
+    screen \( a \), which has two narrow slits in it, \( b \) and \( c
+    \).  Behind screen \( a \) is another screen \( d \), on which are
+    mounted three light detectors \(e, f, g \).
   </p>
 
 
@@ -62,13 +66,13 @@
   </center>
 
       
-  <p>If light acted like a bunch of particles (aka photons), we could
-    analyze this by looking at what any individual photon would do.
-    That analysis is on the right side of the figure.  Briefly, the
-    photon goes from \( s \) to either the screen \(a \), where it
-    will stop, or into one of the slits \( b, c \).  From either
-    slit it will travel to either the second screen \( d \), or
-    one of the detectors \( e, f, g \).
+  <p>If light acted like a bunch of particles, we could analyze this
+    by looking at what any individual light particle (photon) would
+    do.  That analysis is on the right side of the figure.  Briefly,
+    the photon goes from \( s \) to either the screen \(a \), where it
+    will stop, or into one of the slits \( b, c \).  From either slit
+    it will travel to either the second screen \( d \), or one of the
+    detectors \( e, f, g \).
   </p>
 
 
@@ -84,39 +88,38 @@
     The figure puts in some concrete numbers for these. Let's assume
     there is a 90% chance of hitting the screen \( a \) and 5% chance
     of hitting each slit. and then a 2% chance of getting from any
-    slit to any of the three detectors, leading to 94% chance of
+    slit to any of the three detectors, leaving to 94% chance of
     hitting the second screen \( d \).  (No, I didn't bother to write
-    all the numbers but you get the idea, and yes, in a real experiment
-    we'd have to work out from observation what the numbers would be,
-    and they probably would not be equal.).
+    all the numbers but you get the idea, and yes, in a real
+    experiment we'd have to work out from observation what the numbers
+    would be, and they probably would not be equal.).
   </p>
 
   <p>Putting it all together it's easy to see what fraction of photons
-    would hit each detector.  To go from \( s \) to \(e\), for example
+    would hit each detector.  To go from \( s \) to \(e\), for example,
     the photon has to go through either \( b \) or \(c \).  The chance
     of going from \( s \) to \( e \) via \(b \) is found by just multiplying
-    the probabilities:
+    the probabilities along that path:
 
     $$ p(e | s \mbox{~via \( b \)}) = p( b | s ) p ( e | b)
     $$
 
-    and the overall chance a photo hitting \( e \) is
+    and the overall chance a photo hitting \( e \), via either of the
+    possible paths, is found by summing the probabilities of the two paths:
 
     $$ p(e | s) = p( b | s ) p ( e | b) + p( c | s ) p ( e | c)
     $$
 
-    and the equations for the other detectors are similar.  So: if we
-    know how many photons are produced by the light source, we can
-    easily predict how many will hit the detector.  These
-    probabilities are all we need for the model.
+    The equations for the other detectors are similar.  So: if we know
+    how many photons are produced by the light source, we can easily
+    predict how many will hit the detector.  These probabilities are
+    all we need for the model.
   </p>
       
   <p>These probability computations are repetitive, but very easy to
   write down in matrix notation, which is widely used in
-  ML.  <strong>If you aren't up on your matrix math</strong>, read
-  through this a <a href="01-aside-matrices.html">gentle
-  introduction</a> that explains what you'll need to know (to follow
-  along in this document).
+  ML.  
+  </p>
 
   <p>In matrix notation, we have this model for the probability of a
     particle leaving the light source and hitting any of the three
@@ -130,6 +133,12 @@
     \end{array} \right], ~~~ \textbf{D} =
     \textbf{v} \textbf{M} $$
   <p/>
+
+  <article id="aside-matrix">
+    <strong>If you aren't up on your matrix math</strong>, read
+      through this <a href="01-aside-matrices.html"> introduction to
+      matrices</a>.
+  </article>
 
   <p>We could also simplify \( \textbf{M} \) by plugging in the probabilities
     we know will be zero, since photons are assumed to be absorbed by \( a \).
