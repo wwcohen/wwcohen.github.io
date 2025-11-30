@@ -9,88 +9,156 @@
 
 <body>
 <main class="container">
-<header><h1>Matrices and ML</h1></header>
+<header><h1>A gentle introduction to matrices</h1></header>
 <section>
 
-<i>to rewrite</i>
+  
+  <h2>What are matrices and what do they do?</h2>
 
-	  <h2>A gentle introduction to matrices</h2>
+  <h3>Multiplying rows and matrices</h3>
 
-	  <p>If you're not familiar with matrices, they are simply a
-	  convenient and widely-used way of organizing lots of
-	  additionals and multiplications.</p>
 
-	  <p>Here's a more down-to-earth example of when you might use
-	    matrices.  Raphael needs get three items, which I'll
-	    abbreviate (a, b, c), in different quantities (6, 1, 1).
-	    These items are available at two different stores for
-	    different prices.  Which store will be cheaper for Raphael
-	    to do his shopping?</p>
+  <p>If you're not familiar with matrices, they are simply a
+    convenient and widely-used way of organizing lots of
+    additionals and multiplications.</p>
 
-	  <center>
-	    <img src="double-slit/Slide2.png" height="auto" width="auto" alt="Double slit experiment">
-	  </center>
+  <p>Here's a more down-to-earth example of when you might use
+    matrices.  Raphael needs get three items, which I'll
+    abbreviate (a, b, c), in different quantities (0, 1, 1).
+    These items are available at three different stores for
+    different prices.  Which store will be cheaper for Raphael
+    to do his shopping?</p>
 
-	  <p>This is an easy question to solve, as shown above: if he
-	    does the math, Raphael will discover that he would pay
-	    $1.20 less at Food Lion (f) than Giant Eagle (e).  The
-	    computation he needs to do is just to multiple the
-	    quantity needed for each item on his list by the cost in a
-	    store, and then add these numbers up, for each store.</p>
+  <center>
+    <i>Figure 1.2: A concrete example of using matrices</i><br/>
+    <img src="double-slit/Slide2.png" height="auto" width="auto" alt="Example of how to operate on matrices">
+  </center>
 
-	  <p>A matrix is just a table of numbers.  We can write down
-	    all the numbers we need here in two matrices:
+  <p>This is an easy question to solve.  Clearly the costs will
+    be
+    <ul>
+      <li>\( 1 \times $1.50 + 1 \times $4.00 = $5.50 \) at the East End Co-op
+      <li>\( 1 \times $1.00 + 1 \times $4.50 = $5.50 \) at the Food Lion
+      <li>\( 1 \times $1.25 + 1 \times $3.75 = $5.00 \) at the Giant Eagle
+    </ul>
+    so the cheapest store is Giant Eagle.  The graph on the right hand
+    side of the figure shows illustrates the specific set of additions
+    and multiplications we need to do here, in the same format as we
+    used in Figure 1.1, when we were computing probabilities: we
+    multiply along edges of a path (here the edges are quantities, then
+    prices) and add when paths converge (here on a store, not a
+    detector). </p>
 
-	    $$ \textbf{r} = \left[ 6 ~ 1 ~ 1 \right], ~~~ 
-	    \textbf{P} = \left[ \begin{array}{rr}1.00 & 0.80 \\ 1.50 & 1.00 \\ 4.00 & 4.50 \end{array} \right]
-	    $$
-	    If a matrix has just one row, like the one I labeled <b>r</b> above,
-	    then it's called "row vector", and if it has just one column,
-	    it's called called a "column vector".  I will usually use boldfaced lower-case 
-	    letters for matrices that are vectors and boldfaced upper-case letters otherwise.</p>
+  <p>Notice this is same kind of computation we did in Figure 1.1.
+    <strong>Matrices are just a compact way of describing this
+    particular sequence of multiplications and
+    additions</strong>---much more compact than the graphs I used.
+  </p>
 
-	  <p>
-	    Let's give these numbers names so we can follow the operations we need to do easily.
-	    I will use \( r_a \) for the number of apples Raphael needs, use
-	    use \( p_{a, e} \) for the price of apples at Giant Eagle'sand so on.
-	    So then
-	    $$ \textbf{r} = \left[ 6 ~ 1 ~ 1 \right] = \left[ r_a ~ r_b ~ r_c \right]
-	    $$
-	    and
-	    $$
-	    \textbf{P} = \left[ \begin{array}{rr} 1.00 & 0.80 \\ 1.50 & 1.00 \\ 4.00 & 4.50 \end{array} \right]
-	      = \left[ \begin{array}{rr} p_{a,e} & p_{a,f} \\ p_{b,e} & p_{b,f} \\ p_{c,e} & c_{c,f} \end{array} \right]
-	    $$
-	    And the computation we want to do is to find the total price for Raphael in each store, which if we wrote out
-	    as a row vector would be
-	    $$ \left[ (r_a  p_{a,e} + r_b  p_{b,e} + r_c  p_{c,e}) ~~~~ 
-	              (r_a  p_{a,f} + r_b  p_{b,f} + r_c  p_{c,f}) \right]
-	    $$
-	    </p>
+  <p>
+  With matrix algebra we start out by writing all the relevant numbers
+  in tables, which are called matrices.  In this case we need two
+  matrices:
 
-	    <p><i>general matrix multiplication rule...<i>
+  $$ \textbf{r} = \left[ 0, ~ 1, ~ 1 \right], ~~~ 
+  \textbf{P} = \left[ \begin{array}{rr}1.00 & 0.80 \\ 1.50 & 1.00 \\ 4.00 & 4.50 \end{array} \right]
+  $$
+    
+  If a matrix has just one row, like the one I labeled <b>r</b>
+  above, then it's called "row vector", and if it has just one
+  column, it's called called a "column vector".  We usually use
+  boldfaced lower-case letters for matrices that are vectors and
+  boldfaced upper-case letters otherwise.</p>
 
-	    <p>There are other ways that matrices can be combined.
-	      One is just to stick them together side-by-side, or
-	      "stack" them: so if Raphael was going to shop with Shaun
-	      and Shaun's shopping list was the same except with no
-	      apples I might combine those two lists into a
-	      matrix <b>Q</b> like this $$ \textbf{Q} = \left[
-	      \begin{array}{rrr}6 & 1 & 1 \\ 0 & 1 & 1 \end{array}
-	      \right] $$ (Notice I need to add zeros to Shaun's list
+  <p>To explain the general rule we'll use when multiplying a row
+    vector by a matrix, I'll give these numbers names so we can follow
+    the operations we need to do easily.  I will use \( r_a \) for the
+    number of apples Raphael needs, use use \( p_{a, e} \) for the
+    price of apples at Giant Eagle'sand so on.  So then
+
+    $$ \textbf{r} = \left[ 0, ~ 1, ~ 1  \right] = \left[ r_a, ~ r_b, ~ r_c, \right] ~~~~
+    \textbf{P} =
+    \left[ 
+    \begin{array}{rrr} 1.00 & 0.80 & 1.20 \\ 1.50 & 1.00 & 1.25 \\ 4.00 & 4.50 & 3.75 
+    \end{array} \right] = 
+    \left[ \begin{array}{rrr} 
+    p_{a,e} & p_{a,f} & p_{a,g} \\ p_{b,e} & p_{b,f} & p_{b,g} \\ p_{c,e} & p_{c,f} & p_{c,g}
+    \end{array} \right] 
+    $$
+
+    To <i>matrix multiply</i> \( \textbf{r} \) by \( \textbf{P} \), we align
+    the numbers in \( \textbf{r} \) with the <strong>first
+    column</strong> of \( \textbf{P} \), apples to apples, brown sugar to brown sugar, and so on.
+    We multiply each of these pairs, and then add up the products to get a total
+
+    $$ t_e = r_a  p_{a,e} + r_b  p_{b,e} + r_c  p_{c,e}
+    $$ 
+    Then we repeat this to get the corresponding sum for all the
+    columns of \( \textbf{P} \), to get \( t_f \) and \( t_g \).  
+    The
+    resulting <i>matrix product</i> of total costs \( \textbf{T} =
+    \textbf{r} \textbf{P} \) is finally
+    $$ \textbf{T} = \left[ t_e, ~ t_f, ~ t_g \right] 
+    = \left[ r_a  p_{a,e} + r_b  p_{b,e} + r_c  p_{c,e}, ~
+    r_a  p_{a,f} + r_b  p_{b,f} + r_c  p_{c,f}, ~    
+    r_a  p_{a,g} + r_b  p_{b,g} + r_c  p_{c,g}
+    \right]
+    $$
+  </p>
+
+  <p>Here is another way of describing this computation. 
+    Let's write the columns of \( \textbf{P} \) as follows:
+    <ul><li>Column for store \( e \) is written \( \textbf{P}[:,e] \)
+	<li>Column for store \( f \) is written \( \textbf{P}[:,f] \)
+	<li>Column for store \( g \) is written \( \textbf{P}[:,g] \) 
+    </ul>
+    The total \( t_e \) computed is called the <i>inner product</i> of row \(
+    \textbf{r} \) and \( P[:,e] \), the first column of \( \textbf{P}
+    \), and the inner product is usually written with a dot, e.g.,
+    \( t_e = \textbf{r} \cdot \textbf{P}[:,e] 
+    \)
+
+    so we could also write \( \textbf{T} = \textbf{r} \textbf{P} \) as
+    a <strong>row vector of inner products</strong>, one for each
+    column in the matrix \( \textbf{P} \):
+
+    $$ \textbf{T} = \left[ 
+       \textbf{r} \cdot \textbf{P}[:,e], ~ 
+       \textbf{r} \cdot \textbf{P}[:,f], ~ 
+       \textbf{r} \cdot \textbf{P}[:,g]
+       \right]
+    $$
+  </p>
+
+  <i>Generality of a formula like r P - could model different numbers
+  of slits and detectors without changing the equations, just the
+  "shape" of the matrices.</i>
+
+  <h3>Multiplying two matrices</h3>
+
+  <i>general matrix multiplication rule...</i>
+
+  <i>There are other ways that matrices can be combined.
+    One is just to stick them together side-by-side, or
+    "stack" them: so if Raphael was going to shop with Shaun
+    and Shaun's shopping list was the same except with no
+    apples I might combine those two lists into a
+    matrix <b>Q</b> like this $$ \textbf{Q} = \left[
+    \begin{array}{rrr}6 & 1 & 1 \\ 0 & 1 & 1 \end{array}
+    \right] $$ (Notice I need to add zeros to Shaun's list
 	      to make it the same length as Raphael's, so I can
-	      combine them.)
+    combine them.)
+    
+    On the
+    upper right of the figure there's a graph diagram that
+    illustrates exactly what computation he needs to do: he
+    needs to take each
+  </i>
 
-	    On the
-	    upper right of the figure there's a graph diagram that
-	    illustrates exactly what computation he needs to do: he
-	    needs to take each
-	  </p>
+  <h2>Matrices and Machine Learning</h2>
 
-	  <i>matrices as paths and organizing add/multiply operations - neural nets as matrices - 
-	    softmax and other "non-linearities"
-	  </i>
-
+  <i>neural nets as matrices - softmax and other "non-linearities"
+  </i>
 
 </section></main></body></html>
 
