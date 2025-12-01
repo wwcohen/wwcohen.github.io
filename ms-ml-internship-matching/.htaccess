@@ -1,6 +1,0 @@
-AuthType Basic
-AuthName "MLD Primary Master's Candidates: Application Materials"
-AuthUserFile /afs/cs.cmu.edu/user/wcohen/www/ms-ml-internship-matching/.htpassword
-require valid-user
-order deny,allow
-allow from all
