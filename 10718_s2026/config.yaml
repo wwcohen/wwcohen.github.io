@@ -1,0 +1,17 @@
+# for getting the dates of each lecture
+CLASS_NUM: 10-718
+DATES_WITH_NO_CLASS:
+- [1, 19]
+- [3, 3]
+- [3, 5]
+- [4, 9]
+END_DATE: [4, 24]
+LECTURE_DAY_OF_WEEK: 1
+LECTURES_PER_WEEK: 2
+START_DATE: [1, 12]
+YEAR: 2026
+# for generating HTML version of schedule
+BASEDIR: .
+SCHEDULE_FILE: schedule.html
+HEADER: schedule_head.html
+FOOTER: schedule_foot.html

@@ -1,0 +1,156 @@
+
+<html>
+<head>
+<title>10-718 ML in Practice: Spring 2026</title>
+<!--- mathjax  and pic --->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+
+<body>
+<main class="container">
+<header><h1>10-718 ML in Practice: Spring 2026</h1></header>
+<section>
+
+<ul>
+<li>Instructor: William Cohen (wcohen@cmu.edu)
+<li>Times: Tue-Thus 3:30-4:50pm
+<li>Other resources:
+  <ul>
+    <li><a href="schedule.html">Schedule of meetings</a>
+    <li>Sample datasets for project: <a href="https://docs.google.com/document/d/1toAm2vrolMIanQYq5KaKN_x5q6eVLFhhCInaBx1RYwQ/edit?tab=t.0">list 1</a>, TODO
+    <li>Piazza: TODO
+    <li>Gradescope: TODO
+    <li>Signup sheet for presentations/discussions: TODO
+  </ul>
+</ul>
+
+<h2>Overview</h2>
+<p>This is a project-based course designed to provide students training
+  and experience in solving real-world problems using machine learning,
+  exploring the interface between research and practice. The goal of
+  this course is to give students exposure to the nuance of applying
+  machine learning to the real-world, where common assumptions (like iid
+  and stationarity) break down. Students will learn how to formulate
+  real-world business or policy scenarios as machine learning problems,
+  how to address common challenges which arise in applying ML to such
+  problems (e.g., distribution shift or missingness), and how to
+  rigorously evaluate the results of such interventions in practice. We
+  will place an emphasis throughout on issues related to ethics and
+  fairness in machine learning, and discuss how choices throughout the
+  machine learning pipeline – including problem formulation, outcome
+  definition, data collection, and model training – contribute to the
+  social impact of algorithmic systems.
+</p>
+
+<h2>Prerequisites</h2>
+
+<p>Students entering the class are expected to have a pre-existing
+  working knowledge of common machine learning methods, as well as
+  implementation in Python. We will focus on how to choose between
+  different machine learning techniques, modify them to address common
+  real-world challenges, and evaluate their performance. We will assume
+  that students are already familiar with the models themselves (e.g.,
+  linear regression, decisions trees, ensembles, neural networks), as
+  well as how to train such models in Python.</p>
+
+<p>The core content of this course does not exactly follow any one
+textbook. We will have required and suggested readings associated with
+each lecture, which can be found on the course website. Two general
+references that may be helpful are: 
+  <ul>
+    <li>AI for Social Impact. Edited by Fang,
+    Tambe, and Wilder. Freely available at <a href="https://ai4sibook.org/">https://ai4sibook.org/</a>
+    <li>Big Data
+      and Social Science. Edited by Foster, Ghani, Jarmin, Kreuter and
+      Lane. Freely available at <a href="https://textbook.coleridgeinitiative.org/">https://textbook.coleridgeinitiative.org/</a>
+  </ul>
+</p>
+
+<h2>Course Components</h2>
+
+<p>The requirements of this course consist of two components:
+  participating in in-class discussions, presentating material for
+  class, and completing the course project.</p>
+
+<h3>Class discussions</h3>
+
+<p>
+  This course emphasizes the process of thinking
+  through real-world problems and how and when they can be addressed
+  using machine learning. Accordingly, our class sessions will rely on
+  student participation to discuss potential scenarios and case studies
+  together. You are highly encouraged to engage actively during class
+  discussions, which will make the course much more exciting for
+  everyone. During such discussions, we expect you to be respectful at
+  all times towards your fellow students.
+  
+  Discussions will loosely follow
+  the <a href="https://colinraffel.com/blog/role-playing-seminar.html">role-playing
+  seminar</a> format; for each paper, you will either be assigned a
+  presenter role or complete the non-presenter assignment (described
+  below).
+</p>
+
+<h4>Presenter assignment</h4> 
+<p>You will periodically present a paper in class, taking on one of the following presenter roles.
+<ul>
+<li> Educator: Explain the key ideas in the paper to the class. Keep your presentation to 5-10 minutes maximum.
+<li> Investigator: Investigate one of the paper’s authors. What is their area of expertise? Where have they worked previously? What prior projects might have led to working on this one? Explore what motivated them to write the paper and what biases they may have.
+<li> Reviewer: Discuss both one strength and one weakness of the paper. What did you like about the paper? Do you agree with the paper's stance/findings? Did the paper overlook anything? Is there something that could have strengthened the work?
+<li> Discussion Leader: Prepare three discussion questions to ask the class, and lead the discussion amongst the students when answering these questions.
+</ul>
+</p>
+
+<h4>Non-presenter assignment</h4>
+
+<p>If you are not presenting the paper, you must still read the paper
+  and provide at least one discussion question about the paper (e.g.,
+  something you're uncertain about or would like to hear discussed).
+</p>
+
+<h3>Course project</h3>
+
+<p>
+Students will complete a semester-long course project that explores
+the application of machine learning to a problem of practical
+interest. Students may work in groups of up to three people. Each
+group will select a dataset, which _cannot_ be one commonly used in
+machine learning research. Over a series of assignments, each group
+will define a problem to be addressed using the dataset, clean and
+explore it, develop baselines and machine learning models, and explore
+the impact of additional desiderata on their pipeline (e.g., fairness,
+privacy, interpretability, or model efficiency). Students can either
+select their own dataset for the project (which cannot be a commonly
+used ML benchmark dataset) or select one from the set of examples
+provided.</p>
+
+<h3>Grading</h3>
+
+Each component will contribute towards the final grade as follows:
+
+<h4>Discussion participation</h4>
+Discussion and participation is 40%, graded out of 30 points.
+
+<ul>
+<li> Presenter assignments: 3 over the course of the semester, 5 points each. 15 total points
+<li> Non-presenter assignments: 15 over the course of the semester (out of 16 possible sessions), 1 point each
+<li> You are allowed to miss one non-presenter assignment without penalty.
+<li> This format may be adjusted as needed during the semester.
+</ul>
+
+<h4>Course project</h4>
+The project is 60%, graded out of 100 points
+
+<ul>
+<li> Assignment 0: 5 points
+<li> Assignment 1: 20 points
+<li> Assignment 2: 20 points
+<li> Assignment 3: 20 points
+<li> Assignment 4: 20 points
+<li> Final presentation: 15 points
+</ul>
+
+
+</section></main></body></html>
+
