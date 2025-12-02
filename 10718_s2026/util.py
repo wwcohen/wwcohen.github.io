@@ -102,10 +102,10 @@ def lecture_row_as_str(title, summary, printable_date, content, **kw):
         if link:
             texts = [f'<a href="{link}">{texts[0]}</a>'] + texts[1:]
         return '<br/> '.join(texts)
-    slide_href = make_href(kw.get('slide_link'), '/ Slides (pdf)')
-    pptx_href = make_href(kw.get('pptx_link'), '/ Slides (pptx)')
-    movie_href = make_href(kw.get('movie_link'), '/ Recording')
-    notebook_href = make_href(kw.get('notebook_link'), '/ Notebook')
+    slide_href = make_href(kw.get('slide_link'), ' [Slides]')
+    pptx_href = make_href(kw.get('pptx_link'), ' / Slides (pptx)')
+    movie_href = make_href(kw.get('movie_link'), ' / Recording')
+    notebook_href = make_href(kw.get('notebook_link'), ' / Notebook')
     hw_href = make_href_for_list_of_texts(kw.get('hw_link'), assignments)
     lines = []
     lines.append(f'{" "*20}<tr>')
