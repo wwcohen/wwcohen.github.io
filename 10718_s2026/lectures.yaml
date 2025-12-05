@@ -1,68 +1,51 @@
-# Week 1
-
 - title: Intro and Overview
   summary: History, Motivation, Logistics
+  status: ready
   slide_link: https://docs.google.com/presentation/d/1KbAJiSjIyrG37v42gRBrpCmGObkyi4byqxh-0T5Dtik/edit?slide=id.g1ef2a953916_0_349#slide=id.g1ef2a953916_0_349
+  content:
+    - value: kv-caching.gslides
 
 - title: ML Project Deep Dive
+  status: ready
   summary: Project definition and scoping
   slide_link: https://docs.google.com/presentation/d/1LC3IozgVzUCvQIxFFQbhQDfyGmYoqOUr5LHLgMVEia4/edit?usp=drive_link
+  content:
+    - value: rayyid-project.gslides
 
-# Week 2
-
-# MLK day
 - title: Data Preparation
+  status: ready
   summary: Scraping, Data Integration, Visualization
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
 
-# Week 3
-
 - title: Problem Formulation
+  status: ready
+  summary: How ML maps to real world problems
+  slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
+
 - title: Data & Feature Engineering
-
-# Week 4
-
 - title: Model Selection
 - title: Project Checkins
-
-# Week 5
 - title: Hyperparam Tuning
 - title: Distribution Shift 1
-
-# Week 6
-
 - title: Distribution Shift 2
 - title: Privacy
-
-# Week 7
 - title: Project Pitches
 - title: Project Pitches
-
-# Week 8
 - title: Interpretability
+- title: Spring break 1
+- title: Spring break 2
 - title: Fairness
-
-# Week 9
 - title: Safety
 - title: Model Compression
-
-# Week 9
 - title: Uncertainty and Calibration
 - title: Causality
-
-# Week 10
 - title: ML and Intervention
 - title: Performativity
-
-# Week 11
 - title: Project Presentations
 - title: Project Presentations
-
-# Week 12
+- title: Carnival
 - title: TBA
 - title: TBA
-
-# Week 12
 - title: TBA
 - title: TBA
 
