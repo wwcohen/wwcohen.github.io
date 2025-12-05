@@ -7,14 +7,15 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def load():
-    with open('id-parks.json') as fp:
+def load(filename, a, b):
+    with open(filename) as fp:
         obj = json.load(fp)
-    ic, nps = obj['ic'], obj['nps']
-    return ic, nps
+    a, b = obj[a], obj[b]
+    return a, b
 
 if __name__ == '__main__':
-    a0, b0 = load()
+    a0, b0 = load('id-parks.json', 'ic', 'nps')
+    #a0, b0 = load('business.json', 'hw', 'it')
     print(f'loaded {len(a0["name"])} and {len(b0["name"])} names')
     vectorizer = TfidfVectorizer(stop_words='english')
     corpus = a0['name'] + b0['name']
