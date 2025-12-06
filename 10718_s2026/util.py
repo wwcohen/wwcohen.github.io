@@ -18,7 +18,11 @@ class MonthDate(BaseModel):
     date: int
     # computed if we need them
     day_of_week: int = -1
-    printable_date: str | None = Field(default=None)
+    week_num: int = -1
+    def as_str(self):
+        day_names = "Mon Tue Wed Thu Fri Sat Sun".split()
+        month_names = "xx Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split() # cuz start at 1
+        return f'{day_names[self.day_of_week]}  {month_names[self.month]} {self.date:2d}'
 
 class Config(BaseModel):
     class_num: str
@@ -43,18 +47,19 @@ class Config(BaseModel):
         """
         result = []
         c = calendar.Calendar(0)   #monday = day index 0
-        day_names = "Mon Tue Wed Thu Fri Sat Sun".split()
-        month_names = "xx Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split() # cuz start at 1
         start_month, start_date = self.start_date.month, self.start_date.date
         end_month, end_date = self.end_date.month, self.end_date.date
+        week_num = 0
         for month in range(start_month, end_month + 1):
             for (date, day_of_week) in c.itermonthdays2(self.year, month):
                 if date <= 0: continue
                 if month <= start_month and date < start_date: continue
                 if month >= end_month and date > end_date: continue
+                if day_of_week == 0:
+                    week_num += 1
                 if day_of_week not in self.lecture_days: continue
-                printable_date = f'{day_names[day_of_week]}  {month_names[month]} {date:2d} {self.year}'
-                result.append(MonthDate(month=month, date=date, day_of_week=day_of_week, printable_date=printable_date))
+                result.append(
+                    MonthDate(month=month, date=date, day_of_week=day_of_week, week_num=week_num))
         return result
 
 class SlideDeck(BaseModel):
@@ -71,22 +76,25 @@ class Lecture(BaseModel):
     summary: str = ''
     kind: str = Field(default='lecture')
     slide_link: str = ''
+    readings: list[dict[str, str]] = []
+    # slide deck contents - for resources, and me
     content: list[ContentElement] = Field(default=[])
-    status: str = 'not started'
+    # computed date
     date: MonthDate | None = Field(default=None)
+    status: str = 'not started'  # for me only
 
     def as_str(self):
         """Convert to a quick one-line string view.
         """
         opt_summary = f' - {self.summary}' if self.summary else ''
-        opt_date = '??????' if not self.date else self.date.printable_date
+        opt_date = '??????' if not self.date else self.date.as_str()
         return f'{opt_date:20s} {self.title}{opt_summary} ({self.status})'
 
     def as_row(self):
         """Convert to a row in an HTML table.
         """
         opt_summary = f' - {self.summary}' if self.summary else ''
-        # cols are date, meeting type, title, resources, announcements
+        # cols are week, date, meeting type, title, resources, announcements
         tab = " " * 24
         def make_href(link, text):
             return f'<a href="{link}">{text}</a>' if link else ''
@@ -94,11 +102,18 @@ class Lecture(BaseModel):
         hw_href = '' #for now
         lines = []
         lines.append(f'{" "*20}<tr>')
-        lines.append(f'{tab}<td>{self.date.printable_date}</td>')
+        # week
+        lines.append(f'{tab}<td>{self.date.week_num}</td>')
+        # date
+        lines.append(f'{tab}<td>{self.date.as_str()}</td>')
+        # meeting type
         lines.append(f'{tab}<td>{self.kind}</td>')
+        # title [- summary]
         opt_summary = f' - {self.summary}' if self.summary else ''
         lines.append(f'{tab}<td>{self.title}{opt_summary} {slide_href}</td>')
         lines.append(f'{tab}<td>')
+        # todo: refactor to generate lists if url/link pairs and have
+        # something to render those resources
         some_resources = False
         for c in self.content:
             if c.deck is not None:
@@ -113,7 +128,17 @@ class Lecture(BaseModel):
             lines.append(f'{tab}  </ul>')
             lines.append(f'{tab}  </details>')
         lines.append(f'{tab}</td>')
-        lines.append(f'{tab}<td>{hw_href}</td>')
+        # announcements
+        lines.append(f'{tab}<td>')
+        if self.readings:
+            lines.append(f'{tab}<details><summary style="color:SteelBlue;text-decoration: underline;">Required Readings</strong></summary>')
+            lines.append(f'{tab}  <ul>')
+            for d in self.readings:
+                for url, text in d.items():
+                    lines.append(f'{tab}  <li><a href="{url}">{text}</a>')                    
+            lines.append(f'{tab}  </ul>')
+            lines.append(f'{tab}  </details>')
+        lines.append(f'{tab}</td>')
         lines.append(f'{" "*20}</tr>')
         lines.append(f'{" "*20}<tr>')
         lines.append(f'{" "*20}</tr>')

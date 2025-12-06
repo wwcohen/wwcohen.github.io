@@ -1,28 +1,45 @@
 - title: Intro and Overview
   summary: History, Motivation, Logistics
   status: ready
+  # lecture 1
   slide_link: https://docs.google.com/presentation/d/1KbAJiSjIyrG37v42gRBrpCmGObkyi4byqxh-0T5Dtik/edit?slide=id.g1ef2a953916_0_349#slide=id.g1ef2a953916_0_349
   content:
     - value: kv-caching.gslides
 
 - title: ML Project Deep Dive
-  status: ready
+  status: lec ready, do readings
   summary: Project definition and scoping
+  # lecture 2
   slide_link: https://docs.google.com/presentation/d/1LC3IozgVzUCvQIxFFQbhQDfyGmYoqOUr5LHLgMVEia4/edit?usp=drive_link
+  readings:
+   - https://hdsr.mitpress.mit.edu/pub/wot7mkc1/release/10: Artificial Intelligence—The Revolution Hasn’t Happened Yet
+   - http://www.incompleteideas.net/IncIdeas/BitterLesson.html?ref=blog.heim.xyz: The bitter lesson
+   - https://arxiv.org/abs/1906.01998: The secrets of machine learning
   content:
     - value: rayyid-project.gslides
 
 - title: Data Preparation
   status: ready
   summary: Scraping, Data Integration, Visualization
+  # lecture 3
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
 
 - title: Problem Formulation
-  status: ready
+  status: lec ready, do readings
   summary: How ML maps to real world problems
+  readings: 
+   - https://www.science.org/doi/10.1126/science.aax2342: Dissecting Racial Bias in an Algorithm Used to Manage the Health of Populations
+  # lecture 4
   slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
 
 - title: Data & Feature Engineering
+  status: ready-ish; do readings
+  readings: 
+   - https://arxiv.org/abs/2103.14749: Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks
+   - https://arxiv.org/abs/2205.09911: Can Foundation Models Wrangle Your Data?
+  # lecture 5
+  slide_link: https://docs.google.com/presentation/d/1Vd8XvtCcjdV94dBycBEJ4GKih2grqKGHTx-gl6ZjKYA/edit?slide=id.g333bd8d1b57_0_2#slide=id.g333bd8d1b57_0_2
+
 - title: Model Selection
 - title: Project Checkins
 - title: Hyperparam Tuning
@@ -32,8 +49,12 @@
 - title: Project Pitches
 - title: Project Pitches
 - title: Interpretability
+
 - title: Spring break 1
+  status: ready
 - title: Spring break 2
+  status: ready
+
 - title: Fairness
 - title: Safety
 - title: Model Compression
@@ -43,7 +64,10 @@
 - title: Performativity
 - title: Project Presentations
 - title: Project Presentations
+
 - title: Carnival
+  status: ready
+
 - title: TBA
 - title: TBA
 - title: TBA
