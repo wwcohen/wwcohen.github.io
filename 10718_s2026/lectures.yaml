@@ -1,3 +1,5 @@
+# week 1
+
 - title: Intro and Overview
   summary: History, Motivation, Logistics
   status: ready
@@ -18,6 +20,8 @@
   content:
     - value: rayyid-project.gslides
 
+# week 2
+
 - title: Data Preparation
   status: ready
   summary: Scraping, Data Integration, Visualization
@@ -32,6 +36,8 @@
   # lecture 4
   slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
 
+# week 3
+
 - title: Data & Feature Engineering
   status: ready-ish; do readings
   readings: 
@@ -39,40 +45,75 @@
    - https://arxiv.org/abs/2205.09911: Can Foundation Models Wrangle Your Data?
   # lecture 5
   slide_link: https://docs.google.com/presentation/d/1Vd8XvtCcjdV94dBycBEJ4GKih2grqKGHTx-gl6ZjKYA/edit?slide=id.g333bd8d1b57_0_2#slide=id.g333bd8d1b57_0_2
+  content:
+   - value: Project Assignment 0 due (team and alpha version of proposal)
 
-- title: Model Selection
-- title: Project Checkins
+- title: Evaluation
+
+# week 4
+
+- title: Project Checkins 1
+  content:
+   - value: Project Assignment 1 due (project checkins)
+
+- title: Project Checkins 2
+
+# week 5
+
 - title: Hyperparam Tuning
-- title: Distribution Shift 1
-- title: Distribution Shift 2
 - title: Privacy
+
+# week 6
+
 - title: Project Pitches
+  content:
+  - value: Project Assignment 2 due (project pitches)
 - title: Project Pitches
+
+# week 7
+
+- title: Distribution Shift 
 - title: Interpretability
+
+# week 8
 
 - title: Spring break 1
   status: ready
 - title: Spring break 2
   status: ready
 
+# week 9
+
 - title: Fairness
+  content:
+  - value: Project Assignment 3 due (initial result writeups)
 - title: Safety
+
+# week 10
+
 - title: Model Compression
 - title: Uncertainty and Calibration
+
+# week 11
+
 - title: Causality
 - title: ML and Intervention
-- title: Performativity
-- title: Project Presentations
-- title: Project Presentations
 
+# week 12
+
+- title: Project Presentations - 1
+  content:
+  - value: Project Assignment 4 due (proposed extensons)
+- title: Project Presentations - 2
+
+- title: Network Effects and ML
 - title: Carnival
   status: ready
 
 - title: TBA
 - title: TBA
-- title: TBA
-- title: TBA
 
-
-
-
+- title: Final Project Presentations - 1
+  content:
+  - value: Project Assignment 5 due (final writeup and reflections)
+- title: Project Presentations -  2

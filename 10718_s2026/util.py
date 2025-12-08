@@ -14,17 +14,22 @@ import yaml
 from pydantic import BaseModel, Field
 
 class MonthDate(BaseModel):
+    """A date with month and day of month (date).
+    """
     month: int
     date: int
     # computed if we need them
     day_of_week: int = -1
     week_num: int = -1
-    def as_str(self):
+    def as_str(self, show_week_num=False):
         day_names = "Mon Tue Wed Thu Fri Sat Sun".split()
         month_names = "xx Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split() # cuz start at 1
-        return f'{self.week_num:2d} {day_names[self.day_of_week]}  {month_names[self.month]} {self.date:2d}'
+        opt_week_num = 'f{self.week_num:2d} ' if show_week_num else ''
+        return f'{opt_week_num}{day_names[self.day_of_week]}  {month_names[self.month]} {self.date:2d}'
 
 class Config(BaseModel):
+    """Configure a class
+    """
     class_num: str
     dates_without_class: list[MonthDate]
     end_date: MonthDate
@@ -63,10 +68,14 @@ class Config(BaseModel):
         return result
 
 class SlideDeck(BaseModel):
+    """Info about a slide deck.
+    """
     summary: str = ''
     links: list[dict[str, str]]
 
 class ContentElement(BaseModel):
+    """A content element for a lecture.
+    """
     value: str
     deck: SlideDeck | None = Field(default=None)
     kind: str | None = Field(default=None)
@@ -96,7 +105,10 @@ class Lecture(BaseModel):
             lines.append(f'{tab}<details><summary style="color:SteelBlue;text-decoration: underline;">{summary}</summary>')
             lines.append(f'{tab}  <ul>')
             for url, text in url_text_pairs:
-                lines.append(f'{tab}  <li><a href="{url}">{text}</a>')
+                if url is not None:
+                    lines.append(f'{tab}  <li><a href="{url}">{text}</a>')
+                else:
+                    lines.append(f'{tab}  <li>{text}')
             lines.append(f'{tab}  </ul>')
             lines.append(f'{tab}  </details>')
         return lines
@@ -113,10 +125,13 @@ class Lecture(BaseModel):
         hw_href = '' #for now
         lines = []
         lines.append(f'{" "*20}<tr>')
-        # week
-        lines.append(f'{tab}<td>{self.date.week_num}</td>')
-        # date
-        lines.append(f'{tab}<td>{self.date.as_str()}</td>')
+        try:
+            # week
+            lines.append(f'{tab}<td>{self.date.week_num}</td>')
+            # date
+            lines.append(f'{tab}<td>{self.date.as_str(show_week_num=False)}</td>')
+        except AttributeError:
+            lines.append(f'{tab}<td>??</td><td>no date?</td>')
         # meeting type
         lines.append(f'{tab}<td>{self.kind}</td>')
         # title [- summary]
@@ -133,13 +148,15 @@ class Lecture(BaseModel):
         lines.append(f'{tab}</td>')
         # announcements
         lines.append(f'{tab}<td>')
+        deadlines = [
+            (None, c.value) for c in self.content if c.deck is None]
+        lines.extend(self.as_openable_list(tab, 'HW Deadlines', deadlines))
         readings = [
             url_text_pair for d in self.readings
             for url_text_pair in d.items()]
         lines.extend(self.as_openable_list(tab, 'Required Readings', readings))
         lines.append(f'{tab}</td>')
-        lines.append(f'{" "*20}</tr>')
-        lines.append(f'{" "*20}<tr>')
+        # close row
         lines.append(f'{" "*20}</tr>')
         return '\n'.join(lines) + '\n'
 
@@ -155,7 +172,7 @@ def join_lecture_dates(lectures, config):
     for lec, md in zip(lectures, config.all_lecture_dates()):
         lec.date = md
         if config.no_class(lec.date):
-            lec.summary = 'class cancelled'
+            lec.summary = 'no class'
 
 # initialize
 
