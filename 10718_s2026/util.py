@@ -22,7 +22,7 @@ class MonthDate(BaseModel):
     def as_str(self):
         day_names = "Mon Tue Wed Thu Fri Sat Sun".split()
         month_names = "xx Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split() # cuz start at 1
-        return f'{day_names[self.day_of_week]}  {month_names[self.month]} {self.date:2d}'
+        return f'{self.week_num:2d} {day_names[self.day_of_week]}  {month_names[self.month]} {self.date:2d}'
 
 class Config(BaseModel):
     class_num: str
@@ -90,6 +90,17 @@ class Lecture(BaseModel):
         opt_date = '??????' if not self.date else self.date.as_str()
         return f'{opt_date:20s} {self.title}{opt_summary} ({self.status})'
 
+    def as_openable_list(self, tab, summary, url_text_pairs):
+        lines = []
+        if url_text_pairs:
+            lines.append(f'{tab}<details><summary style="color:SteelBlue;text-decoration: underline;">{summary}</summary>')
+            lines.append(f'{tab}  <ul>')
+            for url, text in url_text_pairs:
+                lines.append(f'{tab}  <li><a href="{url}">{text}</a>')
+            lines.append(f'{tab}  </ul>')
+            lines.append(f'{tab}  </details>')
+        return lines
+
     def as_row(self):
         """Convert to a row in an HTML table.
         """
@@ -111,33 +122,21 @@ class Lecture(BaseModel):
         # title [- summary]
         opt_summary = f' - {self.summary}' if self.summary else ''
         lines.append(f'{tab}<td>{self.title}{opt_summary} {slide_href}</td>')
+        # resources
         lines.append(f'{tab}<td>')
-        # todo: refactor to generate lists if url/link pairs and have
-        # something to render those resources
-        some_resources = False
-        for c in self.content:
-            if c.deck is not None:
-                for d in c.deck.links:
-                    for url, text in d.items():
-                        if not some_resources:
-                            some_resources = True
-                            lines.append(f'{tab}<details><summary style="color:SteelBlue;text-decoration: underline;">Resources</strong></summary>')
-                            lines.append(f'{tab}  <ul>')
-                        lines.append(f'{tab}  <li><a href="{url}">{text}</a>')
-        if some_resources:
-            lines.append(f'{tab}  </ul>')
-            lines.append(f'{tab}  </details>')
+        resources = [
+            url_text_pair
+            for c in self.content if c.deck is not None
+            for d in c.deck.links
+            for url_text_pair in d.items()]
+        lines.extend(self.as_openable_list(tab, 'Resources', resources))
         lines.append(f'{tab}</td>')
         # announcements
         lines.append(f'{tab}<td>')
-        if self.readings:
-            lines.append(f'{tab}<details><summary style="color:SteelBlue;text-decoration: underline;">Required Readings</strong></summary>')
-            lines.append(f'{tab}  <ul>')
-            for d in self.readings:
-                for url, text in d.items():
-                    lines.append(f'{tab}  <li><a href="{url}">{text}</a>')                    
-            lines.append(f'{tab}  </ul>')
-            lines.append(f'{tab}  </details>')
+        readings = [
+            url_text_pair for d in self.readings
+            for url_text_pair in d.items()]
+        lines.extend(self.as_openable_list(tab, 'Required Readings', readings))
         lines.append(f'{tab}</td>')
         lines.append(f'{" "*20}</tr>')
         lines.append(f'{" "*20}<tr>')
