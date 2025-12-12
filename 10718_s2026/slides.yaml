@@ -12,3 +12,9 @@ rayyid-project.gslides:
   links:
     - https://datasciencepublicpolicy.org/our-work/tools-guides/data-science-project-scoping-guide/: "project scoping guide"
     - https://datasciencepublicpolicy.org/wp-content/uploads/2021/09/ProjectScopingWorksheetBlank.pdf: "project scoping worksheet"
+
+hyperparam.pptx:
+  num_slides: 57
+  summary: overview of grid, adaptive, random search, hyperband
+  links:
+   - https://www.jmlr.org/papers/v18/16-558.html: Hyperband - A Novel Bandit Based Approach to Hyperparameter Optimization, JMLR 2018

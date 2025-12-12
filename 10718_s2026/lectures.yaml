@@ -2,44 +2,49 @@
 
 - title: Intro and Overview
   summary: History, Motivation, Logistics
-  status: ready
+  status: 60s ready
   # lecture 1
   slide_link: https://docs.google.com/presentation/d/1KbAJiSjIyrG37v42gRBrpCmGObkyi4byqxh-0T5Dtik/edit?slide=id.g1ef2a953916_0_349#slide=id.g1ef2a953916_0_349
   content:
     - value: kv-caching.gslides
 
 - title: ML Project Deep Dive
-  status: lec ready, do readings
+  status: 39s ready
   summary: Project definition and scoping
   # lecture 2
   slide_link: https://docs.google.com/presentation/d/1LC3IozgVzUCvQIxFFQbhQDfyGmYoqOUr5LHLgMVEia4/edit?usp=drive_link
   readings:
    - https://hdsr.mitpress.mit.edu/pub/wot7mkc1/release/10: Artificial Intelligence—The Revolution Hasn’t Happened Yet
    - http://www.incompleteideas.net/IncIdeas/BitterLesson.html?ref=blog.heim.xyz: The bitter lesson
-   - https://arxiv.org/abs/1906.01998: The secrets of machine learning
   content:
     - value: rayyid-project.gslides
 
 # week 2
 
 - title: Data Preparation
-  status: ready
+  status: 46s ready
   summary: Scraping, Data Integration, Visualization
+  readings:
+   - https://dl.acm.org/doi/pdf/10.14778/3415478.3415527?casa_token=D213n2yltscAAAAA:OYnJSExskwfOjSexaSTXTBonlEBT0hXWgqL6ueicfm1UomZke309AiT-BNKJFqon2kbiL84ylhDE: 
+       Debugging Large-Scale Data Science Pipelines using Dagger, Rezig et al, VLDB 2020
+   - https://arxiv.org/abs/2302.14233: Goal Driven Discovery of Distributional Differences via Language Descriptions  #D5
   # lecture 3
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
 
 - title: Problem Formulation
-  status: lec ready, do readings
+  status: 27s ready
   summary: How ML maps to real world problems
   readings: 
    - https://www.science.org/doi/10.1126/science.aax2342: Dissecting Racial Bias in an Algorithm Used to Manage the Health of Populations
+   - https://www.wired.com/story/artificial-intelligence-startups-daydream-fashion-recommendations/: Here’s What You Should Know About Launching an AI Startup - WIRED 2025
+   - https://drive.google.com/file/d/1yxDpDwUDsFwoQPAet72-38kTEwG9ygfL/view?usp=drive_link: Here’s What You Should Know ... WIRED (cached version)
   # lecture 4
   slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
 
 # week 3
 
 - title: Data & Feature Engineering
-  status: ready-ish; do readings
+  status: 70s ready; should reduce
   readings: 
    - https://arxiv.org/abs/2103.14749: Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks
    - https://arxiv.org/abs/2205.09911: Can Foundation Models Wrangle Your Data?
@@ -49,31 +54,53 @@
    - value: Project Assignment 0 due (team and alpha version of proposal)
 
 - title: Evaluation
+  status: 18s ready; check readings
+  slide_link: https://docs.google.com/presentation/d/1gLzpcJRiCpHw7gYxF9uFR7B6yrbrwanIIIQ3pPYI39Q/edit?slide=id.g3afbf7780e5_0_59#slide=id.g3afbf7780e5_0_59
+  readings:
+   - https://aclanthology.org/2024.acl-long.757.pdf: "Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling, ACL 2024"
+   - https://arxiv.org/pdf/2407.04846: Amazing Things Come From Having Many Good Models, ICML 2024
+   - https://www.science.org/doi/full/10.1126/science.adi6000: Prediction Powered Inference
 
 # week 4
 
 - title: Project Checkins 1
+  status: done
   content:
    - value: Project Assignment 1 due (project checkins)
 
 - title: Project Checkins 2
+  status: done
 
 # week 5
 
-- title: Hyperparam Tuning
-- title: Privacy
+- title: Hyperparameter tuning
+  status: 58s ready
+  readings:
+  - https://dl.acm.org/doi/abs/10.1145/3097983.3098043: "Google Vizier: A Service for Black-Box Optimization (KDD 2017)"
+  # pptx
+  slide_link: https://docs.google.com/presentation/d/1ANAFFiAU6BzFVvzKcyhfbnNhcKCA9mRQ/edit?usp=drive_link&ouid=108006266785637771510&rtpof=true&sd=true
+  content:
+  - value: hyperband.pptx
+
+- title: Interpretability
+  status: use my plans and rules doc
+  readings:
+  - https://spawn-queue.acm.org/doi/pdf/10.1145/3236386.3241340: The Mythos of Interpretability, Lipton 2018
 
 # week 6
 
 - title: Project Pitches
+  status: done
   content:
   - value: Project Assignment 2 due (project pitches)
 - title: Project Pitches
+  status: done
 
 # week 7
 
-- title: Distribution Shift 
-- title: Interpretability
+
+- title: Privacy
+- title: Distribution Shift and Robustness
 
 # week 8
 
@@ -116,4 +143,4 @@
 - title: Final Project Presentations - 1
   content:
   - value: Project Assignment 5 due (final writeup and reflections)
-- title: Project Presentations -  2
+- title: Final Project Presentations -  2
