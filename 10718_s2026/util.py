@@ -144,7 +144,8 @@ class Lecture(BaseModel):
             for c in self.content if c.deck is not None
             for d in c.deck.links
             for url_text_pair in d.items()]
-        lines.extend(self.as_openable_list(tab, 'Resources', resources))
+        resources.extend([(c.value, 'Give feedback') for c in self.content if c.value.startswith('https://www.menti.com')])
+        lines.extend(self.as_openable_list(tab, 'Optional readings/feedback', resources))
         lines.append(f'{tab}</td>')
         # announcements
         lines.append(f'{tab}<td>')
