@@ -73,6 +73,7 @@ class ContentElement(BaseModel):
     """
     deck_tag: str | None = None
     form: str | None = None
+    signup: str | None = None
     deadline: str | None = None
     # a computed field
     deck: SlideDeck | None = None
@@ -150,8 +151,11 @@ class Lecture(BaseModel):
         readings = [
             url_text_pair for d in self.readings
             for url_text_pair in d.items()]
-        readings.extend([(c.form, 'Give feedback') for c in self.content if c.form])
-        lines.extend(self.as_openable_list(tab, 'Required readings/feedback', readings))
+        lines.extend(self.as_openable_list(tab, 'Required readings', readings))
+        feedback = [(c.form, 'Give feedback') for c in self.content if c.form]
+        lines.extend(self.as_openable_list(tab, 'Feedback to give', feedback))        
+        signups = [(c.signup, 'Signup') for c in self.content if c.signup]
+        lines.extend(self.as_openable_list(tab, 'Signup to present', signups))        
         lines.append(f'{tab}</td>')
         # close row
         lines.append(f'{" "*20}</tr>')
@@ -211,6 +215,19 @@ class FireMain:
                 fp.write(lec.as_row())
             for line in open(schedule_foot):
                 fp.write(line)
+
+    def presenters(self):
+        lectures, _ = load_lectures()
+        header = ['Date', 'Educator', 'Investigator', 'Reviewer', 'Discussion Leader', 'Paper', 'Title', 'Url']
+        print('\t'.join(header))
+        row = 1
+        for lec in lectures:
+            md = lec.date
+            for reading in lec.readings:
+                for url, title in reading.items():
+                    row += 1
+                    fields = [md.as_str()] + ['open'] * 4 + [f'=hyperlink(H{row},G{row})', title, url]
+                    print('\t'.join(fields))
 
 if __name__ == '__main__':
     fire.Fire(FireMain)
