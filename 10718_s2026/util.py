@@ -1,13 +1,8 @@
 # utilities for planning lectures
 #
 
-import argparse
 import calendar
-import datetime
 import fire
-import json
-import pprint
-import re
 import os
 import yaml
 
@@ -144,18 +139,19 @@ class Lecture(BaseModel):
             for c in self.content if c.deck is not None
             for d in c.deck.links
             for url_text_pair in d.items()]
-        resources.extend([(c.value, 'Give feedback') for c in self.content if c.value.startswith('https://www.menti.com')])
-        lines.extend(self.as_openable_list(tab, 'Optional readings/feedback', resources))
+        lines.extend(self.as_openable_list(tab, 'Optional readings', resources))
         lines.append(f'{tab}</td>')
         # announcements
         lines.append(f'{tab}<td>')
         deadlines = [
-            (None, c.value) for c in self.content if c.deck is None]
+            (None, c.value) for c in self.content if c.deck is None and 'google.com/forms/' not in c.value]
         lines.extend(self.as_openable_list(tab, 'HW Deadlines', deadlines))
         readings = [
             url_text_pair for d in self.readings
             for url_text_pair in d.items()]
-        lines.extend(self.as_openable_list(tab, 'Required Readings', readings))
+        readings.extend(
+            [(c.value, 'Give feedback') for c in self.content if 'google.com/forms/' in c.value])
+        lines.extend(self.as_openable_list(tab, 'Required readings/feedback', readings))
         lines.append(f'{tab}</td>')
         # close row
         lines.append(f'{" "*20}</tr>')
@@ -193,26 +189,29 @@ def load_lectures(config_file='config.yaml',
     return lectures, config
 
 #
-# fire main
+# fire mains
 #
 
-def syllabus():
-    lectures, _ = load_lectures()
-    for lec in lectures:
-        print(lec.as_str())
+class FireMain:
 
-def html():
-    lectures, config = load_lectures()
-    schedule_file = os.path.join(config.basedir, config.schedule_file)
-    schedule_head = os.path.join(config.basedir, config.schedule_head)
-    schedule_foot = os.path.join(config.basedir, config.schedule_foot)
-    with open(schedule_file, 'w') as fp:
-        for line in open(schedule_head):
-            fp.write(line)
+    def syllabus(self):
+        lectures, _ = load_lectures()
         for lec in lectures:
-            fp.write(lec.as_row())
-        for line in open(schedule_foot):
-            fp.write(line)
+            print(lec.as_str())
+
+    def html(self):
+        lectures, config = load_lectures()
+        schedule_file = os.path.join(config.basedir, config.schedule_file)
+        schedule_head = os.path.join(config.basedir, config.schedule_head)
+        schedule_foot = os.path.join(config.basedir, config.schedule_foot)
+        with open(schedule_file, 'w') as fp:
+            for line in open(schedule_head):
+                fp.write(line)
+            for lec in lectures:
+                fp.write(lec.as_row())
+            for line in open(schedule_foot):
+                fp.write(line)
 
 if __name__ == '__main__':
-    fire.Fire()
+    fire.Fire(FireMain)
+    
