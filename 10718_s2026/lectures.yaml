@@ -6,8 +6,8 @@
   # lecture 1
   slide_link: https://docs.google.com/presentation/d/1KbAJiSjIyrG37v42gRBrpCmGObkyi4byqxh-0T5Dtik/edit?slide=id.g1ef2a953916_0_349#slide=id.g1ef2a953916_0_349
   content:
-    - value: kv-caching.gslides
-    - value: https://docs.google.com/forms/d/e/1FAIpQLSeuI9DWWKykfD0OAawf8eakQT5JF6jmyhEl7V0A5XS15uHFtg/viewform?usp=sharing&ouid=108006266785637771510
+    - deck_tag: kv-caching.gslides
+    - form: https://docs.google.com/forms/d/e/1FAIpQLSeuI9DWWKykfD0OAawf8eakQT5JF6jmyhEl7V0A5XS15uHFtg/viewform?usp=sharing&ouid=108006266785637771510
 
 - title: ML Project Deep Dive
   status: 39s ready
@@ -18,7 +18,7 @@
    - https://hdsr.mitpress.mit.edu/pub/wot7mkc1/release/10: Artificial Intelligence—The Revolution Hasn’t Happened Yet
    - http://www.incompleteideas.net/IncIdeas/BitterLesson.html?ref=blog.heim.xyz: The bitter lesson
   content:
-    - value: rayyid-project.gslides
+    - deck_tag: rayyid-project.gslides
 
 # week 2
 
@@ -52,7 +52,7 @@
   # lecture 5
   slide_link: https://docs.google.com/presentation/d/1Vd8XvtCcjdV94dBycBEJ4GKih2grqKGHTx-gl6ZjKYA/edit?slide=id.g333bd8d1b57_0_2#slide=id.g333bd8d1b57_0_2
   content:
-   - value: Project Assignment 0 due (team and alpha version of proposal)
+   - deadline: Project Assignment 0 due (team and alpha version of proposal)
 
 - title: Evaluation
   status: 18s ready; check readings
@@ -67,7 +67,7 @@
 - title: Project Checkins 1
   status: done
   content:
-   - value: Project Assignment 1 due (project checkins)
+   - deadline: Project Assignment 1 due (project checkins)
 
 - title: Project Checkins 2
   status: done
@@ -81,7 +81,7 @@
   # pptx
   slide_link: https://docs.google.com/presentation/d/1ANAFFiAU6BzFVvzKcyhfbnNhcKCA9mRQ/edit?usp=drive_link&ouid=108006266785637771510&rtpof=true&sd=true
   content:
-  - value: hyperband.pptx
+  - deck_tag: hyperband.pptx
 
 - title: Interpretability
   status: use my plans and rules doc
@@ -93,7 +93,7 @@
 - title: Project Pitches
   status: done
   content:
-  - value: Project Assignment 2 due (project pitches)
+  - deadline: Project Assignment 2 due (project pitches)
 - title: Project Pitches
   status: done
 
@@ -114,7 +114,7 @@
 
 - title: Fairness
   content:
-  - value: Project Assignment 3 due (initial result writeups)
+  - deadline: Project Assignment 3 due (initial result writeups)
 - title: Safety
 
 # week 10
@@ -131,7 +131,7 @@
 
 - title: Project Presentations - 1
   content:
-  - value: Project Assignment 4 due (proposed extensons)
+  - deadline: Project Assignment 4 due (proposed extensons)
 - title: Project Presentations - 2
 
 - title: Network Effects and ML
@@ -143,5 +143,5 @@
 
 - title: Final Project Presentations - 1
   content:
-  - value: Project Assignment 5 due (final writeup and reflections)
+  - deadline: Project Assignment 5 due (final writeup and reflections)
 - title: Final Project Presentations -  2

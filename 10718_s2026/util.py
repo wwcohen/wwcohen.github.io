@@ -71,9 +71,11 @@ class SlideDeck(BaseModel):
 class ContentElement(BaseModel):
     """A content element for a lecture.
     """
-    value: str
-    deck: SlideDeck | None = Field(default=None)
-    kind: str | None = Field(default=None)
+    deck_tag: str | None = None
+    form: str | None = None
+    deadline: str | None = None
+    # a computed field
+    deck: SlideDeck | None = None
 
 class Lecture(BaseModel):
     title: str
@@ -143,14 +145,12 @@ class Lecture(BaseModel):
         lines.append(f'{tab}</td>')
         # announcements
         lines.append(f'{tab}<td>')
-        deadlines = [
-            (None, c.value) for c in self.content if c.deck is None and 'google.com/forms/' not in c.value]
-        lines.extend(self.as_openable_list(tab, 'HW Deadlines', deadlines))
+        deadlines = [(None, c.deadline) for c in self.content if c.deadline]
+        lines.extend(self.as_openable_list(tab, 'Deadlines', deadlines))
         readings = [
             url_text_pair for d in self.readings
             for url_text_pair in d.items()]
-        readings.extend(
-            [(c.value, 'Give feedback') for c in self.content if 'google.com/forms/' in c.value])
+        readings.extend([(c.form, 'Give feedback') for c in self.content if c.form])
         lines.extend(self.as_openable_list(tab, 'Required readings/feedback', readings))
         lines.append(f'{tab}</td>')
         # close row
@@ -180,11 +180,11 @@ def load_lectures(config_file='config.yaml',
     lecture_list = load_yaml(lecture_file)
     slide_dict = load_yaml(slide_file)
     lectures = [Lecture(**lec) for lec in lecture_list]
-    # add slide and date info to lectures
+    # pull in slide-deck information for ContentElements
     for lec in lectures:
         for ce in lec.content:
-            if ce.value in slide_dict:
-                ce.deck = SlideDeck(**slide_dict[ce.value])
+            if ce.deck_tag in slide_dict:
+                ce.deck = SlideDeck(**slide_dict[ce.deck_tag])
     join_lecture_dates(lectures, config)
     return lectures, config
 
