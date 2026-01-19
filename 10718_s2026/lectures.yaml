@@ -33,7 +33,7 @@
   # lecture 3
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
   content:
-   - 
+   - deck_tag: visualization.gslides
    - deadline: Signup to present in first 1/3 of course
 
 - title: Data Preparation and Visualization, Problem Formulation
@@ -46,7 +46,7 @@
   # lecture 4
   slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
   content:
-   - signup: Submit your AWS form by Friday 1/3: https://forms.gle/gLaSEP61myh3SVti6
+   - deadline: 'Signup for <a href="https://forms.gle/gLaSEP61myh3SVti6">AWS</a>'
 
 # week 3
 

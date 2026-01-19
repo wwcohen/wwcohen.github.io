@@ -1,11 +1,17 @@
 # Database of info on slide decks for individual "modules"
 
 visualization.gslides:
+ summary: viz refs
  links:
-   - https://quickdraw.withgoogle.com/
-   - https://www.nytimes.com/interactive/2019/12/02/climate/air-pollution-compare-ar-ul.html
-   - http://hint.fm/wind/
-   - https://pair-code.github.io/facets/
+   - https://github.com/wwcohen/wwcohen.github.io/tree/master/10718_s2026/examples: Wordcloud examples, etc
+   - https://quickdraw.withgoogle.com/: Quickdraw
+   - https://www.nytimes.com/interactive/2019/12/02/climate/air-pollution-compare-ar-ul.html: NY Times Air Pollution
+   - http://hint.fm/wind/: Wind maps
+   - https://pair-code.github.io/facets/: FACETS project
+   - https://opensource.googleblog.com/2018/11/introducing-web-component-and-data-api-for-quick-draw.html: Quickdraw blog post
+   - https://cs229.stanford.edu/proj2018/report/98.pdf: One QuickDraw project
+   - https://github.com/googlecreativelab/quickdraw-dataset?tab=readme-ov-file#projects-using-the-dataset: Other QuickDraw data analysis projects 
+   - https://xkcd.com/832/: Obligatory xkcd slide
 
 kv-caching.gslides:
   summary: Some key-value caching papers
