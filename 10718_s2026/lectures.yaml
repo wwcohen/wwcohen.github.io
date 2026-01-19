@@ -23,9 +23,9 @@
 
 # week 2
 
-- title: Data Preparation
-  status: 46s ready
-  summary: Scraping, Data Integration, Visualization
+- title: Data Preparation and Visualization
+  status: ready
+  summary: Visualization techniques
   readings:
    - https://dl.acm.org/doi/pdf/10.14778/3415478.3415527?casa_token=D213n2yltscAAAAA:OYnJSExskwfOjSexaSTXTBonlEBT0hXWgqL6ueicfm1UomZke309AiT-BNKJFqon2kbiL84ylhDE: 
        Debugging Large-Scale Data Science Pipelines using Dagger, Rezig et al, VLDB 2020
@@ -33,17 +33,20 @@
   # lecture 3
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
   content:
-   - deadline: Signup to present in first 1/2 of course
+   - 
+   - deadline: Signup to present in first 1/3 of course
 
-- title: Problem Formulation
+- title: Data Preparation and Visualization, Problem Formulation
+  summary: Deduping and soft-joining data
   status: 27s ready
-  summary: How ML maps to real world problems
   readings: 
    - https://www.science.org/doi/10.1126/science.aax2342: Dissecting Racial Bias in an Algorithm Used to Manage the Health of Populations
    - https://www.wired.com/story/artificial-intelligence-startups-daydream-fashion-recommendations/: Here’s What You Should Know About Launching an AI Startup - WIRED 2025
    - https://drive.google.com/file/d/1yxDpDwUDsFwoQPAet72-38kTEwG9ygfL/view?usp=drive_link: Here’s What You Should Know ... WIRED (cached version)
   # lecture 4
   slide_link: https://docs.google.com/presentation/d/1P1LFU_uE9gKWi2Z1rcT2MiyhagnJPMzXaDdcI9IWYBc/edit?slide=id.g1ef2a953916_0_122#slide=id.g1ef2a953916_0_122
+  content:
+   - signup: Submit your AWS form by Friday 1/3: https://forms.gle/gLaSEP61myh3SVti6
 
 # week 3
 

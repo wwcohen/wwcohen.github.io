@@ -1,5 +1,12 @@
 # Database of info on slide decks for individual "modules"
 
+visualization.gslides:
+ links:
+   - https://quickdraw.withgoogle.com/
+   - https://www.nytimes.com/interactive/2019/12/02/climate/air-pollution-compare-ar-ul.html
+   - http://hint.fm/wind/
+   - https://pair-code.github.io/facets/
+
 kv-caching.gslides:
   summary: Some key-value caching papers
   links:
