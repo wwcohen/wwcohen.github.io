@@ -27,8 +27,7 @@
   status: ready
   summary: Visualization techniques
   readings:
-   - https://dl.acm.org/doi/pdf/10.14778/3415478.3415527?casa_token=D213n2yltscAAAAA:OYnJSExskwfOjSexaSTXTBonlEBT0hXWgqL6ueicfm1UomZke309AiT-BNKJFqon2kbiL84ylhDE: 
-       Debugging Large-Scale Data Science Pipelines using Dagger, Rezig et al, VLDB 2020
+   - https://www.vldb.org/pvldb/vol13/p2993-rezig.pdf: Debugging Large-Scale Data Science Pipelines using Dagger, Rezig et al, VLDB 2020
    - https://arxiv.org/abs/2302.14233: Goal Driven Discovery of Distributional Differences via Language Descriptions  #D5
   # lecture 3
   slide_link: https://docs.google.com/presentation/d/1P7V8NkByqKaGoInIJu0AWeMYvVojjrxQHRt5OqJe1Tc/edit?slide=id.g2b4449ee465_1_99#slide=id.g2b4449ee465_1_99
