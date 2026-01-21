@@ -15,9 +15,11 @@ def load_corpus(filename):
     with open(filename, 'r') as fp:
         return [line.strip() for line in fp.readlines()]
 
-def tfidfsims(filename1, filename2, dedup=False):
+def tfidfsims(filename1, dedup=False, filename2=None):
+    """Return result of soft match or deduping
+    """
     a0 = load_corpus(filename1)
-    b0 = load_corpus(filename2)
+    b0 = a0 if dedup else load_corpus(filename2)
     vectorizer = TfidfVectorizer(stop_words='english')
     ab = vectorizer.fit_transform(a0 + b0)
     # split out a and b from ab
@@ -29,6 +31,10 @@ def tfidfsims(filename1, filename2, dedup=False):
     elapsed = time.time() - start_time
     print(f'joined in {elapsed:.4f} sec')
     # get best match to each thing in a (the rows)
+    if dedup:
+        # discard self-matches and also redundant j > i
+        for i in range(sims.shape[0]):
+            sims[i, i:] = 0.00001
     best_index = sims.argmax(1)
     best_score = sims.max(1).todense()
     # return results
@@ -47,5 +53,9 @@ def softjoin(filename1, filename2, threshold=0.4, truncate=200, maxcolwidths=50)
     df = near_dups(*tfidfsims(filename1, filename2), threshold=threshold, truncate=truncate)
     print(tabulate(df, maxcolwidths=maxcolwidths))
     
+def dedup(filename, threshold=0.4, truncate=200, maxcolwidths=50):
+    df = near_dups(*tfidfsims(filename, dedup=True), threshold=threshold, truncate=truncate)
+    print(tabulate(df, maxcolwidths=maxcolwidths))
+
 if __name__ == '__main__':
     fire.Fire()
