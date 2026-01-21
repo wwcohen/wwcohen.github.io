@@ -21,8 +21,8 @@ def load(filename, a, b):
 if __name__ == '__main__':
     # a pipeline to evaluate a particular softjoin
     # in secondstring format
-    a0, b0 = load('id-parks.json', 'ic', 'nps')
-    #a0, b0 = load('business.json', 'hw', 'it')
+    #a0, b0 = load('id-parks.json', 'ic', 'nps')
+    a0, b0 = load('business.json', 'hw', 'it')
     print(f'loaded {len(a0["name"])} and {len(b0["name"])} names')
     vectorizer = TfidfVectorizer(stop_words='english')
     corpus = a0['name'] + b0['name']
