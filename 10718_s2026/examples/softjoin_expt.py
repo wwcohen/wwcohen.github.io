@@ -1,3 +1,8 @@
+"""Reproducing some simple name-matching experiments to make sure the
+code is working.
+"""
+
+
 import json
 import re
 import pandas as pd
