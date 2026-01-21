@@ -15,7 +15,7 @@ def load_corpus(filename):
     with open(filename, 'r') as fp:
         return [line.strip() for line in fp.readlines()]
 
-def softjoin(filename1, filename2):
+def tfidfsims(filename1, filename2, dedup=False):
     a0 = load_corpus(filename1)
     b0 = load_corpus(filename2)
     vectorizer = TfidfVectorizer(stop_words='english')
@@ -43,8 +43,8 @@ def near_dups(a0, b0, sims, best_index, best_score, threshold=0.5, truncate=200)
             rows.append(dict(sim=sim_ij, i=i, a_i=a0[i][:truncate], j=j, b_j=b0[j][:truncate]))
     return pd.DataFrame(rows).sort_values(by='sim', ascending=False)
 
-def dedup(filename1, filename2, threshold=0.4, truncate=200, maxcolwidths=50):
-    df = near_dups(*softjoin(filename1, filename2), threshold=threshold, truncate=truncate)
+def softjoin(filename1, filename2, threshold=0.4, truncate=200, maxcolwidths=50):
+    df = near_dups(*tfidfsims(filename1, filename2), threshold=threshold, truncate=truncate)
     print(tabulate(df, maxcolwidths=maxcolwidths))
     
 if __name__ == '__main__':
