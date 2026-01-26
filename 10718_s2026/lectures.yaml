@@ -50,7 +50,7 @@
 # week 3
 
 - title: Data & Feature Engineering
-  status: 70s ready; should reduce
+  status: ready
   readings: 
    - https://arxiv.org/abs/2103.14749: Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks
    - https://arxiv.org/abs/2205.09911: Can Foundation Models Wrangle Your Data?
@@ -60,7 +60,7 @@
    - deadline: Project Assignment 0 due (team and alpha version of proposal)
 
 - title: Evaluation
-  status: 18s ready; check readings
+  status: ready
   slide_link: https://docs.google.com/presentation/d/1gLzpcJRiCpHw7gYxF9uFR7B6yrbrwanIIIQ3pPYI39Q/edit?slide=id.g3afbf7780e5_0_59#slide=id.g3afbf7780e5_0_59
   readings:
    - https://aclanthology.org/2024.acl-long.757.pdf: "Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling, ACL 2024"
@@ -68,6 +68,25 @@
    - https://www.science.org/doi/full/10.1126/science.adi6000: Prediction Powered Inference
 
 # week 4
+
+- title: Hyperparameter tuning
+  status: 58s - need to cut down!
+  readings:
+  - https://dl.acm.org/doi/abs/10.1145/3097983.3098043: "Google Vizier: A Service for Black-Box Optimization (KDD 2017)"
+  - https://arxiv.org/abs/2205.13504: "Are Transformers Effective for Time Series Forecasting? (AAAI 2023)"
+  # pptx
+  slide_link: https://docs.google.com/presentation/d/1ANAFFiAU6BzFVvzKcyhfbnNhcKCA9mRQ/edit?usp=drive_link&ouid=108006266785637771510&rtpof=true&sd=true
+  content:
+  - deck_tag: hyperband.pptx
+
+- title: Interpretability
+  status: TODO
+  readings:
+  - https://spawn-queue.acm.org/doi/pdf/10.1145/3236386.3241340: The Mythos of Interpretability, Lipton 2018
+  - https://arxiv.org/abs/2512.18311: "Monitoring Monitorability, Guan et al 2025"
+  - https://arxiv.org/abs/2503.11926: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation, Baker et al, 2025"
+
+# week 5
 
 - title: Project Checkins 1
   status: done
@@ -77,23 +96,14 @@
 - title: Project Checkins 2
   status: done
 
-# week 5
-
-- title: Hyperparameter tuning
-  status: 58s ready
-  readings:
-  - https://dl.acm.org/doi/abs/10.1145/3097983.3098043: "Google Vizier: A Service for Black-Box Optimization (KDD 2017)"
-  # pptx
-  slide_link: https://docs.google.com/presentation/d/1ANAFFiAU6BzFVvzKcyhfbnNhcKCA9mRQ/edit?usp=drive_link&ouid=108006266785637771510&rtpof=true&sd=true
-  content:
-  - deck_tag: hyperband.pptx
-
-- title: Interpretability
-  status: use my plans and rules doc
-  readings:
-  - https://spawn-queue.acm.org/doi/pdf/10.1145/3236386.3241340: The Mythos of Interpretability, Lipton 2018
-
 # week 6
+
+
+- title: Privacy
+- title: Distribution Shift and Robustness
+
+
+# week 7
 
 - title: Project Pitches
   status: done
@@ -101,12 +111,6 @@
   - deadline: Project Assignment 2 due (project pitches)
 - title: Project Pitches
   status: done
-
-# week 7
-
-
-- title: Privacy
-- title: Distribution Shift and Robustness
 
 # week 8
 
