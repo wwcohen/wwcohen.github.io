@@ -100,6 +100,9 @@
 
 
 - title: Privacy
+  readings:
+  - https://research.google/blog/distributed-differential-privacy-for-federated-learning/: "Distributed differential privacy for federated learning, 2023"
+
 - title: Distribution Shift and Robustness
 
 
@@ -134,6 +137,9 @@
 # week 11
 
 - title: Causality
+  readings:  #might pick just one of these
+  - https://jmlr.org/papers/v23/19-480.html: "Causal Classification: Treatment Effect Estimation vs. Outcome Prediction, 2022"
+  - https://arxiv.org/abs/2407.07596: "Learning treatment effects while treating those in need, Bryan Wilder, Pim Welle, 2024"
 - title: ML and Intervention
 
 # week 12
