@@ -1,9 +1,21 @@
 [
   {
+      "title": "Localizing and Correcting Errors for LLM-based Planners",
+      "authors": "Aditya Kumar, William W. Cohen",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2602.00276",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "Multiple Prediction Powered Inference",
       "authors": "Charlie Cowen-Breen, Alekh Agarwal, Stephen Bates, William W. Cohen, Jacob Eisenstein, Amir Globerson, Adam Fisch",
       "venues": "",
-      "year": "2025",
+      "year": "2026",
       "topics": "an",
       "url": "https://openreview.net/pdf?id=gJZ5rf2bS4",
       "cite": "ICLR 2026",
@@ -60,7 +72,7 @@
       "comment": ""
   },
   {
-      "title": "{VLM} Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
+      "title": "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
       "authors": "Gabriel Sarch, Lawrence Jang, Michael J. Tarr, William W. Cohen, Kenneth Marino, Katerina Fragkiadaki",
       "venues": "",
       "year": "2024",
@@ -72,7 +84,7 @@
       "comment": ""
   },
   {
-      "title": "From Observation to Abstractions: Efficient In-Context Learning from Human Feedback and Visual Demonstrations for {VLM} Agents",
+      "title": "From Observation to Abstractions: Efficient In-Context Learning from Human Feedback and Visual Demonstrations for VLM Agents",
       "authors": "Gabriel_Herbert_Sarch, Lawrence Jang, Michael J. Tarr, William W. Cohen, Kenneth Marino, Katerina Fragkiadaki",
       "venues": "",
       "year": "2024",

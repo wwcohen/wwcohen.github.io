@@ -145,16 +145,19 @@
 
 # week 10
 
+# nobody asked for these
 - title: Distribution Shift
 - title: Robustness
 
 # week 11
 
+# nobody asked for these
 - title: Causality
   readings:  #might pick just one of these
   - https://jmlr.org/papers/v23/19-480.html: "Causal Classification: Treatment Effect Estimation vs. Outcome Prediction, 2022"
   - https://arxiv.org/abs/2407.07596: "Learning treatment effects while treating those in need, Bryan Wilder, Pim Welle, 2024"
-- title: ML and Intervention
+
+- title: Graph Data - Guest Speaker, Karish Grover
 
 # week 12
 
@@ -171,8 +174,9 @@
 - title: Carnival
   status: ready
 
+# people did ask for these
 - title: Privacy and Federated Learning
-- title: TBA
+- title: Societal Impact of ML
 
 - title: Final Project Presentations - 1
   content:
