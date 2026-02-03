@@ -1,5 +1,12 @@
 # Database of info on slide decks for individual "modules"
 
+network.gslides:
+  summary: discussion, info cascade, watts science paper, schelling
+  links:
+   - https://www.cs.cornell.edu/home/kleinber/networks-book/: Information cascades, Ch 16, Easly and Kleinberg, 2010
+   - https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1756-8765.2009.01030.x: Salganic, Dodds, Watts, Science 2006
+   - http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/: Schelling Spatial Segregation model
+
 visualization.gslides:
  summary: viz refs
  links:
@@ -30,4 +37,6 @@ hyperparam.pptx:
   num_slides: 57
   summary: overview of grid, adaptive, random search, hyperband
   links:
+   - https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9f2d6eb7-c369-4f5e-85e2-b2a3012d9f0d: "Greg Kochanski, Google Deep Mind, guest lecture on Vizier, Spring 2025 in 10-605"
+   - https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ec8263d-29d1-4709-9fe8-b3830115deb7: "William's lecture on Hyperparameter Search, Fall 2025 in 10-605 (alternate to Greg's talk)"
    - https://www.jmlr.org/papers/v18/16-558.html: Hyperband - A Novel Bandit Based Approach to Hyperparameter Optimization, JMLR 2018

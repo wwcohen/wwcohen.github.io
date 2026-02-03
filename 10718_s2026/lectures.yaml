@@ -1,3 +1,7 @@
+#  Privacy and fed learning: https://research.google/blog/distributed-differential-privacy-for-federated-learning/: "Distributed differential privacy for federated learning, 2023"
+#    - https://www.nature.com/articles/s42256-025-01159-8.epdf?sharing_token=xJmd4cDnq2FxFbfAnUEO8tRgN0jAjWel9jnR3ZoTv0PvnbYm4DP1YR2ybrBtLKE2-ci89m0C22f_VxZ6qtDz6gdTCqxdpdoWgGrsoFGUIgaxb78BHjLOCrIRP22lGITtLPPek5CCq6IFWAXlPQcqOE3r_1m5NRTJunaxyXptY-c%3D: LLM use in scholarly writing, Earp et al
+
+
 # week 1
 
 - title: Intro and Overview
@@ -70,17 +74,15 @@
 # week 4
 
 - title: Hyperparameter tuning
-  status: 58s - need to cut down!
   readings:
   - https://dl.acm.org/doi/abs/10.1145/3097983.3098043: "Google Vizier: A Service for Black-Box Optimization (KDD 2017)"
   - https://arxiv.org/abs/2205.13504: "Are Transformers Effective for Time Series Forecasting? (AAAI 2023)"
   # pptx
-  slide_link: https://docs.google.com/presentation/d/1ANAFFiAU6BzFVvzKcyhfbnNhcKCA9mRQ/edit?usp=drive_link&ouid=108006266785637771510&rtpof=true&sd=true
   content:
-  - deck_tag: hyperband.pptx
+  - deck_tag: hyperparam.pptx
 
-- title: Interpretability
-  status: TODO
+- title: Interpretability and Monitorability
+  status: no slides
   readings:
   - https://spawn-queue.acm.org/doi/pdf/10.1145/3236386.3241340: The Mythos of Interpretability, Lipton 2018
   - https://arxiv.org/abs/2512.18311: "Monitoring Monitorability, Guan et al 2025"
@@ -99,12 +101,19 @@
 # week 6
 
 
-- title: Privacy
+- title: Interpretability as Communication
+  status: SLIDES TO DO
   readings:
-  - https://research.google/blog/distributed-differential-privacy-for-federated-learning/: "Distributed differential privacy for federated learning, 2023"
+    - https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1317&context=edpsychpapers: "Essay Review of The Enigma of Reason by Hugo Mercier and Dan Sperberof Reason, by Mercier and Sperber" 
+    - 3d500d31738cd39eb49a748fa4-Paper-Conference.pdf: "Learning to Scaffold: Optimizing Model Explanations for Teaching, Fernandes et al, 2022"
 
-- title: Distribution Shift and Robustness
-
+- title: Network Effects and ML
+  status: CUT DOWN ppi
+  content:
+   - deck_tag: network.gslides
+  readings: 
+   - https://www.nature.com/articles/s42256-025-01159-8.epdf?sharing_token=xJmd4cDnq2FxFbfAnUEO8tRgN0jAjWel9jnR3ZoTv0PvnbYm4DP1YR2ybrBtLKE2-ci89m0C22f_VxZ6qtDz6gdTCqxdpdoWgGrsoFGUIgaxb78BHjLOCrIRP22lGITtLPPek5CCq6IFWAXlPQcqOE3r_1m5NRTJunaxyXptY-c%3D: LLM use in scholarly writing, Earp et al, 2025
+   - https://arxiv.org/pdf/2510.22954: "Artificial Hivemind: The Open-Ended Homogeneity of Language Models, 2025"
 
 # week 7
 
@@ -124,15 +133,20 @@
 
 # week 9
 
-- title: Fairness
+- title: Working with Agents
+  status: SLIDES TO DO
   content:
   - deadline: Project Assignment 3 due (initial result writeups)
-- title: Safety
+  readings:
+  - https://arxiv.org/pdf/2512.04123: “Measuring Agents in Production, 2025"
+  - https://arxiv.org/abs/2503.13657: "When Do Multi-Agent Systems Fail, 2025"
+
+- title: Model Compression - Guest speaker, Steven Kolawole
 
 # week 10
 
-- title: Model Compression
-- title: Uncertainty and Calibration
+- title: Distribution Shift
+- title: Robustness
 
 # week 11
 
@@ -149,11 +163,15 @@
   - deadline: Project Assignment 4 due (proposed extensons)
 - title: Project Presentations - 2
 
-- title: Network Effects and ML
+- title: Mechanistic Interpretability
+  readings:
+    - https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability: "A Pragmatic Vision for Interpretability, Neel Nanda et al"
+    - https://arxiv.org/abs/2512.18792: The Dead Salmons of AI Interpretability, 2025
+
 - title: Carnival
   status: ready
 
-- title: TBA
+- title: Privacy and Federated Learning
 - title: TBA
 
 - title: Final Project Presentations - 1
