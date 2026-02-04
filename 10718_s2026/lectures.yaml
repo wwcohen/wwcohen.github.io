@@ -89,6 +89,8 @@
   - https://spawn-queue.acm.org/doi/pdf/10.1145/3236386.3241340: The Mythos of Interpretability, Lipton 2018
   - https://arxiv.org/abs/2512.18311: "Monitoring Monitorability, Guan et al 2025"
   - https://arxiv.org/abs/2503.11926: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation, Baker et al, 2025"
+  content:
+   - deck_tag: cot.gslides
 
 # week 5
 
@@ -104,10 +106,13 @@
 
 
 - title: Interpretability as Communication
-  status: SLIDES TO DO
+  slide_link: https://docs.google.com/presentation/d/1bKABKNW9sJbVd3KPvkuFQen8nHq7ZQ_hhpQZqt35Vvo/edit?slide=id.g3c40c0e9bb6_0_41#slide=id.g3c40c0e9bb6_0_41
   readings:
-    - https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1317&context=edpsychpapers: "Essay Review of The Enigma of Reason by Hugo Mercier and Dan Sperberof Reason, by Mercier and Sperber" 
+    - https://www.scotthyoung.com/blog/2019/02/01/reason/: "Unraveling the Enigma of Reason (Scott Young, blog post)"
     - https://arxiv.org/abs/2204.10810: "Learning to Scaffold: Optimizing Model Explanations for Teaching, Fernandes et al, 2022"
+  content:
+    - deck_tag: interp.gslides
+    - form: https://forms.gle/BCD7YKhVaM3x4HBT8
 
 - title: Network Effects and ML
   status: done (18)
@@ -179,7 +184,10 @@
 
 # people did ask for these
 - title: Privacy and Federated Learning
+
 - title: Societal Impact of ML
+  readings:
+   - https://arxiv.org/abs/2502.16487: "All That Glitters is Not Novel: Plagiarism in AI Generated Research, Gupta and Pruthi, 2025"
 
 - title: Final Project Presentations - 1
   content:
