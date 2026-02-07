@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+  .ancestry-outline {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 900px;
+    line-height: 1.5;
+  }
+  .node {
+    padding: 4px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .node::before {
+    content: "↓";
+    color: #94a3b8;
+    font-weight: bold;
+    width: 12px;
+  }
+  .root-node::before { content: "●"; color: #4f46e5; }
+  
+  .name { font-weight: 600; }
+  .details { font-size: 0.85em; color: #64748b; }
+  
+  .split-container {
+    margin-left: 24px;
+    border-left: 2px solid #e2e8f0;
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .split-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6366f1;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+  <main class="container">
+
+
+  <h2>William's Academic Lineage</h2>
+
+  <p>
+  My advisor was <a href="http://www.cs.rutgers.edu/~borgida">Alex
+    Borgida</a>.  His advisor
+    was <a href="http://www.ai.sri.com/people/perrault">Ray
+    Perrault</a>.  Perrault had two
+    advisors, <a href="http://www.genealogy.math.ndsu.nodak.edu/html/id.phtml?id=8658">Joyce
+    Friedman</a>
+    and <a href="http://www.genealogy.math.ndsu.nodak.edu/html/id.phtml?id=44546">William
+    Rounds</a>.
+  </p>
+
+  <p>
+  Bill Rounds' academic ancestry goes back to Poisson, Lagrange, Euler
+  and other limunaries including Leibniz.  Joyze Friedman's goes back
+  through Quine, Alfre Whitehead, and eventually Isaac Newton and
+  Galileo.
+  </p>
+  
+
+
+<div class="ancestry-outline">
+  <div class="node root-node"><span class="name">William Weston Cohen</span> <span class="details">(Rutgers, 1990)</span></div>
+  <div class="node"><span class="name">Alexander Tiberiu Borgida</span> <span class="details">(Toronto, 1977)</span></div>
+  <div class="node"><span class="name">(Charles) Raymond Perrault</span> <span class="details">(Michigan, 1975)</span></div>
+
+  <div class="split-container">
+    <div class="split-label">Branch A: Logic & CS</div>
+    <div class="node"><span class="name">William Chesley Rounds</span> <span class="details">(Stanford, 1968)</span></div>
+    <div class="node"><span class="name">Dana Stewart Scott</span> <span class="details">(Princeton, 1958)</span></div>
+    <div class="node"><span class="name">Alonzo Church</span> <span class="details">(Princeton, 1927)</span></div>
+    <div class="node"><span class="name">Oswald Veblen</span> <span class="details">(Chicago, 1903)</span></div>
+    <div class="node"><span class="name">E. H. Moore</span> <span class="details">(Yale, 1885)</span></div>
+    <div class="node"><span class="name">H. A. Newton</span> <span class="details">(Yale, 1850)</span></div>
+    <div class="node"><span class="name">Michel Chasles</span> <span class="details">(1814)</span></div>
+    <div class="node"><span class="name">Siméon Denis Poisson</span> <span class="details">(1800)</span></div>
+    
+    <div class="split-container">
+        <div class="split-label">Sub-Branch: French Analysis</div>
+        <div class="node"><span class="name">Joseph Louis Lagrange</span></div>
+        <div class="node"><span class="name">Leonhard Paul Euler</span> <span class="details">(1726)</span></div>
+        <div class="node"><span class="name">Johann Bernoulli</span> <span class="details">(1676)</span></div>
+        <div class="node"><span class="name">Nicolas Malebranche</span> <span class="details">(1672)</span></div>
+        <div class="node"><span class="name">G. W. Leibniz</span> <span class="details">(Leipzig, 1666)</span></div>
+    </div>
+    <div class="node"><span class="name">Pierre-Simon Laplace</span> <span class="details">(1769)</span></div>
+  </div>
+
+  <div class="split-container">
+    <div class="split-label">Branch B: Philosophy & Mathematics</div>
+    <div class="node"><span class="name">Joyce Barbara Friedman</span> <span class="details">(Harvard, 1965)</span></div>
+    <div class="node"><span class="name">Hao Wang</span> <span class="details">(Harvard, 1948)</span></div>
+    <div class="node"><span class="name">Willard Van Orman Quine</span> <span class="details">(Harvard, 1932)</span></div>
+    <div class="node"><span class="name">Alfred North Whitehead</span> <span class="details">(Cambridge, 1884)</span></div>
+    <div class="node"><span class="name">Edward John Routh</span> <span class="details">(Cambridge, 1857)</span></div>
+    <div class="node"><span class="name">William Hopkins</span> <span class="details">(Cambridge, 1830)</span></div>
+    <div class="node"><span class="name">Adam Sedgwick</span> <span class="details">(Cambridge, 1811)</span></div>
+
+    <div class="split-container">
+      <div class="split-label">Sub-Branch: Cambridge Lineage</div>
+      <div class="node"><span class="name">Thomas Jones</span> <span class="details">(1782)</span></div>
+      <div class="node"><span class="name">Thomas Postlethwaite</span> <span class="details">(1756)</span></div>
+      <div class="node"><span class="name">Stephen Whisson</span> <span class="details">(1742)</span></div>
+      <div class="node"><span class="name">Walter Taylor</span> <span class="details">(1723)</span></div>
+      <div class="node"><span class="name">Robert Smith</span> <span class="details">(1715)</span></div>
+      <div class="node"><span class="name">Roger Cotes</span> <span class="details">(1706)</span></div>
+      <div class="node"><span class="name">Isaac Newton</span> <span class="details">(1668)</span></div>
+      <div class="node"><span class="name">Isaac Barrow</span> <span class="details">(1652)</span></div>
+      <div class="node"><span class="name">Vincenzo Viviani</span> <span class="details">(Universita de Pisa, 1642)</span></div>
+      <div class="node"><span class="name">Galileo Galilei</span> <span class="details">(Universita de Pisa, 1585)</span></div>
+    </div>
+
+    <div class="split-container">
+      <div class="split-label">Sub-Branch: Dutch/Calvin Lineage</div>
+      <div class="node"><span class="name">John Dawson</span></div>
+      <div class="node"><span class="name">Henry Bracken</span></div>
+      <div class="node"><span class="name">Herman Boerhaave</span> <span class="details">(1690)</span></div>
+      <div class="node"><span class="name">Wolferd Senguerdius</span> <span class="details">(1666)</span></div>
+      <div class="node"><span class="name">Arnold Senguerdius</span> <span class="details">(1630)</span></div>
+      <div class="node"><span class="name">Antonius Thysius</span> <span class="details">(1582)</span></div>
+      <div class="node"><span class="name">Lambert Daneau</span> <span class="details">(1553)</span></div>
+      <div class="node"><span class="name">Johannes Calvin</span></div>
+    </div>
+  </div>
+</div>
+
+<p>Most of this information was unearthed by my former student Andrew
+Arnold.  Going the other direction...there are several former students
+of mine in academia, and even a few "grandchildren".
+
+<ul>			
+  <li>Einat Minkov, University of Haifa
+  <li>Bhuwan Dhingra, Duke University
+  <li>Zhilin Yang, Tsinghua University
+  <li>William Yang Wang, University of California Santa Barbara, who
+    has several PhD students of his own that are professors:
+  <ul>
+    <li>Mai Elsherief (Ph.D., 2019, Asst. Prof. at UC San Diego)
+    <li>Xin Eric Wang (Ph.D., 2020, Asst. Prof. at UC Santa Cruz)
+    <li>Wenhu Chen (PhD., 2021, Asst. Prof. at Univ. Waterloo)
+  </ul>
+</ul>
+</p>
+
+</main>
+
+</body>
+</html>
