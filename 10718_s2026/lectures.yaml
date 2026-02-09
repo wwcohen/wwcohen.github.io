@@ -150,6 +150,9 @@
   - https://arxiv.org/abs/2503.13657: "When Do Multi-Agent Systems Fail, 2025"
 
 - title: Model Compression - Guest speaker, Steven Kolawole
+  readings:
+   - https://arxiv.org/pdf/2310.04621: Model Compression in Practice, Hohman et al, CHI 2024
+   - https://arxiv.org/pdf/1911.05248: What Do Compressed Deep Neural Networks Forget? Hooker et al, 2021
 
 # week 10
 
