@@ -5,6 +5,7 @@ interp.gslides:
   - https://arxiv.org/pdf/1909.07913: Learning to Decieve with Attention-Based Explanations, 2020
   - https://arxiv.org/pdf/2308.14272: Goodhart’s Law Applies to NLP’s Explanation Benchmarks. 2023
   - https://arxiv.org/pdf/2012.00893: "Evaluating Explanations: How much do explanations from the teacher aid students? Pruthi et al 2021."
+  - https://proceedings.mlr.press/v119/perdomo20a.html: Performative Prediction, PMLR 2020
 
 cot.gslides:
  summary: ripper, turpin et al, khambapati
