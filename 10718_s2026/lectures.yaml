@@ -156,13 +156,19 @@
 
 # week 10
 
-# nobody asked for these
+# notes:
+#   Bryan did two lectures on shift, papers look reasonable
+#   Robustness is adversarial shift, maybe de-emphasize
+
+# +10 -2
 - title: Distribution Shift
+# +4 -2
 - title: Robustness
 
 # week 11
 
-# nobody asked for these
+# notes: some pushback but the papers are student recommendations
+# +5 -6
 - title: Causality
   readings:  #might pick just one of these
   - https://jmlr.org/papers/v23/19-480.html: "Causal Classification: Treatment Effect Estimation vs. Outcome Prediction, 2022"
@@ -177,7 +183,11 @@
   - deadline: Project Assignment 4 due (proposed extensons)
 - title: Project Presentations - 2
 
+# +5 -3
 - title: Mechanistic Interpretability
+  # proposed
+  #  https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html
+  #  https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
   readings:
     - https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability: "A Pragmatic Vision for Interpretability, Neel Nanda et al"
     - https://arxiv.org/abs/2512.18792: The Dead Salmons of AI Interpretability, 2025
@@ -185,10 +195,14 @@
 - title: Carnival
   status: ready
 
-# people did ask for these
+# +6 -5
 - title: Privacy and Federated Learning
 
+# +3 -4
+# maybe replace this with something else?
+
 - title: Societal Impact of ML
+  # suggested: https://arxiv.org/pdf/2505.00047v2 alignment breaks creativity
   readings:
    - https://arxiv.org/abs/2502.16487: "All That Glitters is Not Novel: Plagiarism in AI Generated Research, Gupta and Pruthi, 2025"
 

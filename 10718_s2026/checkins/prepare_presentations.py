@@ -94,7 +94,7 @@ def parse_metadata(metadata_path):
             first_name = row.get('First Name', '').strip()
             last_name = row.get('Last Name', '').strip()
             submission_id = row.get('Submission ID', '').strip()
-            response = row.get('Question 1 Response', '')
+            response = row.get('Question 1.1 Response', '')
 
             if first_name and last_name and submission_id:
                 full_name = f"{first_name} {last_name}"
