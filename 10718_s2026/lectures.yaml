@@ -128,9 +128,11 @@
 - title: Project Pitches
   status: done
   content:
-  - deadline: Project Assignment 2 due (project pitches)
+  - deadline: Project Assignment 2 due (talks for project pitches)
 - title: Project Pitches
   status: done
+  content:
+  - deadline: Project Assignment 2 due (writeup, due 2/27)
 
 # week 8
 
@@ -143,8 +145,6 @@
 
 - title: Working with Agents
   status: SLIDES TO DO
-  content:
-  - deadline: Project Assignment 3 due (initial result writeups)
   readings:
   - https://arxiv.org/pdf/2512.04123: “Measuring Agents in Production, 2025"
   - https://arxiv.org/abs/2503.13657: "When Do Multi-Agent Systems Fail, 2025"
