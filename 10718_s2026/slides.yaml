@@ -1,5 +1,37 @@
 # Database of info on slide decks for individual "modules"
 
+robustness.gslides:
+ summary: adversarial examples
+ links:
+  - https://arxiv.org/abs/1412.6572: Goodfellow et al, Explaining and harnessing adversarial examples, ICLR 2015
+  - https://spectrum.ieee.org/hacking-the-brain-with-adversarial-images: Hacking the brain with adversarial images, IEEE Spectrum, 2018
+  - https://arxiv.org/abs/1802.08195: Adversarial Examples that Fool both Computer Vision and Time-Limited Human, Elsayed et al, 2018
+  - https://arxiv.org/pdf/1905.02175: Adversarial Examples Are Not Bugs, They Are Features, Ilyas et al, 2019 
+  - https://openaccess.thecvf.com/content_cvpr_2018/papers/Eykholt_Robust_Physical-World_Attacks_CVPR_2018_paper.pdf: Eykholt and Evtimov, et al, Robust Physical-World Attacks on Deep Learning Visual Classification, CVPR 2018
+  - https://openreview.net/pdf?id=XYqCx026AI#page=10.52: Lewis et al, 2025
+
+distshift.gslides:
+ summary: distribution shift 
+ links:
+  - https://arxiv.org/abs/2307.05284: Rethinking Distribution Shifts, Wang et al 2023
+  - https://www.vldb.org/conf/2004/RS5P1.PDF: Detecting Change in Data Streams, Kifer, Ben-David, Gehrke, VLDB 2004
+  - https://aclanthology.org/P07-1033.pdf: Frustratingly Easy Domain Adaptation, Hal Daume III, 2007
+  - https://www.sciencedirect.com/science/article/pii/S0885230805000276?casa_token=yhzgzh1f1fQAAAAA:gaW9gJwqYhzND9W_yTj_uXlWkssd2uBoDGMHm1DQxUtRsbQgZB1ad6E4QgFIy_PKlarDoyb3kQ: Adaptation of maximum entropy ..., Chelba and Acero, 2004
+  - https://fastml.com/adversarial-validation-part-one: fastml.com Blog, 2023
+
+agents.gslides:
+ summary: agent slides
+ links:
+  - https://medium.com/data-science-collective/a-super-simple-react-agent-87913949f69f: A simple ReAct agent, Maameri Medium post, 2025
+  - https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html: RAG for Knowlege-Intensive NLP Tasks, Lewis et al, NeurIPS 2020
+  - https://arxiv.org/pdf/2211.12588: PoT Prompting, Chen et al, TMLR, 2023
+  - https://openreview.net/forum?id=WE_vluYUL-X: Yao et al, ICLR 2023
+  - https://tomaszs2.medium.com/how-does-openclaw-work-inside-the-agent-loop-that-powers-200-000-github-stars-e61db2bbfcbb: How Does OpenClaw Work? Symkowski Medium post, 2026
+  - https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2: An AI Agent Published a Hit Piece on Me, Shambaugh blog post, 2026
+  - https://github.com/princeton-pli/hal-harness: Holistic Agent Leaderboard, GitHub site, 2026
+  - https://www.anthropic.com/research/measuring-agent-autonomy: Measuring AI agent autonomy in practice, Anthropic blog post, 2026
+  - https://arxiv.org/pdf/2602.11988: Evaluating AGENTS.md, Gloaguen et al, 2026
+
 interp.gslides:
  links:
   - https://arxiv.org/pdf/1909.07913: Learning to Decieve with Attention-Based Explanations, 2020
