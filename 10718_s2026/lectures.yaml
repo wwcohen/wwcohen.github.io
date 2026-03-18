@@ -186,10 +186,13 @@
   #  https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html
   #  https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
   readings:
-    - https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability: "A Pragmatic Vision for Interpretability, Neel Nanda et al"
+    - https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability: "A Pragmatic Vision for Interpretability, Neel Nanda et al, 2025"
     - https://arxiv.org/abs/2512.18792: The Dead Salmons of AI Interpretability, 2025
 
 - title: Graph Data - Guest Speaker, Karish Grover
+  readings:
+   - https://arxiv.org/pdf/1810.00826: How Powerful are Graph Neural Networks? Xu et al, ICLR 2019
+   - https://arxiv.org/abs/2502.14546: Graph Learning Will Lose Relevance Due To Poor Benchmarks, Bechler-Speicher et al, 2026
 
 # week 12
 
