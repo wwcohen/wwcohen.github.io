@@ -1,5 +1,11 @@
 # Database of info on slide decks for individual "modules"
 
+mechinterp.gslides:
+ links:
+  - https://pair.withgoogle.com/explorables/sae/: Mapping LLMs with Sparse Autoencoders, Neel et al, Oct 2025
+  - https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html: An intuitive explanation of SAE, 2024
+  - https://www.anthropic.com/research/mapping-mind-language-model: Mapping the Mind of a Large Language Model, 2024
+
 robustness.gslides:
  summary: adversarial examples
  links:
@@ -8,7 +14,7 @@ robustness.gslides:
   - https://arxiv.org/abs/1802.08195: Adversarial Examples that Fool both Computer Vision and Time-Limited Human, Elsayed et al, 2018
   - https://arxiv.org/pdf/1905.02175: Adversarial Examples Are Not Bugs, They Are Features, Ilyas et al, 2019 
   - https://openaccess.thecvf.com/content_cvpr_2018/papers/Eykholt_Robust_Physical-World_Attacks_CVPR_2018_paper.pdf: Eykholt and Evtimov, et al, Robust Physical-World Attacks on Deep Learning Visual Classification, CVPR 2018
-  - https://openreview.net/pdf?id=XYqCx026AI#page=10.52: Lewis et al, 2025
+  - https://openreview.net/pdf?id=XYqCx026AI: Text to Stealthy Adversarial Face Masks, Lewis et al, 2025
 
 distshift.gslides:
  summary: distribution shift 

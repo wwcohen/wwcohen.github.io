@@ -170,7 +170,7 @@
 
 # +4 -2
 - title: Distribution Shift and Robustness
-  slide_link: https://docs.google.com/presentation/d/1nkRcEt_w0XhB0eYPhBaRCP9-TCppRd9a9DQCPbXt7q4/edit?slide=id.g1f29bb17f82_0_224#slide=id.g1f29bb17f82_0_224
+  slide_link: https://docs.google.com/presentation/d/1mlCWXiIhxJ62NI06TGGlk_03-u4eUf4XCn9jkJEoYVo/edit?slide=id.g1f29bb17f82_0_224#slide=id.g1f29bb17f82_0_224
   content:
    - deck_tag: robustness.gslides
   readings: 
@@ -182,6 +182,9 @@
 # +5 -3
 - title: Mechanistic Interpretability
   status: TO DO
+  slide_link: https://docs.google.com/presentation/d/1h4835X6PWITba1ShhupQ_JlWeCkNYirxHJ90ueNIcBM/edit?slide=id.g2b6c5732ff0_0_5#slide=id.g2b6c5732ff0_0_5
+  content: 
+   - deck_tag: mechinterp.gslides
   # proposed
   #  https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html
   #  https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
@@ -197,9 +200,9 @@
 # week 12
 
 - title: Project Presentations - 1
-  content:
-  - deadline: Project Assignment 4 due (proposed extensons)
 - title: Project Presentations - 2
+  content:
+  - deadline: Project Assignment 3 due on Friday 4/3
 
 # notes: some pushback but the papers are student recommendations
 # +5 -6
