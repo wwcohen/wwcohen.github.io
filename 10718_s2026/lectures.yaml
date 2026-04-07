@@ -208,7 +208,8 @@
 # notes: some pushback but the papers are student recommendations
 # +5 -6
 - title: Causality
-  status: TO DO or skip
+  content:
+    - deck_tag: causality.gslides
   readings:
   - https://jmlr.org/papers/v23/19-480.html: "Causal Classification: Treatment Effect Estimation vs. Outcome Prediction, 2022"
   - https://arxiv.org/abs/2407.07596: "Learning treatment effects while treating those in need, Bryan Wilder, Pim Welle, 2024"
