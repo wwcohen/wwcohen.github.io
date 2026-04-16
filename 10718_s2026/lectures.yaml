@@ -227,6 +227,8 @@
 # maybe replace this with something else?
 
 - title: Bias and Variance in Modern ML
+  content:
+    - deck_tag: biasvar.gslides
   readings:
    -  https://arxiv.org/pdf/2505.00047v2: Base Models Beat Aligned Models at Randomness and Creativity, COLM 2025
    -  https://arxiv.org/pdf/2510.15551: Rethinking Cross-lingual Gaps from a Statistical Viewpoint, Piratla et al, 2025

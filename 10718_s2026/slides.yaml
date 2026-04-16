@@ -1,5 +1,12 @@
 # Database of info on slide decks for individual "modules"
 
+biasvar.gslides:
+ links:
+  - https://direct.mit.edu/neco/article-abstract/10/7/1895/6224/Approximate-Statistical-Tests-for-Comparing: Approximate Statistical Tests for Comparing ... Learning, Dietterich, 1998
+  - https://aclanthology.org/2022.emnlp-main.759.pdf: Rethinking the Role of Demonstrations, Min et al 2022
+  - https://aclanthology.org/2023.acl-long.153.pdf: Towards Understanding CoT Prompting, Wang, Min et al, 2023
+  - https://arxiv.org/pdf/2303.03846: Larger language models do in-context learning differently, Wei et al, 2023 
+
 causality.gslides:
  links:
   - https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/pdf/ijb1203.pdf: An Introduction to Causal Inference, Judea Pearl
