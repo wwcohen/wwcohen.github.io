@@ -1,5 +1,17 @@
 [
   {
+      "title": "Learning to Construct Practical Agentic Systems",
+      "authors": "Aditya Kumar and Zhihan Lei and Jerry Yan and Joshua W. Momo and Lauhitya Reddy and Rafael Enrique Cabrera Jimenez and Cassandra A. Cohen and Arthur Kajiyama and William W. Cohen",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2606.00189",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+  {
       "title": "Localizing and Correcting Errors for LLM-based Planners",
       "authors": "Aditya Kumar, William W. Cohen",
       "venues": "",
