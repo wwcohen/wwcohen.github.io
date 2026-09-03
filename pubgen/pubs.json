@@ -1,5 +1,18 @@
 [
   {
+      "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+      "authors": "Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2608.20316",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+
+  {
       "title": "CollabEval: Statistically Efficient Collaborative Model Evaluation via Matrix Completion",
       "authors": "Adam Fisch and Daniel Deutsch and Joshua Maynez and Alekh Agarwal and Jonathan Berant and William W. Cohen and Amir Globerson and Jacob Eisenstein",
       "venues": "",
