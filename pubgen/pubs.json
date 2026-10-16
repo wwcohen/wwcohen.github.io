@@ -1,5 +1,31 @@
 [
   {
+      "title": "Coding LLMs Can Be Harnessed to Learn Interpretable Models from Data",
+      "authors": "Aditya Kumar, Cassandra A. Cohen, William W. Cohen",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2610.14006",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+
+  {
+      "title": "Learning Reusable Agent Subroutines from Experience",
+      "authors": "Zhihan Lei, Jiarui Yan, Joshua Momo, William W. Cohen",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2606.02994",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+
+  {
       "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
       "authors": "Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein",
       "venues": "",
