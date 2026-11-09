@@ -50,6 +50,21 @@
       "doi": "recent.html",
       "comment": ""
   },
+
+
+  {
+      "title": "Decentralized LLM Workflows via Sequential Auctions",
+      "authors": "Ian Gemp, Shubhendu Trivedi, Adam Fisch, Fantine Huot, Michael Kaisers, Mirella Lapata, William W. Cohen, Alekh Agarwal, Kate Larson, Jacob Eisenstein",
+      "venues": "",
+      "year": "2026",
+      "topics": "an",
+      "url": "https://arxiv.org/abs/2610.22201",
+      "thread": "",
+      "cite": "progress",
+      "doi": "recent.html",
+      "comment": ""
+  },
+
   {
       "title": "Learning to Construct Practical Agentic Systems",
       "authors": "Zhihan Lei and Jerry Yan and Joshua W. Momo and William W. Cohen",
