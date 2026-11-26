@@ -13,9 +13,10 @@
   body { margin: 0; font: 14px/1.4 system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); }
   header { padding: 10px 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: var(--accent); color: #fff;
            box-shadow: 0 2px 6px rgba(0,0,0,.18); }
-  header h1 { font-size: 22px; margin: 0 14px 0 0; white-space: nowrap; }
-  #time { font: 600 22px ui-monospace, Menlo, monospace; min-width: 7ch; }
+  header h1 { font-size: 17px; margin: 0 6px 0 0; white-space: nowrap; }
+  #time { font: 600 16px ui-monospace, Menlo, monospace; min-width: 7ch; }
   #gainLbl { margin-left: auto; display: flex; align-items: center; gap: 5px; font-size: 13px; }
+  #gainDb { min-width: 6ch; font: 12px ui-monospace, Menlo, monospace; }
   #meter { width: 120px; height: 10px; background: rgba(0,0,0,.25); border-radius: 5px; overflow: hidden; }
   #meter div { height: 100%; width: 0; background: #7ee08a; }
   button { font: inherit; padding: 5px 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 6px; cursor: pointer; }
@@ -24,9 +25,10 @@
   header button { font-size: 16px; font-weight: 600; min-width: 46px; }
   body[data-state=playing] #play { background: #fde68a; }
   body[data-state=recording] #rec { background: var(--rec); color: #fff; }
-  #settings { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 8px 18px;
+  #settings, #extras { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 8px 18px;
               background: var(--panel); border-bottom: 1px solid var(--line); }
-  #settings label { display: flex; align-items: center; gap: 5px; }
+  #settings label, #extras label { display: flex; align-items: center; gap: 5px; }
+  #extras { border-top: 1px solid var(--line); margin-bottom: 10px; }
   input[type=number] { width: 62px; }
   #lanes { padding: 10px 18px; display: flex; flex-direction: column; gap: 8px; }
   .lane { display: flex; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; height: 96px; }
@@ -57,23 +59,25 @@
   <button id="play" title="Play (Space)">▶</button>
   <button id="stop" title="Stop (Space)">■</button>
   <button id="rec" title="Record on armed track (R)">●</button>
-  <button id="undo" title="Restore the track as it was before the last take" disabled>Undo take</button>
+  <button id="undo" title="Restore the track as it was before the last take" disabled>Undo</button>
   <span id="time">0:00.0</span>
-  <label id="gainLbl" title="Input gain (double-click to reset)">Input gain <input type="range" id="inGain" min="0" max="4" step="0.05"></label>
+  <label id="gainLbl" title="Input gain (double-click to reset)">Input gain <input type="range" id="inGain" min="-24" max="36" step="1"><span id="gainDb"></span></label>
   <div id="meter" title="Input level"><div></div></div>
 </header>
 <div id="settings">
-  <label><input type="checkbox" id="click"> Click</label>
-  <label>BPM <input type="number" id="bpm" min="30" max="300"></label>
-  <label><input type="checkbox" id="countIn"> 1-bar count-in</label>
   <label><input type="checkbox" id="monitor"> Monitor input</label>
   <label>Latency <input type="number" id="lat" min="0" max="1000"> ms</label>
   <button id="calib" title="Play clicks through the speakers and measure when the mic hears them">Calibrate</button>
-  <button id="mix">Export mix (WAV)</button>
   <button id="clearAll">Clear all</button>
 </div>
 <div id="lanes"></div>
 <div id="status"></div>
+<div id="extras">
+  <label><input type="checkbox" id="click"> Click</label>
+  <label>BPM <input type="number" id="bpm" min="30" max="300"></label>
+  <label><input type="checkbox" id="countIn"> 1-bar count-in</label>
+  <button id="mix">Export mix (WAV)</button>
+</div>
 <ul class="hint">
   <li><b>Use headphones</b> while overdubbing, or the mic will pick up the other tracks.</li>
   <li>Arm a track (<b>R</b> button), then press ● to record. Recording drops in at the playhead and keeps whatever was after the point where you stop, like tape.</li>
@@ -88,7 +92,7 @@ const $ = s => document.querySelector(s);
 const ctx = new AudioContext({ latencyHint: 'interactive' });
 const sr = ctx.sampleRate;
 const S = Object.assign({
-  latencyMs: null, inGain: 1, bpm: 100, click: false, countIn: true, monitor: false, armed: 0,
+  latencyMs: null, inGainDb: 0, bpm: 100, click: false, countIn: true, monitor: false, armed: 0,
   tracks: Array.from({ length: N }, (_, i) => ({ name: `Track ${i + 1}`, vol: 0.8, pan: 0, mute: false, solo: false })),
 }, JSON.parse(localStorage.getItem('fourtrack') || '{}'));
 const save = () => localStorage.setItem('fourtrack', JSON.stringify(S));
@@ -354,14 +358,15 @@ function applySettings() {
   $('#click').checked = S.click; $('#bpm').value = S.bpm; $('#countIn').checked = S.countIn;
   $('#monitor').checked = S.monitor; $('#lat').value = S.latencyMs ?? estLatencyMs();
   monGain.gain.value = S.monitor ? 1 : 0;
-  $('#inGain').value = S.inGain; inGain.gain.value = S.inGain;
+  $('#inGain').value = S.inGainDb; inGain.gain.value = 10 ** (S.inGainDb / 20);
+  $('#gainDb').textContent = `${S.inGainDb > 0 ? '+' : ''}${S.inGainDb} dB`;
   save();
 }
 $('#click').onchange = e => { S.click = e.target.checked; applySettings(); };
 $('#bpm').onchange = e => { S.bpm = Math.min(300, Math.max(30, +e.target.value || 100)); applySettings(); };
 $('#countIn').onchange = e => { S.countIn = e.target.checked; applySettings(); };
-$('#inGain').oninput = e => { S.inGain = +e.target.value; applySettings(); };
-$('#inGain').ondblclick = () => { S.inGain = 1; applySettings(); };
+$('#inGain').oninput = e => { S.inGainDb = +e.target.value; applySettings(); };
+$('#inGain').ondblclick = () => { S.inGainDb = 0; applySettings(); };
 $('#monitor').onchange = e => { S.monitor = e.target.checked; applySettings(); };
 $('#lat').onchange = e => { S.latencyMs = Math.max(0, +e.target.value || 0); applySettings(); };
 
