@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Four-Track Recorder</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --panel: #fffdf8; --ink: #2b2620; --muted: #7a7064; --line: #d9d2c5;
+    --accent: #b4532a; --rec: #dc2626; --wave: #5b4a36; --sel: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.4 system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); }
+  header { padding: 10px 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: var(--accent); color: #fff;
+           box-shadow: 0 2px 6px rgba(0,0,0,.18); }
+  header h1 { font-size: 22px; margin: 0 14px 0 0; white-space: nowrap; }
+  #time { font: 600 22px ui-monospace, Menlo, monospace; min-width: 7ch; }
+  #meter { width: 120px; height: 10px; background: rgba(0,0,0,.25); border-radius: 5px; overflow: hidden; margin-left: auto; }
+  #meter div { height: 100%; width: 0; background: #7ee08a; }
+  button { font: inherit; padding: 5px 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 6px; cursor: pointer; }
+  button:hover { border-color: var(--muted); }
+  button:disabled { opacity: .4; cursor: default; }
+  header button { font-size: 16px; font-weight: 600; min-width: 46px; }
+  body[data-state=playing] #play { background: #fde68a; }
+  body[data-state=recording] #rec { background: var(--rec); color: #fff; }
+  #settings { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 8px 18px;
+              background: var(--panel); border-bottom: 1px solid var(--line); }
+  #settings label { display: flex; align-items: center; gap: 5px; }
+  input[type=number] { width: 62px; }
+  #lanes { padding: 10px 18px; display: flex; flex-direction: column; gap: 8px; }
+  .lane { display: flex; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; height: 96px; }
+  .lane.armed { border-color: var(--rec); box-shadow: 0 0 0 1px var(--rec); }
+  .ctl { width: 260px; flex: none; padding: 7px 8px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 5px; }
+  .ctl .row { display: flex; align-items: center; gap: 5px; }
+  .ctl button { padding: 2px 7px; font-size: 12px; }
+  .ctl label { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 3px; }
+  .ctl input[type=range] { width: 78px; }
+  .name { flex: 1; min-width: 0; font: inherit; font-weight: 600; border: 1px solid transparent; background: none; padding: 1px 3px; }
+  .name:hover, .name:focus { border-color: var(--line); }
+  .arm.on { background: var(--rec); color: #fff; border-color: var(--rec); }
+  .m.on { background: #fbbf24; }
+  .s.on { background: #60a5fa; color: #fff; }
+  .wave { flex: 1; position: relative; cursor: pointer; }
+  .wave canvas { width: 100%; height: 100%; display: block; }
+  .lane.silent canvas { opacity: .3; }
+  .ph { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--sel); pointer-events: none; }
+  #status { padding: 0 18px; color: var(--accent); font-weight: 600; min-height: 1.4em; }
+  .hint { padding: 0 18px 18px; color: var(--muted); font-size: 13px; max-width: 900px; }
+  .hint li { margin: 3px 0; }
+</style>
+</head>
+<body data-state="stopped">
+<header>
+  <h1>Four-Track</h1>
+  <button id="rew" title="Return to start (Home)">⏮</button>
+  <button id="play" title="Play (Space)">▶</button>
+  <button id="stop" title="Stop (Space)">■</button>
+  <button id="rec" title="Record on armed track (R)">●</button>
+  <button id="undo" title="Restore the track as it was before the last take" disabled>Undo take</button>
+  <span id="time">0:00.0</span>
+  <div id="meter" title="Input level"><div></div></div>
+</header>
+<div id="settings">
+  <label><input type="checkbox" id="click"> Click</label>
+  <label>BPM <input type="number" id="bpm" min="30" max="300"></label>
+  <label><input type="checkbox" id="countIn"> 1-bar count-in</label>
+  <label><input type="checkbox" id="monitor"> Monitor input</label>
+  <label>Latency <input type="number" id="lat" min="0" max="1000"> ms</label>
+  <button id="calib" title="Play clicks through the speakers and measure when the mic hears them">Calibrate</button>
+  <button id="mix">Export mix (WAV)</button>
+  <button id="clearAll">Clear all</button>
+</div>
+<div id="lanes"></div>
+<div id="status"></div>
+<ul class="hint">
+  <li><b>Use headphones</b> while overdubbing, or the mic will pick up the other tracks.</li>
+  <li>Arm a track (<b>R</b> button), then press ● to record. Recording drops in at the playhead and keeps whatever was after the point where you stop, like tape.</li>
+  <li><b>Latency</b> moves new takes earlier so they line up with what you heard. To measure it, unplug your headphones, turn the speakers up, keep the room quiet and press <b>Calibrate</b>. If takes still sound late, increase the value; if they sound early, decrease it.</li>
+  <li>Click a waveform to move the playhead. Tracks are saved in this browser and are still there after a reload.</li>
+  <li>Keys: Space play/stop · R record · Home return to start.</li>
+</ul>
+
+<script>
+const N = 4, VIEW_MIN = 30;
+const $ = s => document.querySelector(s);
+const ctx = new AudioContext({ latencyHint: 'interactive' });
+const sr = ctx.sampleRate;
+const S = Object.assign({
+  latencyMs: null, bpm: 100, click: false, countIn: true, monitor: false, armed: 0,
+  tracks: Array.from({ length: N }, (_, i) => ({ name: `Track ${i + 1}`, vol: 0.8, pan: 0, mute: false, solo: false })),
+}, JSON.parse(localStorage.getItem('fourtrack') || '{}'));
+const save = () => localStorage.setItem('fourtrack', JSON.stringify(S));
+const setStatus = msg => $('#status').textContent = msg || '';
+
+// ---------- storage (IndexedDB key/value) ----------
+const dbp = new Promise((res, rej) => {
+  const r = indexedDB.open('fourtrack', 1);
+  r.onupgradeneeded = () => r.result.createObjectStore('kv');
+  r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+});
+async function idb(method, ...args) {
+  const db = await dbp;
+  return new Promise((res, rej) => {
+    const r = db.transaction('kv', method === 'get' ? 'readonly' : 'readwrite').objectStore('kv')[method](...args);
+    r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+  });
+}
+const persist = i => T[i].buf
+  ? idb('put', { sr: T[i].buf.sampleRate, data: T[i].buf.getChannelData(0) }, `track${i}`)
+  : idb('delete', `track${i}`);
+
+// ---------- recorder worklet: posts {frame, data} chunks of mic input ----------
+const WORKLET = `
+class Rec extends AudioWorkletProcessor {
+  constructor() {
+    super(); this.on = false; this.buf = new Float32Array(4096); this.n = 0; this.f0 = 0;
+    this.port.onmessage = e => {
+      if (e.data === 'start') { this.on = true; this.n = 0; }
+      else { this.flush(); this.on = false; this.port.postMessage('done'); }
+    };
+  }
+  flush() { if (this.n) { this.port.postMessage({ frame: this.f0, data: this.buf.slice(0, this.n) }); this.n = 0; } }
+  process(inputs) {
+    const ch = inputs[0] && inputs[0][0];
+    if (this.on && ch) {
+      if (!this.n) this.f0 = currentFrame;
+      this.buf.set(ch, this.n); this.n += ch.length;
+      if (this.n >= this.buf.length) this.flush();
+    }
+    return true;
+  }
+}
+registerProcessor('rec', Rec);`;
+let recNode, chunks = [], captureDone = null;
+const ready = ctx.audioWorklet.addModule(URL.createObjectURL(new Blob([WORKLET], { type: 'application/javascript' }))).then(() => {
+  recNode = new AudioWorkletNode(ctx, 'rec');
+  recNode.connect(ctx.destination);   // outputs silence; keeps the node being processed
+  recNode.port.onmessage = e => e.data === 'done' ? captureDone(chunks) : chunks.push(e.data);
+});
+const capture = () => { chunks = []; recNode.port.postMessage('start'); };
+const endCapture = () => new Promise(r => { captureDone = r; recNode.port.postMessage('stop'); });
+
+// Lay captured chunks into one array whose index 0 is context frame `from`.
+function assemble(chs, from) {
+  const end = chs.reduce((m, c) => Math.max(m, c.frame + c.data.length), from);
+  const out = new Float32Array(end - from);
+  for (const { frame, data } of chs) {
+    const o = frame - from;
+    if (o >= 0) out.set(data, o); else if (o + data.length > 0) out.set(data.subarray(-o), 0);
+  }
+  return out;
+}
+
+// ---------- mic ----------
+const analyser = ctx.createAnalyser(); analyser.fftSize = 1024;
+const monGain = ctx.createGain(); monGain.connect(ctx.destination);
+let mic = null, micLatency = 0;
+async function ensureMic() {
+  if (mic) return true;
+  if (!navigator.mediaDevices) { setStatus('Microphone needs a secure (https) page.'); return false; }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(
+      { audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+    await ready;
+    mic = ctx.createMediaStreamSource(stream);
+    [recNode, analyser, monGain].forEach(n => mic.connect(n));
+    micLatency = stream.getAudioTracks()[0].getSettings().latency || 0;
+    applySettings();
+    return true;
+  } catch (e) { setStatus('Microphone unavailable: ' + e.message); return false; }
+}
+const estLatencyMs = () => Math.round(1000 * ((ctx.baseLatency || 0) + (ctx.outputLatency || 0) + micLatency));
+const latency = () => (S.latencyMs ?? estLatencyMs()) / 1000;
+
+// ---------- tracks ----------
+const master = ctx.createGain(); master.connect(ctx.destination);
+const gainFor = (c, anySolo) => (c.mute || (anySolo && !c.solo)) ? 0 : c.vol;
+const T = S.tracks.map((c, i) => {
+  const el = document.createElement('div');
+  el.className = 'lane';
+  el.innerHTML = `<div class="ctl">
+      <div class="row"><button class="arm" title="Arm for recording">R</button><input class="name"></div>
+      <div class="row"><button class="m" title="Mute">M</button><button class="s" title="Solo">S</button>
+        <label>vol <input type="range" class="vol" min="0" max="1.25" step="0.01"></label>
+        <label>pan <input type="range" class="pan" min="-1" max="1" step="0.05"></label></div>
+      <div class="row"><button class="exp">Export WAV</button><button class="clr">Clear</button></div>
+    </div><div class="wave"><canvas></canvas><div class="ph"></div></div>`;
+  $('#lanes').append(el);
+  const q = s => el.querySelector(s);
+  const t = { el, buf: null, canvas: q('canvas'), ph: q('.ph'), gain: ctx.createGain(), pan: ctx.createStereoPanner() };
+  t.gain.connect(t.pan).connect(master);
+  q('.name').value = c.name; q('.vol').value = c.vol; q('.pan').value = c.pan;
+  q('.name').onchange = e => { c.name = e.target.value; save(); };
+  q('.vol').oninput = e => { c.vol = +e.target.value; applyMix(); };
+  q('.pan').oninput = e => { c.pan = +e.target.value; applyMix(); };
+  q('.pan').ondblclick = e => { c.pan = 0; e.target.value = 0; applyMix(); };
+  q('.arm').onclick = () => { if (state === 'stopped') { S.armed = i; applyMix(); } };
+  q('.m').onclick = () => { c.mute = !c.mute; applyMix(); };
+  q('.s').onclick = () => { c.solo = !c.solo; applyMix(); };
+  q('.exp').onclick = () => t.buf && download(wav([t.buf.getChannelData(0)], t.buf.sampleRate), `${c.name}.wav`);
+  q('.clr').onclick = () => {
+    if (t.buf && state === 'stopped' && confirm(`Erase "${c.name}"?`)) { undo = { i, buf: t.buf }; setBuf(i, null); persist(i); }
+  };
+  q('.wave').onclick = e => { const r = e.currentTarget.getBoundingClientRect(); seek((e.clientX - r.left) / r.width * view); };
+  return t;
+});
+
+function applyMix() {
+  const anySolo = S.tracks.some(c => c.solo);
+  T.forEach((t, i) => {
+    const c = S.tracks[i], g = gainFor(c, anySolo);
+    t.gain.gain.value = g; t.pan.pan.value = c.pan;
+    t.el.classList.toggle('armed', i === S.armed);
+    t.el.classList.toggle('silent', g === 0);
+    t.el.querySelector('.arm').classList.toggle('on', i === S.armed);
+    t.el.querySelector('.m').classList.toggle('on', c.mute);
+    t.el.querySelector('.s').classList.toggle('on', c.solo);
+  });
+  save();
+}
+
+function setBuf(i, data, rate = sr) {
+  T[i].buf = data && data.length ? new AudioBuffer({ length: data.length, sampleRate: rate, numberOfChannels: 1 }) : null;
+  if (T[i].buf) T[i].buf.copyToChannel(data, 0);
+  drawAll();
+}
+const maxDur = () => Math.max(0, ...T.map(t => t.buf ? t.buf.duration : 0));
+
+// ---------- drawing ----------
+let view = VIEW_MIN;
+function drawAll() { view = Math.max(VIEW_MIN, maxDur() * 1.1); T.forEach(drawWave); }
+function drawWave(t) {
+  const c = t.canvas, dpr = devicePixelRatio || 1;
+  const w = c.width = c.clientWidth * dpr, h = c.height = c.clientHeight * dpr, g = c.getContext('2d');
+  g.fillStyle = getComputedStyle(document.body).getPropertyValue('--wave');
+  g.fillRect(0, h / 2, w, 1);
+  if (!t.buf) return;
+  const d = t.buf.getChannelData(0), spp = t.buf.sampleRate * view / w;
+  for (let x = 0; x < w; x++) {
+    const a = Math.floor(x * spp), b = Math.min(d.length, Math.floor((x + 1) * spp));
+    if (a >= d.length) break;
+    let lo = 0, hi = 0;
+    for (let j = a; j < b; j++) { const v = d[j]; if (v < lo) lo = v; else if (v > hi) hi = v; }
+    g.fillRect(x, h / 2 - hi * h / 2, 1, Math.max(1, (hi - lo) * h / 2));
+  }
+}
+addEventListener('resize', drawAll);
+
+const fmt = s => `${Math.floor(s / 60)}:${(s % 60).toFixed(1).padStart(4, '0')}`;
+const meterBuf = new Float32Array(analyser.fftSize);
+function tick() {
+  const p = now();
+  if (p > view * 0.98) { view = p * 1.5; T.forEach(drawWave); }
+  T.forEach(t => t.ph.style.left = `${p / view * 100}%`);
+  $('#time').textContent = fmt(p);
+  if (mic) {
+    analyser.getFloatTimeDomainData(meterBuf);
+    const pk = meterBuf.reduce((m, v) => Math.max(m, Math.abs(v)), 0);
+    $('#meter div').style.width = `${Math.min(100, pk * 100)}%`;
+    $('#meter div').style.background = pk > 0.95 ? '#ef4444' : '#7ee08a';
+  }
+  if (state === 'playing' && !S.click && p > maxDur() + 0.3) stop();
+  requestAnimationFrame(tick);
+}
+
+// ---------- click ----------
+function beep(t, accent, len = 0.03) {
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.frequency.value = accent ? 1600 : 1000;
+  g.gain.setValueAtTime(0.5, t); g.gain.exponentialRampToValueAtTime(0.001, t + len);
+  o.connect(g).connect(ctx.destination); o.start(t); o.stop(t + len);
+}
+let clickTimer = null;
+function startClick(origin, spb, count) {
+  let k = 0;
+  const step = () => { for (; k < count && origin + k * spb < ctx.currentTime + 0.2; k++) beep(origin + k * spb, k % 4 === 0); };
+  step(); clickTimer = setInterval(step, 50);
+}
+
+// ---------- transport ----------
+let state = 'stopped', pos = 0, startPos = 0, t0 = 0, sources = [], undo = null;
+const now = () => state === 'stopped' ? pos : Math.max(startPos, startPos + ctx.currentTime - t0);
+
+async function start(record) {
+  if (state !== 'stopped') return;
+  await ctx.resume();
+  if (record && !await ensureMic()) return;
+  const spb = 60 / S.bpm, lead = record && S.countIn ? 4 * spb : 0;
+  startPos = pos; t0 = ctx.currentTime + 0.15 + lead;   // t0 = context time at which song position startPos plays
+  T.forEach((t, i) => {
+    if (!t.buf || (record && i === S.armed) || startPos >= t.buf.duration) return;
+    const s = ctx.createBufferSource(); s.buffer = t.buf; s.connect(t.gain); s.start(t0, startPos); sources.push(s);
+  });
+  if (S.click || lead) startClick(t0 - lead, spb, S.click ? Infinity : 4);
+  if (record) capture();
+  setState(record ? 'recording' : 'playing');
+}
+
+async function stop() {
+  if (state === 'stopped') return seek(0);
+  const p = now(), wasRec = state === 'recording';
+  sources.forEach(s => s.stop()); sources = []; clearInterval(clickTimer);
+  pos = p; setState('stopped');
+  if (wasRec) commitTake(await endCapture());
+}
+
+// Drop the take into the armed track at startPos, compensating for round-trip latency.
+function commitTake(chs) {
+  const rec = assemble(chs, Math.round((t0 + latency()) * sr));
+  if (!rec.length) return;
+  const i = S.armed, old = T[i].buf, at = Math.round(startPos * sr);
+  const data = new Float32Array(Math.max(old ? old.length : 0, at + rec.length));
+  if (old) data.set(old.getChannelData(0));
+  data.set(rec, at);
+  undo = { i, buf: old };
+  setBuf(i, data); persist(i); setState('stopped');
+}
+
+function seek(t) {
+  if (state === 'recording') return;
+  const wasPlaying = state === 'playing';
+  if (wasPlaying) stop();
+  pos = Math.max(0, t);
+  if (wasPlaying) start(false);
+}
+
+function setState(s) {
+  state = s; document.body.dataset.state = s;
+  $('#undo').disabled = !undo || s !== 'stopped';
+}
+
+$('#undo').onclick = () => {
+  if (!undo || state !== 'stopped') return;
+  setBuf(undo.i, undo.buf && undo.buf.getChannelData(0), undo.buf && undo.buf.sampleRate);
+  persist(undo.i); undo = null; setState('stopped');
+};
+$('#play').onclick = () => start(false);
+$('#rec').onclick = () => start(true);
+$('#stop').onclick = stop;
+$('#rew').onclick = () => seek(0);
+addEventListener('keydown', e => {
+  if (e.target.matches('input:not([type=checkbox]):not([type=range])')) return;
+  if (e.code === 'Space') { e.preventDefault(); state === 'stopped' ? start(false) : stop(); }
+  else if (e.key === 'r' || e.key === 'R') start(true);
+  else if (e.key === 'Home') seek(0);
+});
+
+// ---------- settings ----------
+function applySettings() {
+  $('#click').checked = S.click; $('#bpm').value = S.bpm; $('#countIn').checked = S.countIn;
+  $('#monitor').checked = S.monitor; $('#lat').value = S.latencyMs ?? estLatencyMs();
+  monGain.gain.value = S.monitor ? 1 : 0;
+  save();
+}
+$('#click').onchange = e => { S.click = e.target.checked; applySettings(); };
+$('#bpm').onchange = e => { S.bpm = Math.min(300, Math.max(30, +e.target.value || 100)); applySettings(); };
+$('#countIn').onchange = e => { S.countIn = e.target.checked; applySettings(); };
+$('#monitor').onchange = e => { S.monitor = e.target.checked; applySettings(); };
+$('#lat').onchange = e => { S.latencyMs = Math.max(0, +e.target.value || 0); applySettings(); };
+
+$('#calib').onclick = async () => {
+  if (state !== 'stopped') return;
+  await ctx.resume();
+  if (!await ensureMic()) return;
+  const n = 6, gap = 0.4, t = ctx.currentTime + 0.3, win = Math.round(0.3 * sr);
+  setStatus('Calibrating… (quiet please)');
+  monGain.gain.value = 0;
+  capture();
+  for (let k = 0; k < n; k++) beep(t + k * gap, true, 0.01);
+  await new Promise(r => setTimeout(r, (0.6 + n * gap) * 1000));
+  const d = assemble(await endCapture(), Math.round(t * sr)), lats = [];
+  for (let k = 0; k < n; k++) {
+    const w = d.subarray(Math.round(k * gap * sr), Math.round(k * gap * sr) + win);
+    const mx = w.reduce((m, v) => Math.max(m, Math.abs(v)), 0);
+    if (mx > 0.02) lats.push(w.findIndex(v => Math.abs(v) > mx * 0.5) / sr);
+  }
+  if (lats.length < 3) { applySettings(); return setStatus('Calibration failed: the mic did not hear the clicks. Turn the speakers up or move the mic closer.'); }
+  lats.sort((a, b) => a - b);
+  S.latencyMs = Math.round(lats[lats.length >> 1] * 1000);
+  applySettings();
+  setStatus(`Measured latency: ${S.latencyMs} ms`);
+};
+
+// ---------- export ----------
+function wav(chs, rate) {
+  const n = chs[0].length, k = chs.length, b = new DataView(new ArrayBuffer(44 + n * k * 2));
+  const str = (o, s) => [...s].forEach((c, j) => b.setUint8(o + j, c.charCodeAt(0)));
+  str(0, 'RIFF'); b.setUint32(4, 36 + n * k * 2, true); str(8, 'WAVEfmt ');
+  b.setUint32(16, 16, true); b.setUint16(20, 1, true); b.setUint16(22, k, true); b.setUint32(24, rate, true);
+  b.setUint32(28, rate * k * 2, true); b.setUint16(32, k * 2, true); b.setUint16(34, 16, true);
+  str(36, 'data'); b.setUint32(40, n * k * 2, true);
+  for (let i = 0, o = 44; i < n; i++) for (const c of chs) {
+    const v = Math.max(-1, Math.min(1, c[i])); b.setInt16(o, v < 0 ? v * 0x8000 : v * 0x7fff, true); o += 2;
+  }
+  return new Blob([b], { type: 'audio/wav' });
+}
+function download(blob, name) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+$('#mix').onclick = async () => {
+  const len = Math.ceil(maxDur() * sr);
+  if (!len) return;
+  const off = new OfflineAudioContext(2, len, sr), anySolo = S.tracks.some(c => c.solo);
+  T.forEach((t, i) => {
+    if (!t.buf) return;
+    const s = off.createBufferSource(), g = off.createGain(), p = off.createStereoPanner();
+    s.buffer = t.buf; g.gain.value = gainFor(S.tracks[i], anySolo); p.pan.value = S.tracks[i].pan;
+    s.connect(g).connect(p).connect(off.destination); s.start();
+  });
+  const r = await off.startRendering();
+  download(wav([r.getChannelData(0), r.getChannelData(1)], r.sampleRate), 'mixdown.wav');
+};
+$('#clearAll').onclick = () => {
+  if (state !== 'stopped' || !confirm('Erase all four tracks?')) return;
+  T.forEach((_, i) => { setBuf(i, null); persist(i); });
+  undo = null; pos = 0; setState('stopped');
+};
+
+// ---------- startup: restore saved tracks ----------
+async function resample(data, rate) {
+  const off = new OfflineAudioContext(1, Math.round(data.length * sr / rate), sr), s = off.createBufferSource();
+  const b = new AudioBuffer({ length: data.length, sampleRate: rate, numberOfChannels: 1 });
+  b.copyToChannel(data, 0); s.buffer = b; s.connect(off.destination); s.start();
+  return (await off.startRendering()).getChannelData(0);
+}
+(async () => {
+  for (let i = 0; i < N; i++) {
+    const v = await idb('get', `track${i}`);
+    if (v) setBuf(i, v.sr === sr ? v.data : await resample(v.data, v.sr));
+  }
+})();
+applyMix(); applySettings(); drawAll(); tick();
+</script>
+</body>
+</html>
