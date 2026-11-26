@@ -31,7 +31,7 @@
   #extras { border-top: 1px solid var(--line); margin-bottom: 10px; }
   input[type=number] { width: 62px; }
   #lanes { padding: 10px 18px; display: flex; flex-direction: column; gap: 8px; }
-  .lane { display: flex; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; height: 96px; }
+  .lane { display: flex; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; height: 64px; }
   .lane.armed { border-color: var(--rec); box-shadow: 0 0 0 1px var(--rec); }
   .ctl { width: 260px; flex: none; padding: 7px 8px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 5px; }
   .ctl .row { display: flex; align-items: center; gap: 5px; }
@@ -191,7 +191,6 @@ const T = S.tracks.map((c, i) => {
       <div class="row"><button class="m" title="Mute">M</button><button class="s" title="Solo">S</button>
         <label>vol <input type="range" class="vol" min="0" max="1.25" step="0.01"></label>
         <label>pan <input type="range" class="pan" min="-1" max="1" step="0.05"></label></div>
-      <div class="row"><button class="exp">Export WAV</button><button class="clr">Clear</button></div>
     </div><div class="wave"><canvas></canvas><div class="ph"></div></div>`;
   $('#lanes').append(el);
   const q = s => el.querySelector(s);
@@ -205,10 +204,6 @@ const T = S.tracks.map((c, i) => {
   q('.arm').onclick = () => { if (state === 'stopped') { S.armed = i; applyMix(); } };
   q('.m').onclick = () => { c.mute = !c.mute; applyMix(); };
   q('.s').onclick = () => { c.solo = !c.solo; applyMix(); };
-  q('.exp').onclick = () => t.buf && download(wav([t.buf.getChannelData(0)], t.buf.sampleRate), `${c.name}.wav`);
-  q('.clr').onclick = () => {
-    if (t.buf && state === 'stopped' && confirm(`Erase "${c.name}"?`)) { undo = { i, buf: t.buf }; setBuf(i, null); persist(i); }
-  };
   q('.wave').onclick = e => { const r = e.currentTarget.getBoundingClientRect(); seek((e.clientX - r.left) / r.width * view); };
   return t;
 });
