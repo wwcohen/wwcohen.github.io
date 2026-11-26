@@ -15,7 +15,8 @@
            box-shadow: 0 2px 6px rgba(0,0,0,.18); }
   header h1 { font-size: 22px; margin: 0 14px 0 0; white-space: nowrap; }
   #time { font: 600 22px ui-monospace, Menlo, monospace; min-width: 7ch; }
-  #meter { width: 120px; height: 10px; background: rgba(0,0,0,.25); border-radius: 5px; overflow: hidden; margin-left: auto; }
+  #gainLbl { margin-left: auto; display: flex; align-items: center; gap: 5px; font-size: 13px; }
+  #meter { width: 120px; height: 10px; background: rgba(0,0,0,.25); border-radius: 5px; overflow: hidden; }
   #meter div { height: 100%; width: 0; background: #7ee08a; }
   button { font: inherit; padding: 5px 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 6px; cursor: pointer; }
   button:hover { border-color: var(--muted); }
@@ -58,6 +59,7 @@
   <button id="rec" title="Record on armed track (R)">●</button>
   <button id="undo" title="Restore the track as it was before the last take" disabled>Undo take</button>
   <span id="time">0:00.0</span>
+  <label id="gainLbl" title="Input gain (double-click to reset)">Input gain <input type="range" id="inGain" min="0" max="4" step="0.05"></label>
   <div id="meter" title="Input level"><div></div></div>
 </header>
 <div id="settings">
@@ -86,7 +88,7 @@ const $ = s => document.querySelector(s);
 const ctx = new AudioContext({ latencyHint: 'interactive' });
 const sr = ctx.sampleRate;
 const S = Object.assign({
-  latencyMs: null, bpm: 100, click: false, countIn: true, monitor: false, armed: 0,
+  latencyMs: null, inGain: 1, bpm: 100, click: false, countIn: true, monitor: false, armed: 0,
   tracks: Array.from({ length: N }, (_, i) => ({ name: `Track ${i + 1}`, vol: 0.8, pan: 0, mute: false, solo: false })),
 }, JSON.parse(localStorage.getItem('fourtrack') || '{}'));
 const save = () => localStorage.setItem('fourtrack', JSON.stringify(S));
@@ -154,6 +156,7 @@ function assemble(chs, from) {
 // ---------- mic ----------
 const analyser = ctx.createAnalyser(); analyser.fftSize = 1024;
 const monGain = ctx.createGain(); monGain.connect(ctx.destination);
+const inGain = ctx.createGain();   // mic -> inGain -> recorder, meter, monitor
 let mic = null, micLatency = 0;
 async function ensureMic() {
   if (mic) return true;
@@ -163,7 +166,8 @@ async function ensureMic() {
       { audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
     await ready;
     mic = ctx.createMediaStreamSource(stream);
-    [recNode, analyser, monGain].forEach(n => mic.connect(n));
+    mic.connect(inGain);
+    [recNode, analyser, monGain].forEach(n => inGain.connect(n));
     micLatency = stream.getAudioTracks()[0].getSettings().latency || 0;
     applySettings();
     return true;
@@ -350,11 +354,14 @@ function applySettings() {
   $('#click').checked = S.click; $('#bpm').value = S.bpm; $('#countIn').checked = S.countIn;
   $('#monitor').checked = S.monitor; $('#lat').value = S.latencyMs ?? estLatencyMs();
   monGain.gain.value = S.monitor ? 1 : 0;
+  $('#inGain').value = S.inGain; inGain.gain.value = S.inGain;
   save();
 }
 $('#click').onchange = e => { S.click = e.target.checked; applySettings(); };
 $('#bpm').onchange = e => { S.bpm = Math.min(300, Math.max(30, +e.target.value || 100)); applySettings(); };
 $('#countIn').onchange = e => { S.countIn = e.target.checked; applySettings(); };
+$('#inGain').oninput = e => { S.inGain = +e.target.value; applySettings(); };
+$('#inGain').ondblclick = () => { S.inGain = 1; applySettings(); };
 $('#monitor').onchange = e => { S.monitor = e.target.checked; applySettings(); };
 $('#lat').onchange = e => { S.latencyMs = Math.max(0, +e.target.value || 0); applySettings(); };
 
